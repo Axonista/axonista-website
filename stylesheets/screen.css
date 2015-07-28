@@ -1150,56 +1150,61 @@ section.objectives.showpal h1 {
 }
 
 /* line 833, ../sass/screen.scss */
-.sub-section {
-  background: linear-gradient(rgba(19, 169, 213, 0.9), rgba(19, 169, 213, 0.9)), url(../images/gallery-header.png);
+section.sub-section {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #444444;
+  padding-top: 8em;
+  text-align: center;
+}
+/* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
+section.sub-section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 839, ../sass/screen.scss */
+section.sub-section.showpal {
+  background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  padding: 8em 0 0em 0em;
 }
-/* line 842, ../sass/screen.scss */
-.sub-section header {
-  font-size: 1.3em;
-  color: white;
-  text-align: center;
-  font-weight: 600;
-  padding: 0em 0em 1em 0em;
-}
-/* line 850, ../sass/screen.scss */
-.sub-section p {
-  font-size: 1em;
-  text-align: center;
-  width: 60%;
-  color: white;
-  font-weight: 300;
+/* line 848, ../sass/screen.scss */
+section.sub-section h1 {
+  font-size: 1.5em;
+  font-weight: 700;
   line-height: 2em;
+  color: #fff;
+}
+/* line 854, ../sass/screen.scss */
+section.sub-section p {
   margin: 0 auto;
+  font-size: 1.25em;
+  max-width: 50%;
+  color: rgba(255, 255, 255, 0.9);
 }
-/* line 860, ../sass/screen.scss */
-.sub-section #sub-content {
-  padding: 1em 0em 5em 0em;
-}
-/* line 864, ../sass/screen.scss */
-.sub-section #tv-one img {
-  max-width: 650px;
+/* line 861, ../sass/screen.scss */
+section.sub-section img {
+  padding-top: 2em;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 29.85432%;
-  float: none;
+  width: 65.88078%;
+  margin-left: 17.05961%;
 }
 /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-.sub-section #tv-one img:last-child {
+section.sub-section img:last-child {
   margin-right: 0;
 }
 
-/* line 876, ../sass/screen.scss */
+/* line 871, ../sass/screen.scss */
 .method {
   padding: 8em 0 7em 0em;
 }
-/* line 879, ../sass/screen.scss */
+/* line 874, ../sass/screen.scss */
 .method header {
   font-size: 1.2em;
   font-weight: 400;
@@ -1207,7 +1212,7 @@ section.objectives.showpal h1 {
   color: #13A9D5;
   padding: 0 0 1em 0;
 }
-/* line 887, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 .method p {
   font-weight: 300;
   color: #444444;
@@ -1216,18 +1221,18 @@ section.objectives.showpal h1 {
   font-size: 0.9em;
   margin: 0 auto;
 }
-/* line 897, ../sass/screen.scss */
+/* line 892, ../sass/screen.scss */
 .method #method-content {
   text-align: center;
   margin: 0 auto;
 }
-/* line 904, ../sass/screen.scss */
+/* line 899, ../sass/screen.scss */
 .method #method-step ul {
   list-style-type: none;
   position: relative;
   text-align: center;
 }
-/* line 910, ../sass/screen.scss */
+/* line 905, ../sass/screen.scss */
 .method #method-step li {
   display: inline-block;
   font-size: 1.8em;
@@ -1236,25 +1241,25 @@ section.objectives.showpal h1 {
   margin: 2em 1em 0 0;
   text-align: center;
 }
-/* line 919, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 .method #method-step h3 {
   font-size: 0.5em;
   line-height: 4.2em;
 }
 
-/* line 930, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 .product-details {
   background: #FAFAFA;
   padding: 8em 0 7em 6em;
 }
-/* line 934, ../sass/screen.scss */
+/* line 929, ../sass/screen.scss */
 .product-details header {
   font-size: 1.2em;
   color: #13A9D5;
   margin-left: 2.2em;
   padding: 0 0 1em 0;
 }
-/* line 941, ../sass/screen.scss */
+/* line 936, ../sass/screen.scss */
 .product-details p {
   font-size: 0.9em;
   color: #444444;
@@ -1263,25 +1268,25 @@ section.objectives.showpal h1 {
   width: 65%;
   font-weight: 300;
 }
-/* line 951, ../sass/screen.scss */
+/* line 946, ../sass/screen.scss */
 .product-details #product-images {
   margin-left: 2.9em;
 }
-/* line 954, ../sass/screen.scss */
+/* line 949, ../sass/screen.scss */
 .product-details #product-images ul {
   list-style-type: none;
 }
-/* line 956, ../sass/screen.scss */
+/* line 951, ../sass/screen.scss */
 .product-details #product-images li {
   display: inline-block;
   margin: 3em 1em 0 0;
 }
-/* line 961, ../sass/screen.scss */
+/* line 956, ../sass/screen.scss */
 .product-details #product-images img {
   max-width: 250px;
   border-radius: 3px;
 }
-/* line 965, ../sass/screen.scss */
+/* line 960, ../sass/screen.scss */
 .product-details #product-images img:hover {
   cursor: pointer;
   opacity: 0.8;
