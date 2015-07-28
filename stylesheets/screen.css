@@ -150,7 +150,7 @@ html:last-child, body:last-child {
 }
 /* line 64, ../sass/screen.scss */
 .nav li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   display: inline-block;
   margin-left: 1em;
   color: white;
@@ -186,7 +186,7 @@ html:last-child, body:last-child {
 /* line 95, ../sass/screen.scss */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55)), url(../images/work.jpg);
+  background: linear-gradient(rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55)), url("../assets/images/work.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -284,7 +284,7 @@ html:last-child, body:last-child {
 }
 /* line 155, ../sass/screen.scss */
 .process a {
-  background: #fafafa;
+  background: #f8f8f8;
   color: #353535;
   display: block;
   font-weight: 300;
@@ -455,7 +455,7 @@ button.case-button:hover {
 
 /* line 294, ../sass/screen.scss */
 .rerun {
-  background-image: linear-gradient(rgba(81, 85, 97, 0.7), rgba(79, 90, 124, 0.7)), url("../images/rerun.png");
+  background-image: linear-gradient(rgba(81, 85, 97, 0.7), rgba(79, 90, 124, 0.7)), url("../assets/images/rerun.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -641,7 +641,7 @@ ul.rig.columns-4 li {
 
 /* line 468, ../sass/screen.scss */
 .map {
-  background-image: linear-gradient(rgba(252, 252, 252, 0.5), rgba(252, 252, 252, 0.5)), url(../images/map.png);
+  background-image: linear-gradient(rgba(252, 252, 252, 0.5), rgba(252, 252, 252, 0.5)), url("../assets/images/map.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -793,7 +793,7 @@ ul.rig.columns-4 li {
 }
 /* line 575, ../sass/screen.scss */
 .footer .footer-wrap {
-  background-image: linear-gradient(rgba(36, 42, 53, 0.9), rgba(36, 42, 53, 0.9)), url(../images/office2.png);
+  background-image: linear-gradient(rgba(36, 42, 53, 0.9), rgba(36, 42, 53, 0.9)), url("../assets/images/office2.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

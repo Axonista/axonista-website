@@ -95,7 +95,7 @@ $small: max-width 510px;
 .hero {
 	height: 100vh;
   	background: linear-gradient( rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55) ),
-	url(../images/work.jpg);
+	url('../assets/images/work.jpg');
     background-size: cover;
     -webkit-background-size: cover;
  	-moz-background-size: cover;
@@ -297,7 +297,7 @@ button.case-button {
       rgba(79, 90, 124, 0.7)
     ),
 
-	url('../images/rerun.png');
+	url('../assets/images/rerun.png');
 	background-size: cover;
      -webkit-background-size: cover;
  	 -moz-background-size: cover;
@@ -471,7 +471,7 @@ ul.rig.columns-4 li {
       rgba(252, 252, 252, 0.5)
     ),
 
-	url(../images/map.png);
+	url('../assets/images/map.png');
 	background-size: cover;
      -webkit-background-size: cover;
  	 -moz-background-size: cover;
@@ -579,7 +579,7 @@ ul.rig.columns-4 li {
       rgba(36, 42, 53, 0.90)
     ),
 
-	url(../images/office2.png);
+	url('../assets/images/office2.png');
 	background-size: cover;
      -webkit-background-size: cover;
  	 -moz-background-size: cover;
