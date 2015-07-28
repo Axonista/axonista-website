@@ -1051,7 +1051,7 @@ section.objectives h1 {
 section.objectives p {
   margin-left: 17.05961%;
   line-height: 1.5em;
-  max-width: 35em;
+  max-width: 40em;
   font-size: 1.125em;
   margin-bottom: 1em;
 }
@@ -1200,66 +1200,89 @@ section.sub-section img:last-child {
   margin-right: 0;
 }
 
-/* line 871, ../sass/screen.scss */
-.method {
-  padding: 8em 0 7em 0em;
+/* line 870, ../sass/screen.scss */
+section.method {
+  padding: 4em 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
+section.method::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 /* line 874, ../sass/screen.scss */
-.method header {
-  font-size: 1.2em;
-  font-weight: 400;
+section.method h1 {
+  margin-left: 17.05961%;
+  font-size: 1.5em;
+  font-weight: 700;
   line-height: 2em;
-  color: #13A9D5;
-  padding: 0 0 1em 0;
 }
-/* line 882, ../sass/screen.scss */
-.method p {
-  font-weight: 300;
-  color: #444444;
-  line-height: 2.4em;
-  width: 65%;
-  font-size: 0.9em;
-  margin: 0 auto;
+/* line 881, ../sass/screen.scss */
+section.method p {
+  margin-left: 17.05961%;
+  line-height: 1.5em;
+  max-width: 40em;
+  font-size: 1.125em;
+  margin-bottom: 1em;
 }
-/* line 892, ../sass/screen.scss */
-.method #method-content {
-  text-align: center;
-  margin: 0 auto;
-}
-/* line 899, ../sass/screen.scss */
-.method #method-step ul {
+/* line 889, ../sass/screen.scss */
+section.method ul {
   list-style-type: none;
-  position: relative;
   text-align: center;
+  margin-left: 25.58941%;
+  padding-top: 2em;
 }
-/* line 905, ../sass/screen.scss */
-.method #method-step li {
-  display: inline-block;
-  font-size: 1.8em;
-  color: #13A9D5;
-  padding: 1em 1em 1em 1em;
-  margin: 2em 1em 0 0;
-  text-align: center;
+/* line 896, ../sass/screen.scss */
+section.method li {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.57751%;
+  width: 16.07295%;
+  font-size: 1em;
 }
-/* line 914, ../sass/screen.scss */
-.method #method-step h3 {
-  font-size: 0.5em;
-  line-height: 4.2em;
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.method li:last-child {
+  margin-right: 0;
+}
+/* line 78, ../sass/libraries/neat/grid/_omega.scss */
+section.method li:nth-child(5n) {
+  margin-right: 0;
+}
+/* line 83, ../sass/libraries/neat/grid/_omega.scss */
+section.method li:nth-child(5n+1) {
+  clear: left;
+}
+/* line 903, ../sass/screen.scss */
+section.method h3 {
+  padding-top: 1em;
+  font-weight: 600;
+}
+/* line 908, ../sass/screen.scss */
+section.method i.icon {
+  font-size: 2em;
+}
+/* line 912, ../sass/screen.scss */
+section.method.showpal h1, section.method.showpal i {
+  color: #3BB8D7;
 }
 
-/* line 925, ../sass/screen.scss */
+/* line 921, ../sass/screen.scss */
 .product-details {
   background: #FAFAFA;
   padding: 8em 0 7em 6em;
 }
-/* line 929, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 .product-details header {
   font-size: 1.2em;
   color: #13A9D5;
   margin-left: 2.2em;
   padding: 0 0 1em 0;
 }
-/* line 936, ../sass/screen.scss */
+/* line 932, ../sass/screen.scss */
 .product-details p {
   font-size: 0.9em;
   color: #444444;
@@ -1268,25 +1291,25 @@ section.sub-section img:last-child {
   width: 65%;
   font-weight: 300;
 }
-/* line 946, ../sass/screen.scss */
+/* line 942, ../sass/screen.scss */
 .product-details #product-images {
   margin-left: 2.9em;
 }
-/* line 949, ../sass/screen.scss */
+/* line 945, ../sass/screen.scss */
 .product-details #product-images ul {
   list-style-type: none;
 }
-/* line 951, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 .product-details #product-images li {
   display: inline-block;
   margin: 3em 1em 0 0;
 }
-/* line 956, ../sass/screen.scss */
+/* line 952, ../sass/screen.scss */
 .product-details #product-images img {
   max-width: 250px;
   border-radius: 3px;
 }
-/* line 960, ../sass/screen.scss */
+/* line 956, ../sass/screen.scss */
 .product-details #product-images img:hover {
   cursor: pointer;
   opacity: 0.8;

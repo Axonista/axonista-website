@@ -763,7 +763,7 @@ section.objectives {
     p {
         @include shift (2);
         line-height: 1.5em;
-        max-width: 35em;
+        max-width: 40em;
         font-size: 1.125em;
         margin-bottom: 1em;
     }
@@ -866,56 +866,52 @@ section.sub-section {
 }
 
 
-// 3Player Methodology & Testing //
+// Methodology
+section.method {
+    padding: 4em 0;
+    @include outer-container;
 
-.method {
-    padding: 8em 0 7em 0em;
-
-    header {
-        font-size: 1.2em;
-        font-weight: 400;
+    h1 {
+        @include shift (2);
+        font-size: 1.5em;
+        font-weight: 700;
         line-height: 2em;
-        color: $blue;
-        padding: 0 0 1em 0;
     }
 
     p {
-        font-weight: 300;
-        color: $darkgrey;
-        line-height: 2.4em;
-        width: 65%;
-        font-size: 0.9em;
-        margin: 0 auto;
-
+        @include shift (2);
+        line-height: 1.5em;
+        max-width: 40em;
+        font-size: 1.125em;
+        margin-bottom: 1em;
     }
 
-    #method-content {
+    ul {
+        list-style-type: none;
         text-align: center;
-        margin: 0 auto;
+        @include shift (3);
+        padding-top: 2em;
     }
 
-    #method-step {
+    li {
+        display: block;
+        @include span-columns(2 of 11);
+        @include omega(5n);
+        font-size: 1em;
+    }
 
-        ul {
-            list-style-type: none;
-            position: relative;
-            text-align: center;
-        }
+    h3 {
+        padding-top: 1em;
+        font-weight: 600;
+    }
 
-        li {
-            display: inline-block;
-            font-size: 1.8em;
-            color: $blue;
-            padding: 1em 1em 1em 1em;
-            margin: 2em 1em 0 0;
-            text-align: center;
-        }
+    i.icon {
+        font-size: 2em;
+    }
 
-        h3 {
-            font-size: 0.5em;
-            line-height: 4.2em;
-
-        }
+    &.showpal h1,
+    &.showpal i {
+        color: $showpal;
     }
 }
 
