@@ -220,27 +220,10 @@
 			    </div>
 			</section>
 
-            <script src="js/jquery-1.11.3.min.js"></script>
-            <script src="js/jquery-ui.min.js"></script>
-            <script src="js/velocity.min.js"></script>
-            <script src="script.js" type="text/javascript" ></script>
-			<script type="text/javascript">
-			// Interaction Slider //
-
-				$('.tabs-content div').hide();
-				$('.tabs-content div:first').show();
-				$('.tabs-nav li:first').addClass('tab-active');
-
-				// Change tab class and display content
-				$('.tabs-nav a').on('click', function(event){
-				  event.preventDefault();
-				  $('.tabs-nav li').removeClass('tab-active');
-				  $(this).parent().addClass('tab-active');
-				  $('.tabs-content div').hide();
-				  $($(this).attr('href')).show();
-				});
-			</script>
-
+            <script src="js/vendor/jquery-1.11.3.min.js"></script>
+            <script src="js/vendor/jquery-ui.min.js"></script>
+            <script src="js/vendor/velocity.min.js"></script>
+            <script src="js/main.js"></script>
 
 		</body>
 </html>
