@@ -269,13 +269,14 @@ html, body {
 	}
 }
 
-button.case-button {
+.case-button {
 		border: 1px solid $orange;
 		background: none;
 		padding: 1em 2em 1em 2em;
 		color: $orange;
 		font-size: 0.8em;
 		border-radius: 50px;
+        text-decoration: none;
 
 		&:hover {
 			cursor: pointer;
@@ -571,42 +572,27 @@ ul.rig.columns-4 li {
 }
 
 
+//
+// Footer
+// --------------------------------------------------
+footer {
+	@include outer-container (12);
+    background-image: linear-gradient(
+    rgba(36, 42, 53, 0.90),
+    rgba(36, 42, 53, 0.90)
+    ), url('../assets/images/office2.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    padding-top: 5em;
 
-.footer {
-
-	.footer-wrap {
-
-		background-image: linear-gradient(
-      rgba(36, 42, 53, 0.90),
-      rgba(36, 42, 53, 0.90)
-    ),
-
-	url('../assets/images/office2.png');
-	background-size: cover;
-     -webkit-background-size: cover;
- 	 -moz-background-size: cover;
-	  	position: relative;
-	  	float: left;
-	  	width: 100%;
-
-	  	@include outer-container (12);
-	}
-
-	#look {
-	  	margin: auto;
-	  	width: 940px;
-	  	padding: 6em 0 0 0;
-
-	}
+    .footer-wrap {
+        @include span-columns (8);
+        @include shift(2);
+    }
 
 	.section {
-		  overflow: hidden;
-		  float: left;
-		  display: inline;
-		  width: 160px;
-		  margin: 0 15px 15px 0;
-		  font: 10pt verdana;
-		  line-height: 1.6em;
+          line-height: 1.6em;
 
 		  h3 {
 		  	text-transform: uppercase;
@@ -621,7 +607,7 @@ ul.rig.columns-4 li {
  			font-size: 0.9em;
 		  }
 
-		  @include span-columns (2);
+		  @include span-columns (2 of 8);
 		  @include breakpoint ($small) {
 			display: block;
 			clear: both;
@@ -629,24 +615,6 @@ ul.rig.columns-4 li {
 			position: relative;
 			text-align: center;
 		}
-	}
-
-	.section.right {
-		margin-left: 16em;
-
-		@include breakpoint ($small) {
-			display: block;
-			clear: both;
-			position: relative;
-		}
-
-		@include span-columns (1);
-
-	.section.links {
-		@include breakpoint ($small) {
-			display: none;
-		}
-	}
 }
 
 	.section.right:first-child {
