@@ -748,7 +748,6 @@ section.features {
 
 
 // Objectives section
-
 section.objectives {
     background: $lightgrey;
     padding-top: 4em;
@@ -782,76 +781,50 @@ section.objectives {
 }
 
 
-// 3Player Results //
-
+// Results section
 .results {
+    @include outer-container;
+    padding: 4em 0;
 
-    padding: 8em 0 8em 6em;
-
-    header {
-        font-size: 1.2em;
-        font-weight: 400;
+    h1 {
+        @include shift (2);
+        font-size: 1.5em;
+        font-weight: 700;
         line-height: 2em;
-        color: $blue;
-        margin-left: 3em;
-        padding: 0 0 4em 0;
     }
-}
 
-ul.rig {
-    list-style: none;
-    font-size: 0px;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
-
+    ul {
+        list-style: none;
+        @include span-columns (10);
+        @include shift (2);
+        padding-top: 2em;
+    }
     li {
-        display: inline-block;
-        padding: 0 0 6em 0;
-        background: #fff;
-        font-size: 16px;
-        font-size: 1rem;
-        vertical-align: top;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
+        display: block;
+        @include span-columns(3 of 10);
+        @include omega(3n);
+        margin-bottom: 2em;
+
+        i.icon {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 1em;
+        }
+
+        p {
+            font-size: 1em;
+            color: #999;
+        }
     }
 
-    i.icon {
-        color: $blue;
-        text-align: left;
-        font-size: 1.6em;
-    }
-
-    h3 {
-        margin: 10px 0px 20px;
-        font-size: 0.9em;
-        position: relative;
-        top: 8px;
-        font-weight: 600;
-    }
-
-    p {
-        font-size: .75em;
-        line-height: 2em;
-        color: #999;
-        position: relative;
-        top: 8px;
-        width: 70%;
-    }
-}
-
-ul.rig.columns-4 li {
-    width: 33.3%;
-
-    @include breakpoint ($large) {
-        width: 30.8%;
-    }
-    @include breakpoint ($medium) {
-        width: 47.5%;
-    }
-    @include breakpoint ($small) {
-        width: 100%;
+    &.showpal h1,
+    &.showpal i {
+        color: $showpal;
     }
 }
 
