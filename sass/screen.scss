@@ -15,6 +15,7 @@ $lightpurple:   #9377AC;
 $purple: 		#19254E;
 $facebook: 		#3B5998;
 $twitter: 		#00aced;
+$showpal:       #3BB8D7;
 $blue:          #13A9D5;
 $pin-size: 		12px;
 
@@ -28,8 +29,9 @@ $mobile: new-breakpoint(max-width 500px 4);
 
 html, body {
     background-color: white;
-    font-family: 'Open Sans',
-    sans-serif; height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    height: 100%;
 
     @include span-columns (12);
 }
@@ -220,7 +222,7 @@ html, body {
 
 }
 
-.case-study {
+section.case-study {
 	height: 80vh;
 	padding: 8em 0 0 2em;
 	background: $lightgrey;
@@ -667,16 +669,19 @@ footer {
 //
 // Case study: Showpal
 // --------------------------------------------------
-.main-element {
+header.case-study {
+    @include outer-container;
     height: 100vh;
-    background: linear-gradient( rgba( 19, 169, 213, 0.98), rgba(19, 169, 213, 0.98) ),
-    url(../images/showpal-one.png);
+    background: $darkgrey;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 
-    @include outer-container;
+    &.showpal {
+        //background: linear-gradient(rgba( 19, 169, 213, 0.98), rgba(19, 169, 213, 0.98)), url('../assets/images/case-studies/showpal/showpal-one.png');
+        background: linear-gradient($showpal, darken($showpal, 10%));
+    }
 
     #nav {
         #alignleft {
@@ -717,41 +722,34 @@ footer {
             }
         }
     }
-}
 
-#main-content {
+    #main-content {
         text-align: center;
         position: relative;
-        top: 12em;
-        color: white;
-        line-height: 1.8em;
-        position: relative;
+        top: 8em;
 
-        header {
-            font-size: 1.9em;
-            font-weight: 600;
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
             line-height: 2em;
+            color: #fff;
         }
-        span {
-            font-size: 1em;
-            font-weight: 300;
+        p {
+            margin: 0 auto;
+            font-size: 1.25em;
+            max-width: 50%;
+            color: rgba(255, 255, 255, 0.9);
         }
+    }
 
-        @include span-columns (6.5);
+    img {
+        position: absolute;
+        bottom: 0;
+
+        @include span-columns (8);
         @include shift (2);
     }
-
-    #main-image img {
-        max-width: 650px;
-        position: absolute;
-        margin: 0 auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        @include span-columns (6);
-        @include shift (3);
-    }
+}
 }
 
 // 3Player Features //
