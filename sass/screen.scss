@@ -3,6 +3,7 @@
 @import "compass/css3";
 @import "libraries/bourbon/bourbon.scss";
 @import "libraries/neat/neat.scss";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
 
 $orange: 		#F3B320;
 $darkgrey: 		#444444;
@@ -16,6 +17,7 @@ $purple: 		#19254E;
 $facebook: 		#3B5998;
 $twitter: 		#00aced;
 $showpal:       #3BB8D7;
+$qvc:           #EB5D62;
 $blue:          #13A9D5;
 $pin-size: 		12px;
 
@@ -682,8 +684,11 @@ header.case-study {
     -o-background-size: cover;
 
     &.showpal {
-        //background: linear-gradient(rgba( 19, 169, 213, 0.98), rgba(19, 169, 213, 0.98)), url('../assets/images/case-studies/showpal/showpal-one.png');
         background: linear-gradient($showpal, darken($showpal, 10%));
+    }
+
+    &.qvc {
+        background: linear-gradient($qvc, darken($qvc, 5%));
     }
 
     #main-content {
@@ -744,6 +749,10 @@ section.features {
     &.showpal i {
         color: $showpal;
     }
+
+    &.qvc i {
+        color: $qvc;
+    }
 }
 
 
@@ -777,6 +786,10 @@ section.objectives {
 
     &.showpal h1 {
         color: $showpal;
+    }
+
+    &.qvc h1 {
+        color: $qvc;
     }
 }
 
@@ -826,10 +839,14 @@ section.objectives {
     &.showpal i {
         color: $showpal;
     }
+
+    &.qvc h1,
+    &.qvc i {
+        color: $qvc;
+    }
 }
 
 // Sub Section
-
 section.sub-section {
     @include outer-container;
     background: $darkgrey;
@@ -837,7 +854,16 @@ section.sub-section {
     text-align: center;
 
     &.showpal {
-        background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)),
+        background: linear-gradient(rgba($showpal, 0.9), rgba($showpal, 0.9)),
+        url(../assets/images/case-studies/showpal/gallery-header.png);
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    &.qvc {
+        background: linear-gradient(rgba($qvc, 0.9), rgba($qvc, 0.9)),
         url(../assets/images/case-studies/showpal/gallery-header.png);
         background-size: cover;
         -webkit-background-size: cover;
@@ -913,11 +939,15 @@ section.method {
     &.showpal i {
         color: $showpal;
     }
+
+    &.qvc h1,
+    &.qvc i {
+        color: $qvc;
+    }
 }
 
 
 // Product details
-
 section.product-details {
     background: $lightgrey;
     padding: 4em 0;
@@ -962,5 +992,9 @@ section.product-details {
 
     &.showpal h1 {
         color: $showpal;
+    }
+
+    &.qvc h1 {
+        color: $qvc;
     }
 }
