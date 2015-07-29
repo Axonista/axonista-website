@@ -1394,16 +1394,16 @@ section.product-details p:last-child {
 /* line 1004, ../sass/screen.scss */
 section.product-details ul {
   list-style-type: none;
-  margin-left: 17.05961%;
-  padding-top: 2em;
+  margin-left: 8.5298%;
+  padding-top: 4em;
 }
 /* line 1010, ../sass/screen.scss */
 section.product-details li {
   display: block;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%;
+  margin-right: 2.57751%;
+  width: 44.04863%;
 }
 /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
 section.product-details li:last-child {
@@ -1421,7 +1421,7 @@ section.product-details li:nth-child(2n+1) {
 section.product-details img {
   max-width: 100%;
   border-radius: 3px;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 /* line 1021, ../sass/screen.scss */
 section.product-details img:hover {
