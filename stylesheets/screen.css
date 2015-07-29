@@ -1059,20 +1059,36 @@ section.objectives::after {
 }
 /* line 773, ../sass/screen.scss */
 section.objectives h1 {
-  margin-left: 18.65046%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 2em;
 }
-/* line 780, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.objectives h1:last-child {
+  margin-right: 0;
+}
+/* line 781, ../sass/screen.scss */
 section.objectives p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   margin-left: 17.05961%;
   line-height: 1.5em;
   max-width: 40em;
   font-size: 1.125em;
   margin-bottom: 1em;
 }
-/* line 788, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.objectives p:last-child {
+  margin-right: 0;
+}
+/* line 790, ../sass/screen.scss */
 section.objectives img {
   padding-top: 2em;
   float: left;
@@ -1085,20 +1101,20 @@ section.objectives img {
 section.objectives img:last-child {
   margin-right: 0;
 }
-/* line 795, ../sass/screen.scss */
+/* line 797, ../sass/screen.scss */
 section.objectives.showpal h1 {
   color: #3BB8D7;
 }
-/* line 799, ../sass/screen.scss */
+/* line 801, ../sass/screen.scss */
 section.objectives.qvc h1 {
   color: #EB5D62;
 }
-/* line 803, ../sass/screen.scss */
+/* line 805, ../sass/screen.scss */
 section.objectives.tv3 h1 {
   color: #563689;
 }
 
-/* line 810, ../sass/screen.scss */
+/* line 812, ../sass/screen.scss */
 .results {
   max-width: 100%;
   margin-left: auto;
@@ -1111,15 +1127,27 @@ section.objectives.tv3 h1 {
   content: "";
   display: table;
 }
-/* line 814, ../sass/screen.scss */
+/* line 816, ../sass/screen.scss */
 .results h1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   margin-left: 17.05961%;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 2em;
 }
-/* line 821, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+.results h1:last-child {
+  margin-right: 0;
+}
+/* line 824, ../sass/screen.scss */
 .results ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   list-style: none;
   float: left;
   display: block;
@@ -1132,7 +1160,11 @@ section.objectives.tv3 h1 {
 .results ul:last-child {
   margin-right: 0;
 }
-/* line 827, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+.results ul:last-child {
+  margin-right: 0;
+}
+/* line 831, ../sass/screen.scss */
 .results li {
   display: block;
   float: left;
@@ -1153,36 +1185,36 @@ section.objectives.tv3 h1 {
 .results li:nth-child(3n+1) {
   clear: left;
 }
-/* line 833, ../sass/screen.scss */
+/* line 837, ../sass/screen.scss */
 .results li i.icon {
   font-size: 2em;
 }
-/* line 837, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 .results li h3 {
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 1em;
 }
-/* line 844, ../sass/screen.scss */
+/* line 848, ../sass/screen.scss */
 .results li p {
   font-size: 1em;
   color: #999;
 }
-/* line 850, ../sass/screen.scss */
+/* line 854, ../sass/screen.scss */
 .results.showpal h1, .results.showpal i {
   color: #3BB8D7;
 }
-/* line 855, ../sass/screen.scss */
+/* line 859, ../sass/screen.scss */
 .results.qvc h1, .results.qvc i {
   color: #EB5D62;
 }
-/* line 860, ../sass/screen.scss */
+/* line 864, ../sass/screen.scss */
 .results.tv3 h1, .results.tv3 i {
   color: #563689;
 }
 
-/* line 867, ../sass/screen.scss */
+/* line 871, ../sass/screen.scss */
 section.sub-section {
   max-width: 100%;
   margin-left: auto;
@@ -1201,33 +1233,33 @@ section.sub-section::after {
   content: "";
   display: table;
 }
-/* line 873, ../sass/screen.scss */
+/* line 877, ../sass/screen.scss */
 section.sub-section.showpal {
   background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 878, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 section.sub-section.qvc {
   background: linear-gradient(rgba(235, 93, 98, 0.9), rgba(235, 93, 98, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 883, ../sass/screen.scss */
+/* line 887, ../sass/screen.scss */
 section.sub-section.tv3 {
   background: linear-gradient(rgba(86, 54, 137, 0.9), rgba(86, 54, 137, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 893, ../sass/screen.scss */
+/* line 897, ../sass/screen.scss */
 section.sub-section h1 {
   font-size: 1.5em;
   font-weight: 700;
   line-height: 2em;
   color: #fff;
 }
-/* line 899, ../sass/screen.scss */
+/* line 903, ../sass/screen.scss */
 section.sub-section p {
   margin: 0 auto;
   font-size: 1.25em;
   max-width: 50%;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 906, ../sass/screen.scss */
+/* line 910, ../sass/screen.scss */
 section.sub-section img {
   padding-top: 2em;
   float: left;
@@ -1241,7 +1273,7 @@ section.sub-section img:last-child {
   margin-right: 0;
 }
 
-/* line 915, ../sass/screen.scss */
+/* line 919, ../sass/screen.scss */
 section.method {
   padding: 4em 0;
   max-width: 100%;
@@ -1254,29 +1286,45 @@ section.method::after {
   content: "";
   display: table;
 }
-/* line 919, ../sass/screen.scss */
+/* line 923, ../sass/screen.scss */
 section.method h1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   margin-left: 17.05961%;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 2em;
 }
-/* line 926, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.method h1:last-child {
+  margin-right: 0;
+}
+/* line 931, ../sass/screen.scss */
 section.method p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   margin-left: 17.05961%;
   line-height: 1.5em;
   max-width: 40em;
   font-size: 1.125em;
   margin-bottom: 1em;
 }
-/* line 934, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.method p:last-child {
+  margin-right: 0;
+}
+/* line 940, ../sass/screen.scss */
 section.method ul {
   list-style-type: none;
   text-align: center;
   margin-left: 25.58941%;
   padding-top: 2em;
 }
-/* line 941, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 section.method li {
   display: block;
   float: left;
@@ -1297,29 +1345,29 @@ section.method li:nth-child(5n) {
 section.method li:nth-child(5n+1) {
   clear: left;
 }
-/* line 948, ../sass/screen.scss */
+/* line 954, ../sass/screen.scss */
 section.method h3 {
   padding-top: 1em;
   font-weight: 600;
 }
-/* line 953, ../sass/screen.scss */
+/* line 959, ../sass/screen.scss */
 section.method i.icon {
   font-size: 2em;
 }
-/* line 957, ../sass/screen.scss */
+/* line 963, ../sass/screen.scss */
 section.method.showpal h1, section.method.showpal i {
   color: #3BB8D7;
 }
-/* line 962, ../sass/screen.scss */
+/* line 968, ../sass/screen.scss */
 section.method.qvc h1, section.method.qvc i {
   color: #EB5D62;
 }
-/* line 967, ../sass/screen.scss */
+/* line 973, ../sass/screen.scss */
 section.method.tv3 h1, section.method.tv3 i {
   color: #563689;
 }
 
-/* line 975, ../sass/screen.scss */
+/* line 981, ../sass/screen.scss */
 section.product-details {
   background: #FAFAFA;
   padding: 4em 0;
@@ -1333,28 +1381,44 @@ section.product-details::after {
   content: "";
   display: table;
 }
-/* line 980, ../sass/screen.scss */
+/* line 986, ../sass/screen.scss */
 section.product-details h1 {
-  margin-left: 18.65046%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 2em;
 }
-/* line 987, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.product-details h1:last-child {
+  margin-right: 0;
+}
+/* line 994, ../sass/screen.scss */
 section.product-details p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   margin-left: 17.05961%;
   line-height: 1.5em;
   max-width: 40em;
   font-size: 1.125em;
   margin-bottom: 1em;
 }
-/* line 995, ../sass/screen.scss */
+/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+section.product-details p:last-child {
+  margin-right: 0;
+}
+/* line 1003, ../sass/screen.scss */
 section.product-details ul {
   list-style-type: none;
   margin-left: 17.05961%;
   padding-top: 2em;
 }
-/* line 1001, ../sass/screen.scss */
+/* line 1009, ../sass/screen.scss */
 section.product-details li {
   display: block;
   float: left;
@@ -1374,26 +1438,26 @@ section.product-details li:nth-child(2n) {
 section.product-details li:nth-child(2n+1) {
   clear: left;
 }
-/* line 1007, ../sass/screen.scss */
+/* line 1015, ../sass/screen.scss */
 section.product-details img {
   max-width: 100%;
   border-radius: 3px;
   margin-bottom: 1em;
 }
-/* line 1012, ../sass/screen.scss */
+/* line 1020, ../sass/screen.scss */
 section.product-details img:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-/* line 1017, ../sass/screen.scss */
+/* line 1025, ../sass/screen.scss */
 section.product-details.showpal h1 {
   color: #3BB8D7;
 }
-/* line 1021, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 section.product-details.qvc h1 {
   color: #EB5D62;
 }
-/* line 1025, ../sass/screen.scss */
+/* line 1033, ../sass/screen.scss */
 section.product-details.tv3 h1 {
   color: #563689;
 }

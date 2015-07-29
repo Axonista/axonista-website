@@ -771,6 +771,7 @@ section.objectives {
     @include outer-container;
 
     h1 {
+        @include span-columns(8);
         @include shift (2);
         font-size: 1.5em;
         font-weight: 700;
@@ -778,6 +779,7 @@ section.objectives {
     }
 
     p {
+        @include span-columns(8);
         @include shift (2);
         line-height: 1.5em;
         max-width: 40em;
@@ -812,6 +814,7 @@ section.objectives {
     padding: 4em 0;
 
     h1 {
+        @include span-columns(8);
         @include shift (2);
         font-size: 1.5em;
         font-weight: 700;
@@ -819,6 +822,7 @@ section.objectives {
     }
 
     ul {
+        @include span-columns(8);
         list-style: none;
         @include span-columns (10);
         @include shift (2);
@@ -917,6 +921,7 @@ section.method {
     @include outer-container;
 
     h1 {
+        @include span-columns(8);
         @include shift (2);
         font-size: 1.5em;
         font-weight: 700;
@@ -924,6 +929,7 @@ section.method {
     }
 
     p {
+        @include span-columns(8);
         @include shift (2);
         line-height: 1.5em;
         max-width: 40em;
@@ -978,6 +984,7 @@ section.product-details {
     @include outer-container;
 
     h1 {
+        @include span-columns(8);
         @include shift (2);
         font-size: 1.5em;
         font-weight: 700;
@@ -985,6 +992,7 @@ section.product-details {
     }
 
     p {
+        @include span-columns(8);
         @include shift (2);
         line-height: 1.5em;
         max-width: 40em;
