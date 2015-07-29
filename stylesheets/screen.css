@@ -96,7 +96,7 @@ html:last-child, body:last-child {
 }
 
 /* line 42, ../sass/screen.scss */
-.nav {
+nav {
   height: 80px;
   position: fixed;
   width: 100%;
@@ -105,32 +105,32 @@ html:last-child, body:last-child {
 }
 @media screen and (max-width: 510px) {
   /* line 42, ../sass/screen.scss */
-  .nav {
+  nav {
     background: #1F2638;
     opacity: 0.8;
   }
 }
 /* line 54, ../sass/screen.scss */
-.nav ul {
+nav ul {
   list-style: none;
   width: 100%;
 }
 /* line 57, ../sass/screen.scss */
-.nav div#alignleft {
+nav div#alignleft {
   float: left;
   font-weight: 700;
   position: fixed;
   left: 100px;
 }
 /* line 64, ../sass/screen.scss */
-.nav div#alignright {
+nav div#alignright {
   float: right;
   font-weight: 400;
   position: fixed;
   right: 100px;
 }
 /* line 71, ../sass/screen.scss */
-.nav li {
+nav li {
   display: inline-block;
   margin-left: 1em;
   color: #fff;
@@ -140,27 +140,27 @@ html:last-child, body:last-child {
   font-weight: 600;
 }
 /* line 80, ../sass/screen.scss */
-.nav li li#home {
+nav li li#home {
   padding: 0.5em 1em 0em 1em;
   font-size: 1.3em;
 }
 /* line 85, ../sass/screen.scss */
-.nav li a {
+nav li a {
   text-decoration: none;
   color: inherit;
 }
 /* line 89, ../sass/screen.scss */
-.nav li a:hover {
+nav li a:hover {
   cursor: pointer;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 /* line 95, ../sass/screen.scss */
-.nav .active {
+nav .active {
   color: #F3B320;
 }
 @media screen and (max-width: 1024px) {
   /* line 42, ../sass/screen.scss */
-  .nav {
+  nav {
     background: #1F2638;
     opacity: 0.97;
   }

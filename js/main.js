@@ -13,14 +13,14 @@ $('.nav a').click(function() {
 
 // Nav Background on Scroll //
 var scroll_start = 0;
-var startchange = $('.nav');
+var startchange = $('nav');
 var offset = startchange.offset();
 $(document).scroll(function() {
     scroll_start = $(this).scrollTop();
     if(scroll_start > offset.top) {
-        $('.nav').css({ 'background': 'rgba(36, 42, 53, 0.97)',});
+        $('nav').css({ 'background': 'rgba(36, 42, 53, 0.9)',});
     } else {
-        $('.nav').css('background-color', 'transparent');
+        $('nav').css('background-color', 'transparent');
     }
 });
 
