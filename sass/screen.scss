@@ -37,6 +37,27 @@ html, body {
     @include span-columns (12);
 }
 
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2em;
+
+    @include media($mobile) {
+        font-size: 1.25em;
+    }
+}
+
+p {
+    line-height: 1.5em;
+    max-width: 40em;
+    font-size: 1.125em;
+    margin-bottom: 1em;
+
+    @include media($mobile) {
+        font-size: 1em;
+    }
+}
+
 nav {
 	height: 80px;
 	position: fixed;
@@ -719,6 +740,10 @@ header.case-study {
             font-weight: 700;
             line-height: 2em;
             color: #fff;
+
+            @include media($mobile) {
+                font-size: 1.5em;
+            }
         }
         p {
             margin: 0 auto;
@@ -728,6 +753,10 @@ header.case-study {
             @include media($tablet) {
                 max-width: 75%;
                 font-size: 1.125em;
+            }
+            @include media($mobile) {
+                max-width: 90%;
+                font-size: 1em;
             }
         }
     }
@@ -746,8 +775,11 @@ header.case-study {
 
 // Features section
 section.features {
-    @include outer-container;
     padding: 4em 0;
+    @include outer-container;
+    @include media($mobile) {
+        padding: 2em 0;
+    }
 
     ul {
         @include span-columns (11);
@@ -764,6 +796,10 @@ section.features {
             @include span-columns(3 of 11);
             @include omega(3n);
         }
+        @include media($mobile) {
+            @include span-columns(5 of 11);
+            @include omega(2n);
+        }
         font-size: 1em;
         margin-bottom: 2em;
     }
@@ -771,6 +807,9 @@ section.features {
     h3 {
         padding-top: 1em;
         font-weight: 600;
+        @include media($mobile) {
+            padding-top: 0.5em;
+        }
     }
 
     i.icon {
@@ -796,6 +835,9 @@ section.objectives {
     background: $lightgrey;
     padding-top: 4em;
     @include outer-container;
+    @include media($mobile) {
+        padding: 2em 0 0 0;
+    }
 
     h1, p, img {
         @include span-columns(8);
@@ -804,19 +846,6 @@ section.objectives {
             @include span-columns(10);
             @include shift (1);
         }
-    }
-
-    h1 {
-        font-size: 1.5em;
-        font-weight: 600;
-        line-height: 2em;
-    }
-
-    p {
-        line-height: 1.5em;
-        max-width: 40em;
-        font-size: 1.125em;
-        margin-bottom: 1em;
     }
 
     img {
@@ -839,36 +868,44 @@ section.objectives {
 
 // Results section
 .results {
-    @include outer-container;
     padding: 4em 0;
+    @include outer-container;
+    @include media($mobile) {
+        padding: 2em;
+    }
 
     h1 {
         @include span-columns(8);
         @include shift (2);
         @include media($tablet) {
-            @include span-columns(10);
+            @include span-columns(11);
             @include shift (1);
         }
-        font-size: 1.5em;
-        font-weight: 600;
-        line-height: 2em;
     }
 
     ul {
         list-style: none;
+        padding-top: 2em;
         @include span-columns (10);
         @include shift (2);
         @include media($tablet) {
             @include span-columns(11);
             @include shift (1);
         }
-        padding-top: 2em;
+        @include media($mobile) {
+            padding-top: 1em;
+        }
     }
     li {
         display: block;
         margin-bottom: 2em;
         @include span-columns(3 of 10);
         @include omega(3n);
+        @include media($mobile) {
+            @include span-columns(10 of 11);
+            @include omega(1n);
+            margin-bottom: 1em;
+        }
 
         i.icon {
             font-size: 2em;
@@ -879,6 +916,9 @@ section.objectives {
             font-weight: 700;
             text-transform: uppercase;
             margin-top: 1em;
+            @include media($mobile) {
+                padding-top: 0;
+            }
         }
 
         p {
@@ -905,10 +945,13 @@ section.objectives {
 
 // Sub Section
 section.sub-section {
-    @include outer-container;
     background: $darkgrey;
     padding-top: 4em;
     text-align: center;
+    @include outer-container;
+    @include media($mobile) {
+        padding: 2em 0 0 0;
+    }
 
     &.showpal {
         background: linear-gradient(rgba($showpal, 0.9), rgba($showpal, 0.9)),
@@ -931,18 +974,17 @@ section.sub-section {
     -o-background-size: cover;
 
     h1 {
-        font-size: 1.5em;
-        font-weight: 600;
-        line-height: 2em;
         color: #fff;
     }
     p {
         margin: 0 auto;
-        font-size: 1.25em;
         max-width: 50%;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.8);
         @include media($tablet) {
             max-width: 75%;
+        }
+        @include media($mobile) {
+            max-width: 90%;
         }
     }
 
@@ -962,6 +1004,9 @@ section.sub-section {
 section.method {
     padding: 4em 0;
     @include outer-container;
+    @include media($mobile) {
+        padding: 2em 0;
+    }
 
     h1, p {
         @include span-columns(8);
@@ -970,19 +1015,6 @@ section.method {
             @include span-columns(10);
             @include shift (1);
         }
-    }
-
-    h1 {
-        font-size: 1.5em;
-        font-weight: 600;
-        line-height: 2em;
-    }
-
-    p {
-        line-height: 1.5em;
-        max-width: 40em;
-        font-size: 1.125em;
-        margin-bottom: 1em;
     }
 
     ul {
@@ -999,6 +1031,11 @@ section.method {
         display: block;
         @include span-columns(2 of 10);
         @include omega(5n);
+        @include media($mobile) {
+            @include span-columns(3 of 10);
+            @include omega(3n);
+            margin-bottom: 1em;
+        }
         font-size: 1em;
     }
 
@@ -1033,6 +1070,9 @@ section.product-details {
     background: $lightgrey;
     padding: 4em 0;
     @include outer-container;
+    @include media($mobile) {
+        padding: 2em 0;
+    }
 
     h1, p {
         @include span-columns(8);
@@ -1043,34 +1083,25 @@ section.product-details {
         }
     }
 
-    h1 {
-        font-size: 1.5em;
-        font-weight: 600;
-        line-height: 2em;
-    }
-
-    p {
-        line-height: 1.5em;
-        max-width: 40em;
-        font-size: 1.125em;
-        margin-bottom: 1em;
-    }
-
     ul {
         list-style-type: none;
-
         padding-top: 4em;
     }
 
     li {
         display: block;
+        margin: 1em 0;
         @include span-columns(6 of 12);
         @include omega(2n);
+        @include media($mobile) {
+            @include span-columns(12);
+            @include omega(1n);
+            margin: 0.5em 0;
+        }
     }
 
     img {
         max-width: 100%;
-        margin: 1em 0;
 
         &:hover {
             cursor: pointer; opacity: 0.8;
