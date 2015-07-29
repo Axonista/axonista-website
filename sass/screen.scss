@@ -21,7 +21,7 @@ $qvc:           #EB5D62;
 $tv3:           #563689;
 $pin-size: 		12px;
 
-$large: max-width 1024px;
+$desktop: max-width 1024px;
 $tablet: max-width 768px;
 $mobile: max-width 510px;
 
@@ -94,7 +94,7 @@ nav {
 		color: $orange;
 	}
 
-	@include breakpoint ($large) {
+	@include breakpoint ($desktop) {
 		background: $darknavy;
 		opacity: 0.97;
 	}
@@ -152,7 +152,7 @@ nav {
   		text-transform: uppercase;
   		font-size: 0.9em;
 
-  		@include breakpoint ($large) {
+  		@include breakpoint ($desktop) {
   			visibility: hidden;
   		}
   	}
@@ -464,7 +464,7 @@ section.case-study {
 ul.rig.columns-4 li {
 	width: 21.5%;
 
-	@include breakpoint ($large) {
+	@include breakpoint ($desktop) {
 		width: 30.8%;
 	}
 	@include breakpoint ($tablet) {
@@ -584,7 +584,7 @@ ul.rig.columns-4 li {
 // Footer
 // --------------------------------------------------
 footer {
-	@include outer-container (12);
+	@include outer-container;
     background-image: linear-gradient(
     rgba(36, 42, 53, 0.90),
     rgba(36, 42, 53, 0.90)
@@ -597,6 +597,10 @@ footer {
     .footer-wrap {
         @include span-columns (8);
         @include shift(2);
+        @include media($tablet) {
+            @include span-columns (10);
+            @include shift(1);
+        }
     }
 
 	.section {
@@ -616,6 +620,9 @@ footer {
 		  }
 
 		  @include span-columns (2 of 8);
+        @include media($tablet) {
+            @include span-columns (2.5 of 10);
+        }
 		  @include breakpoint ($mobile) {
 			display: block;
 			clear: both;
@@ -678,7 +685,6 @@ footer {
 
 // Hero/header section
 header.case-study {
-    @include outer-container;
     height: 100vh;
     background: $darkgrey;
     background-size: cover;
@@ -686,6 +692,10 @@ header.case-study {
     -moz-background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
+    @include outer-container;
+    @include media($tablet) {
+        height: auto;
+    }
 
     &.showpal {
         background: linear-gradient($showpal, darken($showpal, 10%));
@@ -715,6 +725,9 @@ header.case-study {
             font-size: 1.25em;
             max-width: 50%;
             color: rgba(255, 255, 255, 0.9);
+            @include media($tablet) {
+                max-width: 75%;
+            }
         }
     }
 
@@ -889,7 +902,7 @@ section.objectives {
 section.sub-section {
     @include outer-container;
     background: $darkgrey;
-    padding-top: 8em;
+    padding-top: 4em;
     text-align: center;
 
     &.showpal {
@@ -923,6 +936,9 @@ section.sub-section {
         font-size: 1.25em;
         max-width: 50%;
         color: rgba(255, 255, 255, 0.9);
+        @include media($tablet) {
+            max-width: 75%;
+        }
     }
 
     img {
@@ -963,13 +979,16 @@ section.method {
     ul {
         list-style-type: none;
         text-align: center;
-        @include shift (3);
         padding-top: 2em;
+        @include shift (2);
+        @include media($tablet) {
+            @include shift (1);
+        }
     }
 
     li {
         display: block;
-        @include span-columns(2 of 11);
+        @include span-columns(2 of 10);
         @include omega(5n);
         font-size: 1em;
     }
