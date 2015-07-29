@@ -1124,10 +1124,6 @@ section.objectives.tv3 h1 {
 }
 /* line 829, ../sass/screen.scss */
 .results ul {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
   list-style: none;
   float: left;
   display: block;
@@ -1140,18 +1136,14 @@ section.objectives.tv3 h1 {
 .results ul:last-child {
   margin-right: 0;
 }
-/* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-.results ul:last-child {
-  margin-right: 0;
-}
-/* line 836, ../sass/screen.scss */
+/* line 835, ../sass/screen.scss */
 .results li {
   display: block;
+  margin-bottom: 2em;
   float: left;
   display: block;
   margin-right: 2.84259%;
   width: 28.01019%;
-  margin-bottom: 2em;
 }
 /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
 .results li:last-child {
@@ -1165,36 +1157,36 @@ section.objectives.tv3 h1 {
 .results li:nth-child(3n+1) {
   clear: left;
 }
-/* line 842, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 .results li i.icon {
   font-size: 2em;
 }
-/* line 846, ../sass/screen.scss */
+/* line 845, ../sass/screen.scss */
 .results li h3 {
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 1em;
 }
-/* line 853, ../sass/screen.scss */
+/* line 852, ../sass/screen.scss */
 .results li p {
   font-size: 1em;
   color: #999;
 }
-/* line 859, ../sass/screen.scss */
+/* line 858, ../sass/screen.scss */
 .results.showpal h1, .results.showpal i {
   color: #3BB8D7;
 }
-/* line 864, ../sass/screen.scss */
+/* line 863, ../sass/screen.scss */
 .results.qvc h1, .results.qvc i {
   color: #EB5D62;
 }
-/* line 869, ../sass/screen.scss */
+/* line 868, ../sass/screen.scss */
 .results.tv3 h1, .results.tv3 i {
   color: #563689;
 }
 
-/* line 876, ../sass/screen.scss */
+/* line 875, ../sass/screen.scss */
 section.sub-section {
   max-width: 100%;
   margin-left: auto;
@@ -1213,33 +1205,33 @@ section.sub-section::after {
   content: "";
   display: table;
 }
-/* line 882, ../sass/screen.scss */
+/* line 881, ../sass/screen.scss */
 section.sub-section.showpal {
   background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 887, ../sass/screen.scss */
+/* line 886, ../sass/screen.scss */
 section.sub-section.qvc {
   background: linear-gradient(rgba(235, 93, 98, 0.9), rgba(235, 93, 98, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 892, ../sass/screen.scss */
+/* line 891, ../sass/screen.scss */
 section.sub-section.tv3 {
   background: linear-gradient(rgba(86, 54, 137, 0.9), rgba(86, 54, 137, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 902, ../sass/screen.scss */
+/* line 901, ../sass/screen.scss */
 section.sub-section h1 {
   font-size: 1.5em;
   font-weight: 600;
   line-height: 2em;
   color: #fff;
 }
-/* line 908, ../sass/screen.scss */
+/* line 907, ../sass/screen.scss */
 section.sub-section p {
   margin: 0 auto;
   font-size: 1.25em;
   max-width: 50%;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 915, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 section.sub-section img {
   padding-top: 2em;
   float: left;
@@ -1253,7 +1245,7 @@ section.sub-section img:last-child {
   margin-right: 0;
 }
 
-/* line 924, ../sass/screen.scss */
+/* line 923, ../sass/screen.scss */
 section.method {
   padding: 4em 0;
   max-width: 100%;
@@ -1266,7 +1258,7 @@ section.method::after {
   content: "";
   display: table;
 }
-/* line 928, ../sass/screen.scss */
+/* line 927, ../sass/screen.scss */
 section.method h1 {
   float: left;
   display: block;
@@ -1281,7 +1273,7 @@ section.method h1 {
 section.method h1:last-child {
   margin-right: 0;
 }
-/* line 936, ../sass/screen.scss */
+/* line 935, ../sass/screen.scss */
 section.method p {
   float: left;
   display: block;
@@ -1297,14 +1289,14 @@ section.method p {
 section.method p:last-child {
   margin-right: 0;
 }
-/* line 945, ../sass/screen.scss */
+/* line 944, ../sass/screen.scss */
 section.method ul {
   list-style-type: none;
   text-align: center;
   margin-left: 25.58941%;
   padding-top: 2em;
 }
-/* line 952, ../sass/screen.scss */
+/* line 951, ../sass/screen.scss */
 section.method li {
   display: block;
   float: left;
@@ -1325,29 +1317,29 @@ section.method li:nth-child(5n) {
 section.method li:nth-child(5n+1) {
   clear: left;
 }
-/* line 959, ../sass/screen.scss */
+/* line 958, ../sass/screen.scss */
 section.method h3 {
   padding-top: 1em;
   font-weight: 600;
 }
-/* line 964, ../sass/screen.scss */
+/* line 963, ../sass/screen.scss */
 section.method i.icon {
   font-size: 2em;
 }
-/* line 968, ../sass/screen.scss */
+/* line 967, ../sass/screen.scss */
 section.method.showpal h1, section.method.showpal i {
   color: #3BB8D7;
 }
-/* line 973, ../sass/screen.scss */
+/* line 972, ../sass/screen.scss */
 section.method.qvc h1, section.method.qvc i {
   color: #EB5D62;
 }
-/* line 978, ../sass/screen.scss */
+/* line 977, ../sass/screen.scss */
 section.method.tv3 h1, section.method.tv3 i {
   color: #563689;
 }
 
-/* line 986, ../sass/screen.scss */
+/* line 985, ../sass/screen.scss */
 section.product-details {
   background: #FAFAFA;
   padding: 4em 0;
@@ -1361,7 +1353,7 @@ section.product-details::after {
   content: "";
   display: table;
 }
-/* line 991, ../sass/screen.scss */
+/* line 990, ../sass/screen.scss */
 section.product-details h1 {
   float: left;
   display: block;
@@ -1376,7 +1368,7 @@ section.product-details h1 {
 section.product-details h1:last-child {
   margin-right: 0;
 }
-/* line 999, ../sass/screen.scss */
+/* line 998, ../sass/screen.scss */
 section.product-details p {
   float: left;
   display: block;
@@ -1392,13 +1384,13 @@ section.product-details p {
 section.product-details p:last-child {
   margin-right: 0;
 }
-/* line 1008, ../sass/screen.scss */
+/* line 1007, ../sass/screen.scss */
 section.product-details ul {
   list-style-type: none;
   margin-left: 8.5298%;
   padding-top: 4em;
 }
-/* line 1014, ../sass/screen.scss */
+/* line 1013, ../sass/screen.scss */
 section.product-details li {
   display: block;
   float: left;
@@ -1418,26 +1410,26 @@ section.product-details li:nth-child(2n) {
 section.product-details li:nth-child(2n+1) {
   clear: left;
 }
-/* line 1020, ../sass/screen.scss */
+/* line 1019, ../sass/screen.scss */
 section.product-details img {
   max-width: 100%;
   border-radius: 3px;
   margin: 1em 0;
 }
-/* line 1025, ../sass/screen.scss */
+/* line 1024, ../sass/screen.scss */
 section.product-details img:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-/* line 1030, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 section.product-details.showpal h1 {
   color: #3BB8D7;
 }
-/* line 1034, ../sass/screen.scss */
+/* line 1033, ../sass/screen.scss */
 section.product-details.qvc h1 {
   color: #EB5D62;
 }
-/* line 1038, ../sass/screen.scss */
+/* line 1037, ../sass/screen.scss */
 section.product-details.tv3 h1 {
   color: #563689;
 }

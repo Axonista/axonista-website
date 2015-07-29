@@ -18,7 +18,7 @@ $facebook: 		#3B5998;
 $twitter: 		#00aced;
 $showpal:       #3BB8D7;
 $qvc:           #EB5D62;
-$tv3:       #563689;
+$tv3:           #563689;
 $pin-size: 		12px;
 
 $large: max-width 1024px;
@@ -827,7 +827,6 @@ section.objectives {
     }
 
     ul {
-        @include span-columns(8);
         list-style: none;
         @include span-columns (10);
         @include shift (2);
@@ -835,9 +834,9 @@ section.objectives {
     }
     li {
         display: block;
+        margin-bottom: 2em;
         @include span-columns(3 of 10);
         @include omega(3n);
-        margin-bottom: 2em;
 
         i.icon {
             font-size: 2em;
