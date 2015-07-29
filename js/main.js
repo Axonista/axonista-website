@@ -18,7 +18,7 @@ var offset = startchange.offset();
 $(document).scroll(function() {
     scroll_start = $(this).scrollTop();
     if(scroll_start > offset.top) {
-        $('nav').css({ 'background': 'rgba(36, 42, 53, 0.9)',});
+        $('nav').css({ 'background': 'rgba(31,38,56, 0.9)',});
     } else {
         $('nav').css('background-color', 'transparent');
     }

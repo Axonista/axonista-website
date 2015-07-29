@@ -196,7 +196,7 @@ nav .active {
 /* line 126, ../sass/screen.scss */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55)), url("../assets/images/work.jpg");
+  background: #1F2638;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -233,16 +233,16 @@ nav .active {
 }
 /* line 145, ../sass/screen.scss */
 #hero-content h1 {
-  font-size: 3em;
-  font-weight: 700;
+  font-size: 3.5em;
+  font-weight: 800;
+  color: #F3B320;
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #hero-content p {
-  font-size: 1.1em;
-  width: 60%;
-  line-height: 1.8em;
-  padding: 1em;
+  font-size: 1.5em;
+  width: 35em;
   margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
 }
 /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
 #hero-content:last-child {
