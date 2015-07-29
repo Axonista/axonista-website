@@ -22,10 +22,8 @@ $tv3:           #563689;
 $pin-size: 		12px;
 
 $large: max-width 1024px;
-$medium: max-width 768px;
-$small: max-width 510px;
-
-$mobile: new-breakpoint(max-width 500px 4);
+$tablet: max-width 768px;
+$mobile: max-width 510px;
 
 *, *:before, *:after { -webkit-font-smoothing: antialiased; }
 
@@ -46,7 +44,7 @@ nav {
 	transition-duration: 0.6s;
 	z-index: 1;
 
-	@include breakpoint ($small) {
+	@include breakpoint ($mobile) {
 		background: $darknavy;
 		opacity: 0.8;
 	}
@@ -186,7 +184,7 @@ nav {
 		position: relative;
 		top: 6.5em;
 
-		@include breakpoint ($small) {
+		@include breakpoint ($mobile) {
   			line-height: 1.5em;
   		}
 	}
@@ -200,7 +198,7 @@ nav {
   		color: $darkgrey;
   		line-height: 1.8em;
 
-  		@include breakpoint ($small) {
+  		@include breakpoint ($mobile) {
   			width: 100%;
   		}
 	}
@@ -469,10 +467,10 @@ ul.rig.columns-4 li {
 	@include breakpoint ($large) {
 		width: 30.8%;
 	}
-	@include breakpoint ($medium) {
+	@include breakpoint ($tablet) {
 		width: 47.5%;
 	}
-	@include breakpoint ($small) {
+	@include breakpoint ($mobile) {
 		width: 100%;
 	}
 }
@@ -618,7 +616,7 @@ footer {
 		  }
 
 		  @include span-columns (2 of 8);
-		  @include breakpoint ($small) {
+		  @include breakpoint ($mobile) {
 			display: block;
 			clear: both;
 			left: 8em;
@@ -731,10 +729,11 @@ header.case-study {
 // Features section
 section.features {
     @include outer-container;
-    @include shift (1);
     padding: 4em 0;
 
     ul {
+        @include span-columns (11);
+        @include shift (1);
         list-style-type: none;
         text-align: center;
     }
@@ -743,7 +742,12 @@ section.features {
         display: block;
         @include span-columns(2 of 11);
         @include omega(5n);
+        @include media($tablet) {
+            @include span-columns(3 of 11);
+            @include omega(3n);
+        }
         font-size: 1em;
+        margin-bottom: 2em;
     }
 
     h3 {
@@ -775,17 +779,22 @@ section.objectives {
     padding-top: 4em;
     @include outer-container;
 
-    h1 {
+    h1, p, img {
         @include span-columns(8);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns(10);
+            @include shift (1);
+        }
+    }
+
+    h1 {
         font-size: 1.5em;
         font-weight: 600;
         line-height: 2em;
     }
 
     p {
-        @include span-columns(8);
-        @include shift (2);
         line-height: 1.5em;
         max-width: 40em;
         font-size: 1.125em;
@@ -794,9 +803,6 @@ section.objectives {
 
     img {
         padding-top: 2em;
-
-        @include span-columns (8);
-        @include shift (2);
     }
 
     &.showpal h1 {
@@ -821,6 +827,10 @@ section.objectives {
     h1 {
         @include span-columns(8);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns(10);
+            @include shift (1);
+        }
         font-size: 1.5em;
         font-weight: 600;
         line-height: 2em;
@@ -830,6 +840,10 @@ section.objectives {
         list-style: none;
         @include span-columns (10);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns(11);
+            @include shift (1);
+        }
         padding-top: 2em;
     }
     li {
@@ -924,17 +938,22 @@ section.method {
     padding: 4em 0;
     @include outer-container;
 
-    h1 {
+    h1, p {
         @include span-columns(8);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns(10);
+            @include shift (1);
+        }
+    }
+
+    h1 {
         font-size: 1.5em;
         font-weight: 600;
         line-height: 2em;
     }
 
     p {
-        @include span-columns(8);
-        @include shift (2);
         line-height: 1.5em;
         max-width: 40em;
         font-size: 1.125em;
@@ -987,17 +1006,22 @@ section.product-details {
     padding: 4em 0;
     @include outer-container;
 
-    h1 {
+    h1, p {
         @include span-columns(8);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns(10);
+            @include shift (1);
+        }
+    }
+
+    h1 {
         font-size: 1.5em;
         font-weight: 600;
         line-height: 2em;
     }
 
     p {
-        @include span-columns(8);
-        @include shift (2);
         line-height: 1.5em;
         max-width: 40em;
         font-size: 1.125em;
@@ -1006,13 +1030,13 @@ section.product-details {
 
     ul {
         list-style-type: none;
-        @include shift (1);
+
         padding-top: 4em;
     }
 
     li {
         display: block;
-        @include span-columns(5 of 11);
+        @include span-columns(6 of 12);
         @include omega(2n);
     }
 
