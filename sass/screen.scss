@@ -826,13 +826,14 @@ section.features {
         @include media($tablet) {
             @include span-columns(3 of 11);
             @include omega(3n);
+            margin-bottom: 2em;
         }
         @include media($mobile) {
             @include span-columns(5 of 11);
             @include omega(2n);
+            margin-bottom: 2em;
         }
         font-size: 1em;
-        margin-bottom: 2em;
     }
 
     h3 {
