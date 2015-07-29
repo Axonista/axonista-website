@@ -3,7 +3,7 @@
 @import "compass/css3";
 @import "libraries/bourbon/bourbon.scss";
 @import "libraries/neat/neat.scss";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
 
 $orange: 		#F3B320;
 $darkgrey: 		#444444;
@@ -30,8 +30,8 @@ $mobile: new-breakpoint(max-width 500px 4);
 *, *:before, *:after { -webkit-font-smoothing: antialiased; }
 
 html, body {
-    background-color: white;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    font-family: 'soleil', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
     color: $darkgrey;
     line-height: 1.5;
     height: 100%;
@@ -69,12 +69,13 @@ html, body {
 	}
 
 	li {
-		font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 		display: inline-block;
 		margin-left: 1em;
-		color: white;
-		font-size: 0.9em;
+		color: #fff;
+		font-size: 0.875em;
 		padding: 1.7em 1em 0em 1em;
+        text-transform: uppercase;
+        font-weight: 600;
 
 		&:hover { cursor: pointer; }
 
