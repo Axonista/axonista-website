@@ -736,6 +736,10 @@ header.case-study {
 
         @include span-columns (8);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns (10);
+            @include shift (1);
+        }
     }
 }
 
@@ -945,6 +949,10 @@ section.sub-section {
         padding-top: 2em;
         @include span-columns (8);
         @include shift (2);
+        @include media($tablet) {
+            @include span-columns (10);
+            @include shift (1);
+        }
     }
 }
 
