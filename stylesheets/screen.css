@@ -927,6 +927,7 @@ header.case-study {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  overflow: hidden;
 }
 /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
 header.case-study::after {
@@ -934,42 +935,41 @@ header.case-study::after {
   content: "";
   display: table;
 }
-/* line 686, ../sass/screen.scss */
+/* line 687, ../sass/screen.scss */
 header.case-study.showpal {
   background: linear-gradient(#3bb8d7, #269cb9);
 }
-/* line 690, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 header.case-study.qvc {
   background: linear-gradient(#eb5d62, #e8464c);
 }
-/* line 694, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 header.case-study.tv3 {
   background: linear-gradient(#563689, #4b2f77);
 }
-/* line 698, ../sass/screen.scss */
+/* line 699, ../sass/screen.scss */
 header.case-study #main-content {
   text-align: center;
   position: relative;
   top: 8em;
 }
-/* line 703, ../sass/screen.scss */
+/* line 704, ../sass/screen.scss */
 header.case-study #main-content h1 {
   font-size: 2em;
   font-weight: 700;
   line-height: 2em;
   color: #fff;
 }
-/* line 709, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 header.case-study #main-content p {
   margin: 0 auto;
   font-size: 1.25em;
   max-width: 50%;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 717, ../sass/screen.scss */
+/* line 718, ../sass/screen.scss */
 header.case-study img {
-  position: absolute;
-  bottom: 0;
+  margin-top: 12em;
   float: left;
   display: block;
   margin-right: 2.35765%;

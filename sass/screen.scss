@@ -682,6 +682,7 @@ header.case-study {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    overflow: hidden;
 
     &.showpal {
         background: linear-gradient($showpal, darken($showpal, 10%));
@@ -715,8 +716,7 @@ header.case-study {
     }
 
     img {
-        position: absolute;
-        bottom: 0;
+        margin-top: 12em;
 
         @include span-columns (8);
         @include shift (2);
