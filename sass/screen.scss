@@ -18,7 +18,7 @@ $facebook: 		#3B5998;
 $twitter: 		#00aced;
 $showpal:       #3BB8D7;
 $qvc:           #EB5D62;
-$blue:          #13A9D5;
+$tv3:       #563689;
 $pin-size: 		12px;
 
 $large: max-width 1024px;
@@ -671,7 +671,7 @@ footer {
 
 //
 // Case studies
-// --------------------------------------------------
+// ----------------------------------------------------------------------------------------------------
 
 // Hero/header section
 header.case-study {
@@ -689,6 +689,10 @@ header.case-study {
 
     &.qvc {
         background: linear-gradient($qvc, darken($qvc, 5%));
+    }
+
+    &.tv3 {
+        background: linear-gradient($tv3, darken($tv3, 5%));
     }
 
     #main-content {
@@ -753,6 +757,10 @@ section.features {
     &.qvc i {
         color: $qvc;
     }
+
+    &.tv3 i {
+        color: $tv3;
+    }
 }
 
 
@@ -790,6 +798,10 @@ section.objectives {
 
     &.qvc h1 {
         color: $qvc;
+    }
+
+    &.tv3 h1 {
+        color: $tv3;
     }
 }
 
@@ -844,6 +856,11 @@ section.objectives {
     &.qvc i {
         color: $qvc;
     }
+
+    &.tv3 h1,
+    &.tv3 i {
+        color: $tv3;
+    }
 }
 
 // Sub Section
@@ -856,20 +873,22 @@ section.sub-section {
     &.showpal {
         background: linear-gradient(rgba($showpal, 0.9), rgba($showpal, 0.9)),
         url(../assets/images/case-studies/showpal/gallery-header.png);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
     }
 
     &.qvc {
         background: linear-gradient(rgba($qvc, 0.9), rgba($qvc, 0.9)),
         url(../assets/images/case-studies/showpal/gallery-header.png);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
     }
+
+    &.tv3 {
+        background: linear-gradient(rgba($tv3, 0.9), rgba($tv3, 0.9)),
+        url(../assets/images/case-studies/showpal/gallery-header.png);
+    }
+
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 
     h1 {
         font-size: 1.5em;
@@ -944,6 +963,11 @@ section.method {
     &.qvc i {
         color: $qvc;
     }
+
+    &.tv3 h1,
+    &.tv3 i {
+        color: $tv3;
+    }
 }
 
 
@@ -994,7 +1018,7 @@ section.product-details {
         color: $showpal;
     }
 
-    &.qvc h1 {
-        color: $qvc;
+    &.tv3 h1 {
+        color: $tv3;
     }
 }
