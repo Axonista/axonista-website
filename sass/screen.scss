@@ -250,67 +250,94 @@ nav {
 }
 
 section.case-study {
-	height: 80vh;
-	padding: 8em 0 0 2em;
+	padding: 4em 0;
 	background: $lightgrey;
+    overflow: hidden;
 
-	@include outer-container (12);
+	@include outer-container();
 
-	header {
-		font-weight: 600;
-		font-size: 1.3em;
-		color: $darkgrey;
-	}
-
-	p { padding: 15px 0 20px 0; }
-
-	#content-left {
-	   	position: relative;
-	   	float: left;
-	   	font-size: 1em;
-	   	font-weight: 300;
-	   	line-height: 2.2em;
-	   	color: $darkgrey;
-
-	   	@include span-columns (6);
-	   	@include shift (2);
+	.info {
+	   	@include span-columns (4);
+	   	@include shift (1);
 	  }
 
-	#image-right {
-	   	position: relative;
-	   	width: 40%;
-	   	float: right;
+    h1 {
+        font-size: 2em;
+    }
+
+	img {
+	   	@include span-columns (6);
+        @include shift (1);
+        box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.125);
 	}
 
-	img { height: 300px; }
-
-	hr {
-		border: none;
-		height: 1px;
-		background: #EDEDED;
-		width: 60%;
-		position: relative;
-  		bottom: 8em;
-	}
-
-	.case-three {
-		padding-bottom: 2em;
-	}
-}
-
-.case-button {
-		border: 1px solid $orange;
-		background: none;
-		padding: 1em 2em 1em 2em;
-		color: $orange;
-		font-size: 0.8em;
-		border-radius: 50px;
+	.case-button {
+        display: inline-block;
+        border: 1px solid $orange;
+        background: none;
+        padding: 0.5em 1.5em;
+        color: $orange;
+        border-radius: 50px;
         text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+            background: $orange;
+        }
+    }
+
+    &.showpal {
+        box-shadow: inset 10px 0px 0px 0px $showpal;
+
+        h1 {
+            color: $showpal;
+        }
+        .case-button {
+            border-color: $showpal;
+            color: $showpal;
+
+            &:hover {
+                color: #fff;
+                background: $showpal;
+            }
+        }
+    }
+    &.tv3 {
+        box-shadow: inset 10px 0px 0px 0px $tv3;
+
+        h1 {
+            color: $tv3;
+        }
+        .case-button {
+            border-color: $tv3;
+            color: $tv3;
+
+            &:hover {
+                color: #fff;
+                background: $tv3;
+            }
+        }
+    }
+    &.qvc {
+        box-shadow: inset 10px 0px 0px 0px $qvc;
+
+        h1 {
+            color: $qvc;
+        }
+        .case-button {
+            border-color: $qvc;
+            color: $qvc;
+
+            &:hover {
+                color: #fff;
+                background: $qvc;
+            }
+        }
+    }
+}
 
 .logos {
 
