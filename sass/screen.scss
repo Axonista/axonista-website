@@ -727,6 +727,7 @@ header.case-study {
             color: rgba(255, 255, 255, 0.9);
             @include media($tablet) {
                 max-width: 75%;
+                font-size: 1.125em;
             }
         }
     }
@@ -1069,7 +1070,6 @@ section.product-details {
 
     img {
         max-width: 100%;
-        border-radius: 3px;
         margin: 1em 0;
 
         &:hover {
