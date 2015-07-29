@@ -196,7 +196,7 @@ nav .active {
 /* line 126, ../sass/screen.scss */
 .hero {
   height: 100vh;
-  background: #1F2638;
+  background: linear-gradient(rgba(31, 38, 56, 0.9), rgba(31, 38, 56, 0.9)), url("../assets/images/work.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -234,7 +234,7 @@ nav .active {
 /* line 145, ../sass/screen.scss */
 #hero-content h1 {
   font-size: 3.5em;
-  font-weight: 800;
+  font-weight: 700;
   color: #F3B320;
 }
 /* line 151, ../sass/screen.scss */
