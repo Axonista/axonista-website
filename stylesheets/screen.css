@@ -1390,6 +1390,10 @@ section.product-details.showpal h1 {
   color: #3BB8D7;
 }
 /* line 1021, ../sass/screen.scss */
+section.product-details.qvc h1 {
+  color: #EB5D62;
+}
+/* line 1025, ../sass/screen.scss */
 section.product-details.tv3 h1 {
   color: #563689;
 }
