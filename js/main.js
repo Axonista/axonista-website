@@ -25,7 +25,6 @@ $(document).scroll(function() {
 });
 
 // Interaction Slider //
-$('.tabs-content div').hide();
 $('.tabs-content div:first').show();
 $('.tabs-nav li:first').addClass('tab-active');
 
