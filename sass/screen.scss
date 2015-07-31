@@ -58,6 +58,14 @@ p {
     }
 }
 
+section {
+  background: #ffffff;
+}
+
+section:nth-of-type(2n) {
+  background: $lightgrey;
+}
+
 nav {
 	height: 80px;
 	position: fixed;
@@ -253,7 +261,6 @@ nav {
 
 section.case-study {
 	padding: 4em 0;
-	background: $lightgrey;
     overflow: hidden;
 
 	@include outer-container();
@@ -358,7 +365,7 @@ section.case-study {
       rgba(79, 90, 124, 0.7)
     ),
 
-	url('../assets/images/rerun.png');
+	url('../assets/images/rerun.png') !important;
 	background-size: cover;
      -webkit-background-size: cover;
  	 -moz-background-size: cover;
@@ -532,7 +539,7 @@ ul.rig.columns-4 li {
       rgba(252, 252, 252, 0.5)
     ),
 
-	url('../assets/images/map.png');
+	url('../assets/images/map.png') !important;
 	background-size: cover;
      -webkit-background-size: cover;
  	 -moz-background-size: cover;
@@ -862,7 +869,6 @@ section.features {
 
 // Objectives section
 section.objectives {
-    background: $lightgrey;
     padding-top: 4em;
     @include outer-container;
     @include media($mobile) {
@@ -1096,7 +1102,6 @@ section.method {
 
 // Product details
 section.product-details {
-    background: $lightgrey;
     padding: 4em 0;
     @include outer-container;
     @include media($mobile) {
