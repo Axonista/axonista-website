@@ -126,37 +126,35 @@ nav {
 .hero {
 	height: 100vh;
   	//background: linear-gradient( rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55) ), url('../assets/images/work.jpg');
-    background: linear-gradient(rgba($darknavy, 0.8), rgba($darknavy, 0.9)), url('../assets/images/work.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
+    background: #f8f8f8;
 
  		@include outer-container (12);
 }
 
 #hero-content {
 	text-align: center;
-	padding-top: 33vh;
+	padding-top: 15vh;
 	color: white;
 
 	 @include span-columns(12);
 
 	h1 {
-		font-size: 3.5em;
+		font-size: 3em;
         font-weight: 700;
         color: #F3B320;
 	}
 
 	p {
-		font-size: 1.5em;
+		font-size: 1.25em;
 		width: 35em;
 		margin: 0 auto;
-        color: rgba(#fff, 0.8);
+        color: $darkgrey;
 	}
 
-		@include span-columns (10);
-		@include shift (1)
+    img {
+        margin-top: 10vh;
+        max-width: 100%;
+    }
 }
 
 .process {
@@ -1009,7 +1007,7 @@ section.sub-section {
         color: #fff;
     }
     p {
-        margin: 0 auto;
+        margin: 0 auto 3em auto;
         max-width: 50%;
         color: rgba(255, 255, 255, 0.8);
         @include media($tablet) {
@@ -1021,7 +1019,6 @@ section.sub-section {
     }
 
     img {
-        padding-top: 2em;
         @include span-columns (8);
         @include shift (2);
         @include media($tablet) {
