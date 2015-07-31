@@ -1267,8 +1267,8 @@ section.objectives h1:last-child, section.objectives p:last-child, section.objec
   }
 }
 /* line 887, ../sass/screen.scss */
-section.objectives img {
-  padding-top: 2em;
+section.objectives p:last-child {
+  padding-bottom: 4em;
 }
 /* line 891, ../sass/screen.scss */
 section.objectives.showpal h1 {
