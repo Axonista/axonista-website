@@ -81,7 +81,7 @@ html {
 /* line 30, ../sass/screen.scss */
 html, body {
   background-color: #fff;
-  font-family: 'soleil', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'proxima-nova', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
   color: #444444;
   line-height: 1.5;
   height: 100%;
