@@ -75,7 +75,6 @@ nav {
 
 	div#alignleft {
 		float: left;
-		font-weight: 700;
 		position: fixed;
 		left: 100px;
 	}
@@ -99,6 +98,7 @@ nav {
     	li#home {
     		padding: 0.5em 1em 0em 1em;
     		font-size: 1.3em;
+    		font-weight: 700;
     	}
 
     	a {
@@ -143,13 +143,14 @@ nav {
 	 @include span-columns(12);
 
 	h1 {
-		font-size: 3.5em;
+		font-size: 3.4em;
         font-weight: 700;
         color: #F3B320;
+        text-transform: uppercase;
 	}
 
 	p {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		width: 35em;
 		margin: 0 auto;
         color: rgba(#fff, 0.8);
