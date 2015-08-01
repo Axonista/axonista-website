@@ -19,6 +19,7 @@ $twitter: 		#00aced;
 $showpal:       #3BB8D7;
 $qvc:           #EB5D62;
 $tv3:           #563689;
+$aolrise:       #6C3995;
 $pin-size: 		12px;
 
 $desktop: max-width 1024px;
@@ -766,6 +767,10 @@ header.case-study {
         background: linear-gradient($tv3, darken($tv3, 5%));
     }
 
+    &.aolrise {
+        background: linear-gradient(#942580, $aolrise);
+    }
+
     #main-content {
         text-align: center;
         position: relative;
@@ -864,6 +869,10 @@ section.features {
     &.tv3 i {
         color: $tv3;
     }
+
+    &.aolrise i {
+        color: $aolrise;
+    }
 }
 
 
@@ -898,6 +907,10 @@ section.objectives {
 
     &.tv3 h1 {
         color: $tv3;
+    }
+
+    &.aolrise h1 {
+        color: $aolrise;
     }
 }
 
@@ -977,6 +990,11 @@ section.objectives {
     &.tv3 i {
         color: $tv3;
     }
+
+    &.aolrise h1,
+    &.aolrise i {
+        color: $aolrise;
+    }
 }
 
 // Sub Section
@@ -1001,6 +1019,11 @@ section.sub-section {
 
     &.tv3 {
         background: linear-gradient(rgba($tv3, 0.9), rgba($tv3, 0.9)),
+        url(../assets/images/case-studies/showpal/gallery-header.png);
+    }
+
+    &.aolrise {
+        background: linear-gradient(rgba(#942580, 0.9), rgba($aolrise, 0.9)),
         url(../assets/images/case-studies/showpal/gallery-header.png);
     }
 
@@ -1097,6 +1120,11 @@ section.method {
     &.tv3 i {
         color: $tv3;
     }
+
+    &.aolrise h1,
+    &.aolrise i {
+        color: $aolrise;
+    }
 }
 
 
@@ -1152,5 +1180,9 @@ section.product-details {
 
     &.tv3 h1 {
         color: $tv3;
+    }
+
+    &.aolrise h1 {
+        color: $aolrise;
     }
 }
