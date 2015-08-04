@@ -155,15 +155,15 @@ nav {
 }
 
 div.hero {
-	height: 100vh;
-  	//background: linear-gradient( rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55) ), url('../assets/images/work.jpg');
-    background: #f8f8f8;
+  	background: linear-gradient( rgba(38, 43, 63, 0.9), rgba(38, 43, 63, 0.9) ), url('../assets/images/office.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+    //background: #f8f8f8;
 
  		@include outer-container (12);
 }
 
 #hero-content {
-	text-align: center;
 	padding-top: 10em;
 	color: white;
 
@@ -173,13 +173,16 @@ div.hero {
 		font-size: 3em;
         font-weight: 700;
         color: #F3B320;
+        margin-left: 100px;
 	}
 
 	p {
 		font-size: 1.25em;
 		width: 35em;
 		margin: 0 auto;
-        color: $darkgrey;
+        color: rgba(255, 255, 255, 0.8);
+        margin-left: 100px;
+        padding-bottom: 6em;
 	}
 
     img {
@@ -215,8 +218,8 @@ div.hero {
   	}
 
 	a {
-	  background: #EEEEEE;
-	  color: $darkgrey;
+	  background: linear-gradient( rgba(38, 43, 63, 0.9), rgba(38, 43, 63, 0.9) );
+	  color: rgba(255, 255, 255, 0.9);
 	  display: block;
 	  font-weight: 400;
 	  padding: 2em;
