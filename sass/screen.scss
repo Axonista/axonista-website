@@ -99,7 +99,7 @@ nav {
 	li {
 		display: inline-block;
 		margin-left: 1em;
-		color: #fff;
+		color: rgba(255, 255, 255, 0.8);
 		font-size: 0.875em;
 		padding: 2em 1em;
         text-transform: uppercase;
@@ -116,6 +116,7 @@ nav {
         }
         a:hover {
             cursor: pointer;
+            color: #fff;
             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
         }
 	}
@@ -132,7 +133,7 @@ nav {
 
 }
 
-.hero {
+div.hero {
 	height: 100vh;
   	//background: linear-gradient( rgba(128, 82, 46, 0.55), rgba(181, 152, 94, 0.55) ), url('../assets/images/work.jpg');
     background: #f8f8f8;
@@ -769,6 +770,10 @@ header.case-study {
 
     &.aolrise {
         background: linear-gradient(#942580, $aolrise);
+
+        img.hero {
+            margin-top: 6em !important;
+        }
     }
 
     #main-content {
@@ -802,7 +807,10 @@ header.case-study {
         }
     }
 
-    img {
+    img.logo {
+        margin-bottom: 1em;
+    }
+    img.hero {
         margin-top: 12em;
 
         @include span-columns (8);
@@ -972,7 +980,7 @@ section.objectives {
 
         p {
             font-size: 1em;
-            color: #999;
+            color: #666;
         }
     }
 
