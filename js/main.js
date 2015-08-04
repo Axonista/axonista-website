@@ -12,15 +12,16 @@ $('.nav a').click(function() {
 });
 
 // Nav Background on Scroll //
-var scroll_start = 0;
-var startchange = $('nav');
-var offset = startchange.offset();
+var window_offset = $(window).scrollTop();
+if(window_offset > 100) {
+    $('nav').addClass('solid');
+}
 $(document).scroll(function() {
-    scroll_start = $(this).scrollTop();
-    if(scroll_start > offset.top) {
-        $('nav').css({ 'background': 'rgba(31,38,56, 0.9)',});
+    scroll_position = $(this).scrollTop();
+    if(scroll_position > 100) {
+        $('nav').addClass('solid');
     } else {
-        $('nav').css('background-color', 'transparent');
+        $('nav').removeClass('solid');
     }
 });
 
