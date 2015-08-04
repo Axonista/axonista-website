@@ -762,6 +762,7 @@ ul.rig.columns-4 li {
 }
 /* line 606, ../sass/screen.scss */
 .map .animated:after {
+  box-sizing: border-box;
   border: 1px solid #F3B320;
   height: 24px;
   width: 24px;
@@ -782,9 +783,6 @@ ul.rig.columns-4 li {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 @-webkit-keyframes pulsate {
   0% {
