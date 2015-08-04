@@ -215,10 +215,10 @@ div.hero {
   	}
 
 	a {
-	  background: #f8f8f8;
+	  background: #EEEEEE;
 	  color: $darkgrey;
 	  display: block;
-	  font-weight: 300;
+	  font-weight: 400;
 	  padding: 2em;
 	  text-align: center;
 	  text-decoration: none;
@@ -258,6 +258,7 @@ div.hero {
 	.tab-active a {
 	  color: $orange;
 	  cursor: pointer;
+      font-weight: 600;
 	}
 
 	li.tab-active { border-bottom: 1px solid $orange; }
