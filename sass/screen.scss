@@ -282,6 +282,9 @@ section.illustrations {
             @include shift (1);
         }
 	}
+    img.after {
+        display: none;
+    }
 
 }
 

@@ -53,3 +53,10 @@ $(".segmented-control label input[type=radio]").each(function(){
         }
     });
 });
+
+$(".illustrations .segmented-control input").on("change", function() {
+    var image_id = $(this).data('image-id'),
+        $parent = $(this).closest('.illustration');
+    $parent.find('img:not(".' + image_id + '")').hide();
+    $parent.find('img.' + image_id).show();
+});
