@@ -10,7 +10,7 @@ $darkgrey: 		#444444;
 $lightgrey: 	#F8F8F8;
 $mediumgrey: 	#EAEAEA;
 $lightgrey2: 	#F2F2F2;
-$darknavy: 		#1F2638;
+$darknavy: 		#262B3F;
 $lightnavy: 	#6A7181;
 $lightpurple:   #9377AC;
 $purple: 		#19254E;
@@ -235,7 +235,7 @@ section.illustrations {
     }
 
     h1 {
-        background: #6A7181;
+        background: $darknavy;
         padding: 0.5em 0;
         color: #fff;
         text-transform: uppercase;
@@ -243,21 +243,25 @@ section.illustrations {
     }
 
 	h2 {
-		font-size: 1.5em;
-		color: $orange;
+		font-size: 1.75em;
+		color: $darknavy;
 		font-weight: 600;
 		text-align: center;
 	}
 
 	p {
-		top: 6em;
   		width: 35em;
-  		margin: 0 auto;
+  		margin: 0.5em auto 1em auto;
 
   		@include media ($mobile) {
   			width: 100%;
   		}
 	}
+
+    .segmented-control {
+        @include span-columns (3);
+        @include shift (4.5);
+    }
 
 	.tab-active a {
 	  color: $orange;
@@ -1213,4 +1217,48 @@ section.product-details {
     &.aolrise h1 {
         color: $aolrise;
     }
+}
+
+//
+// UI Elements
+// ----------------------------------------------------------------------------------------------------
+
+/* Segmented Control */
+.segmented-control {
+    display: flex !important;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    text-align: center;
+}
+.segmented-control label {
+    display: block;
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid  $orange;
+    border-right: none;
+    color: $orange;
+    font-weight: 600;
+    margin: 0;
+    padding: .4em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.segmented-control label.checked {
+    background: $orange;
+    color: #fff;
+}
+.segmented-control label:first-child {
+    border-radius: 2em 0 0 2em;
+    border-right: 0;
+}
+.segmented-control label:last-child {
+    border-radius: 0 2em 2em 0;
+    border-right: 1px solid;
+}
+.segmented-control input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    position: absolute;
 }

@@ -41,3 +41,15 @@ $('.tabs-nav a').on('click', function(event){
   $('.tabs-content div').hide();
   $($(this).attr('href')).show();
 });
+
+// Segmented Control UI
+$(".segmented-control label input[type=radio]").each(function(){
+    $(this).on("change", function(){
+        if($(this).is(":checked")){
+           $(this).parent().siblings().each(function(){
+                $(this).removeClass("checked");
+            });
+            $(this).parent().addClass("checked");
+        }
+    });
+});
