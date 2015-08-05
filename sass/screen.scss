@@ -6,7 +6,8 @@
 //@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
 
 $orange: 		#F3B320;
-$darkgrey: 		#444444;
+$blue:          #4D92E0;
+$darkgrey: 		#333D3D;
 $lightgrey: 	#F8F8F8;
 $mediumgrey: 	#EAEAEA;
 $lightgrey2: 	#F2F2F2;
@@ -196,8 +197,7 @@ div.hero {
 
 section.illustrations {
 	height: 100vh;
-	text-align: center;
-    @include span-columns (12);
+    @include outer-container;
 
 	.tabs-nav li {
   		float: left;
@@ -234,33 +234,38 @@ section.illustrations {
         background: $lightgrey;
     }
 
+    .content {
+        @include span-columns (4);
+        @include shift (1);
+    }
+    .image {
+        @include span-columns (6);
+    }
+
     h1 {
-        background: $darknavy;
+        background: $darkgrey;
         padding: 0.5em 0;
         color: #fff;
         text-transform: uppercase;
         font-weight: 400;
+        text-align: center;
     }
 
 	h2 {
 		font-size: 1.75em;
-		color: $darknavy;
+		color: $darkgrey;
 		font-weight: 600;
-		text-align: center;
+		text-align: left;
 	}
 
 	p {
-  		width: 35em;
   		margin: 0.5em auto 1em auto;
-
-  		@include media ($mobile) {
-  			width: 100%;
-  		}
+        color: lighten($darkgrey, 15%);
 	}
 
     .segmented-control {
-        @include span-columns (3);
-        @include shift (4.5);
+        margin-top: 1em;
+        @include span-columns (3 of 4);
     }
 
 	.tab-active a {
@@ -272,15 +277,8 @@ section.illustrations {
 	li.tab-active { border-bottom: 1px solid $orange; }
 
 	img {
-		margin-top: 2em;
-        float: none;
-
-        @include span-columns (8);
-        @include shift (2);
-        @include media($tablet) {
-            @include span-columns (10);
-            @include shift (1);
-        }
+        float: right;
+        max-width: 100%;
 	}
     img.after {
         display: none;
