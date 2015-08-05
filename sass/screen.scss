@@ -7,7 +7,7 @@
 
 $orange: 		#F3B320;
 $darkgrey: 		#444444;
-$lightgrey: 	#FAFAFA;
+$lightgrey: 	#F8F8F8;
 $mediumgrey: 	#EAEAEA;
 $lightgrey2: 	#F2F2F2;
 $darknavy: 		#1F2638;
@@ -228,6 +228,10 @@ section.illustrations {
     .illustration {
         @include span-columns (12);
         padding: 4em 0;
+    }
+
+    .illustration:nth-of-type(2n) {
+        background: $lightgrey;
     }
 
     h1 {
