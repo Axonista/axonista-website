@@ -13,16 +13,20 @@ $('.nav a').click(function() {
 
 // Nav Background on Scroll //
 var window_offset = $(window).scrollTop();
+var previous_scroll_position = 0;
 if(window_offset > 100) {
     $('nav').addClass('solid');
 }
 $(document).scroll(function() {
     scroll_position = $(this).scrollTop();
-    if(scroll_position > 100) {
-        $('nav').addClass('solid');
+    if(scroll_position > 200 && scroll_position < previous_scroll_position) {
+        $('nav').addClass('solid').show();
+    } else if(scroll_position < 200) {
+        $('nav').removeClass('solid').show();
     } else {
-        $('nav').removeClass('solid');
+        $('nav').hide();
     }
+    previous_scroll_position = scroll_position;
 });
 
 // Interaction Slider //

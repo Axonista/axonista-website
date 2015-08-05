@@ -165,8 +165,9 @@ div.hero {
 }
 
 #hero-content {
-	padding-top: 10em;
-	color: white;
+	padding-top: 12em;
+	color: #fff;
+    text-align: center;
 
 	 @include span-columns(12);
 
@@ -175,16 +176,14 @@ div.hero {
         font-weight: 700;
         line-height: 1.5em;
         color: #F3B320;
-        margin-left: 100px;
 	}
 
 	p {
-		font-size: 1.25em;
+		font-size: 1.333em;
 		width: 35em;
 		margin: 0 auto;
         color: rgba(0, 0, 0, 0.8);
-        margin-left: 100px;
-        padding-bottom: 6em;
+        padding-bottom: 8em;
 	}
 
     img {
@@ -195,13 +194,10 @@ div.hero {
     }
 }
 
-.process {
+section.illustrations {
 	height: 100vh;
 	text-align: center;
-
-	@include outer-container (12);
-
-	.tabs { width: 100%;  }
+    @include span-columns (12);
 
 	.tabs-nav li {
   		float: left;
@@ -212,11 +208,6 @@ div.hero {
   		@include media ($desktop) {
   			visibility: hidden;
   		}
-  	}
-
-  	.tabs-content {
-  		@include span-columns (10);
-  		@include shift (1);
   	}
 
 	a {
@@ -234,15 +225,24 @@ div.hero {
 	  color: $orange;
 	}
 
+    .illustration {
+        @include span-columns (12);
+        padding: 4em 0;
+    }
+
+    h1 {
+        background: #6A7181;
+        padding: 0.5em 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
 	h2 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 		color: $orange;
 		font-weight: 600;
 		text-align: center;
-
-		@include media ($mobile) {
-  			line-height: 1.5em;
-  		}
 	}
 
 	p {
@@ -263,24 +263,16 @@ div.hero {
 
 	li.tab-active { border-bottom: 1px solid $orange; }
 
-	.tabs-content {
-	  border-radius: 0 0 6px 6px;
-	  border-top: 0;
-	  clear: both;
-	  padding: 24px 30px;
-	  position: relative;
-	  top: -1px;
-
-      div {
-        display: none;
-      }
-	}
-
 	img {
-		height: 280px;
-		text-align: center;
-		margin: 2em 0;
- 		position: relative;
+		margin-top: 2em;
+        float: none;
+
+        @include span-columns (8);
+        @include shift (2);
+        @include media($tablet) {
+            @include span-columns (10);
+            @include shift (1);
+        }
 	}
 
 }
