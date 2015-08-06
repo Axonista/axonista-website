@@ -100,7 +100,7 @@ nav {
     img.logo {
         float: left;
         position: fixed;
-        left: 100px;
+        left: 8.5298%;
         max-width: 60px;
         margin-top: 10px;
     }
@@ -168,9 +168,13 @@ div.hero {
 #hero-content {
 	padding-top: 12em;
 	color: #fff;
-    text-align: center;
 
-	 @include span-columns(12);
+	@include span-columns(12);
+
+    h1, p {
+        @include span-columns (6);
+        @include shift (1);
+    }
 
 	h1 {
 		font-size: 3em;
@@ -181,8 +185,7 @@ div.hero {
 
 	p {
 		font-size: 1.333em;
-		width: 35em;
-		margin: 0 auto;
+		width: 27em;
         color: rgba(0, 0, 0, 0.8);
         padding-bottom: 8em;
 	}
@@ -227,7 +230,7 @@ section.illustrations {
 
     .illustration {
         @include span-columns (12);
-        padding: 4em 0;
+        padding: 8em 0;
     }
 
     .illustration:nth-of-type(2n) {
