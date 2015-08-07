@@ -163,8 +163,8 @@ nav {
 }
 
 div.hero {
-  	//background: linear-gradient( rgba(38, 43, 63, 0.9), rgba(38, 43, 63, 0.9) ), url('../assets/images/office.jpg');
-    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../assets/images/office.jpg');
+  	background: linear-gradient( rgba(128, 82, 46, 0.33), rgba(181, 152, 94, 0.33) ), url('../assets/images/placeholder.jpg');
+    //background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../assets/images/office.jpg');
     background-size: cover;
     background-position: 0 50%;
     //background: #f8f8f8;
@@ -173,9 +173,10 @@ div.hero {
 }
 
 #hero-content {
-	padding-top: 35vh;
+	padding-top: 40vh;
 	color: #fff;
     height: 100vh;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 
 	@include span-columns(12);
 
@@ -194,7 +195,7 @@ div.hero {
 	p {
 		font-size: 1.25em;
 		width: 29em;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgba(255, 255, 255, 0.8);
         padding-bottom: 8em;
 	}
 
