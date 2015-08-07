@@ -173,8 +173,9 @@ div.hero {
 }
 
 #hero-content {
-	padding-top: 12em;
+	padding-top: 35vh;
 	color: #fff;
+    height: 100vh;
 
 	@include span-columns(12);
 
