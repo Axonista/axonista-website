@@ -189,7 +189,11 @@ div.hero {
 		font-size: 3em;
         font-weight: 900;
         line-height: 1.5em;
-        color: #F3B320;
+        color: #fff;
+
+        span.highlight {
+            color: $orange;
+        }
 	}
 
 	p {
