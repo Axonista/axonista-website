@@ -119,7 +119,8 @@ nav {
 		font-size: 0.875em;
 		padding: 2em 1em;
         text-transform: uppercase;
-        font-weight: 600;
+        font-family: "brandon-grotesque", "open-sans", "Avenir Next", "Helvetica Neue", sans-serif;
+        font-weight: 700;
 
     	li#home {
     		padding: 0.5em 1em 0em 1em;
@@ -141,17 +142,16 @@ nav {
 		color: $orange;
 	}
 
-    &.light {
+    &.solid {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 0 2px 4px rgba(0,0,0,0.05);
+
         li {
             color: #666;
         }
         a:hover {
             color: #000;
         }
-    }
-    &.solid {
-        background: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 0 2px 4px rgba(0,0,0,0.05);
     }
 
 	@include media ($desktop) {
