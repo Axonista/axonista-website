@@ -238,7 +238,7 @@ nav.solid a:hover {
 
 /* line 167, ../sass/screen.scss */
 video#bgvid {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
