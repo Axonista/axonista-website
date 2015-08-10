@@ -874,6 +874,8 @@ header.case-study {
 
     img.logo {
         margin-bottom: 1em;
+        max-height: 100px;
+        max-width: 200px;
     }
     img.hero {
         margin-top: 12em;
@@ -964,6 +966,10 @@ section.objectives {
             @include span-columns(10);
             @include shift (1);
         }
+    }
+
+    img {
+        margin-top: 2em;
     }
 
     p:last-child {
