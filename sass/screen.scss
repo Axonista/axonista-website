@@ -32,7 +32,7 @@ $mobile: max-width 510px;
 html, body {
     background-color: #fff;
     font-family: 'open-sans', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
-    color: $darkgrey;
+    color: $darknavy;
     line-height: 1.5;
     height: 100%;
 
@@ -237,7 +237,6 @@ div.hero {
 section.illustrations {
 	height: 100vh;
     @include outer-container;
-    box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
 
 	.tabs-nav li {
   		float: left;
@@ -253,7 +252,7 @@ section.illustrations {
 	a {
 	  //background: linear-gradient( rgba(38, 43, 63, 0.9), rgba(38, 43, 63, 0.9) );
       background: #f8f8f8;
-	  color: $darkgrey;
+	  color: $darknavy;
 	  display: block;
 	  font-weight: 400;
 	  padding: 2em;
@@ -284,7 +283,7 @@ section.illustrations {
     }
 
     h1 {
-        background: $darkgrey;
+        background: $darknavy;
         padding: 0.5em 0;
         color: #fff;
         text-transform: uppercase;
@@ -294,12 +293,12 @@ section.illustrations {
 
 	h2 {
 		font-size: 1.5em;
-		color: $darkgrey;
+		color: $darknavy;
 		text-align: left;
 	}
 
 	p {
-        color: lighten($darkgrey, 15%);
+        color: $mediumnavy;
         max-width: 25em;
 	}
 
@@ -644,7 +643,7 @@ ul.rig.columns-4 li {
  	 p {
  	 	font-size: 0.8em;
  	 	font-weight: 300;
- 	 	color: $darkgrey;
+ 	 	color: $darknavy;
  	 	line-height: 1.5em;
  	 }
 
@@ -810,7 +809,7 @@ footer {
 // Hero/header section
 header.case-study {
     height: 100vh;
-    background: $darkgrey;
+    background: $darknavy;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1078,7 +1077,7 @@ section.objectives {
 
 // Sub Section
 section.sub-section {
-    background: $darkgrey;
+    background: $darknavy;
     padding-top: 4em;
     text-align: center;
     @include outer-container;
