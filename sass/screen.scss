@@ -5,15 +5,14 @@
 @import "libraries/neat/neat.scss";
 //@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
 
-$orange: 		#F3B320;
-$blue:          #4D92E0;
+// Main colour palette
+$darknavy: #262b3f; //rgba(38, 43, 63, 100)
+$mediumnavy: #545e75; //rgba(84, 94, 117, 100)
+$orange: #f3b320; //rgba(243, 179, 32, 100)
+$blue: #63adf2; //rgba(99, 173, 242, 100)
+$lightgrey: #f8f8f8; //rgba(248, 248, 248, 100)
+
 $darkgrey: 		#333D3D;
-$lightgrey: 	#F8F8F8;
-$mediumgrey: 	#EAEAEA;
-$lightgrey2: 	#F2F2F2;
-$darknavy: 		#262B3F;
-$lightnavy: 	#6A7181;
-$lightpurple:   #9377AC;
 $purple: 		#19254E;
 $facebook: 		#3B5998;
 $twitter: 		#00aced;
@@ -21,6 +20,7 @@ $showpal:       #3BB8D7;
 $qvc:           #EB5D62;
 $tv3:           #563689;
 $aolrise:       #6C3995;
+
 $pin-size: 		12px;
 
 $desktop: max-width 1024px;
@@ -637,7 +637,7 @@ ul.rig.columns-4 li {
  	 hr {
  	 	height: 1px;
 		border: 0;
-		background-color: $mediumgrey;
+		background-color: $lightgrey;
 		width: 20%;
  	 }
 
@@ -732,7 +732,7 @@ footer {
 
 		  h3 {
 		  	text-transform: uppercase;
-		  	color: $lightgrey2;
+		  	color: $lightgrey;
 		  	padding: 0 0 1.2em 0;
 		  }
 
@@ -761,7 +761,7 @@ footer {
 	}
 
 	a {
-	  	color: $lightgrey2;
+	  	color: $lightgrey;
 	  	text-decoration: none;
 	}
 

@@ -139,7 +139,7 @@ section {
 
 /* line 76, ../sass/screen.scss */
 section:nth-of-type(2n) {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 /* line 80, ../sass/screen.scss */
@@ -153,7 +153,7 @@ nav {
 @media screen and (max-width: 510px) {
   /* line 80, ../sass/screen.scss */
   nav {
-    background: #262B3F;
+    background: #262b3f;
     opacity: 0.8;
   }
 }
@@ -213,7 +213,7 @@ nav li a:hover {
 }
 /* line 143, ../sass/screen.scss */
 nav .active {
-  color: #F3B320;
+  color: #f3b320;
 }
 /* line 147, ../sass/screen.scss */
 nav.solid {
@@ -231,7 +231,7 @@ nav.solid a:hover {
 @media screen and (max-width: 1024px) {
   /* line 80, ../sass/screen.scss */
   nav {
-    background: #262B3F;
+    background: #262b3f;
     opacity: 0.97;
   }
 }
@@ -306,7 +306,7 @@ div.hero::after {
 }
 /* line 216, ../sass/screen.scss */
 #hero-content h1 span.highlight {
-  color: #F3B320;
+  color: #f3b320;
 }
 /* line 221, ../sass/screen.scss */
 #hero-content p {
@@ -363,7 +363,7 @@ section.illustrations a {
 }
 /* line 264, ../sass/screen.scss */
 section.illustrations a:hover {
-  color: #F3B320;
+  color: #f3b320;
 }
 /* line 268, ../sass/screen.scss */
 section.illustrations .illustration {
@@ -380,7 +380,7 @@ section.illustrations .illustration:last-child {
 }
 /* line 274, ../sass/screen.scss */
 section.illustrations .illustration:nth-of-type(2n) {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 /* line 278, ../sass/screen.scss */
 section.illustrations .content {
@@ -439,13 +439,13 @@ section.illustrations .segmented-control:last-child {
 }
 /* line 311, ../sass/screen.scss */
 section.illustrations .tab-active a {
-  color: #F3B320;
+  color: #f3b320;
   cursor: pointer;
   font-weight: 700;
 }
 /* line 317, ../sass/screen.scss */
 section.illustrations li.tab-active {
-  border-bottom: 1px solid #F3B320;
+  border-bottom: 1px solid #f3b320;
 }
 /* line 319, ../sass/screen.scss */
 section.illustrations img {
@@ -503,10 +503,10 @@ section.case-study img:last-child {
 /* line 350, ../sass/screen.scss */
 section.case-study .case-button {
   display: inline-block;
-  border: 1px solid #F3B320;
+  border: 1px solid #f3b320;
   background: none;
   padding: 0.5em 1.5em;
-  color: #F3B320;
+  color: #f3b320;
   border-radius: 50px;
   text-decoration: none;
   text-transform: uppercase;
@@ -516,7 +516,7 @@ section.case-study .case-button {
 section.case-study .case-button:hover {
   cursor: pointer;
   color: #fff;
-  background: #F3B320;
+  background: #f3b320;
 }
 /* line 368, ../sass/screen.scss */
 section.case-study.showpal {
@@ -605,7 +605,7 @@ section.case-study.qvc .case-button:hover {
 /* line 443, ../sass/screen.scss */
 .rerun header {
   text-align: center;
-  color: #F3B320;
+  color: #f3b320;
   font-weight: 600;
   font-size: 1.2em;
   padding-top: 5em;
@@ -626,7 +626,7 @@ section.case-study.qvc .case-button:hover {
 .rerun #email {
   margin: 0 auto;
   border: none;
-  background: #262B3F;
+  background: #262b3f;
   color: #A0A0A0;
   border-radius: 4px;
   padding: 1em 10em 1em 1em;
@@ -640,7 +640,7 @@ section.case-study.qvc .case-button:hover {
   position: relative;
   margin-left: -11px;
   border-radius: 0px 3px 3px 0px;
-  background-color: #F3B320;
+  background-color: #f3b320;
   padding: 1em 1em 1em 1em;
   border: none;
   color: white;
@@ -678,7 +678,7 @@ section.case-study.qvc .case-button:hover {
 /* line 511, ../sass/screen.scss */
 .blog header {
   font-size: 1.4em;
-  color: #F3B320;
+  color: #f3b320;
   font-weight: 300;
   text-align: center;
   padding-bottom: 3em;
@@ -713,7 +713,7 @@ section.case-study.qvc .case-button:hover {
 /* line 545, ../sass/screen.scss */
 .blog ul.rig hr {
   border: none;
-  background: #F3B320;
+  background: #f3b320;
   height: 1px;
   width: 15%;
   position: relative;
@@ -745,11 +745,11 @@ section.case-study.qvc .case-button:hover {
 }
 /* line 576, ../sass/screen.scss */
 .blog button.read-more {
-  border: 1px solid #F3B320;
+  border: 1px solid #f3b320;
   border-radius: 50px;
   background: none;
   padding: 1em 2em 1em 2em;
-  color: #F3B320;
+  color: #f3b320;
   position: relative;
   top: 2em;
   font-size: 0.7em;
@@ -804,14 +804,14 @@ ul.rig.columns-4 li {
 /* line 631, ../sass/screen.scss */
 .map header {
   font-size: 1.4em;
-  color: #F3B320;
+  color: #f3b320;
   font-weight: 600;
 }
 /* line 637, ../sass/screen.scss */
 .map hr {
   height: 1px;
   border: 0;
-  background-color: #EAEAEA;
+  background-color: #f8f8f8;
   width: 20%;
 }
 /* line 644, ../sass/screen.scss */
@@ -836,7 +836,7 @@ ul.rig.columns-4 li {
 }
 /* line 659, ../sass/screen.scss */
 .map .pin {
-  background-color: #F3B320;
+  background-color: #f3b320;
   width: 12px;
   height: 12px;
   position: absolute;
@@ -851,7 +851,7 @@ ul.rig.columns-4 li {
 /* line 672, ../sass/screen.scss */
 .map .animated:after {
   box-sizing: border-box;
-  border: 1px solid #F3B320;
+  border: 1px solid #f3b320;
   height: 24px;
   width: 24px;
   content: "";
@@ -982,7 +982,7 @@ footer .section {
 /* line 733, ../sass/screen.scss */
 footer .section h3 {
   text-transform: uppercase;
-  color: #F2F2F2;
+  color: #f8f8f8;
   padding: 0 0 1.2em 0;
 }
 /* line 739, ../sass/screen.scss */
@@ -1025,7 +1025,7 @@ footer .section.right:first-child {
 }
 /* line 763, ../sass/screen.scss */
 footer a {
-  color: #F2F2F2;
+  color: #f8f8f8;
   text-decoration: none;
 }
 /* line 768, ../sass/screen.scss */
@@ -1906,9 +1906,9 @@ section.product-details.aolrise h1 {
   display: block;
   flex: 1;
   box-sizing: border-box;
-  border: 1px solid #F3B320;
+  border: 1px solid #f3b320;
   border-right: none;
-  color: #F3B320;
+  color: #f3b320;
   font-weight: 600;
   margin: 0;
   padding: .4em;
@@ -1919,7 +1919,7 @@ section.product-details.aolrise h1 {
 
 /* line 1294, ../sass/screen.scss */
 .segmented-control label.checked {
-  background: #F3B320;
+  background: #f3b320;
   color: #fff;
 }
 
