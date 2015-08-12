@@ -112,7 +112,7 @@ h1 {
 
 /* line 56, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon-grotesque", "proxima-nova", "open-sans", "Avenir Next", sans-serif;
+  font-family: "brandon-grotesque", "open-sans", "Avenir Next", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   line-height: 2em;
