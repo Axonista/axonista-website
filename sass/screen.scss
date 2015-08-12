@@ -27,7 +27,11 @@ $desktop: max-width 1024px;
 $tablet: max-width 768px;
 $mobile: max-width 510px;
 
-*, *:before, *:after { -webkit-font-smoothing: antialiased; }
+*, *:before, *:after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
 
 html, body {
     background-color: #fff;
