@@ -1562,7 +1562,7 @@ section.objectives.aolrise h1 {
 /* line 1085, ../sass/screen.scss */
 section.sub-section {
   background: #262b3f;
-  padding-top: 4em;
+  padding-top: 6em;
   text-align: center;
   max-width: 100%;
   margin-left: auto;
@@ -1606,7 +1606,8 @@ section.sub-section h1 {
 }
 /* line 1122, ../sass/screen.scss */
 section.sub-section p {
-  margin: 0 auto 3em auto;
+  font-size: 1.125em;
+  margin: 0 auto 6em auto;
   max-width: 50%;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1622,7 +1623,7 @@ section.sub-section p {
     max-width: 90%;
   }
 }
-/* line 1134, ../sass/screen.scss */
+/* line 1135, ../sass/screen.scss */
 section.sub-section img {
   float: left;
   display: block;
@@ -1635,7 +1636,7 @@ section.sub-section img:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1134, ../sass/screen.scss */
+  /* line 1135, ../sass/screen.scss */
   section.sub-section img {
     float: left;
     display: block;
@@ -1649,7 +1650,7 @@ section.sub-section img:last-child {
   }
 }
 
-/* line 1146, ../sass/screen.scss */
+/* line 1147, ../sass/screen.scss */
 section.method {
   padding: 4em 0;
   max-width: 100%;
@@ -1663,12 +1664,12 @@ section.method::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
-  /* line 1146, ../sass/screen.scss */
+  /* line 1147, ../sass/screen.scss */
   section.method {
     padding: 2em 0;
   }
 }
-/* line 1153, ../sass/screen.scss */
+/* line 1154, ../sass/screen.scss */
 section.method h1, section.method p {
   float: left;
   display: block;
@@ -1681,7 +1682,7 @@ section.method h1:last-child, section.method p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1153, ../sass/screen.scss */
+  /* line 1154, ../sass/screen.scss */
   section.method h1, section.method p {
     float: left;
     display: block;
@@ -1694,7 +1695,7 @@ section.method h1:last-child, section.method p:last-child {
     margin-right: 0;
   }
 }
-/* line 1162, ../sass/screen.scss */
+/* line 1163, ../sass/screen.scss */
 section.method ul {
   list-style-type: none;
   text-align: center;
@@ -1702,12 +1703,12 @@ section.method ul {
   margin-left: 17.05961%;
 }
 @media screen and (max-width: 768px) {
-  /* line 1162, ../sass/screen.scss */
+  /* line 1163, ../sass/screen.scss */
   section.method ul {
     margin-left: 8.5298%;
   }
 }
-/* line 1172, ../sass/screen.scss */
+/* line 1173, ../sass/screen.scss */
 section.method li {
   display: block;
   float: left;
@@ -1729,7 +1730,7 @@ section.method li:nth-child(5n+1) {
   clear: left;
 }
 @media screen and (max-width: 510px) {
-  /* line 1172, ../sass/screen.scss */
+  /* line 1173, ../sass/screen.scss */
   section.method li {
     float: left;
     display: block;
@@ -1750,33 +1751,33 @@ section.method li:nth-child(5n+1) {
     clear: left;
   }
 }
-/* line 1184, ../sass/screen.scss */
+/* line 1185, ../sass/screen.scss */
 section.method h3 {
   padding-top: 1em;
   font-weight: 600;
 }
-/* line 1189, ../sass/screen.scss */
+/* line 1190, ../sass/screen.scss */
 section.method i.icon {
   font-size: 2em;
 }
-/* line 1193, ../sass/screen.scss */
+/* line 1194, ../sass/screen.scss */
 section.method.showpal h1, section.method.showpal i {
   color: #3BB8D7;
 }
-/* line 1198, ../sass/screen.scss */
+/* line 1199, ../sass/screen.scss */
 section.method.qvc h1, section.method.qvc i {
   color: #EB5D62;
 }
-/* line 1203, ../sass/screen.scss */
+/* line 1204, ../sass/screen.scss */
 section.method.tv3 h1, section.method.tv3 i {
   color: #563689;
 }
-/* line 1208, ../sass/screen.scss */
+/* line 1209, ../sass/screen.scss */
 section.method.aolrise h1, section.method.aolrise i {
   color: #6C3995;
 }
 
-/* line 1216, ../sass/screen.scss */
+/* line 1217, ../sass/screen.scss */
 section.product-details {
   padding: 4em 0;
   max-width: 100%;
@@ -1790,12 +1791,12 @@ section.product-details::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
-  /* line 1216, ../sass/screen.scss */
+  /* line 1217, ../sass/screen.scss */
   section.product-details {
     padding: 2em 0;
   }
 }
-/* line 1223, ../sass/screen.scss */
+/* line 1224, ../sass/screen.scss */
 section.product-details h1, section.product-details p {
   float: left;
   display: block;
@@ -1808,7 +1809,7 @@ section.product-details h1:last-child, section.product-details p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1223, ../sass/screen.scss */
+  /* line 1224, ../sass/screen.scss */
   section.product-details h1, section.product-details p {
     float: left;
     display: block;
@@ -1821,12 +1822,12 @@ section.product-details h1:last-child, section.product-details p:last-child {
     margin-right: 0;
   }
 }
-/* line 1232, ../sass/screen.scss */
+/* line 1233, ../sass/screen.scss */
 section.product-details ul {
   list-style-type: none;
   padding-top: 4em;
 }
-/* line 1237, ../sass/screen.scss */
+/* line 1238, ../sass/screen.scss */
 section.product-details li {
   display: block;
   margin: 1em 0;
@@ -1848,7 +1849,7 @@ section.product-details li:nth-child(2n+1) {
   clear: left;
 }
 @media screen and (max-width: 510px) {
-  /* line 1237, ../sass/screen.scss */
+  /* line 1238, ../sass/screen.scss */
   section.product-details li {
     float: left;
     display: block;
@@ -1869,34 +1870,34 @@ section.product-details li:nth-child(2n+1) {
     clear: left;
   }
 }
-/* line 1249, ../sass/screen.scss */
+/* line 1250, ../sass/screen.scss */
 section.product-details img {
   max-width: 100%;
 }
-/* line 1252, ../sass/screen.scss */
+/* line 1253, ../sass/screen.scss */
 section.product-details img:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-/* line 1257, ../sass/screen.scss */
+/* line 1258, ../sass/screen.scss */
 section.product-details.showpal h1 {
   color: #3BB8D7;
 }
-/* line 1261, ../sass/screen.scss */
+/* line 1262, ../sass/screen.scss */
 section.product-details.qvc h1 {
   color: #EB5D62;
 }
-/* line 1265, ../sass/screen.scss */
+/* line 1266, ../sass/screen.scss */
 section.product-details.tv3 h1 {
   color: #563689;
 }
-/* line 1269, ../sass/screen.scss */
+/* line 1270, ../sass/screen.scss */
 section.product-details.aolrise h1 {
   color: #6C3995;
 }
 
 /* Segmented Control */
-/* line 1279, ../sass/screen.scss */
+/* line 1280, ../sass/screen.scss */
 .segmented-control {
   display: flex !important;
   flex-flow: row wrap;
@@ -1904,7 +1905,7 @@ section.product-details.aolrise h1 {
   text-align: center;
 }
 
-/* line 1285, ../sass/screen.scss */
+/* line 1286, ../sass/screen.scss */
 .segmented-control label {
   display: block;
   flex: 1;
@@ -1920,25 +1921,25 @@ section.product-details.aolrise h1 {
   -webkit-user-select: none;
 }
 
-/* line 1299, ../sass/screen.scss */
+/* line 1300, ../sass/screen.scss */
 .segmented-control label.checked {
   background: #f3b320;
   color: #fff;
 }
 
-/* line 1303, ../sass/screen.scss */
+/* line 1304, ../sass/screen.scss */
 .segmented-control label:first-child {
   border-radius: 2em 0 0 2em;
   border-right: 0;
 }
 
-/* line 1307, ../sass/screen.scss */
+/* line 1308, ../sass/screen.scss */
 .segmented-control label:last-child {
   border-radius: 0 2em 2em 0;
   border-right: 1px solid;
 }
 
-/* line 1311, ../sass/screen.scss */
+/* line 1312, ../sass/screen.scss */
 .segmented-control input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;

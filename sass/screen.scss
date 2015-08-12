@@ -1084,7 +1084,7 @@ section.objectives {
 // Sub Section
 section.sub-section {
     background: $darknavy;
-    padding-top: 4em;
+    padding-top: 6em;
     text-align: center;
     @include outer-container;
     @include media($mobile) {
@@ -1120,7 +1120,8 @@ section.sub-section {
         color: #fff;
     }
     p {
-        margin: 0 auto 3em auto;
+        font-size: 1.125em;
+        margin: 0 auto 6em auto;
         max-width: 50%;
         color: rgba(255, 255, 255, 0.8);
         @include media($tablet) {
