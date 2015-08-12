@@ -313,12 +313,15 @@ section.illustrations {
     }
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.75em;
+        line-height: 1.2em;
 		color: $darknavy;
 		text-align: left;
+        padding-bottom: 0.25em;
 	}
 
 	p {
+        font-size: 1.125em;
         color: $mediumnavy;
         max-width: 25em;
 	}
