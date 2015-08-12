@@ -398,14 +398,14 @@ section.illustrations .content:last-child {
   margin-right: 0;
 }
 /* line 287, ../sass/screen.scss */
-section.illustrations .image {
+section.illustrations .illustration-image {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 53.08608%;
 }
 /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-section.illustrations .image:last-child {
+section.illustrations .illustration-image:last-child {
   margin-right: 0;
 }
 /* line 291, ../sass/screen.scss */
@@ -1908,10 +1908,13 @@ section.product-details.aolrise h1 {
 /* line 1286, ../sass/screen.scss */
 .segmented-control label {
   display: block;
+  position: relative;
   flex: 1;
   box-sizing: border-box;
+  overflow: hidden;
   border: 1px solid #f3b320;
   border-right: none;
+  background: transparent;
   color: #f3b320;
   font-weight: 600;
   margin: 0;
@@ -1921,28 +1924,48 @@ section.product-details.aolrise h1 {
   -webkit-user-select: none;
 }
 
-/* line 1300, ../sass/screen.scss */
+/* line 1303, ../sass/screen.scss */
 .segmented-control label.checked {
   background: #f3b320;
   color: #fff;
 }
 
-/* line 1304, ../sass/screen.scss */
+/* line 1307, ../sass/screen.scss */
 .segmented-control label:first-child {
   border-radius: 2em 0 0 2em;
   border-right: 0;
 }
 
-/* line 1308, ../sass/screen.scss */
+/* line 1311, ../sass/screen.scss */
 .segmented-control label:last-child {
   border-radius: 0 2em 2em 0;
   border-right: 1px solid;
 }
 
-/* line 1312, ../sass/screen.scss */
+/* line 1315, ../sass/screen.scss */
 .segmented-control input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   margin: 0;
   position: absolute;
+}
+
+/* line 1322, ../sass/screen.scss */
+.circle {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: scale(0);
+}
+/* line 1329, ../sass/screen.scss */
+.circle.animate {
+  animation: effect 0.3s linear;
+}
+
+@keyframes effect {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
 }
