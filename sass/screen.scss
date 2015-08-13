@@ -1382,15 +1382,13 @@ section.product-details {
     border-right: none;
     background: transparent;
     color: $orange;
+    font-size: 0.875em;
     font-weight: 600;
     margin: 0;
     padding: 0.3em;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
-    @include media($mobile) {
-        font-size: 0.875em;
-    }
 }
 .segmented-control label.checked {
     background: $orange;

@@ -2122,6 +2122,7 @@ section.product-details.aolrise h1 {
   border-right: none;
   background: transparent;
   color: #f3b320;
+  font-size: 0.875em;
   font-weight: 600;
   margin: 0;
   padding: 0.3em;
@@ -2129,32 +2130,26 @@ section.product-details.aolrise h1 {
   user-select: none;
   -webkit-user-select: none;
 }
-@media screen and (max-width: 510px) {
-  /* line 1375, ../sass/screen.scss */
-  .segmented-control label {
-    font-size: 0.875em;
-  }
-}
 
-/* line 1395, ../sass/screen.scss */
+/* line 1393, ../sass/screen.scss */
 .segmented-control label.checked {
   background: #f3b320;
   color: #fff;
 }
 
-/* line 1399, ../sass/screen.scss */
+/* line 1397, ../sass/screen.scss */
 .segmented-control label:first-child {
   border-radius: 2em 0 0 2em;
   border-right: 0;
 }
 
-/* line 1403, ../sass/screen.scss */
+/* line 1401, ../sass/screen.scss */
 .segmented-control label:last-child {
   border-radius: 0 2em 2em 0;
   border-right: 1px solid;
 }
 
-/* line 1407, ../sass/screen.scss */
+/* line 1405, ../sass/screen.scss */
 .segmented-control input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
