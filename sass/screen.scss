@@ -14,6 +14,7 @@ $lightgrey: #f8f8f8; //rgba(248, 248, 248, 100)
 
 $darkgrey: 		#333D3D;
 $purple: 		#19254E;
+$rerun:         #3f51b5;
 $facebook: 		#3B5998;
 $twitter: 		#00aced;
 $showpal:       #3BB8D7;
@@ -69,6 +70,10 @@ p {
     @include media($mobile) {
         font-size: 1em;
     }
+}
+
+span.highlight {
+    color: $orange;
 }
 
 section {
@@ -248,10 +253,6 @@ div.hero {
         line-height: 1.5em;
         color: #fff;
 
-        span.highlight {
-            color: $orange;
-        }
-
         @include media($mobile) {
             font-size: 1.75em;
             line-height: 1em;
@@ -318,8 +319,7 @@ section.illustrations {
         @include span-columns (12);
         display: flex;
         align-items: center;
-        padding: 10em 0;
-        height: 100vh;
+        padding: 6em 0;
         background: #fff;
         @include media($tablet) {
             display: block;
@@ -514,19 +514,6 @@ section.case-study {
 }
 
 .rerun {
-	background-image: linear-gradient(
-      rgba(81, 85, 97, 0.7),
-      rgba(79, 90, 124, 0.7)
-    ),
-
-	url('../assets/images/rerun.png') !important;
-	background-size: cover;
-     -webkit-background-size: cover;
- 	 -moz-background-size: cover;
- 	 -o-background-size: cover;
-	height: 60vh;
-	text-align: center;
-
 	header {
 		text-align: center;
 		color: $orange;
@@ -534,17 +521,6 @@ section.case-study {
 		font-size: 1.2em;
 		padding-top: 5em;
 		line-height: 3em;
-	}
-
-	p {
-		font-weight: 300;
-		color: white;
-		font-size: 1.1em;
-		text-align: center;
-		padding: 0em 0em 2em 0em;
-		width: 35%;
-		margin: 0 auto;
-		line-height: 1.7em;
 	}
 
 	#email {
@@ -1172,6 +1148,16 @@ section.image-banner {
     @include outer-container;
     @include media($mobile) {
         padding: 2em 0 0 0;
+    }
+
+    &.orange {
+        background: linear-gradient(rgba($orange, 0.75), rgba($orange, 0.75)),
+        url(../assets/images/case-studies/showpal/gallery-header.png);
+    }
+
+    &.rerun {
+        background: url(../assets/images/rerun-bg.png);
+        background-size: 50%;
     }
 
     &.showpal {
