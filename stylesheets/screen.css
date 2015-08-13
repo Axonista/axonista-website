@@ -1752,10 +1752,11 @@ section.objectives.aolrise h1 {
 }
 
 /* line 1166, ../sass/screen.scss */
-section.sub-section {
+section.image-banner {
   background: #262b3f;
   padding-top: 6em;
   text-align: center;
+  background: linear-gradient(rgba(38, 43, 63, 0.5), rgba(38, 43, 63, 0.5)), url(../assets/images/case-studies/showpal/gallery-header.png);
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1765,58 +1766,58 @@ section.sub-section {
   -o-background-size: cover;
 }
 /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-section.sub-section::after {
+section.image-banner::after {
   clear: both;
   content: "";
   display: table;
 }
 @media screen and (max-width: 510px) {
   /* line 1166, ../sass/screen.scss */
-  section.sub-section {
+  section.image-banner {
     padding: 2em 0 0 0;
   }
 }
-/* line 1175, ../sass/screen.scss */
-section.sub-section.showpal {
+/* line 1177, ../sass/screen.scss */
+section.image-banner.showpal {
   background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 1180, ../sass/screen.scss */
-section.sub-section.qvc {
+/* line 1182, ../sass/screen.scss */
+section.image-banner.qvc {
   background: linear-gradient(rgba(235, 93, 98, 0.9), rgba(235, 93, 98, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 1185, ../sass/screen.scss */
-section.sub-section.tv3 {
+/* line 1187, ../sass/screen.scss */
+section.image-banner.tv3 {
   background: linear-gradient(rgba(86, 54, 137, 0.9), rgba(86, 54, 137, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 1190, ../sass/screen.scss */
-section.sub-section.aolrise {
+/* line 1192, ../sass/screen.scss */
+section.image-banner.aolrise {
   background: linear-gradient(rgba(148, 37, 128, 0.9), rgba(108, 57, 149, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
-/* line 1200, ../sass/screen.scss */
-section.sub-section h1 {
+/* line 1202, ../sass/screen.scss */
+section.image-banner h1 {
   color: #fff;
 }
-/* line 1203, ../sass/screen.scss */
-section.sub-section p {
+/* line 1205, ../sass/screen.scss */
+section.image-banner p {
   font-size: 1.125em;
   margin: 0 auto 6em auto;
   max-width: 50%;
   color: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 768px) {
-  /* line 1203, ../sass/screen.scss */
-  section.sub-section p {
+  /* line 1205, ../sass/screen.scss */
+  section.image-banner p {
     max-width: 75%;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 1203, ../sass/screen.scss */
-  section.sub-section p {
+  /* line 1205, ../sass/screen.scss */
+  section.image-banner p {
     max-width: 90%;
   }
 }
-/* line 1216, ../sass/screen.scss */
-section.sub-section img {
+/* line 1218, ../sass/screen.scss */
+section.image-banner img {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -1824,12 +1825,12 @@ section.sub-section img {
   margin-left: 17.05961%;
 }
 /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-section.sub-section img:last-child {
+section.image-banner img:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1216, ../sass/screen.scss */
-  section.sub-section img {
+  /* line 1218, ../sass/screen.scss */
+  section.image-banner img {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -1837,12 +1838,12 @@ section.sub-section img:last-child {
     margin-left: 8.5298%;
   }
   /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-  section.sub-section img:last-child {
+  section.image-banner img:last-child {
     margin-right: 0;
   }
 }
 
-/* line 1228, ../sass/screen.scss */
+/* line 1230, ../sass/screen.scss */
 section.method {
   padding: 4em 0;
   max-width: 100%;
@@ -1856,12 +1857,12 @@ section.method::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
-  /* line 1228, ../sass/screen.scss */
+  /* line 1230, ../sass/screen.scss */
   section.method {
     padding: 2em 0;
   }
 }
-/* line 1235, ../sass/screen.scss */
+/* line 1237, ../sass/screen.scss */
 section.method h1, section.method p {
   float: left;
   display: block;
@@ -1874,7 +1875,7 @@ section.method h1:last-child, section.method p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1235, ../sass/screen.scss */
+  /* line 1237, ../sass/screen.scss */
   section.method h1, section.method p {
     float: left;
     display: block;
@@ -1887,7 +1888,7 @@ section.method h1:last-child, section.method p:last-child {
     margin-right: 0;
   }
 }
-/* line 1244, ../sass/screen.scss */
+/* line 1246, ../sass/screen.scss */
 section.method ul {
   list-style-type: none;
   text-align: center;
@@ -1895,12 +1896,12 @@ section.method ul {
   margin-left: 17.05961%;
 }
 @media screen and (max-width: 768px) {
-  /* line 1244, ../sass/screen.scss */
+  /* line 1246, ../sass/screen.scss */
   section.method ul {
     margin-left: 8.5298%;
   }
 }
-/* line 1254, ../sass/screen.scss */
+/* line 1256, ../sass/screen.scss */
 section.method li {
   display: block;
   float: left;
@@ -1922,7 +1923,7 @@ section.method li:nth-child(5n+1) {
   clear: left;
 }
 @media screen and (max-width: 510px) {
-  /* line 1254, ../sass/screen.scss */
+  /* line 1256, ../sass/screen.scss */
   section.method li {
     float: left;
     display: block;
@@ -1943,33 +1944,33 @@ section.method li:nth-child(5n+1) {
     clear: left;
   }
 }
-/* line 1266, ../sass/screen.scss */
+/* line 1268, ../sass/screen.scss */
 section.method h3 {
   padding-top: 1em;
   font-weight: 600;
 }
-/* line 1271, ../sass/screen.scss */
+/* line 1273, ../sass/screen.scss */
 section.method i.icon {
   font-size: 2em;
 }
-/* line 1275, ../sass/screen.scss */
+/* line 1277, ../sass/screen.scss */
 section.method.showpal h1, section.method.showpal i {
   color: #3BB8D7;
 }
-/* line 1280, ../sass/screen.scss */
+/* line 1282, ../sass/screen.scss */
 section.method.qvc h1, section.method.qvc i {
   color: #EB5D62;
 }
-/* line 1285, ../sass/screen.scss */
+/* line 1287, ../sass/screen.scss */
 section.method.tv3 h1, section.method.tv3 i {
   color: #563689;
 }
-/* line 1290, ../sass/screen.scss */
+/* line 1292, ../sass/screen.scss */
 section.method.aolrise h1, section.method.aolrise i {
   color: #6C3995;
 }
 
-/* line 1298, ../sass/screen.scss */
+/* line 1300, ../sass/screen.scss */
 section.product-details {
   padding: 4em 0;
   max-width: 100%;
@@ -1983,12 +1984,12 @@ section.product-details::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
-  /* line 1298, ../sass/screen.scss */
+  /* line 1300, ../sass/screen.scss */
   section.product-details {
     padding: 2em 0;
   }
 }
-/* line 1305, ../sass/screen.scss */
+/* line 1307, ../sass/screen.scss */
 section.product-details h1, section.product-details p {
   float: left;
   display: block;
@@ -2001,7 +2002,7 @@ section.product-details h1:last-child, section.product-details p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1305, ../sass/screen.scss */
+  /* line 1307, ../sass/screen.scss */
   section.product-details h1, section.product-details p {
     float: left;
     display: block;
@@ -2014,12 +2015,12 @@ section.product-details h1:last-child, section.product-details p:last-child {
     margin-right: 0;
   }
 }
-/* line 1314, ../sass/screen.scss */
+/* line 1316, ../sass/screen.scss */
 section.product-details ul {
   list-style-type: none;
   padding-top: 4em;
 }
-/* line 1319, ../sass/screen.scss */
+/* line 1321, ../sass/screen.scss */
 section.product-details li {
   display: block;
   margin: 1em 0;
@@ -2041,7 +2042,7 @@ section.product-details li:nth-child(2n+1) {
   clear: left;
 }
 @media screen and (max-width: 510px) {
-  /* line 1319, ../sass/screen.scss */
+  /* line 1321, ../sass/screen.scss */
   section.product-details li {
     float: left;
     display: block;
@@ -2062,34 +2063,34 @@ section.product-details li:nth-child(2n+1) {
     clear: left;
   }
 }
-/* line 1331, ../sass/screen.scss */
+/* line 1333, ../sass/screen.scss */
 section.product-details img {
   max-width: 100%;
 }
-/* line 1334, ../sass/screen.scss */
+/* line 1336, ../sass/screen.scss */
 section.product-details img:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-/* line 1339, ../sass/screen.scss */
+/* line 1341, ../sass/screen.scss */
 section.product-details.showpal h1 {
   color: #3BB8D7;
 }
-/* line 1343, ../sass/screen.scss */
+/* line 1345, ../sass/screen.scss */
 section.product-details.qvc h1 {
   color: #EB5D62;
 }
-/* line 1347, ../sass/screen.scss */
+/* line 1349, ../sass/screen.scss */
 section.product-details.tv3 h1 {
   color: #563689;
 }
-/* line 1351, ../sass/screen.scss */
+/* line 1353, ../sass/screen.scss */
 section.product-details.aolrise h1 {
   color: #6C3995;
 }
 
 /* Segmented Control */
-/* line 1361, ../sass/screen.scss */
+/* line 1363, ../sass/screen.scss */
 .segmented-control {
   display: flex !important;
   flex-flow: row wrap;
@@ -2097,7 +2098,7 @@ section.product-details.aolrise h1 {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 1361, ../sass/screen.scss */
+  /* line 1363, ../sass/screen.scss */
   .segmented-control {
     float: none !important;
     margin: 2em auto 2em auto !important;
@@ -2105,13 +2106,13 @@ section.product-details.aolrise h1 {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 1361, ../sass/screen.scss */
+  /* line 1363, ../sass/screen.scss */
   .segmented-control {
     width: 75% !important;
   }
 }
 
-/* line 1375, ../sass/screen.scss */
+/* line 1377, ../sass/screen.scss */
 .segmented-control label {
   display: block;
   position: relative;
@@ -2131,25 +2132,25 @@ section.product-details.aolrise h1 {
   -webkit-user-select: none;
 }
 
-/* line 1393, ../sass/screen.scss */
+/* line 1395, ../sass/screen.scss */
 .segmented-control label.checked {
   background: #f3b320;
   color: #fff;
 }
 
-/* line 1397, ../sass/screen.scss */
+/* line 1399, ../sass/screen.scss */
 .segmented-control label:first-child {
   border-radius: 2em 0 0 2em;
   border-right: 0;
 }
 
-/* line 1401, ../sass/screen.scss */
+/* line 1403, ../sass/screen.scss */
 .segmented-control label:last-child {
   border-radius: 0 2em 2em 0;
   border-right: 1px solid;
 }
 
-/* line 1405, ../sass/screen.scss */
+/* line 1407, ../sass/screen.scss */
 .segmented-control input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;

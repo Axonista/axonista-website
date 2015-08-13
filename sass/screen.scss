@@ -1163,10 +1163,12 @@ section.objectives {
 }
 
 // Sub Section
-section.sub-section {
+section.image-banner {
     background: $darknavy;
     padding-top: 6em;
     text-align: center;
+    background: linear-gradient(rgba($darknavy, 0.5), rgba($darknavy, 0.5)),
+        url(../assets/images/case-studies/showpal/gallery-header.png);
     @include outer-container;
     @include media($mobile) {
         padding: 2em 0 0 0;
