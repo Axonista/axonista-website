@@ -88,11 +88,6 @@ nav {
 	transition-duration: 0.2s;
 	z-index: 2;
 
-	@include media ($mobile) {
-		background: $darknavy;
-		opacity: 0.8;
-	}
-
 	ul {
 		list-style: none;
         width: 100%;
@@ -232,6 +227,9 @@ div.hero {
     background: linear-gradient( rgba($darknavy, 0.5), rgba($darknavy, 0.5) );
 
 	@include span-columns(12);
+    @include media($mobile) {
+        padding-top: 33vh;
+    }
 
     h1, p {
         @include span-columns (6);
@@ -253,6 +251,11 @@ div.hero {
         span.highlight {
             color: $orange;
         }
+
+        @include media($mobile) {
+            font-size: 1.75em;
+            line-height: 1em;
+        }
 	}
 
 	p {
@@ -264,6 +267,13 @@ div.hero {
         @include media($tablet) {
             max-width: none;
             padding: 0 2em 8em 2em;
+        }
+        @include media($mobile) {
+            max-width: none;
+            padding: 1em 2em 8em 2em;
+            font-size: 1em;
+            @include span-columns (12);
+            @include shift (0);
         }
 	}
 
@@ -335,6 +345,10 @@ section.illustrations {
             @include span-columns (10);
             @include shift (1);
         }
+        @include media($tablet) {
+            @include span-columns (11);
+            @include shift (0.5);
+        }
     }
 
     h1 {
@@ -356,6 +370,7 @@ section.illustrations {
             font-size: 1.5em;
         }
         @include media($tablet) {
+            font-size: 1.25em;
             text-align: center;
         }
 	}
@@ -373,6 +388,11 @@ section.illustrations {
             margin-bottom: 2em;
             @include span-columns (8 of 10);
             @include shift (1);
+        }
+        @include media($mobile) {
+            font-size: 0.875em;
+            @include span-columns (9 of 10);
+            @include shift (0.5);
         }
 	}
 
@@ -1354,6 +1374,9 @@ section.product-details {
         margin: 2em auto 2em auto !important;
         width: 50% !important;
     }
+    @include media($mobile) {
+        width: 75% !important;
+    }
 }
 .segmented-control label {
     display: block;
@@ -1367,10 +1390,14 @@ section.product-details {
     color: $orange;
     font-weight: 600;
     margin: 0;
-    padding: .4em;
+    padding: 0.4em;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
+    @include media($mobile) {
+        font-size: 0.875em;
+        padding: 0.3em;
+    }
 }
 .segmented-control label.checked {
     background: $orange;
