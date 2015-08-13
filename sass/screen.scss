@@ -200,15 +200,31 @@ video#bgvid {
 
 div.hero {
   	//background: linear-gradient( rgba(128, 82, 46, 0.33), rgba(181, 152, 94, 0.33) ), url('../assets/images/placeholder.jpg');
-    background: linear-gradient( rgba($darknavy, 0.33), rgba($darknavy, 0.33) );
+    background: linear-gradient( rgba($darknavy, 0.5), rgba($darknavy, 0.5) );
     //background: linear-gradient(rgba(0,0,0, 0.33),rgba(0,0,0, 0.33));
     //background-size: cover;
     //background-position: 0 50%;
     //background: #f8f8f8;
     position: relative;
     z-index: 1;
+ 	@include outer-container (12);
 
- 		@include outer-container (12);
+    .hero-footer {
+        @include span-columns (6);
+        @include shift (1);
+        position: absolute;
+        bottom: 1.5em;
+        z-index: 1;
+
+        a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgba(255, 255, 255, 1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    }
 }
 
 #hero-content {
