@@ -772,10 +772,7 @@ ul.rig.columns-4 li {
 // --------------------------------------------------
 footer {
 	@include outer-container;
-    background-image: linear-gradient(
-    rgba(36, 42, 53, 0.90),
-    rgba(36, 42, 53, 0.90)
-    ), url('../assets/images/office2.png');
+    background-image: linear-gradient(rgba($darknavy, 0.9), rgba($darknavy, 0.9)), url('../assets/images/office2.png');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -837,23 +834,15 @@ footer {
 	i.icon.icon-twitter { color: $twitter; }
 
 	.legality {
-		margin: auto;
-		max-width: 940px;
 		text-align: center;
+        font-size: 0.875em;
+        color: rgba(255, 255, 255, 0.5);
 		clear: both;
-		font: 10pt verdana;
-		line-height: 2em;
-		padding: 8em 0 5em 0;
-		color: #6A7181;
-
-		hr {
-		  	border: none;
-		  	height: 1px;
-		  	background: #2F384D;
-		  	position: relative;
-  			bottom: 100px;
-  			max-width: 940px;
-		}
+		padding: 3em 0;
+        margin-top: 3em;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        @include span-columns (8);
+        @include shift(2);
 
 		  img {
 		  	height: 20px;
