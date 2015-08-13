@@ -139,8 +139,8 @@ nav {
 		font-size: 0.875em;
 		padding: 2em 1em;
         text-transform: uppercase;
-        font-family: "brandon-grotesque", "open-sans", "Avenir Next", "Helvetica Neue", sans-serif;
-        font-weight: 700;
+        font-family: "open-sans", "Avenir Next", "Helvetica Neue", sans-serif;
+        font-weight: 600;
 
     	li#home {
     		padding: 0.5em 1em 0em 1em;
@@ -176,11 +176,6 @@ nav {
             color: #000;
         }
     }
-
-	@include media ($desktop) {
-		background: $darknavy;
-		opacity: 0.97;
-	}
 }
 
 video#bgvid {
@@ -199,14 +194,9 @@ video#bgvid {
 }
 
 div.hero {
-  	//background: linear-gradient( rgba(128, 82, 46, 0.33), rgba(181, 152, 94, 0.33) ), url('../assets/images/placeholder.jpg');
-    background: linear-gradient( rgba($darknavy, 0.5), rgba($darknavy, 0.5) );
-    //background: linear-gradient(rgba(0,0,0, 0.33),rgba(0,0,0, 0.33));
-    //background-size: cover;
-    //background-position: 0 50%;
-    //background: #f8f8f8;
     position: relative;
     z-index: 1;
+    overflow: hidden;
  	@include outer-container (12);
 
     .hero-footer {
@@ -233,6 +223,7 @@ div.hero {
 	padding-top: 40vh;
 	color: $darknavy;
     height: 100vh;
+    background: linear-gradient( rgba($darknavy, 0.5), rgba($darknavy, 0.5) );
 
 	@include span-columns(12);
 
