@@ -213,7 +213,7 @@ div.hero {
         @include span-columns (6);
         @include shift (1);
         position: absolute;
-        bottom: 1.5em;
+        bottom: 2em;
         z-index: 1;
 
         a {
