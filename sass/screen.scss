@@ -70,6 +70,14 @@ p {
     @include media($mobile) {
         font-size: 1em;
     }
+
+    &.small {
+        font-size: 0.75em !important;
+    }
+}
+
+strong {
+    font-weight: 700;
 }
 
 span.highlight {
@@ -513,58 +521,51 @@ section.case-study {
 	img { height: 26px; }
 }
 
-.rerun {
-	header {
-		text-align: center;
-		color: $orange;
-		font-weight: 600;
-		font-size: 1.2em;
-		padding-top: 5em;
-		line-height: 3em;
-	}
+section.rerun {
+    padding-bottom: 5em;
 
-	#email {
-		margin: 0 auto;
+    img {
+        float: none !important;
+        margin: 0 auto 1em auto !important;
+        max-width: 150px;
+    }
+
+	p {
+        margin-bottom: 2em !important;
+
+        &.small {
+            margin-top: 1em;
+        }
+    }
+
+	input[type="email"] {
 		border: none;
-		background: $darknavy;
-		color: #A0A0A0;
+		background: $lightgrey;
+		color: $darkgrey;
 		border-radius: 4px;
 		padding: 1em 10em 1em 1em;
-		font-size: 0.8em;
-		font-weight: 300;
+		font-size: 1em;
+		font-weight: 400;
+        outline: none;
 	}
 
-	#submit {
+	input[type="submit"] {
 		font-weight: 400;
-		font-size: 0.8em;
+		font-size: 1em;
+        text-transform: uppercase;
 		position: relative;
-  		margin-left: -11px;
-  		border-radius:0px 3px 3px 0px;
-  		background-color: $orange;
-  		padding: 1em 1em 1em 1em;
+  		margin-left: -8px;
+  		border-radius: 0px 4px 4px 0px;
+  		background-color: $rerun;
+  		padding: 1em 2em;
  		border: none;
-  		color: white;
+  		color: #fff;
+        outline: none;
 
   		&:hover {
   			cursor: pointer;
+            background-color: darken($rerun, 5%);
   		}
-	}
-
-	.social-icons {
-		padding: 2em;
-
-		ul { text-decoration: none; }
-
-		li {
-			display: inline-block;
-			color: $purple;
-			padding: 0.8em;
-			border-radius: 50%;
-			background: white;
-			margin: 1em;
-		}
-
-		&:hover { cursor: pointer; }
 	}
 }
 
@@ -1143,8 +1144,9 @@ section.image-banner {
     }
 
     &.rerun {
-        background: url(../assets/images/rerun-bg.png);
-        background-size: 50%;
+        //background: url(../assets/images/rerun-bg.png);
+        background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(../assets/images/rerun-bg.png);
+        background-size: 75%;
     }
 
     &.showpal {
