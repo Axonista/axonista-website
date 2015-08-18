@@ -800,9 +800,9 @@ footer {
     }
 
 	.section {
-        @include span-columns (2.5 of 11);
+        @include span-columns (2 of 11);
         &.brand {
-            @include span-columns (5 of 11);
+            @include span-columns (6 of 11);
         }
         @include media($tablet) {
             @include span-columns (2.5 of 10);
