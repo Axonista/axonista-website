@@ -15,17 +15,20 @@ $('a.anchor-link').click(function(event) {
 // Nav Background on Scroll //
 var window_offset = $(window).scrollTop();
 var previous_scroll_position = 0;
+var $nav = $('nav');
 if(window_offset > 100) {
-    $('nav').addClass('solid');
+    $nav.addClass('solid');
 }
 $(document).scroll(function() {
     scroll_position = $(this).scrollTop();
     if(scroll_position > 200 && scroll_position < previous_scroll_position) {
-        $('nav').addClass('solid').show();
+        $nav.addClass('solid').show();
+        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo-text-gold.png');
     } else if(scroll_position < 200) {
-        $('nav').removeClass('solid').show();
+        $nav.removeClass('solid').show();
+        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo-text.png');
     } else {
-        $('nav').hide();
+        $nav.hide();
     }
     previous_scroll_position = scroll_position;
 });

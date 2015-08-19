@@ -176,13 +176,14 @@ nav {
         box-shadow: 0 0 2px 4px rgba(0,0,0,0.05);
 
         a {
-            color: $darkgrey;
+            color: $darknavy;
         }
         li {
             color: #666;
         }
         a:hover {
-            color: #000;
+            color: $darknavy;
+            border-bottom: 2px solid rgba($darknavy, 0.5);
         }
     }
 }
@@ -826,13 +827,13 @@ footer {
         	color: rgba(255, 255, 255, 0.9);
         	font-size: 0.875em;
             line-height: 2em;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #fff;
         }
     }
-
-	a {
-	  	color: $lightgrey;
-	  	text-decoration: none;
-	}
 
 	.icon {
 		font-size: 1.25em;
