@@ -583,11 +583,13 @@ section.rerun {
 
 section.contact {
     @include outer-container;
+    display: flex;
+    align-items: center;
 
     div.content {
         @include span-columns (5);
         @include shift(1);
-        padding-top: 4em;
+        padding: 4em 0;
 
         ul {
             list-style: none;
