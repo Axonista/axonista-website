@@ -350,6 +350,13 @@ section.illustrations {
 
     .illustration:nth-of-type(2n) {
         background: $lightgrey;
+
+        .content {
+            @include shift (0.5);
+        }
+        .illustration-image {
+            @include shift (1);
+        }
     }
 
     .content {
@@ -361,7 +368,8 @@ section.illustrations {
         }
     }
     .illustration-image {
-        @include span-columns (6.5);
+        @include span-columns (5.5);
+        @include shift (0.5);
         @include media($tablet) {
             @include span-columns (10);
             @include shift (1);
@@ -617,7 +625,6 @@ section.contact {
         a {
             color: $blue;
             text-decoration: none;
-            font-weight: 600;
         }
         a:hover {
             color: darken($blue, 5%);
@@ -734,7 +741,7 @@ footer {
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    padding-top: 5em;
+    padding: 4em 0 2em 0;
 
     .footer-content {
         @include span-columns (11);
@@ -801,8 +808,8 @@ footer {
         @include span-columns (10 of 11);
         font-size: 0.875em;
         color: rgba(255, 255, 255, 0.5);
-		padding: 1em 0 5em 0;
-        margin-top: 5em;
+		padding-top: 1em;
+        margin-top: 8em;
         border-top: 1px solid rgba(255, 255, 255, 0.25);
 
         span {
