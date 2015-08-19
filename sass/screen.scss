@@ -766,17 +766,23 @@ footer {
             color: rgba($lightgrey, 0.5);
             font-weight: 700;
         }
-
-        a {
-        	display: block;
-        	color: rgba(255, 255, 255, 0.9);
-        	font-size: 0.875em;
+        ul {
+            list-style: none;
+        }
+        li {
+            display: block;
+            color: rgba($lightgrey, 0.9);
+            font-size: 0.875em;
             line-height: 2em;
+        }
+        a {
+            color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
+            font-weight: 400;
         }
         a:hover {
-            text-decoration: underline;
             color: #fff;
+            border-bottom: 2px solid rgba($lightgrey, 0.5);
         }
     }
 
