@@ -84,7 +84,7 @@ html {
 html, body {
   background-color: #fff;
   font-family: 'open-sans', 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #262b3f;
+  color: #10152E;
   line-height: 1.5;
   height: 100%;
   float: left;
@@ -274,7 +274,7 @@ video#bgvid {
   z-index: 0;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: linear-gradient(rgba(38, 43, 63, 0.33), rgba(38, 43, 63, 0.33)), url("../assets/images/placeholder.jpg");
+  background: linear-gradient(rgba(16, 21, 46, 0.33), rgba(16, 21, 46, 0.33)), url("../assets/images/placeholder.jpg");
   background-size: cover;
 }
 
@@ -339,9 +339,9 @@ div.hero .hero-footer a:hover {
   position: relative;
   z-index: 1;
   padding-top: 40vh;
-  color: #262b3f;
+  color: #10152E;
   height: 100vh;
-  background: linear-gradient(rgba(38, 43, 63, 0.5), rgba(38, 43, 63, 0.5));
+  background: linear-gradient(rgba(16, 21, 46, 0.5), rgba(16, 21, 46, 0.5));
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -466,7 +466,7 @@ section.illustrations .tabs-nav li {
 /* line 311, ../sass/screen.scss */
 section.illustrations a {
   background: #f8f8f8;
-  color: #262b3f;
+  color: #10152E;
   display: block;
   font-weight: 400;
   padding: 2em;
@@ -570,7 +570,7 @@ section.illustrations .illustration-image:last-child {
 }
 /* line 362, ../sass/screen.scss */
 section.illustrations h1 {
-  background: #262b3f;
+  background: #10152E;
   padding: 0.5em 0;
   color: #fff;
   text-transform: uppercase;
@@ -581,7 +581,7 @@ section.illustrations h1 {
 section.illustrations h2 {
   font-size: 1.5em;
   line-height: 1.2em;
-  color: #262b3f;
+  color: #10152E;
   text-align: left;
   padding-bottom: 0.25em;
 }
@@ -993,7 +993,7 @@ ul.rig.columns-4 li {
 .map p {
   font-size: 0.8em;
   font-weight: 300;
-  color: #262b3f;
+  color: #10152E;
   line-height: 1.5em;
 }
 /* line 715, ../sass/screen.scss */
@@ -1108,7 +1108,7 @@ footer {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(#262b3f, rgba(38, 43, 63, 0.7)), url("../assets/images/office2.png");
+  background-image: linear-gradient(#10152e, rgba(16, 21, 46, 0.7)), url("../assets/images/office2.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1262,7 +1262,7 @@ footer .legality img {
 /* line 869, ../sass/screen.scss */
 header.case-study {
   height: 100vh;
-  background: #262b3f;
+  background: #10152E;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1740,10 +1740,10 @@ section.objectives.aolrise h1 {
 
 /* line 1137, ../sass/screen.scss */
 section.image-banner {
-  background: #262b3f;
+  background: #10152E;
   padding-top: 6em;
   text-align: center;
-  background: linear-gradient(rgba(38, 43, 63, 0.5), rgba(38, 43, 63, 0.5)), url(../assets/images/case-studies/showpal/gallery-header.png);
+  background: linear-gradient(rgba(16, 21, 46, 0.5), rgba(16, 21, 46, 0.5)), url(../assets/images/case-studies/showpal/gallery-header.png);
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
