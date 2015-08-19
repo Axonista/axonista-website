@@ -86,6 +86,7 @@ span.highlight {
 
 .icon {
     font-size: 1.25em;
+    color: $orange;
 }
 
 i.icon-facebook {
@@ -598,6 +599,9 @@ section.contact {
         li {
             display: block;
             line-height: 1.75em;
+        }
+        span {
+            vertical-align: text-bottom;
         }
         a {
             color: $blue;
