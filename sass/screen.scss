@@ -9,7 +9,7 @@
 $darknavy: #10152E; //rgba(38, 43, 63, 100)
 $mediumnavy: #545e75; //rgba(84, 94, 117, 100)
 $orange: #f3b320; //rgba(243, 179, 32, 100)
-$blue: #63adf2; //rgba(99, 173, 242, 100)
+$blue: #4D92E0; //rgba(99, 173, 242, 100)
 $lightgrey: #f8f8f8; //rgba(248, 248, 248, 100)
 
 $darkgrey: 		#333D3D;
@@ -82,6 +82,17 @@ strong {
 
 span.highlight {
     color: $orange;
+}
+
+.icon {
+    font-size: 1.25em;
+}
+
+i.icon-facebook {
+    color: $facebook;
+}
+i.icon-twitter {
+    color: $twitter;
 }
 
 section {
@@ -570,6 +581,38 @@ section.rerun {
 	}
 }
 
+section.contact {
+    @include outer-container;
+
+    div.content {
+        @include span-columns (5);
+        @include shift(1);
+        padding-top: 4em;
+
+        ul {
+            list-style: none;
+            margin-bottom: 2em;
+        }
+        li {
+            display: block;
+            line-height: 1.75em;
+        }
+        a {
+            color: $blue;
+            text-decoration: none;
+            font-weight: 600;
+            vertical-align: text-bottom;
+        }
+        a:hover {
+            color: darken($blue, 5%);
+            border-bottom: 2px solid rgba($blue, 0.5);
+        }
+    }
+    iframe {
+        @include span-columns (6);
+    }
+}
+
 .blog {
 	padding: 5em;
 
@@ -665,115 +708,12 @@ ul.rig.columns-4 li {
 }
 
 
-.map{
-	background-image: linear-gradient(
-      rgba(252, 252, 252, 0.5),
-      rgba(252, 252, 252, 0.5)
-    ),
-
-	url('../assets/images/map.png') !important;
-	background-size: cover;
-     -webkit-background-size: cover;
- 	 -moz-background-size: cover;
- 	 padding: 8.5em;
- 	 text-align: center;
-
- 	 #map-content {
- 	 	text-align: center;
- 	 	background: white;
- 	 	padding: 3em;
- 	 	border-radius: 4px;
- 	 	width: 20%;
- 	 	margin: 0 auto;
- 	 	display: inline-block;
- 	 	margin: 0 0 0 1em;
-
- 	 	-webkit-box-shadow: 0 8px 6px -6px rgb(181, 181, 181);
-     	-moz-box-shadow: 0 8px 6px -6px rgb(181, 181, 181);
-        box-shadow: 0 8px 6px -6px rgb(181, 181, 181);
- 	 }
-
- 	 header {
- 	 	font-size: 1.4em;
- 	 	color: $orange;
- 	 	font-weight: 600;
- 	 }
-
- 	 hr {
- 	 	height: 1px;
-		border: 0;
-		background-color: $lightgrey;
-		width: 20%;
- 	 }
-
- 	 p {
- 	 	font-size: 0.8em;
- 	 	font-weight: 300;
- 	 	color: $darknavy;
- 	 	line-height: 1.5em;
- 	 }
-
-	 span { font-style: italic; font-weight: 300; font-size: 0.8em; padding-top: 2em; }
-
-	 .container {
-  		position: relative;
-  		width: 100%;
-  		height: 100%;
-	}
-
-	.pin {
- 		background-color: $orange;
-  		width: $pin-size;
-		height: $pin-size;
-		position: absolute;
-		top: 50%;
-		left: 47%;
-		margin-top: -14px;
-		margin-left: $pin-size / 2;
-
-		@include border-radius(50%);
-	}
-
-	.animated:after {
-	  	$radial-size: $pin-size * 2;
-        box-sizing: border-box;
-		border: 1px solid $orange;
-		height: $radial-size;
-		width: $radial-size;
-		content: "";
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		margin-top: -$radial-size / 2;
-		margin-left: -$radial-size / 2;
-
-		@include animation(pulsate 1s ease-out infinite);
-		@include animation-delay(1.1s);
-		@include opacity(0);
-		@include border-radius(50%);
-	}
-
-		@include keyframes(pulsate) {
-	  		0% {
-	    @include transform(scale(0.1));
-	    @include opacity(0);
-	  	}
-	 		 50% {
-	    @include opacity(1);
-	  	}
-	  		100% {
-	    @include transform(scale(1.2));
-	    @include opacity(0);
-  		}
-	}
-}
-
-
 //
 // Footer
 // --------------------------------------------------
 footer {
 	@include outer-container;
+    clear: both;
     background-image: linear-gradient(rgba($darknavy, 1), rgba($darknavy, 0.7)), url('../assets/images/office2.png');
     background-size: cover;
     -webkit-background-size: cover;
@@ -834,14 +774,6 @@ footer {
             color: #fff;
         }
     }
-
-	.icon {
-		font-size: 1.25em;
-		border-radius: 3px;
-	}
-
-	i.icon.icon-facebook-with-circle { color: $facebook; }
-	i.icon.icon-twitter { color: $twitter; }
 
 	.legality {
         @include span-columns (10 of 11);
