@@ -24,6 +24,7 @@ $aolrise:       #6C3995;
 
 $pin-size: 		12px;
 
+$biggerdesktop: max-width 1150px;
 $desktop: max-width 1024px;
 $tablet: max-width 768px;
 $mobile: max-width 510px;
@@ -590,9 +591,23 @@ section.contact {
         @include span-columns (5);
         @include shift(1);
 
+        .addresses {
+            @include span-columns (5 of 5);
+        }
+        section {
+            @include span-columns (2.5 of 5);
+            background-color: #fff;
+        }
+        h3 {
+            color: $mediumnavy;
+        }
         ul {
             list-style: none;
             margin-bottom: 2em;
+
+            @include media($biggerdesktop) {
+                font-size: 0.875em;
+            }
         }
         li {
             display: block;
