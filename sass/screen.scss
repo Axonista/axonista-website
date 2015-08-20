@@ -12,6 +12,7 @@ $orange: #f3b320; //rgba(243, 179, 32, 100)
 $blue: #4D92E0; //rgba(99, 173, 242, 100)
 $lightgrey: #f8f8f8; //rgba(248, 248, 248, 100)
 
+$greynavy:      #151828;
 $darkgrey: 		#333D3D;
 $purple: 		#19254E;
 $rerun:         #3f51b5;
@@ -445,30 +446,41 @@ section.illustrations {
 section.case-study {
 	padding: 4em 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 
 	@include outer-container();
 
 	.info {
-	   	@include span-columns (4);
+	   	@include span-columns (3);
 	   	@include shift (1);
 	  }
 
     h1 {
         font-size: 2em;
+        color: #fff;
     }
-
-	img {
-	   	@include span-columns (6);
-        @include shift (1);
+    p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    img.logo {
+        max-height: 100px;
+        max-width: 200px;
+        margin-bottom: 1em;
+    }
+	img.featured {
+	   	@include span-columns (7.5);
+        @include shift (0.5);
         box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.125);
 	}
 
 	.case-button {
         display: inline-block;
-        border: 1px solid $orange;
+        border: 2px solid rgba(255, 255, 255, 0.5);
         background: none;
+        margin-top: 1em;
         padding: 0.5em 1.5em;
-        color: $orange;
+        color: rgba(255, 255, 255, 0.8);
         border-radius: 50px;
         text-decoration: none;
         text-transform: uppercase;
@@ -476,8 +488,7 @@ section.case-study {
 
         &:hover {
             cursor: pointer;
-            color: #fff;
-            background: $orange;
+            background: #fff;
         }
     }
 
@@ -514,32 +525,37 @@ section.case-study {
         }
     }
     &.qvc {
-        box-shadow: inset 10px 0px 0px 0px $qvc;
-
-        h1 {
+        background-color: $qvc;
+        .case-button:hover {
             color: $qvc;
-        }
-        .case-button {
-            border-color: $qvc;
-            color: $qvc;
-
-            &:hover {
-                color: #fff;
-                background: $qvc;
-            }
         }
     }
 }
 
-.logos {
+section.logos {
+    @include outer-container;
+    background-color: #151828;
+	padding: 4em;
+    text-align: center;
 
-	padding: 3em; text-align: center;
 
-	ul { text-decoration: none; }
-
-	li { display: inline-block; padding: 2em; }
-
-	img { height: 26px; }
+    h1 {
+        color: $orange;
+        font-weight: 700;
+    }
+	ul {
+        @include shift (1);
+        list-style: none;
+        padding-top: 2em;
+    }
+	li {
+        @include span-columns(2);
+        @include omega(5n);
+    }
+	img {
+        max-width: 90%;
+        max-height: 30px;
+    }
 }
 
 section.rerun {
@@ -594,6 +610,7 @@ section.contact {
     @include outer-container;
     display: flex;
     align-items: center;
+    background-color: #fff;
 
     div.content {
         @include span-columns (5);
