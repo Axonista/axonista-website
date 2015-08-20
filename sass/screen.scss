@@ -737,7 +737,7 @@ ul.rig.columns-4 li {
 footer {
 	@include outer-container;
     clear: both;
-    background-image: linear-gradient(rgba($darknavy, 1), rgba($darknavy, 0.7)), url('../assets/images/office2.png');
+    background-image: linear-gradient(rgba(#151828, 1), rgba(#151828, 0.7)), url('../assets/images/office2.png');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

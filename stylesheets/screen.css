@@ -1076,7 +1076,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   clear: both;
-  background-image: linear-gradient(#10152e, rgba(16, 21, 46, 0.7)), url("../assets/images/office2.png");
+  background-image: linear-gradient(#151828, rgba(21, 24, 40, 0.7)), url("../assets/images/office2.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
