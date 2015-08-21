@@ -1,3 +1,4 @@
+$(window).fadeThis({speed: 200, offset: -100, reverse: false});
 
 // Smooth Scroll to Section //
 $('a.anchor-link').click(function(event) {
