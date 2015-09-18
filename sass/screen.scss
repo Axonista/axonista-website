@@ -582,6 +582,8 @@ section.case-study {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
+        font-size: 0.875em;
+        letter-spacing: 1px;
 
         &:hover {
             cursor: pointer;
@@ -600,16 +602,12 @@ section.case-study {
         h1 {
             color: $showpal;
         }
-        p {
-            color: #fff;
-        }
         .case-button {
-            border-color: lighten ($showpal, 10%);
-            color: ligthen ($showpal, 10%);
+            border-color: $showpal;
 
             &:hover {
-                color: $showpal;
-                background: lighten ($showpal, 5%);
+                color: #fff;
+                background: $showpal;
             }
         }
     }
@@ -624,7 +622,6 @@ section.case-study {
             color: $tv3;
 
             &:hover {
-                color: #fff;
                 background: $tv3;
             }
         }
@@ -639,10 +636,8 @@ section.case-study {
         background-position-y: 25%;
         .case-button {
             border-color: $qvc;
-            color: $qvc;
 
             &:hover {
-                color: #fff;
                 background: $qvc;
             }
         }
