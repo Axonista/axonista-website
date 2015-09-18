@@ -666,11 +666,24 @@ section.logos {
         width: auto;
         margin: 0 5%;
         display: inline-block;
-        @include omega(5n);
     }
 	img {
         max-width: 100%;
         max-height: 30px;
+    }
+    &.platforms {
+        li {
+            @include omega(5n);
+        }
+    }
+    &.clients {
+        li {
+            @include omega(6n);
+        }
+        img {
+            max-width: 100%;
+            max-height: 50px;
+        }
     }
 }
 
