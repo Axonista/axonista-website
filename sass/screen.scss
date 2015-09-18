@@ -540,7 +540,7 @@ section.illustrations {
 
 
 section.case-study {
-	padding: 8em 0;
+	padding: 9em 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -558,10 +558,11 @@ section.case-study {
     }
     p {
         color: rgba(255, 255, 255, 0.9);
+        font-size: 1.125em;
     }
     img.logo {
-        max-height: 100px;
-        max-width: 200px;
+        max-height: 120px;
+        max-width: 240px;
         margin-bottom: 1em;
     }
 	img.featured {
@@ -589,7 +590,7 @@ section.case-study {
     }
 
     &.showpal {
-        background: linear-gradient(to right, #2B3540, rgba(59, 184, 215, 0.3)),
+        background: linear-gradient(to right, $greynavy, rgba(59, 184, 215, 0.2)),
         url(../assets/images/case-studies/showpal/showpal-featured.png);
         background-size: cover;
         -webkit-background-size: cover;
@@ -629,15 +630,21 @@ section.case-study {
         }
     }
     &.qvc {
-        background: linear-gradient(to right, #2B3540, rgba(235, 93, 98,0.3)),
+        background: linear-gradient(to right, $greynavy, rgba(235, 93, 98,0.2)),
         url(../assets/images/case-studies/qvc/qvc-featured.jpg);
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-position-y: 25%;
-        .case-button:hover {
+        .case-button {
+            border-color: $qvc;
             color: $qvc;
+
+            &:hover {
+                color: #fff;
+                background: $qvc;
+            }
         }
     }
 }
