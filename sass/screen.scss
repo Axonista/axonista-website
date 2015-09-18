@@ -252,7 +252,7 @@ div.hero {
 	padding-top: 40vh;
 	color: $darknavy;
     height: 100vh;
-    background: linear-gradient(rgba(23, 28, 33, 0.5), rgba(23, 28, 33, 0.5));
+    background: linear-gradient(to right, $greynavy, rgba($greynavy, 0.2));
 
 	@include span-columns(12);
     @include media($mobile) {
@@ -272,7 +272,7 @@ div.hero {
 
 	h1 {
 		font-size: 3em;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 1.5em;
         color: #fff;
 
@@ -285,7 +285,7 @@ div.hero {
 	p {
 		font-size: 1.25em;
 		max-width: 29em;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.8);
         padding-bottom: 8em;
         line-height: 1.4;
         @include media($tablet) {
