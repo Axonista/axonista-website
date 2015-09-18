@@ -589,7 +589,7 @@ section.case-study {
     }
 
     &.showpal {
-        background: linear-gradient(to right, #2B3540, rgba(23, 28, 33, 0.5)),
+        background: linear-gradient(to right, #2B3540, rgba(59, 184, 215, 0.3)),
         url(../assets/images/case-studies/showpal/showpal-featured.png);
         background-size: cover;
         -webkit-background-size: cover;
@@ -629,7 +629,7 @@ section.case-study {
         }
     }
     &.qvc {
-        background: linear-gradient(to right, #2B3540, rgba(23, 28, 33,0.5)),
+        background: linear-gradient(to right, #2B3540, rgba(235, 93, 98,0.3)),
         url(../assets/images/case-studies/qvc/qvc-featured.jpg);
         background-size: cover;
         -webkit-background-size: cover;
@@ -644,8 +644,13 @@ section.case-study {
 
 section.logos {
     @include outer-container;
+<<<<<<< Updated upstream
     background-color: #fff;
 	padding: 6em;
+=======
+    background-color: $lightgrey;
+	padding: 8em;
+>>>>>>> Stashed changes
     text-align: center;
 
 
