@@ -234,11 +234,11 @@ nav li {
   display: inline-block;
   margin-left: 1em;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875em;
-  padding: 2em 1em;
+  font-size: 1em;
+  padding: 2.3em 1em;
   text-transform: uppercase;
-  font-family: "open-sans", "Avenir Next", "Helvetica Neue", sans-serif;
-  font-weight: 600;
+  font-family: "brandon-grotesqued", "Avenir Next", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 /* line 168, ../sass/screen.scss */
 nav li li#home {
