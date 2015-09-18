@@ -504,7 +504,7 @@ section.illustrations {
         width: 22.5%; /* this value + 2.5 should = 25% */
     }
 }
- 
+
 @media (max-width: 480px) {
     ul.grid-nav li {
         display: block;
@@ -589,7 +589,7 @@ section.case-study {
     }
 
     &.showpal {
-        background: linear-gradient(to right, #2B3540, rgba(23, 28, 33, 0.5)), 
+        background: linear-gradient(to right, #2B3540, rgba(23, 28, 33, 0.5)),
         url(../assets/images/case-studies/showpal/showpal-featured.png);
         background-size: cover;
         -webkit-background-size: cover;
@@ -644,26 +644,30 @@ section.case-study {
 
 section.logos {
     @include outer-container;
-    background-color: #151828;
+    background-color: #fff;
 	padding: 8em;
     text-align: center;
 
 
     h1 {
         color: $orange;
-        font-weight: 700;
+        font-weight: 900;
     }
 	ul {
-        @include shift (1);
+        //@include shift (1);
+        width: auto;
+        margin: 0 auto;
         list-style: none;
         padding-top: 2em;
     }
 	li {
-        @include span-columns(2);
+        width: auto;
+        margin: 0 5%;
+        display: inline-block;
         @include omega(5n);
     }
 	img {
-        max-width: 90%;
+        max-width: 100%;
         max-height: 30px;
     }
 }
@@ -866,7 +870,7 @@ ul.rig.columns-4 li {
 footer {
 	@include outer-container;
     clear: both;
-    background-image: linear-gradient(rgba(#151828, 1), rgba(#151828, 0.7)), url('../assets/images/office2.png');
+    background-image: linear-gradient(rgba($greynavy, 1), rgba($greynavy, 0.7)), url('../assets/images/office2.png');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -971,13 +975,13 @@ header.case-study {
     }
 
     &.showpal {
-        background: linear-gradient(to right, rgba(#151828, 1), rgba(#151828, 0.4)), 
+        background: linear-gradient(to right, rgba($greynavy, 1), rgba($greynavy, 0.4)),
         url('/assets/images/case-studies/showpal/showpal-featured.png');
         height: 80vh;
     }
 
     &.qvc {
-        background: linear-gradient(to right, rgba(#151828, 1), rgba(#151828, 0.4)), 
+        background: linear-gradient(to right, rgba($greynavy, 1), rgba($greynavy, 0.4)),
         url('/assets/images/case-studies/qvc/qvc-featured.jpg');
         background-size: cover;
         -webkit-background-size: cover;
@@ -1261,7 +1265,7 @@ section.image-banner {
     }
 
     &.qvc {
-        background: linear-gradient(to right, rgba(#151828, 1), rgba(#151828, 0.4)), 
+        background: linear-gradient(to right, rgba($greynavy, 1), rgba($greynavy, 0.4)),
         url(../assets/images/case-studies/qvc/qvc-featured.jpg)
     }
 
