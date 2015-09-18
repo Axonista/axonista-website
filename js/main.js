@@ -24,10 +24,10 @@ $(document).scroll(function() {
     scroll_position = $(this).scrollTop();
     if(scroll_position > 200 && scroll_position < previous_scroll_position) {
         $nav.addClass('solid').show();
-        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo-text-gold.png');
+        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo.png');
     } else if(scroll_position < 200) {
         $nav.removeClass('solid').show();
-        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo-text.png');
+        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo.png');
     } else {
         $nav.hide();
     }

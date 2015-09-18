@@ -176,7 +176,7 @@ section:nth-of-type(2n) {
 
 /* line 111, ../sass/screen.scss */
 nav {
-  height: 80px;
+  height: 100px;
   position: fixed;
   width: 100%;
   transition-duration: 0.2s;
@@ -207,7 +207,7 @@ nav a.brand {
   display: flex;
   align-items: center;
   left: 8.5298%;
-  margin-top: 30px;
+  margin-top: 25px;
   text-decoration: none !important;
 }
 @media screen and (max-width: 768px) {
@@ -218,7 +218,7 @@ nav a.brand {
 }
 /* line 145, ../sass/screen.scss */
 nav a.brand img.logo {
-  max-width: 110px;
+  max-width: 240px;
 }
 /* line 148, ../sass/screen.scss */
 nav a.brand span.name {

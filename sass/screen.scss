@@ -109,7 +109,7 @@ section:nth-of-type(2n) {
 }
 
 nav {
-	height: 80px;
+	height: 100px;
 	position: fixed;
 	width: 100%;
 	transition-duration: 0.2s;
@@ -136,14 +136,14 @@ nav {
         display: flex;
         align-items: center;
         left: 8.5298%;
-        margin-top: 30px;
+        margin-top: 25px;
         text-decoration: none !important;
         @include media ($tablet) {
             left: 4.2649%;
         }
 
         img.logo {
-            max-width: 110px;
+            max-width: 240px;
         }
         span.name {
             margin-left: 10px;
