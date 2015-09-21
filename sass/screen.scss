@@ -621,9 +621,21 @@ section.contact {
         @include span-columns (5);
         @include shift(1);
         padding: 2em 0;
+        @include media($tablet) {
+            @include span-columns (10);
+        }
+        @include media($mobile) {
+            @include span-columns (10);
+        }
 
         .addresses {
             @include span-columns (5 of 5);
+            @include media($tablet) {
+                @include span-columns (6 of 10);
+            }
+            @include media($mobile) {
+                @include span-columns (10 of 10);
+            }
         }
         section {
             @include span-columns (2.5 of 5);
@@ -656,6 +668,12 @@ section.contact {
     }
     iframe {
         @include span-columns (6);
+        @include media($tablet) {
+            display: none;
+        }
+        @include media($mobile) {
+            display: none;
+        }
     }
 }
 
