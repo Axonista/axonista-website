@@ -3,12 +3,11 @@
 @import "compass/css3";
 @import "libraries/bourbon/bourbon.scss";
 @import "libraries/neat/neat.scss";
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
 
 // Main colour palette
 $darknavy: #10152E; //rgba(38, 43, 63, 100)
 $mediumnavy: #545e75; //rgba(84, 94, 117, 100)
-/*$orange: #f3b320; //rgba(243, 179, 32, 100)*/
 $orange: #F3A540; //rgba (34, 67, 100, 100)
 $blue: #4D92E0; //rgba(99, 173, 242, 100)
 $lightgrey: #f8f8f8; //rgba(248, 248, 248, 100)
@@ -523,20 +522,22 @@ section.illustrations {
 }
 
 .segmented-control {
-        margin-top: 1.3em;
-        padding-bottom: 3.2em;
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-    }
+    margin-top: 1.3em;
+    padding-bottom: 3.2em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    .tab-active a {
-      color: $orange;
-      cursor: pointer;
-      font-weight: 700;
-    }
+.tab-active a {
+  color: $orange;
+  cursor: pointer;
+  font-weight: 700;
+}
 
-    li.tab-active { border-bottom: 1px solid $orange; }
+li.tab-active {
+    border-bottom: 1px solid $orange;
+}
 
 
 section.case-study {
@@ -544,8 +545,8 @@ section.case-study {
     overflow: hidden;
     display: flex;
     align-items: center;
-
 	@include outer-container();
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.33);
 
 	.info {
 	   	@include span-columns (3);
