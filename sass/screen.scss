@@ -688,14 +688,13 @@ footer {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     padding: 6em 0 2em 0;
+    @include media($tablet) {
+        background-position-x: 50%;
+    }
 
     .footer-content {
         @include span-columns (11);
         @include shift(1);
-        @include media($tablet) {
-            @include span-columns (10);
-            @include shift(1);
-        }
     }
 
     p {
@@ -713,16 +712,20 @@ footer {
         @include span-columns (2 of 11);
         &.brand {
             @include span-columns (6 of 11);
+            @include media($desktop) {
+                @include span-columns (5 of 11);
+            }
+            @include media($tablet) {
+                margin-top: 0;
+                @include span-columns (11 of 11);
+            }
+        }
+        @include media($desktop) {
+            @include span-columns (2.5 of 11);
         }
         @include media($tablet) {
-            @include span-columns (2.5 of 10);
-        }
-        @include media ($mobile) {
-            display: block;
-            clear: both;
-            left: 8em;
-            position: relative;
-            text-align: center;
+            margin-top: 2em;
+            @include span-columns (5 of 11);
         }
 
         h3 {
