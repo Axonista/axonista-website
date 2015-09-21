@@ -358,7 +358,7 @@ div.hero .hero-footer a:hover {
   padding-top: 40vh;
   color: #10152E;
   height: 100vh;
-  background: linear-gradient(to right, #151828, rgba(21, 24, 40, 0.2));
+  background: linear-gradient(to right, rgba(21, 24, 40, 0.9), rgba(21, 24, 40, 0.2));
   float: left;
   display: block;
   margin-right: 2.35765%;

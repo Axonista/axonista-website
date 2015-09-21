@@ -251,7 +251,7 @@ div.hero {
 	padding-top: 40vh;
 	color: $darknavy;
     height: 100vh;
-    background: linear-gradient(to right, $greynavy, rgba($greynavy, 0.2));
+    background: linear-gradient(to right, rgba($greynavy, 0.9), rgba($greynavy, 0.2));
 
 	@include span-columns(12);
     @include media($mobile) {
