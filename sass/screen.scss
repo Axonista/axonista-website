@@ -308,147 +308,12 @@ div.hero {
     }
 }
 
-/*section.illustrations {
-    @include outer-container;
-
-	.tabs-nav li {
-  		float: left;
-  		width:25%;
-  		text-transform: uppercase;
-  		font-size: 0.9em;
-
-  		@include media ($desktop) {
-  			visibility: hidden;
-  		}
-  	}
-
-	a {
-	  //background: linear-gradient( rgba(38, 43, 63, 0.9), rgba(38, 43, 63, 0.9) );
-      background: #f8f8f8;
-	  color: $darknavy;
-	  display: block;
-	  font-weight: 400;
-	  padding: 2em;
-	  text-align: center;
-	  text-decoration: none;
-	}
-
-	a:hover {
-	  color: $orange;
-	}
-
-    .illustration {
-        @include span-columns (12);
-        display: flex;
-        align-items: center;
-        padding: 6em 0;
-        background: #fff;
-        @include media($tablet) {
-            display: block;
-            padding: 4.5em 0;
-        }
-    }
-
-    .illustration:nth-of-type(2n) {
-        background: $lightgrey;
-
-        .content {
-            @include shift (0.5);
-        }
-        .illustration-image {
-            @include shift (1);
-        }
-    }
-
-    .content {
-        @include span-columns (4);
-        @include shift (1);
-        @include media($tablet) {
-            @include span-columns (10);
-            @include shift (1);
-        }
-    }
-    .illustration-image {
-        @include span-columns (5.5);
-        @include shift (0.5);
-        @include media($tablet) {
-            @include span-columns (10);
-            @include shift (1);
-        }
-        @include media($tablet) {
-            @include span-columns (11);
-            @include shift (0.5);
-        }
-    }
-
-    h1 {
-        background: $darknavy;
-        padding: 0.5em 0;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 400;
-        text-align: center;
-    }
-
-	h2 {
-		font-size: 1.5em;
-        line-height: 1.2em;
-		color: $darknavy;
-		text-align: left;
-        padding-bottom: 0.25em;
-        @include media($tablet) {
-            font-size: 1.25em;
-            text-align: center;
-        }
-	}
-
-	p {
-        font-size: 1em;
-        color: $mediumnavy;
-        max-width: 25em;
-        @include media($tablet) {
-            text-align: center;
-            max-width: none;
-            margin-bottom: 2em;
-            @include span-columns (8 of 10);
-            @include shift (1);
-        }
-        @include media($mobile) {
-            font-size: 0.875em;
-            @include span-columns (9 of 10);
-            @include shift (0.5);
-        }
-	}
-
-    .segmented-control {
-        margin-top: 1em;
-        @include span-columns (3 of 4);
-        padding-bottom: 4em;
-    }
-
-	.tab-active a {
-	  color: $orange;
-	  cursor: pointer;
-      font-weight: 700;
-	}
-
-	li.tab-active { border-bottom: 1px solid $orange; }
-
-	img {
-        float: right;
-        max-width: 100%;
-	}
-    img.after {
-        display: none;
-    }
-
-}*/
-
+/*
 section.illustrations {
     ul.rig {
         list-style: none;
         font-size: 0px;
-        margin-left: -2.5%; /* should match li left margin */
+        margin-left: -2.5%;
 
     }
     ul.rig li {
@@ -490,17 +355,14 @@ section.illustrations {
     ul.rig li:last-child {
         background: #f8f8f8;
     }
-    /* class for 2 columns */
     ul.rig.columns-2 li {
-        width: 50%; /* this value + 2.5 should = 50% */
+        width: 50%;
     }
-    /* class for 3 columns */
     ul.rig.columns-3 li {
-        width: 30.83%; /* this value + 2.5 should = 33% */
+        width: 30.83%;
     }
-    /* class for 4 columns */
     ul.rig.columns-4 li {
-        width: 22.5%; /* this value + 2.5 should = 25% */
+        width: 22.5%;
     }
 }
 
@@ -516,29 +378,11 @@ section.illustrations {
         margin-left: 0;
     }
     ul.rig li {
-        width: 100% !important; /* over-ride all li styles */
+        width: 100% !important;
         margin: 0 0 20px;
     }
 }
-
-.segmented-control {
-    margin-top: 1.3em;
-    padding-bottom: 3.2em;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.tab-active a {
-  color: $orange;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-li.tab-active {
-    border-bottom: 1px solid $orange;
-}
-
+*/
 
 section.case-study {
 	padding: 9em 0;
@@ -546,7 +390,7 @@ section.case-study {
     display: flex;
     align-items: center;
 	@include outer-container();
-    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.33);
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.2);
 
 	.info {
 	   	@include span-columns (3);
@@ -559,18 +403,13 @@ section.case-study {
     }
     p {
         color: rgba(255, 255, 255, 0.9);
-        font-size: 1.125em;
+        font-size: 1em;
     }
     img.logo {
-        max-height: 120px;
+        max-height: 100px;
         max-width: 240px;
         margin-bottom: 1em;
     }
-	img.featured {
-	   	@include span-columns (7.5);
-        @include shift (0.5);
-        box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
-	}
 
 	.case-button {
         display: inline-block;
@@ -592,6 +431,22 @@ section.case-study {
         }
     }
 
+    &.qvc {
+        background: linear-gradient(to right, $greynavy, rgba(235, 93, 98,0.2)),
+        url(../assets/images/case-studies/qvc/qvc-featured.jpg);
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position-y: 25%;
+        .case-button {
+            border-color: $qvc;
+
+            &:hover {
+                background: $qvc;
+            }
+        }
+    }
     &.showpal {
         background: linear-gradient(to right, $greynavy, rgba(59, 184, 215, 0.2)),
         url(../assets/images/case-studies/showpal/showpal-featured.png);
@@ -612,65 +467,59 @@ section.case-study {
             }
         }
     }
-    &.tv3 {
-        box-shadow: inset 10px 0px 0px 0px $tv3;
-
-        h1 {
-            color: $tv3;
-        }
-        .case-button {
-            border-color: $tv3;
-            color: $tv3;
-
-            &:hover {
-                background: $tv3;
-            }
-        }
-    }
-    &.qvc {
-        background: linear-gradient(to right, $greynavy, rgba(235, 93, 98,0.2)),
-        url(../assets/images/case-studies/qvc/qvc-featured.jpg);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-position-y: 25%;
-        .case-button {
-            border-color: $qvc;
-
-            &:hover {
-                background: $qvc;
-            }
-        }
-    }
 }
 
 section.logos {
     @include outer-container;
     background-color: $lightgrey;
-	padding: 5em;
+	padding: 5em 0;
     text-align: center;
-
+    @include media($tablet) {
+        padding: 5em 0 2em 0;
+    }
 
     h1 {
         color: $orange;
         font-weight: 900;
     }
-	ul {
-        //@include shift (1);
-        width: auto;
-        margin: 0 auto;
-        list-style: none;
-        padding-top: 2em;
-    }
-	li {
-        width: auto;
-        margin: 0 5%;
-        display: inline-block;
-    }
-	img {
+    img {
         max-width: 100%;
         max-height: 30px;
+    }
+	ul {
+        @include shift (1);
+        @include span-columns (10);
+        list-style: none;
+        padding-top: 2em;
+        @include media($desktop) {
+            @include shift (0);
+            @include span-columns (12);
+        }
+        @include media($tablet) {
+            @include shift (1.5);
+            @include span-columns (9);
+        }
+        @include media($mobile) {
+            @include shift (1);
+            @include span-columns (10);
+        }
+    }
+	li {
+        @include span-columns (2 of 10);
+        @include media($desktop) {
+            @include span-columns (2.4 of 12);
+        }
+        @include media($tablet) {
+            @include span-columns (3 of 9);
+            @include omega(3n);
+            margin-bottom: 3em;
+        }
+        @include media($mobile) {
+            @include span-columns (5 of 10);
+            @include omega(2n);
+            clear: none !important;
+            margin-bottom: 3em;
+        }
     }
     &.platforms {
         li {
@@ -680,6 +529,15 @@ section.logos {
     &.clients {
         li {
             @include omega(6n);
+            @include span-columns (1.6 of 10);
+            @include media($desktop) {
+                @include span-columns (2 of 12);
+            }
+            @include media($tablet) {
+                @include span-columns (3 of 9);
+                @include omega(3n);
+                margin-bottom: 3em;
+            }
         }
         img {
             max-width: 100%;
@@ -785,101 +643,6 @@ section.contact {
         @include span-columns (6);
     }
 }
-
-.blog {
-	padding: 5em;
-
-	header {
-		font-size: 1.4em;
-		color: $orange;
-		font-weight: 300;
-		text-align: center;
-		padding-bottom: 3em;
-	}
-
-	ul.rig {
-	list-style: none;
-	font-size: 0px;
-	text-align: left;
-	width: 90%;
-	margin: 0 auto;
-
-	li {
-		display: inline-block;
-		padding: 0 0 1.8em 0;
-		margin: 0 0 1.5% 2.5%;
-		background: #fff;
-		font-size: 16px;
-		font-size: 1rem;
-		vertical-align: top;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-	}
-
-	img {
-		max-width: 100%;
-		height: auto;
-		margin: 0 0 10px;
-  	}
-
-  	hr {
-  		border: none;
-  		background: $orange;
-  		height: 1px;
-  		width: 15%;
-  		position: relative;
-  		top: 8px;
-  		right: 105px;
-  	}
-
-  	h3 {
-		margin: 10px 0px 20px;
-		font-size: 0.9em;
-		position: relative;
-		top: 8px;
-		font-weight: 600;
-	}
-
-	p {
-		font-size: .7em;
-		line-height: 2em;
-		color: #999;
-		position: relative;
-		top: 8px;
-				overflow: hidden;
-				white-space: pre-line;
-	}
-
-		a { color: inherit; text-decoration: none;}
-	}
-
-	button.read-more {
-		border: 1px solid $orange;
-		border-radius: 50px;
-		background: none;
-		padding: 1em 2em 1em 2em;
-		color: $orange;
-		position: relative;
-		top: 2em;
-		font-size: 0.7em;
-	}
-}
-
-ul.rig.columns-4 li {
-	width: 21.5%;
-
-	@include media ($desktop) {
-		width: 30.8%;
-	}
-	@include media ($tablet) {
-		width: 47.5%;
-	}
-	@include media ($mobile) {
-		width: 100%;
-	}
-}
-
 
 //
 // Footer
@@ -1511,4 +1274,14 @@ section.product-details {
     -webkit-appearance: none;
     margin: 0;
     position: absolute;
+}
+
+.tab-active a {
+  color: $orange;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+li.tab-active {
+    border-bottom: 1px solid $orange;
 }
