@@ -395,7 +395,16 @@ section.case-study {
 	.info {
 	   	@include span-columns (3);
 	   	@include shift (1);
-	  }
+        @include media($desktop) {
+            @include span-columns (4);
+        }
+        @include media($tablet) {
+            @include span-columns (6);
+        }
+        @include media($mobile) {
+            @include span-columns (8);
+        }
+	}
 
     h1 {
         font-size: 2em;
@@ -466,6 +475,12 @@ section.case-study {
                 background: $showpal;
             }
         }
+    }
+    @include media($tablet) {
+        background-position-x: 50% !important;
+    }
+    @include media($mobile) {
+        background-position-x: 50% !important;
     }
 }
 
