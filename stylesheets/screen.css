@@ -727,7 +727,7 @@ section.logos {
   margin-right: auto;
   background-color: #f8f8f8;
   background: linear-gradient(#ffffff, #eeeeee);
-  padding: 50px 0;
+  padding: 50px 0 60px 0;
   text-align: center;
 }
 /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */

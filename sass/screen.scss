@@ -520,7 +520,7 @@ section.logos {
     @include outer-container;
     background-color: $lightgrey;
     background: linear-gradient(#fff, #eee);
-	padding: 50px 0;
+	padding: 50px 0 60px 0;
     text-align: center;
     @include media($tablet) {
         padding: 5em 0 2em 0;
