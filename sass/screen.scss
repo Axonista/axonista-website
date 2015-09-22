@@ -462,7 +462,7 @@ section.case-study {
     &.showpal {
         //background: linear-gradient(to right, $greynavy, rgba(59, 184, 215, 0.2)),
         //url(../assets/images/case-studies/showpal/showpal-featured.png);
-        background: radial-gradient(circle farthest-corner at right bottom, rgba($showpal, 0.25) 0%, rgba($showpal, 0.3) 20%, rgba($showpal, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/showpal/showpal-featured.png);
+        background: radial-gradient(circle farthest-corner at right bottom, rgba($showpal, 0.25) 0%, rgba($showpal, 0.3) 20%, rgba($showpal, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/showpal/showpal-featured.jpg);
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -690,7 +690,7 @@ section.contact {
 footer {
 	@include outer-container;
     clear: both;
-    background-image: linear-gradient(rgba($greynavy, 1), rgba($greynavy, 0.7)), url('../assets/images/office2.png');
+    background-image: linear-gradient(rgba($greynavy, 1), rgba($greynavy, 0.7)), url('../assets/images/office.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
