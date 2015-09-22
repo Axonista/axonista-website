@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
-/* line 5, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Users/iangoode/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -176,18 +176,44 @@ section:nth-of-type(2n) {
 
 /* line 110, ../sass/screen.scss */
 nav {
-  height: 100px;
+  height: 90px;
   position: fixed;
   width: 100%;
   transition-duration: 0.2s;
   z-index: 2;
 }
-/* line 117, ../sass/screen.scss */
+@media screen and (max-width: 510px) {
+  /* line 110, ../sass/screen.scss */
+  nav {
+    display: block;
+    background-color: #10152E;
+    height: 90px;
+  }
+}
+/* line 123, ../sass/screen.scss */
+nav:after {
+  content: "";
+  background: url(../assets/images/menu-2.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 30px;
+}
+/* line 134, ../sass/screen.scss */
 nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 122, ../sass/screen.scss */
+@media screen and (max-width: 510px) {
+  /* line 134, ../sass/screen.scss */
+  nav ul {
+    display: none;
+    height: auto;
+  }
+}
+/* line 144, ../sass/screen.scss */
 nav div#alignright {
   float: right;
   font-weight: 400;
@@ -195,12 +221,12 @@ nav div#alignright {
   right: 8.5298%;
 }
 @media screen and (max-width: 768px) {
-  /* line 122, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   nav div#alignright {
     right: 4.2649%;
   }
 }
-/* line 132, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 nav a.brand {
   float: left;
   position: fixed;
@@ -211,16 +237,22 @@ nav a.brand {
   text-decoration: none !important;
 }
 @media screen and (max-width: 768px) {
-  /* line 132, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   nav a.brand {
     left: 4.2649%;
   }
 }
-/* line 144, ../sass/screen.scss */
-nav a.brand img.logo {
-  max-width: 240px;
+@media screen and (max-width: 510px) {
+  /* line 154, ../sass/screen.scss */
+  nav a.brand {
+    width: 180px;
+  }
 }
-/* line 147, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
+nav a.brand img.logo {
+  max-width: 220px;
+}
+/* line 174, ../sass/screen.scss */
 nav a.brand span.name {
   margin-left: 10px;
   color: #fff;
@@ -229,7 +261,7 @@ nav a.brand span.name {
   font-family: "brandon-grotesque", "open-sans", "Avenir Next", "Helvetica Neue", sans-serif;
   font-weight: 700;
 }
-/* line 157, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 nav li {
   display: inline-block;
   margin-left: 1em;
@@ -240,46 +272,46 @@ nav li {
   font-family: "brandon-grotesque", "Avenir Next", "Helvetica Neue", sans-serif;
   font-weight: 700;
 }
-/* line 167, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 nav li li#home {
   padding: 0.5em 1em 0em 1em;
   font-size: 1.3em;
 }
-/* line 172, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 nav li a {
   text-decoration: none;
   color: inherit;
 }
-/* line 176, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 nav li a:hover {
   cursor: pointer;
   color: #fff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
-/* line 183, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 nav .active {
   color: #F3A540;
 }
-/* line 187, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 nav.solid {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-/* line 191, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 nav.solid a {
   color: #10152E;
 }
-/* line 194, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 nav.solid li {
   color: #666;
 }
-/* line 197, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 nav.solid a:hover {
   color: #10152E;
   border-bottom: 2px solid rgba(16, 21, 46, 0.5);
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 video#bgvid {
   position: absolute;
   top: 50%;
@@ -295,7 +327,7 @@ video#bgvid {
   background-size: cover;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 div.hero {
   position: relative;
   z-index: 1;
@@ -310,7 +342,7 @@ div.hero::after {
   content: "";
   display: table;
 }
-/* line 225, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 div.hero .hero-footer {
   float: left;
   display: block;
@@ -326,7 +358,7 @@ div.hero .hero-footer:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 225, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   div.hero .hero-footer {
     float: left;
     display: block;
@@ -340,18 +372,18 @@ div.hero .hero-footer:last-child {
     margin-right: 0;
   }
 }
-/* line 237, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 div.hero .hero-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
-/* line 241, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 div.hero .hero-footer a:hover {
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #hero-content {
   position: relative;
   z-index: 1;
@@ -370,12 +402,12 @@ div.hero .hero-footer a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 510px) {
-  /* line 248, ../sass/screen.scss */
+  /* line 275, ../sass/screen.scss */
   #hero-content {
     padding-top: 33vh;
   }
 }
-/* line 263, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #hero-content h1, #hero-content p {
   float: left;
   display: block;
@@ -388,7 +420,7 @@ div.hero .hero-footer a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 263, ../sass/screen.scss */
+  /* line 290, ../sass/screen.scss */
   #hero-content h1, #hero-content p {
     float: left;
     display: block;
@@ -402,7 +434,7 @@ div.hero .hero-footer a:hover {
     margin-right: 0;
   }
 }
-/* line 274, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #hero-content h1 {
   font-size: 2.5em;
   font-weight: 700;
@@ -410,13 +442,13 @@ div.hero .hero-footer a:hover {
   color: #fff;
 }
 @media screen and (max-width: 510px) {
-  /* line 274, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   #hero-content h1 {
     font-size: 1.75em;
     line-height: 1em;
   }
 }
-/* line 286, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #hero-content p {
   font-size: 1.25em;
   max-width: 29em;
@@ -425,14 +457,14 @@ div.hero .hero-footer a:hover {
   line-height: 1.4;
 }
 @media screen and (max-width: 768px) {
-  /* line 286, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   #hero-content p {
     max-width: none;
     padding: 0 2em 8em 2em;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 286, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   #hero-content p {
     max-width: none;
     padding: 1em 2em 8em 2em;
@@ -448,7 +480,7 @@ div.hero .hero-footer a:hover {
     margin-right: 0;
   }
 }
-/* line 305, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #hero-content img {
   max-width: 100%;
   position: absolute;
@@ -531,7 +563,7 @@ section.illustrations {
     }
 }
 */
-/* line 389, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 section.case-study {
   padding: 9em 0;
   overflow: hidden;
@@ -547,7 +579,7 @@ section.case-study::after {
   content: "";
   display: table;
 }
-/* line 396, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 section.case-study .info {
   float: left;
   display: block;
@@ -560,7 +592,7 @@ section.case-study .info:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 396, ../sass/screen.scss */
+  /* line 423, ../sass/screen.scss */
   section.case-study .info {
     float: left;
     display: block;
@@ -573,7 +605,7 @@ section.case-study .info:last-child {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 396, ../sass/screen.scss */
+  /* line 423, ../sass/screen.scss */
   section.case-study .info {
     float: left;
     display: block;
@@ -586,7 +618,7 @@ section.case-study .info:last-child {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 396, ../sass/screen.scss */
+  /* line 423, ../sass/screen.scss */
   section.case-study .info {
     float: left;
     display: block;
@@ -598,23 +630,23 @@ section.case-study .info:last-child {
     margin-right: 0;
   }
 }
-/* line 410, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 section.case-study h1 {
   font-size: 2em;
   color: #fff;
 }
-/* line 414, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 section.case-study p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1em;
 }
-/* line 418, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 section.case-study img.logo {
   max-height: 100px;
   max-width: 240px;
   margin-bottom: 1em;
 }
-/* line 424, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 section.case-study .case-button {
   display: inline-block;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -629,12 +661,12 @@ section.case-study .case-button {
   font-size: 0.875em;
   letter-spacing: 1px;
 }
-/* line 438, ../sass/screen.scss */
+/* line 465, ../sass/screen.scss */
 section.case-study .case-button:hover {
   cursor: pointer;
   background: #fff;
 }
-/* line 444, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 section.case-study.qvc {
   background: radial-gradient(circle farthest-corner at right bottom, rgba(235, 93, 98, 0.25) 0%, rgba(235, 93, 98, 0.3) 20%, rgba(235, 93, 98, 0.35) 45%, rgba(21, 24, 40, 0.7) 70%, #151828 100%), url(../assets/images/case-studies/qvc/qvc-featured.jpg);
   background-size: cover;
@@ -644,15 +676,15 @@ section.case-study.qvc {
   background-position-y: 25%;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25), inset 0 -1px rgba(255, 255, 255, 0.2);
 }
-/* line 454, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 section.case-study.qvc .case-button {
   border-color: #EB5D62;
 }
-/* line 457, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 section.case-study.qvc .case-button:hover {
   background: #EB5D62;
 }
-/* line 462, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 section.case-study.showpal {
   background: radial-gradient(circle farthest-corner at right bottom, rgba(59, 184, 215, 0.25) 0%, rgba(59, 184, 215, 0.3) 20%, rgba(59, 184, 215, 0.35) 45%, rgba(21, 24, 40, 0.7) 70%, #151828 100%), url(../assets/images/case-studies/showpal/showpal-featured.jpg);
   background-size: cover;
@@ -662,33 +694,33 @@ section.case-study.showpal {
   background-position-y: 25%;
   box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.25);
 }
-/* line 472, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 section.case-study.showpal h1 {
   color: #3BB8D7;
 }
-/* line 475, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 section.case-study.showpal .case-button {
   border-color: #3BB8D7;
 }
-/* line 478, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 section.case-study.showpal .case-button:hover {
   color: #fff;
   background: #3BB8D7;
 }
 @media screen and (max-width: 768px) {
-  /* line 389, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   section.case-study {
     background-position-x: 50% !important;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 389, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   section.case-study {
     background-position-x: 50% !important;
   }
 }
 
-/* line 492, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 section.logos {
   max-width: 100%;
   margin-left: auto;
@@ -705,22 +737,22 @@ section.logos::after {
   display: table;
 }
 @media screen and (max-width: 768px) {
-  /* line 492, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   section.logos {
     padding: 5em 0 2em 0;
   }
 }
-/* line 502, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 section.logos h1 {
   color: #F3A540;
   font-weight: 900;
 }
-/* line 506, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 section.logos img {
   max-width: 100%;
   max-height: 30px;
 }
-/* line 510, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 section.logos ul {
   margin-left: 8.5298%;
   float: left;
@@ -735,7 +767,7 @@ section.logos ul:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 510, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   section.logos ul {
     margin-left: 0%;
     float: left;
@@ -749,7 +781,7 @@ section.logos ul:last-child {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 510, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   section.logos ul {
     margin-left: 12.79471%;
     float: left;
@@ -763,7 +795,7 @@ section.logos ul:last-child {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 510, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   section.logos ul {
     margin-left: 8.5298%;
     float: left;
@@ -776,7 +808,7 @@ section.logos ul:last-child {
     margin-right: 0;
   }
 }
-/* line 528, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 section.logos li {
   float: left;
   display: block;
@@ -788,7 +820,7 @@ section.logos li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 528, ../sass/screen.scss */
+  /* line 555, ../sass/screen.scss */
   section.logos li {
     float: left;
     display: block;
@@ -801,7 +833,7 @@ section.logos li:last-child {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 528, ../sass/screen.scss */
+  /* line 555, ../sass/screen.scss */
   section.logos li {
     float: left;
     display: block;
@@ -823,7 +855,7 @@ section.logos li:last-child {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 528, ../sass/screen.scss */
+  /* line 555, ../sass/screen.scss */
   section.logos li {
     float: left;
     display: block;
@@ -853,7 +885,7 @@ section.logos.platforms li:nth-child(5n) {
 section.logos.platforms li:nth-child(5n+1) {
   clear: left;
 }
-/* line 551, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 section.logos.clients li {
   float: left;
   display: block;
@@ -873,7 +905,7 @@ section.logos.clients li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 551, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   section.logos.clients li {
     float: left;
     display: block;
@@ -886,7 +918,7 @@ section.logos.clients li:last-child {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 551, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   section.logos.clients li {
     float: left;
     display: block;
@@ -907,32 +939,32 @@ section.logos.clients li:last-child {
     clear: left;
   }
 }
-/* line 563, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 section.logos.clients img {
   max-width: 100%;
   max-height: 50px;
 }
 
-/* line 570, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 section.rerun {
   padding: 8em 0 6em 0 !important;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25), inset 0 -4px 8px rgba(0, 0, 0, 0.25);
 }
-/* line 574, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 section.rerun img {
   float: none !important;
   margin: 0 auto 1em auto !important;
   max-width: 150px;
 }
-/* line 580, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 section.rerun p {
   margin-bottom: 2em !important;
 }
-/* line 583, ../sass/screen.scss */
+/* line 610, ../sass/screen.scss */
 section.rerun p.small {
   margin-top: 1em;
 }
-/* line 588, ../sass/screen.scss */
+/* line 615, ../sass/screen.scss */
 section.rerun input[type="email"] {
   border: none;
   background: #f8f8f8;
@@ -943,7 +975,7 @@ section.rerun input[type="email"] {
   font-weight: 400;
   outline: none;
 }
-/* line 599, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 section.rerun input[type="submit"] {
   font-weight: 400;
   font-size: 1em;
@@ -957,13 +989,13 @@ section.rerun input[type="submit"] {
   color: #fff;
   outline: none;
 }
-/* line 612, ../sass/screen.scss */
+/* line 639, ../sass/screen.scss */
 section.rerun input[type="submit"]:hover {
   cursor: pointer;
   background-color: #3849a2;
 }
 
-/* line 621, ../sass/screen.scss */
+/* line 648, ../sass/screen.scss */
 section.contact {
   max-width: 100%;
   margin-left: auto;
@@ -978,7 +1010,7 @@ section.contact::after {
   content: "";
   display: table;
 }
-/* line 627, ../sass/screen.scss */
+/* line 654, ../sass/screen.scss */
 section.contact div.content {
   float: left;
   display: block;
@@ -992,7 +1024,7 @@ section.contact div.content:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 627, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   section.contact div.content {
     float: left;
     display: block;
@@ -1005,7 +1037,7 @@ section.contact div.content:last-child {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 627, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   section.contact div.content {
     float: left;
     display: block;
@@ -1017,7 +1049,7 @@ section.contact div.content:last-child {
     margin-right: 0;
   }
 }
-/* line 638, ../sass/screen.scss */
+/* line 665, ../sass/screen.scss */
 section.contact div.content .addresses {
   float: left;
   display: block;
@@ -1029,7 +1061,7 @@ section.contact div.content .addresses:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 638, ../sass/screen.scss */
+  /* line 665, ../sass/screen.scss */
   section.contact div.content .addresses {
     float: left;
     display: block;
@@ -1042,7 +1074,7 @@ section.contact div.content .addresses:last-child {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 638, ../sass/screen.scss */
+  /* line 665, ../sass/screen.scss */
   section.contact div.content .addresses {
     float: left;
     display: block;
@@ -1054,7 +1086,7 @@ section.contact div.content .addresses:last-child {
     margin-right: 0;
   }
 }
-/* line 647, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 section.contact div.content section {
   float: left;
   display: block;
@@ -1066,38 +1098,38 @@ section.contact div.content section {
 section.contact div.content section:last-child {
   margin-right: 0;
 }
-/* line 651, ../sass/screen.scss */
+/* line 678, ../sass/screen.scss */
 section.contact div.content h3 {
   color: #545e75;
   font-weight: 700;
 }
-/* line 655, ../sass/screen.scss */
+/* line 682, ../sass/screen.scss */
 section.contact div.content ul {
   list-style: none;
   margin-bottom: 2em;
 }
 @media screen and (max-width: 1150px) {
-  /* line 655, ../sass/screen.scss */
+  /* line 682, ../sass/screen.scss */
   section.contact div.content ul {
     font-size: 0.875em;
   }
 }
-/* line 663, ../sass/screen.scss */
+/* line 690, ../sass/screen.scss */
 section.contact div.content li {
   display: block;
   line-height: 1.75em;
 }
-/* line 667, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 section.contact div.content a {
   color: #4D92E0;
   text-decoration: none;
 }
-/* line 671, ../sass/screen.scss */
+/* line 698, ../sass/screen.scss */
 section.contact div.content a:hover {
   color: #3785dc;
   border-bottom: 2px solid rgba(77, 146, 224, 0.5);
 }
-/* line 676, ../sass/screen.scss */
+/* line 703, ../sass/screen.scss */
 section.contact iframe {
   float: left;
   display: block;
@@ -1109,19 +1141,19 @@ section.contact iframe:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 676, ../sass/screen.scss */
+  /* line 703, ../sass/screen.scss */
   section.contact iframe {
     display: none;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 676, ../sass/screen.scss */
+  /* line 703, ../sass/screen.scss */
   section.contact iframe {
     display: none;
   }
 }
 
-/* line 690, ../sass/screen.scss */
+/* line 717, ../sass/screen.scss */
 footer {
   max-width: 100%;
   margin-left: auto;
@@ -1141,12 +1173,12 @@ footer::after {
   display: table;
 }
 @media screen and (max-width: 768px) {
-  /* line 690, ../sass/screen.scss */
+  /* line 717, ../sass/screen.scss */
   footer {
     background-position-x: 50%;
   }
 }
-/* line 703, ../sass/screen.scss */
+/* line 730, ../sass/screen.scss */
 footer .footer-content {
   float: left;
   display: block;
@@ -1158,18 +1190,18 @@ footer .footer-content {
 footer .footer-content:last-child {
   margin-right: 0;
 }
-/* line 708, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 footer p {
   font-size: 0.875em;
   max-width: 29em;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 1em;
 }
-/* line 715, ../sass/screen.scss */
+/* line 742, ../sass/screen.scss */
 footer img.logo {
   max-width: 200px;
 }
-/* line 719, ../sass/screen.scss */
+/* line 746, ../sass/screen.scss */
 footer .section {
   float: left;
   display: block;
@@ -1180,7 +1212,7 @@ footer .section {
 footer .section:last-child {
   margin-right: 0;
 }
-/* line 721, ../sass/screen.scss */
+/* line 748, ../sass/screen.scss */
 footer .section.brand {
   float: left;
   display: block;
@@ -1192,7 +1224,7 @@ footer .section.brand:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 721, ../sass/screen.scss */
+  /* line 748, ../sass/screen.scss */
   footer .section.brand {
     margin-top: 0;
     float: left;
@@ -1206,7 +1238,7 @@ footer .section.brand:last-child {
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 719, ../sass/screen.scss */
+  /* line 746, ../sass/screen.scss */
   footer .section {
     float: left;
     display: block;
@@ -1219,7 +1251,7 @@ footer .section.brand:last-child {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 719, ../sass/screen.scss */
+  /* line 746, ../sass/screen.scss */
   footer .section {
     margin-top: 2em;
     float: left;
@@ -1232,35 +1264,35 @@ footer .section.brand:last-child {
     margin-right: 0;
   }
 }
-/* line 736, ../sass/screen.scss */
+/* line 763, ../sass/screen.scss */
 footer .section h3 {
   text-transform: uppercase;
   color: rgba(248, 248, 248, 0.5);
   font-weight: 700;
 }
-/* line 741, ../sass/screen.scss */
+/* line 768, ../sass/screen.scss */
 footer .section ul {
   list-style: none;
 }
-/* line 744, ../sass/screen.scss */
+/* line 771, ../sass/screen.scss */
 footer .section li {
   display: block;
   color: rgba(248, 248, 248, 0.9);
   font-size: 0.875em;
   line-height: 2em;
 }
-/* line 750, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 footer .section a {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-weight: 400;
 }
-/* line 755, ../sass/screen.scss */
+/* line 782, ../sass/screen.scss */
 footer .section a:hover {
   color: #fff;
   border-bottom: 2px solid rgba(248, 248, 248, 0.5);
 }
-/* line 761, ../sass/screen.scss */
+/* line 788, ../sass/screen.scss */
 footer .legality {
   float: left;
   display: block;
@@ -1276,17 +1308,17 @@ footer .legality {
 footer .legality:last-child {
   margin-right: 0;
 }
-/* line 769, ../sass/screen.scss */
+/* line 796, ../sass/screen.scss */
 footer .legality span {
   vertical-align: top;
   margin-left: 5px;
 }
-/* line 774, ../sass/screen.scss */
+/* line 801, ../sass/screen.scss */
 footer .legality img {
   height: 20px;
 }
 
-/* line 785, ../sass/screen.scss */
+/* line 812, ../sass/screen.scss */
 header.case-study {
   height: 100vh;
   background: #10152E;
@@ -1306,12 +1338,12 @@ header.case-study::after {
   display: table;
 }
 @media screen and (max-width: 768px) {
-  /* line 785, ../sass/screen.scss */
+  /* line 812, ../sass/screen.scss */
   header.case-study {
     height: auto;
   }
 }
-/* line 798, ../sass/screen.scss */
+/* line 825, ../sass/screen.scss */
 header.case-study.showpal {
   background: linear-gradient(to right, #151828, rgba(21, 24, 40, 0.5)), url("/assets/images/case-studies/showpal/showpal-featured.jpg");
   background-size: cover;
@@ -1321,7 +1353,11 @@ header.case-study.showpal {
   height: 80vh;
   box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< Updated upstream
 /* line 809, ../sass/screen.scss */
+=======
+/* line 831, ../sass/screen.scss */
+>>>>>>> Stashed changes
 header.case-study.qvc {
   background: linear-gradient(to right, #151828, rgba(21, 24, 40, 0.5)), url("/assets/images/case-studies/qvc/qvc-featured.jpg");
   background-size: cover;
@@ -1331,6 +1367,7 @@ header.case-study.qvc {
   height: 80vh;
   box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< Updated upstream
 /* line 820, ../sass/screen.scss */
 header.case-study.tv3 {
   background: linear-gradient(#563689, #4b2f77);
@@ -1344,12 +1381,31 @@ header.case-study.aolrise img.hero {
   margin-top: 6em !important;
 }
 /* line 832, ../sass/screen.scss */
+=======
+/* line 841, ../sass/screen.scss */
+header.case-study.tv3 {
+  background: linear-gradient(#563689, #4b2f77);
+}
+/* line 845, ../sass/screen.scss */
+header.case-study.aolrise {
+  background: linear-gradient(#942580, #6c3995);
+}
+/* line 848, ../sass/screen.scss */
+header.case-study.aolrise img.hero {
+  margin-top: 6em !important;
+}
+/* line 853, ../sass/screen.scss */
+>>>>>>> Stashed changes
 header.case-study #main-content {
   text-align: center;
   position: relative;
   top: 14em;
 }
+<<<<<<< Updated upstream
 /* line 837, ../sass/screen.scss */
+=======
+/* line 858, ../sass/screen.scss */
+>>>>>>> Stashed changes
 header.case-study #main-content h1 {
   font-size: 2em;
   font-weight: 700;
@@ -1357,12 +1413,20 @@ header.case-study #main-content h1 {
   color: #fff;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 837, ../sass/screen.scss */
+=======
+  /* line 858, ../sass/screen.scss */
+>>>>>>> Stashed changes
   header.case-study #main-content h1 {
     font-size: 1.5em;
   }
 }
+<<<<<<< Updated upstream
 /* line 847, ../sass/screen.scss */
+=======
+/* line 868, ../sass/screen.scss */
+>>>>>>> Stashed changes
 header.case-study #main-content p {
   margin: 0 auto;
   font-size: 1.25em;
@@ -1370,25 +1434,41 @@ header.case-study #main-content p {
   color: rgba(255, 255, 255, 0.9);
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 847, ../sass/screen.scss */
+=======
+  /* line 868, ../sass/screen.scss */
+>>>>>>> Stashed changes
   header.case-study #main-content p {
     max-width: 75%;
     font-size: 1.125em;
   }
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 847, ../sass/screen.scss */
+=======
+  /* line 868, ../sass/screen.scss */
+>>>>>>> Stashed changes
   header.case-study #main-content p {
     max-width: 90%;
     font-size: 1em;
   }
 }
+<<<<<<< Updated upstream
 /* line 863, ../sass/screen.scss */
+=======
+/* line 884, ../sass/screen.scss */
+>>>>>>> Stashed changes
 header.case-study img.logo {
   max-height: 100px;
   max-width: 200px;
 }
+<<<<<<< Updated upstream
 /* line 867, ../sass/screen.scss */
+=======
+/* line 888, ../sass/screen.scss */
+>>>>>>> Stashed changes
 header.case-study img.hero {
   margin-top: 12em;
   float: left;
@@ -1402,7 +1482,11 @@ header.case-study img.hero:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 867, ../sass/screen.scss */
+=======
+  /* line 888, ../sass/screen.scss */
+>>>>>>> Stashed changes
   header.case-study img.hero {
     float: left;
     display: block;
@@ -1416,7 +1500,11 @@ header.case-study img.hero:last-child {
   }
 }
 
+<<<<<<< Updated upstream
 /* line 880, ../sass/screen.scss */
+=======
+/* line 901, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.features {
   padding: 4em 0;
   max-width: 100%;
@@ -1430,12 +1518,20 @@ section.features::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 880, ../sass/screen.scss */
+=======
+  /* line 901, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.features {
     padding: 2em 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 887, ../sass/screen.scss */
+=======
+/* line 908, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.features ul {
   float: left;
   display: block;
@@ -1449,7 +1545,11 @@ section.features ul {
 section.features ul:last-child {
   margin-right: 0;
 }
+<<<<<<< Updated upstream
 /* line 894, ../sass/screen.scss */
+=======
+/* line 915, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.features li {
   display: block;
   float: left;
@@ -1471,7 +1571,11 @@ section.features li:nth-child(5n+1) {
   clear: left;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 894, ../sass/screen.scss */
+=======
+  /* line 915, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.features li {
     float: left;
     display: block;
@@ -1493,7 +1597,11 @@ section.features li:nth-child(5n+1) {
   }
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 894, ../sass/screen.scss */
+=======
+  /* line 915, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.features li {
     float: left;
     display: block;
@@ -1514,17 +1622,26 @@ section.features li:nth-child(5n+1) {
     clear: left;
   }
 }
+<<<<<<< Updated upstream
 /* line 911, ../sass/screen.scss */
+=======
+/* line 932, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.features h3 {
   padding-top: 1em;
   font-weight: 600;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 911, ../sass/screen.scss */
+=======
+  /* line 932, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.features h3 {
     padding-top: 0.5em;
   }
 }
+<<<<<<< Updated upstream
 /* line 919, ../sass/screen.scss */
 section.features i.icon {
   font-size: 2em;
@@ -1542,11 +1659,34 @@ section.features.tv3 i {
   color: #563689;
 }
 /* line 935, ../sass/screen.scss */
+=======
+/* line 940, ../sass/screen.scss */
+section.features i.icon {
+  font-size: 2em;
+}
+/* line 944, ../sass/screen.scss */
+section.features.showpal i {
+  color: #3BB8D7;
+}
+/* line 948, ../sass/screen.scss */
+section.features.qvc i {
+  color: #EB5D62;
+}
+/* line 952, ../sass/screen.scss */
+section.features.tv3 i {
+  color: #563689;
+}
+/* line 956, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.features.aolrise i {
   color: #6C3995;
 }
 
+<<<<<<< Updated upstream
 /* line 942, ../sass/screen.scss */
+=======
+/* line 963, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.objectives {
   padding-top: 4em;
   max-width: 100%;
@@ -1560,12 +1700,20 @@ section.objectives::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 942, ../sass/screen.scss */
+=======
+  /* line 963, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.objectives {
     padding: 2em 0 0 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 949, ../sass/screen.scss */
+=======
+/* line 970, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.objectives h1, section.objectives p, section.objectives img {
   float: left;
   display: block;
@@ -1578,7 +1726,11 @@ section.objectives h1:last-child, section.objectives p:last-child, section.objec
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 949, ../sass/screen.scss */
+=======
+  /* line 970, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.objectives h1, section.objectives p, section.objectives img {
     float: left;
     display: block;
@@ -1591,6 +1743,7 @@ section.objectives h1:last-child, section.objectives p:last-child, section.objec
     margin-right: 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 958, ../sass/screen.scss */
 section.objectives img {
   margin-top: 2em;
@@ -1612,11 +1765,38 @@ section.objectives.tv3 h1 {
   color: #563689;
 }
 /* line 978, ../sass/screen.scss */
+=======
+/* line 979, ../sass/screen.scss */
+section.objectives img {
+  margin-top: 2em;
+}
+/* line 983, ../sass/screen.scss */
+section.objectives p:last-child {
+  padding-bottom: 4em;
+}
+/* line 987, ../sass/screen.scss */
+section.objectives.showpal h1 {
+  color: #3BB8D7;
+}
+/* line 991, ../sass/screen.scss */
+section.objectives.qvc h1 {
+  color: #EB5D62;
+}
+/* line 995, ../sass/screen.scss */
+section.objectives.tv3 h1 {
+  color: #563689;
+}
+/* line 999, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.objectives.aolrise h1 {
   color: #6C3995;
 }
 
+<<<<<<< Updated upstream
 /* line 985, ../sass/screen.scss */
+=======
+/* line 1006, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results {
   padding: 4em 0;
   max-width: 100%;
@@ -1630,12 +1810,20 @@ section.objectives.aolrise h1 {
   display: table;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 985, ../sass/screen.scss */
+=======
+  /* line 1006, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .results {
     padding: 2em;
   }
 }
+<<<<<<< Updated upstream
 /* line 992, ../sass/screen.scss */
+=======
+/* line 1013, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results h1 {
   float: left;
   display: block;
@@ -1648,7 +1836,11 @@ section.objectives.aolrise h1 {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 992, ../sass/screen.scss */
+=======
+  /* line 1013, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .results h1 {
     float: left;
     display: block;
@@ -1661,7 +1853,11 @@ section.objectives.aolrise h1 {
     margin-right: 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1001, ../sass/screen.scss */
+=======
+/* line 1022, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results ul {
   list-style: none;
   padding-top: 2em;
@@ -1676,7 +1872,11 @@ section.objectives.aolrise h1 {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1001, ../sass/screen.scss */
+=======
+  /* line 1022, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .results ul {
     float: left;
     display: block;
@@ -1690,12 +1890,20 @@ section.objectives.aolrise h1 {
   }
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1001, ../sass/screen.scss */
+=======
+  /* line 1022, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .results ul {
     padding-top: 1em;
   }
 }
+<<<<<<< Updated upstream
 /* line 1014, ../sass/screen.scss */
+=======
+/* line 1035, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results li {
   display: block;
   margin-bottom: 2em;
@@ -1717,7 +1925,11 @@ section.objectives.aolrise h1 {
   clear: left;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1014, ../sass/screen.scss */
+=======
+  /* line 1035, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .results li {
     float: left;
     display: block;
@@ -1738,11 +1950,19 @@ section.objectives.aolrise h1 {
     clear: left;
   }
 }
+<<<<<<< Updated upstream
 /* line 1025, ../sass/screen.scss */
 .results li i.icon {
   font-size: 2em;
 }
 /* line 1029, ../sass/screen.scss */
+=======
+/* line 1046, ../sass/screen.scss */
+.results li i.icon {
+  font-size: 2em;
+}
+/* line 1050, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results li h3 {
   font-size: 1em;
   font-weight: 700;
@@ -1750,16 +1970,25 @@ section.objectives.aolrise h1 {
   margin-top: 1em;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1029, ../sass/screen.scss */
+=======
+  /* line 1050, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .results li h3 {
     padding-top: 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1039, ../sass/screen.scss */
+=======
+/* line 1060, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results li p {
   font-size: 1em;
   color: #666;
 }
+<<<<<<< Updated upstream
 /* line 1045, ../sass/screen.scss */
 .results.showpal h1, .results.showpal i {
   color: #3BB8D7;
@@ -1773,11 +2002,30 @@ section.objectives.aolrise h1 {
   color: #563689;
 }
 /* line 1060, ../sass/screen.scss */
+=======
+/* line 1066, ../sass/screen.scss */
+.results.showpal h1, .results.showpal i {
+  color: #3BB8D7;
+}
+/* line 1071, ../sass/screen.scss */
+.results.qvc h1, .results.qvc i {
+  color: #EB5D62;
+}
+/* line 1076, ../sass/screen.scss */
+.results.tv3 h1, .results.tv3 i {
+  color: #563689;
+}
+/* line 1081, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .results.aolrise h1, .results.aolrise i {
   color: #6C3995;
 }
 
+<<<<<<< Updated upstream
 /* line 1067, ../sass/screen.scss */
+=======
+/* line 1088, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.image-banner {
   background: #10152E;
   padding-top: 6em;
@@ -1798,20 +2046,33 @@ section.image-banner::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1067, ../sass/screen.scss */
+=======
+  /* line 1088, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.image-banner {
     padding: 2em 0 0 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1078, ../sass/screen.scss */
 section.image-banner.orange {
   background: linear-gradient(rgba(243, 165, 64, 0.75), rgba(243, 165, 64, 0.75)), url(../assets/images/case-studies/showpal/gallery-header.png);
 }
 /* line 1083, ../sass/screen.scss */
+=======
+/* line 1099, ../sass/screen.scss */
+section.image-banner.orange {
+  background: linear-gradient(rgba(243, 165, 64, 0.75), rgba(243, 165, 64, 0.75)), url(../assets/images/case-studies/showpal/gallery-header.png);
+}
+/* line 1104, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.image-banner.rerun {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/rerun-bg.png);
   background-size: 75%;
 }
+<<<<<<< Updated upstream
 /* line 1089, ../sass/screen.scss */
 section.image-banner.showpal {
   background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
@@ -1833,6 +2094,29 @@ section.image-banner h1 {
   color: #fff;
 }
 /* line 1117, ../sass/screen.scss */
+=======
+/* line 1110, ../sass/screen.scss */
+section.image-banner.showpal {
+  background: linear-gradient(rgba(59, 184, 215, 0.9), rgba(59, 184, 215, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
+}
+/* line 1115, ../sass/screen.scss */
+section.image-banner.qvc {
+  background: linear-gradient(to right, #151828, rgba(21, 24, 40, 0.4)), url(../assets/images/case-studies/qvc/qvc-featured.jpg);
+}
+/* line 1120, ../sass/screen.scss */
+section.image-banner.tv3 {
+  background: linear-gradient(rgba(86, 54, 137, 0.9), rgba(86, 54, 137, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
+}
+/* line 1125, ../sass/screen.scss */
+section.image-banner.aolrise {
+  background: linear-gradient(rgba(148, 37, 128, 0.9), rgba(108, 57, 149, 0.9)), url(../assets/images/case-studies/showpal/gallery-header.png);
+}
+/* line 1135, ../sass/screen.scss */
+section.image-banner h1 {
+  color: #fff;
+}
+/* line 1138, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.image-banner p {
   font-size: 1.125em;
   margin: 0 auto 6em auto;
@@ -1840,18 +2124,30 @@ section.image-banner p {
   color: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1117, ../sass/screen.scss */
+=======
+  /* line 1138, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.image-banner p {
     max-width: 75%;
   }
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1117, ../sass/screen.scss */
+=======
+  /* line 1138, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.image-banner p {
     max-width: 90%;
   }
 }
+<<<<<<< Updated upstream
 /* line 1130, ../sass/screen.scss */
+=======
+/* line 1151, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.image-banner img {
   float: left;
   display: block;
@@ -1864,7 +2160,11 @@ section.image-banner img:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1130, ../sass/screen.scss */
+=======
+  /* line 1151, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.image-banner img {
     float: left;
     display: block;
@@ -1878,7 +2178,11 @@ section.image-banner img:last-child {
   }
 }
 
+<<<<<<< Updated upstream
 /* line 1142, ../sass/screen.scss */
+=======
+/* line 1163, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.method {
   padding: 4em 0;
   max-width: 100%;
@@ -1892,12 +2196,20 @@ section.method::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1142, ../sass/screen.scss */
+=======
+  /* line 1163, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.method {
     padding: 2em 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1149, ../sass/screen.scss */
+=======
+/* line 1170, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.method h1, section.method p {
   float: left;
   display: block;
@@ -1910,7 +2222,11 @@ section.method h1:last-child, section.method p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1149, ../sass/screen.scss */
+=======
+  /* line 1170, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.method h1, section.method p {
     float: left;
     display: block;
@@ -1923,7 +2239,11 @@ section.method h1:last-child, section.method p:last-child {
     margin-right: 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1158, ../sass/screen.scss */
+=======
+/* line 1179, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.method ul {
   list-style-type: none;
   text-align: center;
@@ -1931,12 +2251,20 @@ section.method ul {
   margin-left: 17.05961%;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1158, ../sass/screen.scss */
+=======
+  /* line 1179, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.method ul {
     margin-left: 8.5298%;
   }
 }
+<<<<<<< Updated upstream
 /* line 1168, ../sass/screen.scss */
+=======
+/* line 1189, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.method li {
   display: block;
   float: left;
@@ -1958,7 +2286,11 @@ section.method li:nth-child(5n+1) {
   clear: left;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1168, ../sass/screen.scss */
+=======
+  /* line 1189, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.method li {
     float: left;
     display: block;
@@ -1979,11 +2311,16 @@ section.method li:nth-child(5n+1) {
     clear: left;
   }
 }
+<<<<<<< Updated upstream
 /* line 1180, ../sass/screen.scss */
+=======
+/* line 1201, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.method h3 {
   padding-top: 1em;
   font-weight: 600;
 }
+<<<<<<< Updated upstream
 /* line 1185, ../sass/screen.scss */
 section.method i.icon {
   font-size: 2em;
@@ -2001,11 +2338,34 @@ section.method.tv3 h1, section.method.tv3 i {
   color: #563689;
 }
 /* line 1204, ../sass/screen.scss */
+=======
+/* line 1206, ../sass/screen.scss */
+section.method i.icon {
+  font-size: 2em;
+}
+/* line 1210, ../sass/screen.scss */
+section.method.showpal h1, section.method.showpal i {
+  color: #3BB8D7;
+}
+/* line 1215, ../sass/screen.scss */
+section.method.qvc h1, section.method.qvc i {
+  color: #EB5D62;
+}
+/* line 1220, ../sass/screen.scss */
+section.method.tv3 h1, section.method.tv3 i {
+  color: #563689;
+}
+/* line 1225, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.method.aolrise h1, section.method.aolrise i {
   color: #6C3995;
 }
 
+<<<<<<< Updated upstream
 /* line 1212, ../sass/screen.scss */
+=======
+/* line 1233, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.product-details {
   padding: 4em 0;
   max-width: 100%;
@@ -2019,12 +2379,20 @@ section.product-details::after {
   display: table;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1212, ../sass/screen.scss */
+=======
+  /* line 1233, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.product-details {
     padding: 2em 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1219, ../sass/screen.scss */
+=======
+/* line 1240, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.product-details h1, section.product-details p {
   float: left;
   display: block;
@@ -2037,7 +2405,11 @@ section.product-details h1:last-child, section.product-details p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1219, ../sass/screen.scss */
+=======
+  /* line 1240, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.product-details h1, section.product-details p {
     float: left;
     display: block;
@@ -2050,12 +2422,20 @@ section.product-details h1:last-child, section.product-details p:last-child {
     margin-right: 0;
   }
 }
+<<<<<<< Updated upstream
 /* line 1228, ../sass/screen.scss */
+=======
+/* line 1249, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.product-details ul {
   list-style-type: none;
   padding-top: 4em;
 }
+<<<<<<< Updated upstream
 /* line 1233, ../sass/screen.scss */
+=======
+/* line 1254, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.product-details li {
   display: block;
   margin: 1em 0;
@@ -2077,7 +2457,11 @@ section.product-details li:nth-child(2n+1) {
   clear: left;
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1233, ../sass/screen.scss */
+=======
+  /* line 1254, ../sass/screen.scss */
+>>>>>>> Stashed changes
   section.product-details li {
     float: left;
     display: block;
@@ -2098,15 +2482,24 @@ section.product-details li:nth-child(2n+1) {
     clear: left;
   }
 }
+<<<<<<< Updated upstream
 /* line 1245, ../sass/screen.scss */
 section.product-details img {
   max-width: 100%;
 }
 /* line 1248, ../sass/screen.scss */
+=======
+/* line 1266, ../sass/screen.scss */
+section.product-details img {
+  max-width: 100%;
+}
+/* line 1269, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.product-details img:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+<<<<<<< Updated upstream
 /* line 1253, ../sass/screen.scss */
 section.product-details.showpal h1 {
   color: #3BB8D7;
@@ -2120,12 +2513,31 @@ section.product-details.tv3 h1 {
   color: #563689;
 }
 /* line 1265, ../sass/screen.scss */
+=======
+/* line 1274, ../sass/screen.scss */
+section.product-details.showpal h1 {
+  color: #3BB8D7;
+}
+/* line 1278, ../sass/screen.scss */
+section.product-details.qvc h1 {
+  color: #EB5D62;
+}
+/* line 1282, ../sass/screen.scss */
+section.product-details.tv3 h1 {
+  color: #563689;
+}
+/* line 1286, ../sass/screen.scss */
+>>>>>>> Stashed changes
 section.product-details.aolrise h1 {
   color: #6C3995;
 }
 
 /* Segmented Control */
+<<<<<<< Updated upstream
 /* line 1275, ../sass/screen.scss */
+=======
+/* line 1296, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .segmented-control {
   display: flex !important;
   flex-flow: row wrap;
@@ -2133,7 +2545,11 @@ section.product-details.aolrise h1 {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< Updated upstream
   /* line 1275, ../sass/screen.scss */
+=======
+  /* line 1296, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .segmented-control {
     float: none !important;
     margin: 2em auto 2em auto !important;
@@ -2141,13 +2557,21 @@ section.product-details.aolrise h1 {
   }
 }
 @media screen and (max-width: 510px) {
+<<<<<<< Updated upstream
   /* line 1275, ../sass/screen.scss */
+=======
+  /* line 1296, ../sass/screen.scss */
+>>>>>>> Stashed changes
   .segmented-control {
     width: 75% !important;
   }
 }
 
+<<<<<<< Updated upstream
 /* line 1289, ../sass/screen.scss */
+=======
+/* line 1310, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .segmented-control label {
   display: block;
   position: relative;
@@ -2167,25 +2591,41 @@ section.product-details.aolrise h1 {
   -webkit-user-select: none;
 }
 
+<<<<<<< Updated upstream
 /* line 1307, ../sass/screen.scss */
+=======
+/* line 1328, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .segmented-control label.checked {
   background: #F3A540;
   color: #fff;
 }
 
+<<<<<<< Updated upstream
 /* line 1311, ../sass/screen.scss */
+=======
+/* line 1332, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .segmented-control label:first-child {
   border-radius: 2em 0 0 2em;
   border-right: 0;
 }
 
+<<<<<<< Updated upstream
 /* line 1315, ../sass/screen.scss */
+=======
+/* line 1336, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .segmented-control label:last-child {
   border-radius: 0 2em 2em 0;
   border-right: 1px solid;
 }
 
+<<<<<<< Updated upstream
 /* line 1319, ../sass/screen.scss */
+=======
+/* line 1340, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .segmented-control input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
@@ -2193,14 +2633,22 @@ section.product-details.aolrise h1 {
   position: absolute;
 }
 
+<<<<<<< Updated upstream
 /* line 1326, ../sass/screen.scss */
+=======
+/* line 1347, ../sass/screen.scss */
+>>>>>>> Stashed changes
 .tab-active a {
   color: #F3A540;
   cursor: pointer;
   font-weight: 700;
 }
 
+<<<<<<< Updated upstream
 /* line 1332, ../sass/screen.scss */
+=======
+/* line 1353, ../sass/screen.scss */
+>>>>>>> Stashed changes
 li.tab-active {
   border-bottom: 1px solid #F3A540;
 }
