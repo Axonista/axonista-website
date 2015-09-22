@@ -1,3 +1,24 @@
+var $hero_vid = $('#bgvid'),
+    $highlight_word = $('#hero-content span.highlight');
+
+$highlight_word.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
+    $highlight_word.removeClass('animated rotateIn');
+});
+
+$hero_vid.on('timeupdate', function(e) {
+    var time = $hero_vid[0].currentTime;
+    if((time >= 9.6 && time < 17.4)&& $highlight_word.text() !== "mobile") {
+        $highlight_word.addClass('animated rotateIn');
+        $highlight_word.text("mobile");
+    } else if((time >= 17.4 && time <= $hero_vid[0].duration) && $highlight_word.text() !== "global") {
+        $highlight_word.addClass('animated rotateIn');
+        $highlight_word.text("global");
+    } else if(time < 9.6 && $highlight_word.text() !== "interactive") {
+        $highlight_word.addClass('animated rotateIn');
+        $highlight_word.text("interactive");
+    }
+});
+
 // Smooth Scroll to Section //
 $('a.anchor-link').click(function(event) {
     event.preventDefault();
