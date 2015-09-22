@@ -441,8 +441,9 @@ section.case-study {
     }
 
     &.qvc {
-        background: linear-gradient(to right, $greynavy, rgba(235, 93, 98,0.2)),
-        url(../assets/images/case-studies/qvc/qvc-featured.jpg);
+        //background: linear-gradient(to right, $greynavy, rgba(235, 93, 98,0.2)),
+        //url(../assets/images/case-studies/qvc/qvc-featured.jpg);
+        background: radial-gradient(circle farthest-corner at right bottom, rgba($qvc, 0.25) 0%, rgba($qvc, 0.3) 20%, rgba($qvc, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/qvc/qvc-featured.jpg);
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -458,8 +459,9 @@ section.case-study {
         }
     }
     &.showpal {
-        background: linear-gradient(to right, $greynavy, rgba(59, 184, 215, 0.2)),
-        url(../assets/images/case-studies/showpal/showpal-featured.png);
+        //background: linear-gradient(to right, $greynavy, rgba(59, 184, 215, 0.2)),
+        //url(../assets/images/case-studies/showpal/showpal-featured.png);
+        background: radial-gradient(circle farthest-corner at right bottom, rgba($showpal, 0.25) 0%, rgba($showpal, 0.3) 20%, rgba($showpal, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/showpal/showpal-featured.png);
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
