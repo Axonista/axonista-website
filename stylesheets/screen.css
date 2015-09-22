@@ -2277,3 +2277,28 @@ li.tab-active {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+/* line 1415, ../sass/screen.scss */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 1424, ../sass/screen.scss */
+.pace-inactive {
+  display: none;
+}
+
+/* line 1428, ../sass/screen.scss */
+.pace .pace-progress {
+  background: #F3A540;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
