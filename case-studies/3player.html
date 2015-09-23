@@ -5,6 +5,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 
+        <meta name="twitter:widgets:theme" content="light">
+        <meta name="twitter:widgets:link-color" content="#F3A540">
+        <meta name="twitter:widgets:border-color" content="#F3A540">
+
 		<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
@@ -12,24 +16,17 @@
         <script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
+    <div class="animsition">
         <header class="case-study tv3">
             <nav>
-                <a href="/" class="brand">
-                    <img class="logo" src="/assets/images/axonista-logo-text.png"/>
-                    <!--<span class="name">Axonista</span>-->
+                <a href="/" class="brand animsition-link">
+                    <img class="logo" src="/assets/images/axonista-logo.png"/>
                 </a>
                 <div id="alignright">
                     <ul>
-                    <!--
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#work">Case Studies</a></li>
-                        <li><a href="3player/3player.html">Blog</a></li>
-                        -->
-                        <li><a href="/work">Work</a></li>
-                        <li><a href="/about">Company</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="mailto:connect@axonista.com">Contact</a></li>
+                        <li><a class="animsition-link" href="/#work">Work</a></li>
+                        <li><a href="https://medium.com/axonista-hq">Blog</a></li>
+                        <li><a class="animsition-link" href="/#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -146,7 +143,7 @@
 		<section class="method tv3">
 			<h1>Methodology & Testing</h1>
 			<p>We used C# / .Net client-side, XML, Silverlight and DOM development in this project, and we use XML and DOM in Roku channel development projects. We've developed 3player on Roku and Windows Phone as well for TV3. We provide a good design and development service that attracts repeat custom. IPTV, OTT and VOD are a key part of our product roadmap for our audience engagement CMS Ediflo, that we have developed ourselves and which supports a number of our companion viewing apps.
-			</p>
+            </p>
 			<ul>
 				<li><i class="icon icon-light-bulb"></i><h3>Ideate</h3></li>
 				<li><i class="icon icon-circular-graph"></i><h3>Prototype</h3></li>
@@ -171,16 +168,15 @@
 		<footer>
             <div class="footer-content">
                 <div class="section brand">
-                    <img class="logo" src="/assets/images/axonista-logo-text.png"/>
+                    <img class="logo" src="/assets/images/axonista-logo.png"/>
                     <p>We work with broadcasters to make TV truly interactive, connecting viewers to storytellers in engaging, measurable and monetisable ways.</p>
                 </div>
                 <div class="section">
                     <h3>Explore</h3>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a class="animsition-link" href="/#work">Work</a></li>
+                        <li><a href="https://medium.com/axonista-hq">Blog</a></li>
+                        <li><a class="animsition-link" href="/#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="section">
@@ -198,6 +194,13 @@
                 </div>
             </div>
         </footer>
+
+        </div>
+        <script src="/js/libraries/jquery-1.11.3.min.js"></script>
+        <script src="/js/libraries/jquery-ui.min.js"></script>
+        <script src="/js/libraries/animsition.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
 	</body>
 
 </html>
