@@ -108,3 +108,5 @@ $(".illustrations .segmented-control input").on("change", function() {
     $parent.find('img:not(".' + image_id + '")').hide();
     $parent.find('img.' + image_id).show();
 });
+
+
