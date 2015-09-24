@@ -668,7 +668,7 @@ section.case-study .case-button:hover {
 }
 /* line 470, ../sass/screen.scss */
 section.case-study.threeplayer {
-  background: radial-gradient(circle farthest-corner at right bottom, rgba(81, 74, 148, 0.1) 0%, rgba(81, 74, 148, 0.2) 20%, rgba(248, 248, 248, 0.3) 45%, rgba(248, 248, 248, 0.8) 70%, #f8f8f8 100%), url(../assets/images/case-studies/3player/3player-featured.jpg);
+  background: radial-gradient(circle farthest-corner at right bottom, rgba(81, 74, 148, 0.1) 0%, rgba(81, 74, 148, 0.2) 20%, rgba(248, 248, 248, 0.3) 45%, rgba(248, 248, 248, 0.8) 70%, #f8f8f8 100%), url(../assets/images/case-studies/3player/3player-featured-2.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
