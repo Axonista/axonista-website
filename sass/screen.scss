@@ -107,7 +107,7 @@ section:nth-of-type(2n) {
   background: $lightgrey;
 }
 
-/*nav {
+nav {
 	height: 90px;
 	position: fixed;
 	width: 100%;
@@ -226,7 +226,7 @@ section:nth-of-type(2n) {
             border-bottom: 2px solid rgba($darknavy, 0.5);
         }
     }
-}*/
+}
 
 .menuIcon {
   background: #151828;
@@ -1108,12 +1108,78 @@ section.objectives {
         color: $qvc;
     }
 
+    &.qvc p {
+        line-height: 2em;
+        max-width: 50%;
+    }
+
     &.tv3 h1 {
         color: $threeplayer;
     }
 
     &.aolrise h1 {
         color: $aolrise;
+    }
+
+    .quote {
+        font-style: italic;
+    }
+
+    .reviews-container {
+        ul.rig {
+            list-style: none;
+            font-size: 0px;
+            text-align: center;
+        }
+        ul.rig li {
+            display: inline-block;
+            padding: 10px;
+            margin: 0 0 2.5% 2.5%;
+            background: #fff;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            font-size: 1rem;
+            vertical-align: top;
+            box-shadow: 0 0 5px #ddd;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        ul.rig li h3 {
+            margin: 0 0 5px;
+        }
+        ul.rig li p {
+            font-size: .9em;
+            line-height: 1.5em;
+            color: #999;
+        }
+        ul.rig.columns-3 li {
+            width: 21%;
+        }
+         
+        @media (max-width: 480px) {
+            ul.grid-nav li {
+                display: block;
+                margin: 0 0 5px;
+            }
+            ul.grid-nav li a {
+                display: block;
+            }
+            ul.rig {
+                margin-left: 0;
+            }
+            ul.rig li {
+                width: 100% !important;
+                margin: 0 0 20px;
+            }
+        }
+
+        h5 {
+            font-size: 1em;
+            font-weight: 400;
+            font-family: Avenir Next;
+            text-transform: lowercase;
+        }
     }
 }
 
