@@ -134,6 +134,7 @@ nav {
         @include media ($tablet) {
             z-index: 2;
             display: block;
+            right: 4.2649%
         }
         @include media ($mobile) {
             top: 21px;
