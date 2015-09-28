@@ -114,21 +114,29 @@ nav {
 	transition-duration: 0.2s;
 	z-index: 2;
 
-     @include media ($mobile) {
+     @include media ($tablet) {
         display: block;
         background-color: $darknavy;
         height: 90px;
     }
 
-    &:after {
-        content:"";
-        background: url(../assets/images/menu-2.png) no-repeat;
-        width: 50px;
-        height: 50px;
+    span {
+        font-size: 1.8em;
+        color: white;
         display: inline-block;
         position: absolute;
         right: 5px;
         top: 30px;
+        display: none;
+        right: 1.3em;
+        @include media ($tablet) {
+            z-index: 2;
+            display: block;
+        }
+
+        &:hover { cursor: pointer; }
+
+        a { color: inherit; text-decoration: none;}
     }
 
 	ul {
@@ -163,13 +171,11 @@ nav {
             left: 4.2649%;
         }
 
-        @include media ($mobile) {
-            width: 180px;
-        }
-
-
         img.logo {
             max-width: 220px;
+            @include media ($tablet) {
+                width: 200px;
+            }
         }
         span.name {
             margin-left: 10px;
@@ -190,6 +196,14 @@ nav {
         text-transform: uppercase;
         font-family: "brandon-grotesque", "Avenir Next", "Helvetica Neue", sans-serif;
         font-weight: 700;
+
+        @include media ($tablet) {
+            display: block;
+            text-align: left;
+            position: relative;
+            top: 5.6em;
+            background: rgba(243, 165, 64, 0.9);
+        }
 
     	li#home {
     		padding: 0.5em 1em 0em 1em;
@@ -227,6 +241,7 @@ nav {
         }
     }
 }
+
 
 .menuIcon {
   background: #151828;

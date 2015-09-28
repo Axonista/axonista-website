@@ -109,4 +109,21 @@ $(".illustrations .segmented-control input").on("change", function() {
     $parent.find('img.' + image_id).show();
 });
 
+$(function() {
+
+    $('.menu-link').click(function(event) {
+        event.stopPropagation();
+        $('#toggle-menu').toggle();
+    });
+
+    $('body').click(function() {
+        var submenu = $('#toggle-menu');
+        if(submenu.is(":visible")) {
+            submenu.hide();
+        }
+    })
+
+
+});
+
 
