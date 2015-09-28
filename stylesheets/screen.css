@@ -350,12 +350,12 @@ nav .active {
 }
 /* line 243, ../sass/screen.scss */
 nav.solid {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(38, 43, 63, 0.93);
   box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 /* line 247, ../sass/screen.scss */
 nav.solid a {
-  color: #10152E;
+  color: white;
 }
 /* line 250, ../sass/screen.scss */
 nav.solid li {
