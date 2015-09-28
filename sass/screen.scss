@@ -117,7 +117,9 @@ nav {
      @include media ($tablet) {
         display: block;
         background-color: $darknavy;
-        height: 90px;
+    }
+    @include media ($mobile) {
+        height: 80px;
     }
 
     span {
@@ -126,12 +128,15 @@ nav {
         display: inline-block;
         position: absolute;
         right: 5px;
-        top: 30px;
+        top: 26px;
         display: none;
-        right: 1.3em;
+        right: 20px;
         @include media ($tablet) {
             z-index: 2;
             display: block;
+        }
+        @include media ($mobile) {
+            top: 21px;
         }
 
         &:hover { cursor: pointer; }
@@ -165,16 +170,22 @@ nav {
         display: flex;
         align-items: center;
         left: 8.5298%;
-        margin-top: 20px;
+        margin-top: 22px;
         text-decoration: none !important;
         @include media ($tablet) {
             left: 4.2649%;
+        }
+        @include media ($mobile) {
+            margin-top: 21px;
         }
 
         img.logo {
             max-width: 220px;
             @include media ($tablet) {
-                width: 200px;
+                max-width: 200px;
+            }
+            @include media ($mobile) {
+                max-width: 180px;
             }
         }
         span.name {
@@ -201,8 +212,11 @@ nav {
             display: block;
             text-align: left;
             position: relative;
-            top: 5.6em;
+            top: 90px;
             background: rgba(243, 165, 64, 0.9);
+        }
+        @include media($mobile) {
+            top: 80px;
         }
 
     	li#home {
@@ -1171,7 +1185,7 @@ section.objectives {
         ul.rig.columns-3 li {
             width: 21%;
         }
-         
+
         @media (max-width: 480px) {
             ul.grid-nav li {
                 display: block;
