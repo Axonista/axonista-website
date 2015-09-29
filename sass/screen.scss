@@ -84,6 +84,7 @@ strong {
 
 span.highlight {
     color: $orange;
+    font-weight: 900;
 }
 
 .icon {
@@ -412,7 +413,7 @@ div.hero {
     h1, p {
         @include span-columns (6);
         @include shift (1);
-        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
 
         @include media($tablet) {
             @include span-columns (10);
@@ -676,7 +677,7 @@ section.logos {
 
     h1 {
         color: $orange;
-        font-weight: 900;
+        font-weight: 700;
     }
     img {
         max-width: 100%;
