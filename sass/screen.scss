@@ -545,6 +545,7 @@ section.case-study {
 	@include outer-container();
 
 	.info {
+        z-index: 1;
 	   	@include span-columns (4);
 	   	@include shift (1);
         @include media($desktop) {
@@ -592,15 +593,23 @@ section.case-study {
         }
     }
     &.threeplayer {
-        //background: linear-gradient(to right, $greynavy, rgba(59, 184, 215, 0.2)),
-        //url(../assets/images/case-studies/showpal/showpal-featured.png);
-        background: radial-gradient(circle farthest-corner at right bottom, rgba($threeplayer, 0.1) 0%, rgba($threeplayer, 0.2) 20%, rgba($lightgrey, 0.3) 45%, rgba($lightgrey, 0.8) 70%, rgba($lightgrey, 1) 100%), url(../assets/images/case-studies/3player/3player-featured-2.jpg);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-position-y: 25%;
         box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            background: radial-gradient(circle farthest-corner at right bottom, rgba($threeplayer, 0.1) 0%, rgba($threeplayer, 0.2) 20%, rgba($lightgrey, 0.3) 45%, rgba($lightgrey, 0.8) 70%, rgba($lightgrey, 1) 100%), url(../assets/images/case-studies/3player/3player-featured-2.jpg);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position-y: 25%;
+            -webkit-animation: zoom-in linear 30s;
+            -webkit-animation-iteration-count: infinite;
+        }
         h1 {
             color: $threeplayer;
         }
@@ -618,15 +627,23 @@ section.case-study {
         }
     }
     &.qvc {
-        //background: linear-gradient(to right, $greynavy, rgba(235, 93, 98,0.2)),
-        //url(../assets/images/case-studies/qvc/qvc-featured.jpg);
-        background: radial-gradient(circle farthest-corner at right bottom, rgba($qvc, 0.25) 0%, rgba($qvc, 0.3) 20%, rgba($qvc, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/qvc/qvc-featured.jpg);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-position-y: 25%;
         box-shadow: inset 0 4px 8px rgba(0,0,0,0.25), inset 0 -1px rgba(255, 255, 255, 0.2);
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            background: radial-gradient(circle farthest-corner at right bottom, rgba($qvc, 0.25) 0%, rgba($qvc, 0.3) 20%, rgba($qvc, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/qvc/qvc-featured.jpg);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position-y: 25%;
+            -webkit-animation: zoom-in linear 30s;
+            -webkit-animation-iteration-count: infinite;
+        }
         .case-button {
             border-color: $qvc;
 
@@ -1795,6 +1812,28 @@ li.tab-active {
           animation-name: zoom-in;
 }
 
+@-webkit-keyframes zoom-in {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+}
+
+
+@keyframes zoom-in {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+}
 
 @-webkit-keyframes zoom-out {
   0% {
