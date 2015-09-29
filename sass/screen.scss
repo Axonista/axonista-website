@@ -387,6 +387,7 @@ div.hero {
         a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
+            font-size: 1.125em;
         }
         a:hover {
             color: rgba(255, 255, 255, 1);
@@ -411,7 +412,7 @@ div.hero {
     }
 
     h1, p {
-        @include span-columns (6);
+        @include span-columns (8);
         @include shift (1);
         text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
 
@@ -423,7 +424,7 @@ div.hero {
     }
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 3em;
         font-weight: 700;
         line-height: 1.5em;
         color: #fff;
@@ -435,7 +436,7 @@ div.hero {
 	}
 
 	p {
-		font-size: 1.25em;
+		font-size: 1.5em;
 		max-width: 29em;
         color: rgba(255, 255, 255, 0.8);
         padding-bottom: 8em;
@@ -587,10 +588,12 @@ section.case-study {
         font-weight: 600;
         font-size: 0.875em;
         letter-spacing: 1px;
+        transition: all .1s ease-in-out;
 
         &:hover {
             cursor: pointer;
             background: #fff;
+            transform: scale(1.1);
         }
     }
     &.threeplayer {
@@ -1963,4 +1966,3 @@ li.tab-active {
     opacity: 1;
   }
 }
-
