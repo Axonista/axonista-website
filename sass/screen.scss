@@ -306,11 +306,17 @@ div.hero {
         position: absolute;
         bottom: 2em;
         z-index: 1;
+        @include media($mobile) {
+            bottom: 40px;
+        }
 
         a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-size: 1.125em;
+            @include media($mobile) {
+                font-size: 1em;
+            }
         }
         a:hover {
             color: rgba(255, 255, 255, 1);
