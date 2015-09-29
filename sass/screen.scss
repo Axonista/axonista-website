@@ -609,6 +609,13 @@ section.case-study {
             background-position-y: 25%;
             -webkit-animation: zoom-in linear 30s;
             -webkit-animation-iteration-count: infinite;
+            animation-direction: alternate;
+            @include media($tablet) {
+                background-position-x: 50% !important;
+            }
+            @include media($mobile) {
+                background-position-x: 50% !important;
+            }
         }
         h1 {
             color: $threeplayer;
@@ -643,6 +650,13 @@ section.case-study {
             background-position-y: 25%;
             -webkit-animation: zoom-in linear 30s;
             -webkit-animation-iteration-count: infinite;
+            animation-direction: alternate;
+            @include media($tablet) {
+                background-position-x: 50% !important;
+            }
+            @include media($mobile) {
+                background-position-x: 50% !important;
+            }
         }
         .case-button {
             border-color: $qvc;
@@ -673,12 +687,6 @@ section.case-study {
                 background: $showpal;
             }
         }
-    }
-    @include media($tablet) {
-        background-position-x: 50% !important;
-    }
-    @include media($mobile) {
-        background-position-x: 50% !important;
     }
 }
 
