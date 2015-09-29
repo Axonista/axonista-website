@@ -280,6 +280,13 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: linear-gradient( rgba($darknavy, 0.33), rgba($darknavy, 0.33) ), url(../assets/images/placeholder.jpg);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    @include media($tablet) {
+        display: none;
+    }
 }
 
 div.hero {
@@ -319,10 +326,17 @@ div.hero {
 	color: $darknavy;
     height: 100vh;
     //background: linear-gradient(to right, rgba($greynavy, 0.9), rgba($greynavy, 0.2));
-    background: radial-gradient(circle farthest-corner at right, rgba($greynavy, 0.1) 0%, rgba($greynavy, 0.2) 20%, rgba($greynavy, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%);
+    background: radial-gradient(circle farthest-corner at right, rgba($greynavy, 0.1) 0%, rgba($greynavy, 0.2) 20%, rgba($greynavy, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/placeholder.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
 
 	@include span-columns(12);
+    @include media($tablet) {
+        background-position: center;
+    }
     @include media($mobile) {
         padding-top: 33vh;
     }
@@ -513,6 +527,14 @@ section.case-study {
             background: #fff;
             transform: scale(1.1);
         }
+        &.disabled {
+            opacity: 0.25;
+        }
+        &.disabled:hover {
+            cursor: default;
+            background: none !important;
+            transform: none;
+        }
     }
     &.threeplayer {
         box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
@@ -557,6 +579,10 @@ section.case-study {
                 color: #fff;
                 background: $threeplayer;
             }
+            &.disabled:hover {
+                color: $greynavy;
+                background: none;
+            }
         }
     }
     &.qvc {
@@ -594,6 +620,9 @@ section.case-study {
 
             &:hover {
                 background: $qvc;
+            }
+            &.disabled:hover {
+                background: none;
             }
         }
     }
