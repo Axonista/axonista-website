@@ -671,7 +671,8 @@ section.logos {
         color: $orange;
         font-weight: 900;
         @include media ($mobile) {
-            padding: 0 2em 2em 2em;
+            line-height: 1.5;
+            padding: 0 2em;
         }
     }
     img {
