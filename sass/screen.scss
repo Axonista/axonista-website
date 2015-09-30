@@ -106,12 +106,8 @@ nav {
 	transition-duration: 0.2s;
 	z-index: 2;
 
-     @include media ($tablet) {
-        display: block;
-        background-color: rgba($greynavy, 0.3);
-    }
     @include media ($mobile) {
-        height: 80px;
+        height: 60px;
     }
 
     span {
@@ -126,10 +122,12 @@ nav {
         @include media ($tablet) {
             z-index: 2;
             display: block;
-            right: 4.2649%
+            right: 4.2649%;
+            display: none;
         }
         @include media ($mobile) {
             top: 21px;
+            display: none;
         }
 
         &:hover { cursor: pointer; }
@@ -153,6 +151,7 @@ nav {
 		position: fixed;
 		right: 8.5298%;
         @include media ($tablet) {
+            display: none;
             right: 4.2649%;
         }
 	}
@@ -164,10 +163,13 @@ nav {
         margin-top: 22px;
         text-decoration: none !important;
         @include media ($tablet) {
-            left: 4.2649%;
+            left: 50%;
+            margin-left: -100px;
         }
         @include media ($mobile) {
-            margin-top: 21px;
+            margin-top: 14px;
+            left: 50%;
+            margin-left: -75px;
         }
 
         img.logo {
@@ -176,7 +178,7 @@ nav {
                 max-width: 200px;
             }
             @include media ($mobile) {
-                max-width: 180px;
+                max-width: 150px;
             }
         }
         span.name {
@@ -239,20 +241,9 @@ nav {
 		color: $orange;
 	}
 
-    &.solid {
-        background: rgba(38, 43, 63, 0.93);
-        box-shadow: 0 0 2px 4px rgba(0,0,0,0.05);
-
-        a {
-            color: white;
-        }
-        li {
-            color: #666;
-        }
-        a:hover {
-            color: $darknavy;
-            border-bottom: 2px solid rgba($darknavy, 0.5);
-        }
+    &.headroom--not-top {
+        background: rgba($greynavy, 0.90);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.25);
     }
 }
 
@@ -333,9 +324,18 @@ div.hero {
     @include media($tablet) {
         background: radial-gradient(circle farthest-corner at right, rgba($greynavy, 0.1) 0%, rgba($greynavy, 0.125) 20%, rgba($greynavy, 0.25) 45%, rgba($greynavy, 0.5) 70%, rgba($greynavy, 0.8) 100%), url(../assets/images/placeholder.jpg);
         background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
     @include media($mobile) {
         padding-top: 33vh;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
 
     h1, p {
@@ -474,6 +474,9 @@ section.case-study {
     align-items: center;
     -webkit-align-items: center;
 	@include outer-container();
+    @include media($mobile) {
+        height: 90vh;
+    }
 
 	.info {
         z-index: 1;
@@ -499,6 +502,9 @@ section.case-study {
     p {
         color: rgba(255, 255, 255, 0.9);
         font-size: 1.25em;
+        @include media($mobile) {
+            font-size: 1em;
+        }
     }
     img.logo {
         max-height: 100px;
@@ -537,6 +543,9 @@ section.case-study {
             transform: none;
             -webkit-transform: none;
         }
+    }
+    .store-link img {
+        height: 45px;
     }
     &.threeplayer {
         .background-image {
@@ -613,6 +622,7 @@ section.case-study {
             }
             @include media($mobile) {
                 background-position-x: 50% !important;
+                -webkit-filter: brightness(0.5);
             }
         }
         .case-button {
@@ -1668,6 +1678,13 @@ li.tab-active {
   animation-fill-mode: both;
 }
 
+.animated-fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -1975,4 +1992,66 @@ li.tab-active {
   100% {
     opacity: 1;
   }
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
 }

@@ -21,6 +21,16 @@ $(".animsition").animsition({
     transition: function(url){ window.location.href = url; }
 });
 
+$("nav").headroom({
+  "offset": 100,
+  "tolerance": 10,
+  "classes": {
+    "initial": "animated-fast",
+    "pinned": "slideInDown",
+    "unpinned": "slideOutUp"
+  }
+});
+
 // Update highlighted word in sync with video
 var $hero_vid = $('#bgvid'),
     $highlight_word = $('#hero-content span.highlight');
@@ -56,27 +66,6 @@ $('a.anchor-link').click(function(event) {
 	}
 });
 
-// Nav Background on Scroll //
-var window_offset = $(window).scrollTop();
-var previous_scroll_position = 0;
-var $nav = $('nav');
-if(window_offset > 100) {
-    $nav.addClass('solid');
-}
-$(document).scroll(function() {
-    scroll_position = $(this).scrollTop();
-    if(scroll_position > 200 && scroll_position < previous_scroll_position) {
-        $nav.addClass('solid').show();
-        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo.png');
-    } else if(scroll_position < 200) {
-        $nav.removeClass('solid').show();
-        $nav.find('img.logo').attr('src', '/assets/images/axonista-logo.png');
-    } else {
-        $nav.hide();
-    }
-    previous_scroll_position = scroll_position;
-});
-
 // Interaction Slider //
 $('.tabs-content div:first').show();
 $('.tabs-nav li:first').addClass('tab-active');
@@ -110,20 +99,10 @@ $(".illustrations .segmented-control input").on("change", function() {
 });
 
 $(function() {
-
     $('.menu-link').click(function(event) {
         event.stopPropagation();
-        $('#toggle-menu').toggle();
+        $('#alignright').toggle();
     });
-
-    $('body').click(function() {
-        var submenu = $('#toggle-menu');
-        if(submenu.is(":visible")) {
-            submenu.hide();
-        }
-    })
-
-
 });
 
 
