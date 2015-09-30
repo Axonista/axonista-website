@@ -117,7 +117,7 @@ nav {
 
      @include media ($tablet) {
         display: block;
-        background-color: rgba($greynavy, 0.2);
+        background-color: rgba($greynavy, 0.3);
     }
     @include media ($mobile) {
         height: 80px;
@@ -212,16 +212,17 @@ nav {
             display: block;
             text-align: center;
             position: relative;
-            top: 90px;
             background: rgba(38, 43, 63, 0.98);
             @include span-columns (12);
         }
         @include media($mobile) {
-            top: 80px;
             display: block;
             text-align: center;
-            position: relative;
-            top: 80px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             background: rgba(38, 43, 63, 0.98);
             right: 0;
             @include span-columns (12);
