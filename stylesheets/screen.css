@@ -555,7 +555,7 @@ div.hero .hero-footer a:hover {
 @media screen and (max-width: 510px) {
   /* line 361, ../sass/screen.scss */
   #hero-content h1 {
-    font-size: 2.3em;
+    font-size: 2.75em;
     line-height: 1em;
   }
 }
@@ -998,11 +998,10 @@ section.logos h1 {
 }
 /* line 690, ../sass/screen.scss */
 section.logos img {
-  max-width: 100%;
   max-height: 25px;
   margin: 0 auto;
 }
-/* line 695, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 section.logos ul {
   float: left;
   display: block;
@@ -1016,7 +1015,7 @@ section.logos ul:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 695, ../sass/screen.scss */
+  /* line 694, ../sass/screen.scss */
   section.logos ul {
     float: left;
     display: block;
@@ -1030,7 +1029,7 @@ section.logos ul:last-child {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 695, ../sass/screen.scss */
+  /* line 694, ../sass/screen.scss */
   section.logos ul {
     float: left;
     display: block;
@@ -1044,7 +1043,7 @@ section.logos ul:last-child {
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 695, ../sass/screen.scss */
+  /* line 694, ../sass/screen.scss */
   section.logos ul {
     float: left;
     display: block;
@@ -1057,7 +1056,7 @@ section.logos ul:last-child {
     margin-right: 0;
   }
 }
-/* line 712, ../sass/screen.scss */
+/* line 711, ../sass/screen.scss */
 section.logos li {
   width: 150px;
   height: 150px;
@@ -1070,31 +1069,31 @@ section.logos li {
   margin: 0 4px 12px 4px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 712, ../sass/screen.scss */
+  /* line 711, ../sass/screen.scss */
   section.logos li {
     width: 160px;
     height: 160px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 712, ../sass/screen.scss */
+  /* line 711, ../sass/screen.scss */
   section.logos li {
     width: 150px;
     height: 150px;
   }
 }
-/* line 731, ../sass/screen.scss */
+/* line 730, ../sass/screen.scss */
 section.logos li:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   box-shadow: 0 0 24px rgba(21, 24, 40, 0.1);
 }
-/* line 738, ../sass/screen.scss */
+/* line 737, ../sass/screen.scss */
 section.logos.clients img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
-/* line 744, ../sass/screen.scss */
+/* line 743, ../sass/screen.scss */
 section.rerun {
   padding: 150px 0 120px 0 !important;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25), inset 0 -4px 8px rgba(0, 0, 0, 0.25);
@@ -1104,26 +1103,27 @@ section.rerun {
   align-items: center;
   -webkit-align-items: center;
 }
-/* line 753, ../sass/screen.scss */
+/* line 752, ../sass/screen.scss */
 section.rerun img {
   float: none !important;
   margin: 0 auto 1em auto !important;
   max-width: 150px;
 }
-/* line 759, ../sass/screen.scss */
+/* line 758, ../sass/screen.scss */
 section.rerun p {
   margin-bottom: 2em !important;
 }
-/* line 762, ../sass/screen.scss */
+/* line 761, ../sass/screen.scss */
 section.rerun p.small {
   margin-top: 1em;
 }
-/* line 767, ../sass/screen.scss */
+/* line 766, ../sass/screen.scss */
 section.rerun form {
   width: 100%;
 }
-/* line 771, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 section.rerun input[type="email"] {
+  -webkit-appearance: none;
   border: none;
   background: #f8f8f8;
   color: #333D3D;
