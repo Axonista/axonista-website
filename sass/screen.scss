@@ -16,8 +16,6 @@ $greynavy:      #151828;
 $darkgrey: 		#333D3D;
 $purple: 		#19254E;
 $rerun:         #3f51b5;
-$facebook: 		#3B5998;
-$twitter: 		#00aced;
 $showpal:       #3BB8D7;
 $qvc:           #EB5D62;
 $threeplayer:   #514A94;
@@ -89,13 +87,6 @@ span.highlight {
 
 .icon {
     color: $orange;
-}
-
-i.icon-facebook {
-    color: $facebook;
-}
-i.icon-twitter {
-    color: $twitter;
 }
 
 section {
@@ -305,7 +296,7 @@ div.hero {
         bottom: 2em;
         z-index: 1;
         @include media($mobile) {
-            bottom: 40px;
+            display: none;
         }
 
         a {
@@ -365,7 +356,7 @@ div.hero {
         color: #fff;
 
         @include media($mobile) {
-            font-size: 2.75em;
+            font-size: 2.5em;
             line-height: 1em;
         }
 	}
@@ -383,7 +374,7 @@ div.hero {
         @include media($mobile) {
             max-width: none;
             padding: 1em 2em 8em 2em;
-            font-size: 1.1em;
+            font-size: 1em;
             @include span-columns (12);
             @include shift (0);
         }
@@ -727,6 +718,10 @@ section.logos {
             width: 150px;
             height: 150px;
         }
+        @include media($mobile) {
+            width: 140px;
+            height: 140px;
+        }
         &:hover {
             transform: scale(1.1);
             -webkit-transform: scale(1.1);
@@ -748,6 +743,9 @@ section.rerun {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
+    @include media($mobile) {
+        height: 90vh;
+    }
 
     img {
         float: none !important;
@@ -765,6 +763,9 @@ section.rerun {
 
     form {
         width: 100%;
+        @include media($mobile) {
+            margin: 0 auto;
+        }
     }
 
 	input[type="email"] {
@@ -777,6 +778,9 @@ section.rerun {
 		font-size: 1em;
 		font-weight: 400;
         outline: none;
+        @include media($mobile) {
+            width: 90%;
+        }
 	}
 
 	input[type="submit"] {
@@ -792,6 +796,11 @@ section.rerun {
  		border: none;
   		color: #fff;
         outline: none;
+        @include media($mobile) {
+            margin-left: 0;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
 
   		&:hover {
   			cursor: pointer;
@@ -903,7 +912,7 @@ footer {
     }
 
 	.section {
-        @include span-columns (2 of 11);
+        @include span-columns (2.5 of 11);
         @include media ($mobile) {
             text-align: center;
         }
