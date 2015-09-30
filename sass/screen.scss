@@ -560,9 +560,11 @@ section.case-study {
             -moz-background-size: cover;
             -o-background-size: cover;
             background-position-y: 25%;
+            /*
             -webkit-animation: zoom-in linear 30s;
             -webkit-animation-iteration-count: infinite;
             animation-direction: alternate;
+            */
             @include media($tablet) {
                 background-position-x: 50% !important;
             }
@@ -609,9 +611,11 @@ section.case-study {
             -moz-background-size: cover;
             -o-background-size: cover;
             background-position-y: 25%;
+            /*
             -webkit-animation: zoom-in linear 30s;
             -webkit-animation-iteration-count: infinite;
             animation-direction: alternate;
+            */
             @include media($tablet) {
                 background-position-x: 50% !important;
             }
