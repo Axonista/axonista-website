@@ -769,6 +769,7 @@ section.rerun {
     }
 
 	input[type="email"] {
+        -webkit-appearance: none;
 		border: none;
 		background: $lightgrey;
 		color: $darkgrey;
@@ -780,6 +781,7 @@ section.rerun {
 	}
 
 	input[type="submit"] {
+        -webkit-appearance: none;
 		font-weight: 400;
 		font-size: 1em;
         text-transform: uppercase;
