@@ -169,7 +169,6 @@ nav {
         width: 100%;
 
         @include media($mobile) {
-            display: none;
             height: auto;
             position: relative;
         }
