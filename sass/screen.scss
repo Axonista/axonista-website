@@ -41,8 +41,65 @@ html, body {
     color: $darknavy;
     line-height: 1.5;
     height: 100%;
+    position: absolute;
 
     @include span-columns (12);
+
+    a { text-decoration: none; color: inherit; }
+}
+
+#trigger {
+    z-index: 1000;
+    position: relative;
+    font-size: 2em;
+    float: right;
+    display: none;
+    top: 15px;
+    right: 15px;
+    @include media ($tablet) {
+        z-index: 1000;
+        display: block;
+    }
+    @include media ($mobile) {
+        display: block;
+        z-index: 1000;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+#full-screen-nav {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    color: white;
+    font-weight: 800;
+    background: rgba($darknavy, 0.9);
+
+    &.open {
+        display: block;
+    }
+
+    ul {
+        text-align: center;
+        position: relative;
+        top: 8em;
+
+        li {
+            a {
+                display: block;
+                text-align: center;
+                font-size: 2.5em;
+                padding: 1em;
+            } 
+        }
+    }
 }
 
 h1 {
@@ -107,42 +164,6 @@ nav {
 	transition-duration: 0.2s;
 	z-index: 2;
 
-    @include media ($tablet) {
-        height: 80px;
-        background: rgba(23, 26, 37, .98)
-    }
-
-    @include media ($mobile) {
-        height: 80px;
-        background: rgba(23, 26, 37, .98)
-    }
-
-    span  {
-        font-size: 1.8em;
-        color: white;
-        display: inline-block;
-        position: absolute;
-        right: 5px;
-        top: 26px;
-        display: none;
-        right: 20px;
-        @include media ($tablet) {
-            z-index: 2;
-            display: block;
-            right: 4.2649%;
-        }
-        @include media ($mobile) {
-            display: block;
-            z-index: 2;
-            right: 4.2649%;
-
-        }
-
-        &:hover { cursor: pointer; }
-
-        a { color: inherit; text-decoration: none;}
-    }
-
 	ul {
 		list-style: none;
         width: 100%;
@@ -190,9 +211,11 @@ nav {
             max-width: 220px;
             @include media ($tablet) {
                 max-width: 180px;
+                z-index: 1000;
             }
             @include media ($mobile) {
                 max-width: 150px;
+                z-index: 1000;
             }
         }
         span.name {
@@ -214,24 +237,12 @@ nav {
         text-transform: uppercase;
         font-family: "brandon-grotesque", "Avenir Next", "Helvetica Neue", sans-serif;
         font-weight: 700;
-
         @include media ($tablet) {
-            display: block;
-            text-align: center;
-            position: relative;
-            top: 80px;
-            left: 10px;
-            background: rgba(23, 26, 37, .98);
-            @include span-columns (12);
+            width: 100%;
         }
-        @include media($mobile) {
-            display: block;
-            text-align: center;
-            position: relative;
-            top: 80px;
-            left: 10px;
-            background: rgba(23, 26, 37, .98);
-            @include span-columns (12);
+
+        @include media ($mobile) {
+            width: 100%;
         }
 
     	li#home {
