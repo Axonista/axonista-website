@@ -46,6 +46,8 @@ html, body {
     @include span-columns (12);
 
     a { text-decoration: none; color: inherit; }
+
+    .open-menu { overflow: hidden; }
 }
 
 #trigger {
@@ -238,6 +240,7 @@ nav {
         font-weight: 700;
         @include media ($tablet) {
             width: 100%;
+            border: none!important;
         }
 
         @include media ($mobile) {
@@ -257,6 +260,11 @@ nav {
             cursor: pointer;
             color: #fff;
             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            @include media ($mobile) {
+                border: none!important;
+                text-decoration: none;
+                color: inherit;
+            }
         }
 	}
 
