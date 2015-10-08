@@ -103,3 +103,21 @@ $(function() {
         $('#alignright').toggle();
     });
 });
+
+var $body = $('body'),
+    $nav = $('#full-screen-nav');
+$('#trigger').on('click', function(e) {
+    if ( $body.hasClass('open-menu') ) {
+        $body.removeClass('open-menu');
+        $nav.fadeOut().removeClass('open');
+    } else  {
+        $nav.fadeIn().addClass('open');
+        $body.addClass('open-menu');
+    }
+});
+$nav.on('click', 'a', function(e) {
+    if ( $body.hasClass('open-menu') ) {
+        $body.removeClass('open-menu');
+        $nav.fadeOut().removeClass('open');
+    }
+});

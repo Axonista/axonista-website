@@ -32,18 +32,10 @@
         <script src="//use.typekit.net/bey1ybm.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
 	</head>
-		<body class="open-menu">
+		<body>
         <div class="animsition">
             <nav class="headroom">
                 <p id="trigger" style="color: white;"><i class="icon-menu"></i></p>
-
-            <div id="full-screen-nav">
-                <ul>
-                    <li><a class="anchor-link" href="#work">Work</a></li>
-                    <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
-                    <li><a class="anchor-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
                 <a href="/" class="brand animsition-link">
                     <img class="logo" src="/assets/images/axonista-logo.png"/>
                 </a>
@@ -55,6 +47,13 @@
                     </ul>
                 </div>
             </nav>
+			<div id="full-screen-nav">
+                <ul>
+                    <li><a class="anchor-link" href="#work">Work</a></li>
+                    <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
+                    <li><a class="anchor-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
 			<div class="hero" id="home">
 				<div id="hero-content">
 					<h1>TV is now <span class="highlight">interactive</span></h1>
@@ -191,16 +190,5 @@
             <script src="/js/libraries/jquery.headroom.min.js"></script>
             <script src="/js/libraries/animsition.min.js"></script>
             <script src="/js/main.js"></script>
-            <script>
-                (function($){
-                    var nav = $('#full-screen-nav');
-
-                    $('#trigger').on('click', function(){
-
-                        if ( nav.hasClass('open') ) nav.fadeOut().removeClass('open');
-                        else nav.fadeIn().addClass('open');
-                    });
-                })(jQuery);
-            </script>
 		</body>
 </html>
