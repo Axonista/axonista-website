@@ -81,6 +81,7 @@ html, body {
     z-index: 999;
     display: none;
     color: white;
+    border-bottom: none!important;
     font-weight: 800;
     background: rgba($darknavy, 0.9);
 
@@ -261,7 +262,7 @@ nav {
             color: #fff;
             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
             @include media ($mobile) {
-                border: none!important;
+                border-bottom: none!important;
                 text-decoration: none;
                 color: inherit;
             }
