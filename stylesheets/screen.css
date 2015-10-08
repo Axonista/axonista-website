@@ -370,7 +370,7 @@ nav li a:hover {
   color: #fff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 768px) {
   /* line 260, ../sass/screen.scss */
   nav li a:hover {
     border-bottom: none !important;
