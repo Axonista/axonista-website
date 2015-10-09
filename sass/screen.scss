@@ -50,29 +50,6 @@ html, body {
     .open-menu { overflow: hidden; }
 }
 
-#trigger {
-    z-index: 1000;
-    position: relative;
-    font-size: 2em;
-    float: right;
-    display: none;
-    top: 15px;
-    right: 15px;
-    @include media ($tablet) {
-        z-index: 1000;
-        display: block;
-    }
-    @include media ($mobile) {
-        display: block;
-        z-index: 1000;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-
 #full-screen-nav {
     position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -206,10 +183,10 @@ nav {
         margin-top: 22px;
         text-decoration: none !important;
         @include media ($tablet) {
-            left: 2em;
+            left: 20px;
         }
         @include media ($mobile) {
-            left: 2em;
+            left: 20px;
         }
 
         img.logo {
@@ -394,10 +371,11 @@ div.hero {
         font-weight: 700;
         line-height: 1.5em;
         color: #fff;
-
+        @include media($tablet) {
+            line-height: 1em;
+        }
         @include media($mobile) {
             font-size: 2.5em;
-            line-height: 1em;
         }
 	}
 
@@ -409,7 +387,7 @@ div.hero {
         line-height: 1.4;
         @include media($tablet) {
             max-width: none;
-            padding: 0 2em 8em 2em;
+            padding: 0.5em 2em 8em 2em;
         }
         @include media($mobile) {
             max-width: none;
@@ -1701,6 +1679,121 @@ li.tab-active {
 
 .morphext > .animated {
     display: inline-block;
+}
+
+/* Menu Icon */
+
+#menu-icon {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  float: right;
+  display: none;
+  top: 30px;
+  right: 20px;
+  z-index: 1000;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  @include media ($tablet) {
+      display: block;
+  }
+  @include media ($mobile) {
+      display: block;
+      width: 30px;
+      height: 15px;
+  }
+}
+
+#menu-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  @include media ($mobile) {
+    height: 3px;
+    border-radius: 3px;
+  }
+}
+
+#menu-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#menu-icon span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  @include media ($mobile) {
+      top: 8px;
+  }
+}
+
+#menu-icon span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  @include media ($mobile) {
+      top: 16px;
+  }
+}
+
+#menu-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -2px;
+  left: 6px;
+  @include media ($mobile) {
+      top: 0px;
+      left: 4px;
+  }
+}
+
+#menu-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#menu-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 26px;
+  left: 6px;
+  @include media ($mobile) {
+      top: 21px;
+      left: 4px;
+  }
 }
 
 //
