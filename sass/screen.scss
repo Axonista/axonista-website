@@ -69,7 +69,7 @@ html, body {
     ul {
         text-align: center;
         position: relative;
-        top: 8em;
+        top: 25%;
 
         li {
             text-transform: uppercase;
@@ -186,17 +186,18 @@ nav {
             left: 20px;
         }
         @include media ($mobile) {
+            margin-top: 28px;
             left: 20px;
         }
 
         img.logo {
             max-width: 220px;
             @include media ($tablet) {
-                max-width: 180px;
+                max-width: 200px;
                 z-index: 1000;
             }
             @include media ($mobile) {
-                max-width: 150px;
+                max-width: 160px;
                 z-index: 1000;
             }
         }
@@ -1707,6 +1708,7 @@ li.tab-active {
   }
   @include media ($mobile) {
       display: block;
+      top: 35px;
       width: 30px;
       height: 15px;
   }
