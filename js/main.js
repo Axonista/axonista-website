@@ -56,8 +56,7 @@ $hero_vid.on('timeupdate', function(e) {
 // Smooth Scroll to Section //
 $('a.anchor-link').click(function(event) {
     event.preventDefault();
-	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	&& location.hostname == this.hostname) {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		var $target = $(this.hash);
 		$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
 		if ($target.length) {
@@ -105,4 +104,23 @@ $(function() {
     });
 });
 
-
+var $body = $('body'),
+    $nav = $('#full-screen-nav'),
+    $menu_icon = $('#menu-icon');
+$menu_icon.on('click', function(e) {
+    $(this).toggleClass('open');
+    if ( $body.hasClass('open-menu') ) {
+        $body.removeClass('open-menu');
+        $nav.fadeOut().removeClass('open');
+    } else  {
+        $nav.fadeIn().addClass('open');
+        $body.addClass('open-menu');
+    }
+});
+$nav.on('click', 'a', function(e) {
+    if ( $body.hasClass('open-menu') ) {
+        $menu_icon.toggleClass('open');
+        $body.removeClass('open-menu');
+        $nav.fadeOut().removeClass('open');
+    }
+});
