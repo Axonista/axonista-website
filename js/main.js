@@ -105,8 +105,9 @@ $(function() {
 });
 
 var $body = $('body'),
-    $nav = $('#full-screen-nav');
-$('#menu-icon').on('click', function(e) {
+    $nav = $('#full-screen-nav'),
+    $menu_icon = $('#menu-icon');
+$menu_icon.on('click', function(e) {
     $(this).toggleClass('open');
     if ( $body.hasClass('open-menu') ) {
         $body.removeClass('open-menu');
@@ -118,7 +119,7 @@ $('#menu-icon').on('click', function(e) {
 });
 $nav.on('click', 'a', function(e) {
     if ( $body.hasClass('open-menu') ) {
-        $('#menu-icon').toggleClass('open');
+        $menu_icon.toggleClass('open');
         $body.removeClass('open-menu');
         $nav.fadeOut().removeClass('open');
     }
