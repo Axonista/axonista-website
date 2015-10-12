@@ -118,6 +118,7 @@ $('#menu-icon').on('click', function(e) {
 });
 $nav.on('click', 'a', function(e) {
     if ( $body.hasClass('open-menu') ) {
+        $('#menu-icon').toggleClass('open');
         $body.removeClass('open-menu');
         $nav.fadeOut().removeClass('open');
     }
