@@ -1070,7 +1070,7 @@ section.case-study.qvc-tv .featured img {
   max-width: 100%;
   border-radius: 4px;
   border: 15px solid #151828;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
+  box-shadow: 0 8px 30px rgba(14, 21, 47, 0.45);
 }
 /* line 739, ../sass/screen.scss */
 section.case-study.showpal {
