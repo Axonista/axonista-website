@@ -31,6 +31,8 @@ $("nav").headroom({
   }
 });
 
+atvImg();
+
 // Update highlighted word in sync with video
 var $hero_vid = $('#bgvid'),
     $highlight_word = $('#hero-content span.highlight');
