@@ -666,7 +666,7 @@ section.case-study {
         height: 100vh;
         .info {
             @include media($desktop) {
-                @include span-columns (4);
+                @include span-columns (5);
             }
             @include media($tablet) {
                 @include span-columns (6);
@@ -680,7 +680,7 @@ section.case-study {
         }
         h1 {
             color: $orange;
-            font-size: 1.5em;
+            font-size: 1.25em;
             line-height: 1.3em;
             @include media($desktop) {
                 font-size: 1.25em;
@@ -697,13 +697,9 @@ section.case-study {
             font-size: 1em;
         }
         .atvImg {
-            width: 240px;
-            height: 144px;
+            width: 200px;
+            height: 120px;
             margin-bottom: 30px;
-            @include media($biggerdesktop) {
-                width: 200px;
-                height: 120px;
-            }
             @include media($tablet) {
                 margin: 0 auto 20px auto;
             }
@@ -1151,6 +1147,8 @@ footer {
 
 // Hero/header section
 header.case-study {
+    display: flex;
+    align-items: center;
     height: 100vh;
     background: $darknavy;
     background-size: cover;
@@ -1166,7 +1164,7 @@ header.case-study {
     #main-content {
         text-align: center;
         position: relative;
-        top: 14em;
+        margin: 0 auto;
 
         h1 {
             font-size: 2em;
@@ -1181,7 +1179,7 @@ header.case-study {
         p {
             margin: 0 auto;
             font-size: 1.25em;
-            max-width: 50%;
+            max-width: 24em;
             color: rgba(255, 255, 255, 0.9);
             @include media($tablet) {
                 max-width: 75%;
@@ -1262,6 +1260,28 @@ header.case-study {
         -o-background-size: cover;
         height: 80vh;
         box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
+    }
+
+    &.qvc-apple-tv {
+        background: linear-gradient(rgba($qvc, 0.1) rgba($qvc, 0.1)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 80vh;
+        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
+        .atvImg {
+            width: 240px;
+            height: 144px;
+            margin: 30px auto;
+            @include media($biggerdesktop) {
+                width: 200px;
+                height: 120px;
+            }
+            @include media($tablet) {
+                margin: 0 auto 20px auto;
+            }
+        }
     }
 
     &.aolrise {
@@ -1497,9 +1517,10 @@ section.objectives {
 
         h3 {
             font-size: 1em;
-            font-weight: 700;
+            font-weight: 900;
             text-transform: uppercase;
             margin-top: 1em;
+            line-height: 1.5em;
             @include media($mobile) {
                 padding-top: 0;
             }
@@ -1535,13 +1556,52 @@ section.objectives {
 // Sub Section
 section.image-banner {
     background: $darknavy;
-    padding-top: 6em;
+    padding: 6em 0;
     text-align: center;
     background: linear-gradient(rgba($darknavy, 0.5), rgba($darknavy, 0.5)),
         url(../assets/images/case-studies/showpal/gallery-header.png);
     @include outer-container;
     @include media($mobile) {
         padding: 2em 0 0 0;
+    }
+    h1 {
+        color: #fff;
+    }
+    p {
+        font-size: 1.125em;
+        margin: 0 auto 6em auto;
+        max-width: 50%;
+        color: rgba(255, 255, 255, 0.8);
+        @include media($tablet) {
+            max-width: 75%;
+        }
+        @include media($mobile) {
+            max-width: 90%;
+        }
+    }
+
+    &.clear {
+        background: #fff;
+        h1 {
+            color: $orange;
+            margin: 0 auto;
+            max-width: 25em;
+            line-height: 1.25em;
+        }
+        p {
+            color: $darknavy;
+            margin: 0 auto;
+        }
+        img.logo {
+            max-width: 100%;
+            width: 150px;
+            margin-bottom: 30px;
+        }
+        img.logos {
+            max-width: 100%;
+            width: 50%;
+            margin-top: 30px;
+        }
     }
 
     &.orange {
@@ -1579,31 +1639,6 @@ section.image-banner {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-    h1 {
-        color: #fff;
-    }
-    p {
-        font-size: 1.125em;
-        margin: 0 auto 6em auto;
-        max-width: 50%;
-        color: rgba(255, 255, 255, 0.8);
-        @include media($tablet) {
-            max-width: 75%;
-        }
-        @include media($mobile) {
-            max-width: 90%;
-        }
-    }
-
-    img {
-        @include span-columns (8);
-        @include shift (2);
-        @include media($tablet) {
-            @include span-columns (10);
-            @include shift (1);
-        }
-    }
 }
 
 
