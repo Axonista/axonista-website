@@ -546,6 +546,10 @@ section.case-study {
         transition: all .1s ease-in-out;
         -webkit-transition: all .1s ease-in-out;
 
+        &.on-light {
+            border: 2px solid $orange;
+            color: $orange;
+        }
         &:hover {
             cursor: pointer;
             background: #fff;
@@ -659,6 +663,7 @@ section.case-study {
     }
     &.qvc-tv {
         background: #fff;
+        height: 100vh;
         .info {
             @include media($desktop) {
                 @include span-columns (4);
@@ -674,7 +679,6 @@ section.case-study {
             }
         }
         h1 {
-            margin-top: 50px;
             color: $orange;
             font-size: 1.5em;
             line-height: 1.3em;
@@ -684,6 +688,7 @@ section.case-study {
         }
         p {
             color: $mediumnavy;
+            font-size: 1em;
             @include media($biggerdesktop) {
                 font-size: 1em;
             }
@@ -694,7 +699,7 @@ section.case-study {
         .atvImg {
             width: 240px;
             height: 144px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             @include media($biggerdesktop) {
                 width: 200px;
                 height: 120px;
