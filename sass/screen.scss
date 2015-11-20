@@ -1179,7 +1179,7 @@ header.case-study {
         p {
             margin: 0 auto;
             font-size: 1.25em;
-            max-width: 24em;
+            max-width: 35em;
             color: rgba(255, 255, 255, 0.9);
             @include media($tablet) {
                 max-width: 75%;
@@ -1270,6 +1270,12 @@ header.case-study {
         -o-background-size: cover;
         height: 80vh;
         box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
+        @include media($biggerdesktop) {
+            height: 100vh;
+        }
+        p.subtext {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
         .atvImg {
             width: 240px;
             height: 144px;
@@ -1277,6 +1283,10 @@ header.case-study {
             @include media($biggerdesktop) {
                 width: 200px;
                 height: 120px;
+            }
+            @include media($mobile) {
+                width: 160px;
+                height: 96px;
             }
             @include media($tablet) {
                 margin: 0 auto 20px auto;
@@ -1562,7 +1572,7 @@ section.image-banner {
         url(../assets/images/case-studies/showpal/gallery-header.png);
     @include outer-container;
     @include media($mobile) {
-        padding: 2em 0 0 0;
+        padding: 3em 1em;
     }
     h1 {
         color: #fff;
@@ -1587,6 +1597,9 @@ section.image-banner {
             margin: 0 auto;
             max-width: 25em;
             line-height: 1.25em;
+            @include media($mobile) {
+                font-size: 1.125em;
+            }
         }
         p {
             color: $darknavy;
@@ -1601,6 +1614,9 @@ section.image-banner {
             max-width: 100%;
             width: 50%;
             margin-top: 30px;
+            @include media($mobile) {
+                width: 90%;
+            }
         }
     }
 
