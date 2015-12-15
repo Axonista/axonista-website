@@ -6,21 +6,29 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700);
 
 // Main colour palette
-$darknavy: #10152E; //rgba(38, 43, 63, 100)
-$mediumnavy: #545e75; //rgba(84, 94, 117, 100)
-$orange: #F3A540; //rgba (34, 67, 100, 100)
-$blue: #4D92E0; //rgba(99, 173, 242, 100)
-$lightgrey: #f8f8f8; //rgba(248, 248, 248, 100)
-$navnavy: #171A1B; //rgba(23, 26, 37, 100)
+$darknavy:      #10152E; //rgba(38, 43, 63, 100)
+$mediumnavy:    #545e75; //rgba(84, 94, 117, 100)
+$orange:        #F3A540; //rgba (34, 67, 100, 100)
+$blue:          #4D92E0; //rgba(99, 173, 242, 100)
+$lightgrey:     #f8f8f8; //rgba(248, 248, 248, 100)
+$navnavy:       #171A1B; //rgba(23, 26, 37, 100)
 
 $greynavy:      #151828;
-$darkgrey: 		#333D3D;
-$purple: 		#19254E;
+$darkgrey: 		  #333D3D;
+$purple: 		    #19254E;
 $rerun:         #3f51b5;
 $showpal:       #3BB8D7;
 $qvc:           #EB5D62;
 $threeplayer:   #514A94;
 $aolrise:       #6C3995;
+
+//Rise Colours
+$rise-green:    #00897B;
+$darker-grey:   #474E66;
+$dark-orange:   #F47056;
+$light-orange:  #FECC75;
+$grey-text:     #8C94A5;
+$faded-orange:  #FDF1E8;
 
 $pin-size: 		12px;
 
@@ -2446,4 +2454,328 @@ li.tab-active {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+
+//HuffPost Rise Case Study
+
+body.huff-body { background: white;
+@include media($mobile) {
+  width: 100%;
+} }
+nav.case-study-nav {
+  background: $navnavy;
+  height: 70px;
+  width: 100%;
+
+  img {
+    height: 35px;
+    margin: 18px 0 0 150px;
+  }
+}
+
+section.rise-hero {
+  background: linear-gradient(135deg, $dark-orange, $light-orange);
+  height: 100vh;
+  @include clearfix;
+
+  #align-left {
+    float: left;
+    position: relative;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+    position: relative;
+    @include media($mobile) {
+      float: none;
+      top: 40%;
+      width: 80%;
+    }
+
+    img {
+      height: 50px;
+      @include media($mobile) {
+        height: 30px;
+      }
+    }
+
+    h2 {
+      color: white;
+      font-family: Proxima Nova;
+      font-weight: 600;
+      text-transform: none;
+      font-size: 1.7em;
+      margin: .7em 0 0 0;
+      @include media($mobile) {
+        font-size: 1.3em;
+      }
+    }
+
+    p {
+      width: 70%;
+      font-size: 1em;
+      color: white;
+      font-family: Proxima Nova;
+      margin: 0 0 2em 0;
+      @include media($mobile) {
+        font-size: 0.9em;
+      }
+    }
+
+    button {
+      background: none;
+      border: 2px solid white;
+      border-radius: 3px;
+      font-weight: 400;
+      color: white;
+      font-family: Proxima Nova;
+      font-size: 1em;
+      padding: .5em 2em .5em 2em;
+    }
+  }
+
+  #align-right {
+    float: right;
+    @include media($mobile) {
+      float: none;
+    }
+
+
+    img {
+      height: 750px;
+      position: relative;
+      top: 8em;
+      @include media($mobile) {
+        height: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+section.rise-section {
+  background: white;
+  text-align: center;
+  padding: 7em 0;
+
+  h2 {
+    color: $darker-grey;
+    font-family: Proxima Nova;
+    font-weight: 600;
+    font-size: 1.4em;
+    text-transform: none;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 50%;
+    line-height: 1.9em;
+    color: $grey-text;
+    font-weight: 300;
+    font-size: 1.1em;
+    @include media($mobile){
+      max-width: 90%;
+    }
+  }
+
+  ul.objectives {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+
+    li {
+      display: inline-block;
+    	padding: 10px;
+      background: #fff;
+    	font-size: 16px;
+    	font-size: 1rem;
+    	vertical-align: top;
+      padding-top: 7em;
+    }
+
+    h3 {
+      margin: 0 0 5px;
+      font-family: Proxima Nova;
+      font-weight: 600;
+      text-transform: none;
+      font-size: 1.3em;
+      color: $darker-grey;
+
+    }
+
+    p {
+      font-size: 1em;
+    	line-height: 1.7em;
+    	color: $grey-text;
+      max-width: 80%;
+
+    }
+
+    i.icon {
+      color: $rise-green;
+      font-size: 1.5em;
+    }
+  }
+
+  ul.objectives.columns-3 li {
+  	width: 28%
+  }
+
+  @media (max-width: 480px) {
+  	ul.objectives li {
+  		display: block;
+  		margin: 0 0 5px;
+  	}
+  	ul.objectives li a {
+  		display: block;
+  	}
+  	ul.objectives {
+  		margin-left: 0;
+  	}
+  	ul.objectives li {
+  		width: 100% !important; /* over-ride all li styles */
+  		margin: 0 0 20px;
+  	}
+  }
+}
+
+section.two {
+  border-top: 1px solid $lightgrey;
+
+  ul {
+    margin: 5em 0;
+  }
+
+  li {
+    display: block;
+    text-align: left;
+    margin-left: 10em;
+    color: $grey-text;
+    font-size: 1.2em;
+    font-family: Proxima Nova;
+    line-height: 2.5em;
+    list-style-type: disc;
+    @include media($mobile) {
+      margin-left: 1em;
+    }
+  }
+
+  i.icon-circle {
+    margin-right: 1em;
+    color: $rise-green;
+  }
+}
+
+section.three {
+  border-top: 1px solid $lightgrey;
+
+  span {
+    color: $rise-green;
+    font-weight: 800;
+  }
+
+  #solution-one {
+    padding: 8em;
+    @include clearfix;
+
+    img#left {
+      float: left;
+      width: 450px;
+      height: auto;
+      max-width: 100%;
+      left: 5%;
+      position: relative
+    }
+
+    #solution-content {
+      float: right;
+      position: relative;
+      right: 10%;
+      margin-top: 8em;
+
+      p { max-width: 100%;}
+    }
+  }
+
+  #solution-two {
+    padding: 8em;
+    @include clearfix;
+
+    img#right {
+      float: right;
+      width: 450px;
+      height: auto;
+      max-width: 100%;
+      right: 7%;
+      position: relative
+    }
+
+    #solution-content {
+      float: left;
+      position: relative;
+      left: 8%;
+      margin-top: 8em;
+
+      p { max-width: 50%; text-align: left; margin-left: 0; }
+    }
+  }
+
+
+
+}
+
+section.four {
+  border-top: 1px solid $lightgrey;
+
+  img {
+    margin: 4em 0;
+    width: 950px;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+section.five {
+  height: 60vh;
+  padding: 0;
+  background: $faded-orange;
+  @include clearfix;
+
+  #align-left {
+    float: left;
+    position: relative;
+    top: 100%;
+    left: 20%;
+    transform: translateY(-100%);
+  }
+
+  #align-right {
+    float: right;
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+
+    p {
+      margin-left: 0;
+    }
+  }
+
+  img {
+    height: 400px;
+  }
+}
+
+section.case-study-footer {
+  background: white;
+  height: 70px;
+
+  h2 {
+    font-family: Proxima Nova;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-transform: none;
+    text-align: center;
+    line-height: 70px;
+  }
 }
