@@ -2476,19 +2476,18 @@ nav.case-study-nav {
 section.rise-hero {
   background: linear-gradient(135deg, $dark-orange, $light-orange);
   height: 100vh;
-  @include clearfix;
+  @include outer-container;
+  position: relative;
 
   #align-left {
-    float: left;
     position: relative;
-    top: 50%;
-    left: 11%;
-    transform: translateY(-50%);
-    position: relative;
+    padding: 17em 0em 0em 2em;
+    @include span-columns (6);
+    @include shift (1);
     @include media($mobile) {
-      float: none;
-      top: 40%;
-      width: 80%;
+      @include span-columns (10);
+      padding: 6em 0;
+      text-align: center;
     }
 
     img {
@@ -2518,6 +2517,7 @@ section.rise-hero {
       margin: 0 0 2em 0;
       @include media($mobile) {
         font-size: 0.9em;
+        width: 100%;
       }
     }
 
@@ -2534,19 +2534,25 @@ section.rise-hero {
   }
 
   #align-right {
-    float: right;
+    padding: 4 0;
+    @include span-columns (4);
+    @include shift (-1);
     @include media($mobile) {
-      float: none;
+      padding: 0;
+      text-align: center;
+      margin-left: 1.5em;
+      @include span-columns(12);
     }
 
 
     img {
-      height: 750px;
+      height: 700px;
       position: relative;
-      top: 8em;
+      bottom: -130px;
       @include media($mobile) {
-        height: 300px;
-        margin: 0 auto;
+        height: 500px;
+        position: relative;
+        bottom: 30px;
       }
     }
   }
@@ -2572,11 +2578,13 @@ section.rise-section {
     color: $grey-text;
     font-weight: 300;
     font-size: 1.1em;
-    @include media($mobile){
+    @include media($mobile) {
       max-width: 90%;
     }
   }
+}
 
+section.one {
   ul.objectives {
 	list-style: none;
 	font-size: 0px;
@@ -2590,6 +2598,12 @@ section.rise-section {
     	font-size: 1rem;
     	vertical-align: top;
       padding-top: 7em;
+
+      @include media($mobile) {
+        display: block;
+        width: 100%!important;
+        margin: 0 0 20px;
+      }
     }
 
     h3 {
@@ -2619,23 +2633,6 @@ section.rise-section {
   ul.objectives.columns-3 li {
   	width: 28%
   }
-
-  @media (max-width: 480px) {
-  	ul.objectives li {
-  		display: block;
-  		margin: 0 0 5px;
-  	}
-  	ul.objectives li a {
-  		display: block;
-  	}
-  	ul.objectives {
-  		margin-left: 0;
-  	}
-  	ul.objectives li {
-  		width: 100% !important; /* over-ride all li styles */
-  		margin: 0 0 20px;
-  	}
-  }
 }
 
 section.two {
@@ -2654,6 +2651,9 @@ section.two {
     font-family: Proxima Nova;
     line-height: 2.5em;
     list-style-type: disc;
+    @include media($tablet) {
+      margin-left: 2em;
+    }
     @include media($mobile) {
       margin-left: 1em;
     }
@@ -2667,6 +2667,7 @@ section.two {
 
 section.three {
   border-top: 1px solid $lightgrey;
+  @include outer-container;
 
   span {
     color: $rise-green;
@@ -2674,52 +2675,57 @@ section.three {
   }
 
   #solution-one {
-    padding: 8em;
-    @include clearfix;
+    padding: 8em 0;
 
     img#left {
-      float: left;
+      @include span-columns (5);
+      @include shift (1);
       width: 450px;
       height: auto;
       max-width: 100%;
       left: 5%;
-      position: relative
+      position: relative;
     }
 
     #solution-content {
-      float: right;
+      @include span-columns (7);
       position: relative;
-      right: 10%;
       margin-top: 8em;
+
+      @include media($mobile) {
+        @include span-columns (12);
+      }
 
       p { max-width: 100%;}
     }
   }
 
   #solution-two {
-    padding: 8em;
-    @include clearfix;
+    padding: 30% 0;
 
     img#right {
-      float: right;
+      @include span-columns (5);
+      @include shift (1);
       width: 450px;
       height: auto;
       max-width: 100%;
-      right: 7%;
-      position: relative
+      left: 5%;
+      position: relative;
     }
 
     #solution-content {
-      float: left;
+      @include span-columns (5);
+      @include shift (1);
       position: relative;
-      left: 8%;
       margin-top: 8em;
 
-      p { max-width: 50%; text-align: left; margin-left: 0; }
+      @include media($mobile) {
+        @include span-columns (12);
+      }
+
+      p { max-width: 100%;}
     }
   }
-
-
 
 }
 
@@ -2737,29 +2743,39 @@ section.four {
 section.five {
   height: 60vh;
   padding: 0;
-  background: $faded-orange;
-  @include clearfix;
+  background: #FD9569;
+  @include outer-container;
+  @include media($mobile) {
+    height: 100vh;
+  }
 
   #align-left {
-    float: left;
-    position: relative;
-    top: 100%;
-    left: 20%;
-    transform: translateY(-100%);
+    @include span-columns (5);
+    @include shift (1);
+    @include media($mobile) {
+      @include span-columns (12);
+    }
   }
 
   #align-right {
-    float: right;
+    @include span-columns (5);
+    @include shift (-1);
+    margin-top: 8em;
     text-align: left;
-    position: relative;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    @include media($mobile) {
+      @include span-columns (12);
+    }
+  }
+
+  h2 {
+    color: white;
+  }
 
     p {
       margin-left: 0;
+      max-width: 100%;
+      color: white;
     }
-  }
 
   img {
     height: 400px;
