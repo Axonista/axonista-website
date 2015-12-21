@@ -891,7 +891,7 @@ section.case-study.qvc .background-image {
   bottom: 0;
   right: 0;
   z-index: 0;
-  background: linear-gradient(rgba(228, 102, 103, 0.95) 0%, #e46667 50%, rgba(228, 102, 103, 0.98) 100%), url(../assets/images/case-studies/qvc/ipad-four.jpg);
+  background: linear-gradient(rgba(228, 102, 103, 0.9) 0%, rgba(228, 102, 103, 0.98) 50%, #e46667 100%), url(../assets/images/case-studies/qvc/ipad-four.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1373,7 +1373,7 @@ section.rerun {
 section.rerun img {
   float: none !important;
   margin: 0 auto 1em auto !important;
-  max-width: 150px;
+  max-width: 180px;
 }
 /* line 919, ../sass/screen.scss */
 section.rerun p {
@@ -2603,7 +2603,7 @@ section.image-banner.orange {
 }
 /* line 1662, ../sass/screen.scss */
 section.image-banner.rerun {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/rerun-bg.png);
+  background: linear-gradient(rgba(16, 21, 46, 0.66), rgba(16, 21, 46, 0.66)), url(../assets/images/rerun-bad-tv.jpg);
   background-size: 75%;
 }
 /* line 1668, ../sass/screen.scss */
