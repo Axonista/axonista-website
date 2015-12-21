@@ -18,7 +18,7 @@ $darkgrey: 		  #333D3D;
 $purple: 		    #19254E;
 $rerun:         #3f51b5;
 $showpal:       #3BB8D7;
-$qvc:           #EB5D62;
+$qvc:           #E46667;
 $threeplayer:   #514A94;
 $aolrise:       #6C3995;
 
@@ -629,6 +629,7 @@ section.case-study {
         }
     }
     &.qvc {
+        background: linear-gradient(rgba($qvc, 0.95) 0%, rgba($qvc, 1) 50%, rgba($qvc, 0.95) 100%);
         .background-image {
             position: absolute;
             top: 0;
@@ -636,7 +637,7 @@ section.case-study {
             bottom: 0;
             right: 0;
             z-index: 0;
-            background: radial-gradient(circle farthest-corner at right bottom, rgba($qvc, 0.25) 0%, rgba($qvc, 0.3) 20%, rgba($qvc, 0.35) 45%, rgba($greynavy, 0.7) 70%, rgba($greynavy, 1) 100%), url(../assets/images/case-studies/qvc/qvc-featured.jpg);
+            background: linear-gradient(rgba($qvc, 0.95) 0%, rgba($qvc, 1) 50%, rgba($qvc, 0.98) 100%), url(../assets/images/case-studies/qvc/ipad-four.jpg);
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -652,7 +653,22 @@ section.case-study {
             }
             @include media($mobile) {
                 background-position-x: 50% !important;
-                -webkit-filter: brightness(0.5);
+            }
+        }
+        .featured {
+            z-index: 1;
+    	   	@include span-columns (6);
+            @include shift(0.25);
+            @include media($biggerdesktop) {
+                @include span-columns (5);
+                @include shift(0.25);
+            }
+            @include media($mobile) {
+                display: none;
+            }
+
+            img {
+                max-width: 100%;
             }
         }
         .case-button {
