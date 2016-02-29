@@ -1,4 +1,5 @@
-.tmp
+_site
 .sass-cache
-bower_components
+.jekyll-metadata
 .DS_Store
+bower_components
