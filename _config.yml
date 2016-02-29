@@ -1,6 +1,6 @@
-# Site settings
+---
 title: Axonista
-url: http://axonista.siteleaf.net
+url: http://axonista.com
 timezone: UTC
 collections:
   posts:
@@ -10,10 +10,8 @@ collections:
     title: Uploads
     output: true
 email: connect@axonista.com
-description: We work with broadcasters to make TV truly interactive, connecting viewers to storytellers in engaging, measurable and monetisable ways.
-baseurl: ""
-url: "http://axonista.com"
+description: We work with broadcasters to make TV truly interactive, connecting viewers
+  to storytellers in engaging, measurable and monetisable ways.
+baseurl: ''
 twitter: axonista
-
-# Build settings
 markdown: kramdown
