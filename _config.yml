@@ -1,6 +1,6 @@
 ---
 title: Axonista
-url: http://axonista.com
+url: http://new.axonista.com
 timezone: UTC
 collections:
   posts:
@@ -12,6 +12,6 @@ collections:
 email: connect@axonista.com
 description: We work with broadcasters to make TV truly interactive, connecting viewers
   to storytellers in engaging, measurable and monetisable ways.
-baseurl: ''
+baseurl: 
 twitter: axonista
 markdown: kramdown
