@@ -11,7 +11,7 @@ collections:
     output: true
 description: Our award-winning technology powers real-time interactive video graphics
   for some of the world's leading video and TV companies.
-email: "connect@axonista.com"
+email: connect@axonista.com
 twitter: "@axonista"
-baseurl:
+baseurl: 
 markdown: kramdown
