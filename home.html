@@ -1,0 +1,242 @@
+---
+title: Home
+date: 2016-03-01 17:59:00 Z
+permalink: "/"
+description: Our award-winning technology powers real-time interactive video graphics
+  for some of the world's leading video and TV companies.
+---
+
+<!DOCTYPE html>
+<html>
+	<title>{{ site.title }}</title>
+	<head>
+        <meta name="description" content="{{ site.description }}">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="{{ site.twitter }}">
+        <meta name="twitter:title" content="{{ site.title }}">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:creator" content="{{ site.twitter }}">
+        <meta name="twitter:image" content="http://www.axonista.com/assets/images/axonista-logo-stacked.png">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="{{ site.title }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://axonista.com/" />
+        <meta property="og:image" content="http://www.axonista.com/assets/images/axonista-logo-stacked.png" />
+        <meta property="og:description" content="{{ site.description }}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+        <script src="/js/libraries/pace.min.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-18701425-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+        <script src="//use.typekit.net/bey1ybm.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+	</head>
+		<body>
+        <div class="animsition">
+            <nav class="headroom">
+				<div id="menu-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+                <a href="/" class="brand animsition-link">
+                    <img class="logo" src="/assets/images/axonista-logo.png"/>
+                </a>
+                <div id="alignright">
+                    <ul id="toggle-menu">
+                        <li><a class="anchor-link" href="#work">Work</a></li>
+                        <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
+                        <li><a class="anchor-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+			<div id="full-screen-nav">
+                <ul>
+                    <li><a class="anchor-link" href="#work">Work</a></li>
+                    <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
+                    <li><a class="anchor-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+			<div class="hero" id="home">
+				<div id="hero-content">
+					<h1>TV is now <span class="highlight">interactive</span></h1>
+					<p>{{ description }}</p>
+                </div>
+                <div class="hero-footer">
+                    <a href="#what-we-do" class="anchor-link">Learn more about what we do <svg width="16" height="8" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg"><path d="M15.34.495L8.028 7.87.715.495" stroke="rgba(255, 255, 255, 0.8)" stroke-width="1.5px" fill="none"></path></svg></a>
+                </div>
+                <video autoplay loop poster="/assets/images/placeholder.jpg" id="bgvid">
+                    <source src="/assets/videos/hero-comp.mp4" type="video/mp4">
+                </video>
+			</div>
+
+            <section id="what-we-do" class="logos platforms">
+                <h1>We build <span class="highlight">awesome apps</span> on these platforms</h1>
+                <ul>
+                    <li><img src='/assets/images/logos/platform/ios.png'></li>
+                    <li><img src='/assets/images/logos/platform/tvos.png'></li>
+                    <li><img src='/assets/images/logos/platform/android.png'></li>
+                    <li><img src='/assets/images/logos/platform/roku.png'></li>
+                    <li><img src='/assets/images/logos/platform/xbox.png'></li>
+                    <li><img src='/assets/images/logos/platform/oculus.png'></li>
+                </ul>
+            </section>
+
+			<section id="work" class='case-study qvc-tv'>
+                <div class="info">
+					<div class="atvImg">
+						<!--<img class="logo" src="/assets/images/case-studies/qvc/qvc-icon-apple-tv-flat.png"/>-->
+						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
+						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
+					</div>
+					<p>We collaborated closely with QVC to deliver what is widely lauded as one of the best apps in the Apple TV App Store.</p>
+					<h1>"The single most interesting app in the Apple TV App Store right now"</h1>
+                    <p class="subtext">&mdash; Nilay Patel, The Verge</p>
+					<a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
+				</div>
+				<div class="featured">
+					<img src="/assets/images/case-studies/qvc/qvc-apple-tv.jpg"/>
+				</div>
+            </section>
+			<section class='case-study qvc'>
+				<div class="background-image"></div>
+                <div class="info">
+                    <img class="logo" src="/assets/images/case-studies/qvc/qvc-logo-white.png" alt="QVC Logo">
+                    <p>QVC UK uses our interactive video platform Ediflo to bring a host of new storytelling features to their flagship iPad app.</p>
+                    <a class="store-link" href="https://itunes.apple.com/gb/app/qvc-ipad-edition/id848357388?mt=8"><img src="/assets/images/app-store.svg" alt="Download QVC on the App Store"/></a>
+                </div>
+				<div class="featured">
+					<img src="/assets/images/case-studies/qvc/qvc-featured-image.png"/>
+				</div>
+            </section>
+            <section class='case-study threeplayer'>
+                <div class="background-image"></div>
+                <div class="info">
+                    <img class="logo" src="/assets/images/case-studies/3player/3player-logo-colour.png" alt="3player Logo">
+                    <p>We designed and developed the native 3player live streaming and VOD apps on iOS, Android, Xbox and Roku platforms for TV3.</p>
+                    <a class="store-link" href="https://itunes.apple.com/ie/app/3player/id602597705?mt=8"><img src="/assets/images/app-store.svg" alt="Download 3player on the App Store"/></a>
+                    <a class="store-link" href="https://play.google.com/store/apps/details?id=com.axonista.threeplayer">
+                        <img src="/assets/images/play-store.png" alt="Get it on Google Play"/>
+                    </a>
+                </div>
+            </section>
+
+            <section class="logos clients">
+                <h1>We work with these <span class="highlight">visionaries of video &amp; tv</span></h1>
+                <ul>
+										<li><img src='/assets/images/logos/client/the-qyou.png'></li>
+                    <li><img src='/assets/images/logos/client/qvc.png'></li>
+                    <li><img src='/assets/images/logos/client/aol.png'></li>
+                    <li><img src='/assets/images/logos/client/tv3.png'></li>
+                    <li><img src='/assets/images/logos/client/channel-five.png'></li>
+                    <li><img src='/assets/images/logos/client/mtv.png'></li>
+                    <li><img src='/assets/images/logos/client/setanta-sports.png'></li>
+                </ul>
+            </section>
+
+            <section class="image-banner rerun">
+                <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
+                <img src="/assets/images/rerun-logo.png" alt="Rerun logo" />
+                <p>Rerun is the best way to keep up with the world of digital storytelling, interactive media and future of TV. Curated by us and published Fridays!</p>
+                    <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
+                    <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
+                    <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
+                </form>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="content">
+                    <h1>Contact Us</h1>
+                    <div class="addresses">
+                        <section class="address">
+                            <h3>Dublin</h3>
+                            <ul class="address">
+                                <li>Axonista HQ</li>
+                                <li>15-17 South Leinster Street</li>
+                                <li>Dublin 2</li>
+                                <li><i class="icon icon-phone"></i> <span>+353 1 676 6251</span></li>
+                            </ul>
+                        </section>
+                        <section class="address">
+                            <h3>London</h3>
+                            <ul class="address">
+                                <li>Axonista UK</li>
+                                <li>88-90 Hatton Garden</li>
+                                <li>London</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <h3>Online</h3>
+                    <ul>
+                        <li><i class="icon icon-mail"></i> <a href="mailto:connect@axonista.com">connect@axonista.com</a></li>
+                        <li><i class="icon icon-twitter"></i> <a href="https://twitter.com/axonista">@axonista</a></li>
+                        <li><i class="icon icon-facebook"></i> <a href="https://www.facebook.com/axonista">Axonista</a></li>
+                    </ul>
+                </div>
+                <iframe width='100%' height='550px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/ianaxonista.99663faf/attribution,zoompan.html?access_token=pk.eyJ1IjoiaWFuYXhvbmlzdGEiLCJhIjoiZWZjMTliMGFjN2RhY2IzODgwM2EyMzgwYmQyMTE5YTIifQ.9HmZyIsHxL67XCCCODfr2A'></iframe>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="section brand">
+                        <img class="logo" src="/assets/images/axonista-logo.png"/>
+                        <p>We work with global broadcasters to engage and delight their audiences.</p>
+                    </div>
+                    <div class="section explore">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a class="anchor-link" href="#work">Work</a></li>
+                            <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
+                            <li><a class="anchor-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><i class="icon icon-phone"></i> <span>+353 1 676 6251</span></li>
+                            <li><i class="icon icon-mail"></i> <a href="mailto:connect@axonista.com">connect@axonista.com</a></li>
+                            <li><i class="icon icon-twitter"></i> <a href="https://twitter.com/axonista">@axonista</a></li>
+                            <li><i class="icon icon-facebook"></i> <a href="https://www.facebook.com/axonista">Axonista</a></li>
+                        </ul>
+                   </div>
+                    <div class="legality">
+                        <img src="/assets/images/tv.png" alt="TV icon">
+                        <span>
+							Copyright ©
+							<script type="text/javascript">
+  								document.write(new Date().getFullYear());
+							</script>
+ 							Axonista. All Rights Reserved.
+						</span>
+                    </div>
+                </div>
+            </footer>
+
+            </div>
+            <script src="/js/libraries/jquery-1.11.3.min.js"></script>
+            <script src="/js/libraries/jquery-ui.min.js"></script>
+            <script src="/js/libraries/headroom.min.js"></script>
+            <script src="/js/libraries/jquery.headroom.min.js"></script>
+			<script src="/js/libraries/atvImg.min.js"></script>
+            <script src="/js/libraries/animsition.min.js"></script>
+            <script src="/js/main.js"></script>
+		</body>
+</html>
