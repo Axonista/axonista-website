@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Axonista</title>
-    <description>We work with broadcasters to make TV truly interactive, connecting viewers to storytellers in engaging, measurable and monetisable ways.</description>
+    <description>Our award-winning technology powers real-time interactive video graphics for some of the world&#39;s leading video and TV companies.</description>
     <link>http://axonista.siteleaf.net/</link>
     <atom:link href="http://axonista.siteleaf.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Mar 2016 10:55:57 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2016 10:55:57 +0000</lastBuildDate>
+    <pubDate>Tue, 01 Mar 2016 17:32:10 +0000</pubDate>
+    <lastBuildDate>Tue, 01 Mar 2016 17:32:10 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
   </channel>
