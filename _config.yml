@@ -9,9 +9,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+description: Our award-winning technology powers real-time interactive video graphics
+  for some of the world's leading video and TV companies.
 email: connect@axonista.com
-description: We work with broadcasters to make TV truly interactive, connecting viewers
-  to storytellers in engaging, measurable and monetisable ways.
-baseurl: 
 twitter: axonista
+baseurl: 
 markdown: kramdown
