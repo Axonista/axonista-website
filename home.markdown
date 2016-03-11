@@ -13,12 +13,12 @@ ediflo-library:
 platforms-heading: We design and build awesome video experiences on these platforms
 services-heading: |
   We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
-qvc-text: We collaborated closely with QVC to deliver what is widely lauded as one
-  of the best apps in the Apple TV App Store. Powered by Ediflo.
+qvc-description: We collaborated closely with QVC to deliver what is widely lauded
+  as one of the best apps in the Apple TV App Store. Powered by Ediflo.
 qvc-quote:
   text: '"The single most interesting app in the Apple TV App Store right now"'
   author: Nilay Patel, The Verge
-clients-text: We work with these visionaries of video & TV
+clients-heading: We work with these visionaries of video & TV
 rerun-text: Rerun is the best way to keep up with the world of digital storytelling,
   interactive media and future of TV. Curated by us and published Fridays!
 ediflo-live:
