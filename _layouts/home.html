@@ -12,7 +12,7 @@
           <div id="alignright">
               <ul id="toggle-menu">
 								<li><a class="anchor-link" href="{{ site.url }}#products">Products</a></li>
-                  <li><a class="anchor-link" href="{{ site.url }}#work">Work</a></li>
+                  <li><a class="anchor-link" href="{{ site.url }}#services">Services</a></li>
                   <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                   <li><a class="anchor-link" href="{{ site.url }}#contact">Contact</a></li>
               </ul>
@@ -20,7 +20,8 @@
       </nav>
 			<div id="full-screen-nav">
                 <ul>
-                    <li><a class="anchor-link" href="{{ site.url }}#work">Work</a></li>
+									<li><a class="anchor-link" href="{{ site.url }}#products">Products</a></li>
+										<li><a class="anchor-link" href="{{ site.url }}#services">Services</a></li>
                     <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                     <li><a class="anchor-link" href="{{ site.url }}#contact">Contact</a></li>
                 </ul>
@@ -28,7 +29,7 @@
 			<div class="hero" id="home">
 				<div id="hero-content">
 					<h1>TV is now <span class="highlight">interactive</span></h1>
-					<p>{{ page.description }}</p>
+					<p>{{ page.axonista-description }}</p>
                 </div>
                 <div class="hero-footer">
                     <a href="#what-we-do" class="anchor-link">Learn more about what we do <svg width="16" height="8" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg"><path d="M15.34.495L8.028 7.87.715.495" stroke="rgba(255, 255, 255, 0.8)" stroke-width="1.5px" fill="none"></path></svg></a>
@@ -38,34 +39,34 @@
                 </video>
 			</div>
 
-		<section class="ediflo">
-			<h1>Products</h1>
+		<section id="products" class="ediflo">
+			<h1>Product</h1>
 			<img src='assets/images/logos/ediflo.png' />
-			<p>Cloud based digital asset management and workflow system for powering video apps.</p>
+			<p>{{ page.ediflo-description }}</p>
 
 			<div class="features">
 				<ul class="rig columns-3">
 					<li>
-						<h2>Ediflo Library</h2>
-						<h3>Digital Asset Management</h3>
-						<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec phare, condimentum ullamcorper est sit.</p>
+						<h2>{{ page.ediflo-library.heading }}</h2>
+						<h3>{{ page.ediflo-library.subheading }}</h3>
+						<p>{{ page.ediflo-library.description }}</p>
 					</li>
 					<li>
-						<h2>Ediflo Live</h2>
-						<h3>Scheduling & Playout</h3>
-						<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec phare, condimentum ullamcorper est sit.</p>
+						<h2>{{ page.ediflo-live.heading }}</h2>
+						<h3>{{ page.ediflo-live.subheading }}</h3>
+						<p>{{ page.ediflo-live.description }}</p>
 					</li>
 					<li>
-						<h2>Remoco</h2>
-						<h3>Interactive Video</h3>
-						<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec phare, condimentum ullamcorper est sit.</p>
+						<h2>{{ page.remoco.heading }}</h2>
+						<h3>{{ page.remoco.subheading }}</h3>
+						<p>{{ page.remoco.description }}</p>
 					</li>
 				</ul>
 			</div>
 		</section>
 
             <section id="what-we-do" class="logos platforms">
-                <h1>{{ page.platforms-text }}</h1>
+                <h1>{{ page.platforms-heading }}</h1>
                 <ul>
                     <li><img src='{{ site.url }}/assets/images/logos/platform/ios.png'></li>
                     <li><img src='{{ site.url }}/assets/images/logos/platform/tvos.png'></li>
@@ -76,13 +77,13 @@
                 </ul>
             </section>
 
-			<section class="services">
+			<section id="services" class="services">
 					<h1>Services</h1>
-					<p>Axonista offers technology for creating interactive video apps that can be distributed on multiple platforms and managed by TV producers.</p>
+					<p>{{ page.services-description }}</p>
 					<a class='case-button on-light animsition-link' href="{{ site.url }}/services.html">View Our Work</a>
 			</section>
 
-			<section id="work" class='case-study qvc-tv'>
+			<section class='case-study qvc-tv'>
         <div class="info">
 					<h1>Customer Story</h1>
 					<div class="atvImg">
@@ -90,7 +91,7 @@
 						<div class="atvImg-layer" data-img="{{ site.url }}/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
 						<div class="atvImg-layer" data-img="{{ site.url }}/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
 					</div>
-					<p>{{ page.qvc-text }}</p>
+					<p>{{ page.qvc-description }}</p>
 					<h1>{{ page.qvc-quote.text }}</h1>
                     <p class="subtext">&mdash; {{ page.qvc-quote.author }}</p>
 					<a class='case-button on-light animsition-link' href="{{ site.url }}/qvc-apple-tv.html">Read more about it</a>
@@ -101,7 +102,7 @@
       </section>
 
             <section class="logos clients">
-                <h1>{{ page.clients-text }}</h1>
+                <h1>{{ page.clients-heading }}</h1>
                 <ul>
 										<li><img src='{{ site.url }}/assets/images/logos/client/the-qyou.png'></li>
                     <li><img src='{{ site.url }}/assets/images/logos/client/qvc.png'></li>
@@ -116,7 +117,7 @@
             <section class="image-banner rerun">
                 <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
                 <img src="{{ site.url }}/assets/images/rerun-logo.png" alt="Rerun logo" />
-                <p>{{ page.rerun-text }}</p>
+                <p>{{ page.rerun-description }}</p>
                     <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
                     <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
                     <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
