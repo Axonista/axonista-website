@@ -11,7 +11,7 @@ ediflo-library:
   subheading: Digital Asset Management
   description: Description
 platforms-heading: We design and build awesome video experiences on these platforms
-services-heading: |
+services-description: |
   We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
 qvc-description: We collaborated closely with QVC to deliver what is widely lauded
   as one of the best apps in the Apple TV App Store. Powered by Ediflo.
