@@ -2,8 +2,8 @@
 title: Home
 date: 2016-03-01 18:07:00 Z
 permalink: "/"
-description: Our award-winning technology powers real-time interactive video graphics
-  for some of the world's leading video and TV companies.
+header-description: Our award-winning technology powers real-time interactive video
+  graphics for some of the world's leading video and TV companies.
 ediflo-description: Ediflo is our smart video platform designed and developed for
   the information age.
 ediflo-library:
