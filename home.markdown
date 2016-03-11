@@ -10,6 +10,14 @@ ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
   description: Description
+ediflo-live:
+  heading: Ediflo Live
+  subheading: Scheduling & Playout
+  description: Description
+remoco:
+  heading: Remoco
+  subheading: Interactive Video
+  description: Description
 platforms-heading: We design and build awesome video experiences on these platforms
 services-description: |
   We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
@@ -19,12 +27,8 @@ qvc-quote:
   text: '"The single most interesting app in the Apple TV App Store right now"'
   author: Nilay Patel, The Verge
 clients-heading: We work with these visionaries of video & TV
-rerun-text: Rerun is the best way to keep up with the world of digital storytelling,
+rerun-description: Rerun is the best way to keep up with the world of digital storytelling,
   interactive media and future of TV. Curated by us and published Fridays!
-ediflo-live:
-  heading: Ediflo Live
-  subheading: Scheduling & Playout
-  description: Description
 layout: home
 ---
 
