@@ -6,7 +6,7 @@ description: Our award-winning technology powers real-time interactive video gra
   for some of the world's leading video and TV companies.
 platforms-text: We build awesome apps on these platforms
 qvc-text: We collaborated closely with QVC to deliver what is widely lauded as one
-  of the best apps in the Apple TV App Store.
+  of the best apps in the Apple TV App Store. Powered by Ediflo.
 qvc-quote:
   text: '"The single most interesting app in the Apple TV App Store right now"'
   author: Nilay Patel, The Verge
