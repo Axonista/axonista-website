@@ -6,5 +6,6 @@ main-quote:
     just a great TV shopping experience, but what is widely lauded as one of the best
     apps in the Apple TV App Store, going on to win multiple awards.
   author: Claire McHugh, CEO Axonista
+layout: qvc-apple-tv
 ---
 
