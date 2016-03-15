@@ -3,10 +3,10 @@
   <channel>
     <title>Axonista</title>
     <description>Our award-winning technology powers real-time interactive video graphics for some of the world&#39;s leading video and TV companies.</description>
-    <link>http://axonista.com/</link>
-    <atom:link href="http://axonista.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Mar 2016 17:15:11 +0000</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2016 17:15:11 +0000</lastBuildDate>
+    <link>http://www.axonista.com/</link>
+    <atom:link href="http://www.axonista.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 15 Mar 2016 17:23:27 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Mar 2016 17:23:27 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
   </channel>
