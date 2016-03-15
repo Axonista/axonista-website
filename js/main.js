@@ -57,8 +57,8 @@ $hero_vid.on('timeupdate', function(e) {
 
 // Smooth Scroll to Section //
 $('a.anchor-link').click(function(event) {
+	if (location.pathname.replace(/^\//,'').length <= 0) {
     event.preventDefault();
-	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		var $target = $(this.hash);
 		$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
 		if ($target.length) {
