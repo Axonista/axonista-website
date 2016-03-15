@@ -9,11 +9,11 @@ ediflo-description: Ediflo is our smart video platform designed and developed fo
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
-  description: Description
+  description: 
 ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
-  description: Description
+  description: 
 remoco:
   heading: Remoco
   subheading: Interactive Video
