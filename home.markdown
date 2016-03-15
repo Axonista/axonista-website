@@ -17,7 +17,7 @@ ediflo-live:
 remoco:
   heading: Remoco
   subheading: Interactive Video
-  description: Description
+  description: 
 platforms-heading: We design and build awesome video experiences on these platforms
 services-description: |
   We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
