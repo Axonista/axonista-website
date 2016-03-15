@@ -27,10 +27,17 @@
             </ul>
         </div>
 
+      <!--
   <section class="services-header">
     <h1>Services</h1>
     <p>{{ page.content }}</p>
-  </section>
+  </section>-->
+  <header class="case-study">
+    <div id="main-content">
+      <h1>Services</h1>
+      <p>{{ page.content }}</p>
+    </div>
+  </header>
 
   <section id="work" class='case-study qvc-tv'>
             <div class="info">
@@ -39,9 +46,9 @@
         <div class="atvImg-layer" data-img="{{ site.url }}/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
         <div class="atvImg-layer" data-img="{{ site.url }}/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
       </div>
-      <p>We collaborated closely with QVC to deliver what is widely lauded as one of the best apps in the Apple TV App Store.</p>
-      <h1>"The single most interesting app in the Apple TV App Store right now"</h1>
-                <p class="subtext">&mdash; Nilay Patel, The Verge</p>
+      <p>{{ page.qvc-description }}</p>
+      <h1>{{ page.qvc-quote.text }}</h1>
+                <p class="subtext">&mdash; {{ page.qvc-quote.author }}</p>
       <a class='case-button on-light animsition-link' href="{{ site.url }}/qvc-apple-tv.html">Read more about it</a>
     </div>
     <div class="featured">
