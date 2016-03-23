@@ -9,7 +9,9 @@ ediflo-description: Ediflo is our smart video platform designed and developed fo
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
-  description: 
+  description: |
+    Rich, highly flexible metadata store and workflow system for powering video apps. Configure sources from other in house systems and social networks or create your own.
+    Store everything from posters and trailers to cast and presenter profiles and any content you want to associate with your videos like images, profiles, products and blogs.
 ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
