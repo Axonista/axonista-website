@@ -13,7 +13,7 @@ ediflo-library:
 ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
-  description: 
+  description: Create linear programme schedules and stream live.
 remoco:
   heading: Remoco
   subheading: Interactive Video
