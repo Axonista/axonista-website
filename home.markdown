@@ -22,8 +22,8 @@ ediflo-live:
 remoco:
   heading: Remoco
   subheading: Interactive Video
-  description: Our SDK for mobile, Apple TV and VR for adding interactive elements
-    into existing video apps.
+  description: Our SDK for mobile, Apple TV, Android TV and VR for adding interactive
+    elements into existing video apps.
 platforms-heading: We design and build awesome video experiences on these platforms
 services-description: |
   We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
