@@ -15,13 +15,16 @@ ediflo-live:
   subheading: Scheduling & Playout
   description: |-
     Linear scheduling
+
     Live streaming
+
     Real time content management
 remoco:
   heading: Remoco
   subheading: Interactive Layer
   description: |-
     Our cross platform in-app SDK for mobile, Apple TV, Android TV and VR.
+
     Add interactive graphic overlays into existing video apps for both live and on demand video.
 platforms-heading: We design and build awesome video experiences on these platforms
 services-description: |
