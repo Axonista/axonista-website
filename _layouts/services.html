@@ -1,0 +1,78 @@
+{% include header.html %}
+
+  <nav class="headroom">
+    <div id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <a href="/" class="brand animsition-link">
+          <img class="logo" src="/assets/images/axonista-logo.png"/>
+      </a>
+      <div id="alignright">
+          <ul id="toggle-menu">
+            <li><a href="/#products">Products</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
+              <li><a class="anchor-link" href="#contact">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div id="full-screen-nav">
+            <ul>
+              <li><a href="/#products">Products</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
+                <li><a class="anchor-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+  <header class="case-study">
+    <div id="main-content">
+      <h1>Services</h1>
+      <p>{{ page.content }}</p>
+    </div>
+  </header>
+
+  <section id="work" class='case-study qvc-tv'>
+            <div class="info">
+      <div class="atvImg">
+        <!--<img class="logo" src="/assets/images/case-studies/qvc/qvc-icon-apple-tv-flat.png"/>-->
+        <div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
+        <div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
+      </div>
+      <p>{{ page.qvc-description }}</p>
+      <h1>{{ page.qvc-quote.text }}</h1>
+                <p class="subtext">&mdash; {{ page.qvc-quote.author }}</p>
+      <a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
+    </div>
+    <div class="featured">
+      <img src="/assets/images/case-studies/qvc/qvc-apple-tv.jpg"/>
+    </div>
+  </section>
+  <section class='case-study qvc'>
+    <div class="background-image"></div>
+            <div class="info">
+                <img class="logo" src="/assets/images/case-studies/qvc/qvc-logo-white.png" alt="QVC Logo">
+                <p>{{ page.qvc-ipad-description }}</p>
+                <a class="store-link" href="https://itunes.apple.com/gb/app/qvc-ipad-edition/id848357388?mt=8"><img src="/assets/images/app-store.svg" alt="Download QVC on the App Store"/></a>
+            </div>
+    <div class="featured">
+      <img src="/assets/images/case-studies/qvc/qvc-featured-image.png"/>
+    </div>
+  </section>
+  <section class='case-study threeplayer'>
+      <div class="background-image"></div>
+      <div class="info">
+          <img class="logo" src="/assets/images/case-studies/3player/3player-logo-colour.png" alt="3player Logo">
+          <p>{{ page.3player-description }}</p>
+          <a class="store-link" href="https://itunes.apple.com/ie/app/3player/id602597705?mt=8"><img src="/assets/images/app-store.svg" alt="Download 3player on the App Store"/></a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.axonista.threeplayer">
+              <img src="/assets/images/play-store.png" alt="Get it on Google Play"/>
+          </a>
+      </div>
+  </section>
+
+  {% include contact.html %}
+
+  {% include footer.html %}

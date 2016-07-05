@@ -1,0 +1,17 @@
+---
+title: Axonista
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: Our award-winning technology powers real-time interactive video graphics
+  for some of the world's leading video and TV companies.
+footer-description: Our award-winning technology powers real-time interactive video
+  graphics for some of the world's leading video and TV companies.
+email: connect@axonista.com
+baseurl: 
+markdown: kramdown
