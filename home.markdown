@@ -15,7 +15,9 @@ ediflo-live:
   subheading: Scheduling & Playout
   description: |-
     Linear scheduling
+
     Live streaming
+
     Real time content management
 remoco:
   heading: Remoco
