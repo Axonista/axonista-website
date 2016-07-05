@@ -14,11 +14,11 @@ ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
   description: |-
-    Linear scheduling
+    * Linear scheduling
 
-    Live streaming
+    * Live streaming
 
-    Real time content management
+    * Real time content management
 remoco:
   heading: Remoco
   subheading: Interactive Layer
