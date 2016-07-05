@@ -30,7 +30,7 @@
 				<div id="hero-content">
 					<h1>TV is now <span class="highlight">interactive</span></h1>
 					{% if page.axonista-description %}
-						<p>{{ page.axonista-description | markdownify }}</p>
+						<p>{{ page.axonista-description }}</p>
 					{% endif %}
                 </div>
                 <div class="hero-footer">
@@ -45,24 +45,24 @@
 			<h1>Product</h1>
 			<img src='assets/images/logos/ediflo.png' />
 			{% if page.ediflo-description %}
-				<p>{{ page.ediflo-description | markdownify }}</p>
+				<p>{{ page.ediflo-description }}</p>
 			{% endif %}
 			
 			<div class="features">
 				<ul class="rig columns-3">
 					<li>
-						<h2>{% if page.ediflo-library.heading %}{{ page.ediflo-library.heading | markdownify }}{% endif %}</h2>
-						<h3>{% if page.ediflo-library.subheading %}{{ page.ediflo-library.subheading | markdownify }}{% endif %}</h3>
+						<h2>{% if page.ediflo-library.heading %}{{ page.ediflo-library.heading }}{% endif %}</h2>
+						<h3>{% if page.ediflo-library.subheading %}{{ page.ediflo-library.subheading }}{% endif %}</h3>
 						<p>{% if page.ediflo-library.description %}{{ page.ediflo-library.description | markdownify }}{% endif %}</p>
 					</li>
 					<li>
-						<h2>{% if page.ediflo-live.heading %}{{ page.ediflo-live.heading | markdownify }}{% endif %}</h2>
-						<h3>{% if page.ediflo-live.subheading %}{{ page.ediflo-live.subheading | markdownify }}{% endif %}</h3>
+						<h2>{% if page.ediflo-live.heading %}{{ page.ediflo-live.heading }}{% endif %}</h2>
+						<h3>{% if page.ediflo-live.subheading %}{{ page.ediflo-live.subheading }}{% endif %}</h3>
 						<p>{% if page.ediflo-live.description %}{{ page.ediflo-live.description | markdownify }}{% endif %}</p>
 					</li>
 					<li>
-						<h2>{% if page.remoco.heading %}{{ page.remoco.heading | markdownify }}{% endif %}</h2>
-						<h3>{% if page.remoco.subheading %}{{ page.remoco.subheading | markdownify }}{% endif %}</h3>
+						<h2>{% if page.remoco.heading %}{{ page.remoco.heading }}{% endif %}</h2>
+						<h3>{% if page.remoco.subheading %}{{ page.remoco.subheading }}{% endif %}</h3>
 						<p>{% if page.remoco.description %}{{ page.remoco.description | markdownify }}{% endif %}</p>
 					</li>
 				</ul>
@@ -83,7 +83,7 @@
 
 			<section id="services" class="services">
 					<h1>Services</h1>
-					<p>{% if page.services-description %}{{ page.services-description | markdownify }}{% endif %}</p>
+					<p>{% if page.services-description %}{{ page.services-description }}{% endif %}</p>
 					<a class='case-button on-light animsition-link' href="/services.html">View Our Work</a>
 			</section>
 
@@ -96,8 +96,8 @@
 						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
 					</div>
 					<p>{% if page.qvc-description %}{{ page.qvc-description | markdownify }}{% endif %}</p>
-					<h1>{% if page.qvc-quote.text %}{{ page.qvc-quote.text | markdownify }}{% endif %}</h1>
-                    {% if page.qvc-quote.author %}<p class="subtext">&mdash; {{ page.qvc-quote.author | markdownify }}{% endif %}</p>
+					<h1>{% if page.qvc-quote.text %}{{ page.qvc-quote.text }}{% endif %}</h1>
+                    {% if page.qvc-quote.author %}<p class="subtext">&mdash; {{ page.qvc-quote.author }}{% endif %}</p>
 					<a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
 				</div>
 				<div class="featured">
@@ -106,7 +106,7 @@
       </section>
 
             <section class="logos clients">
-                <h1>{% if page.clients-heading %}{{ page.clients-heading | markdownify }}{% endif %}</h1>
+                <h1>{% if page.clients-heading %}{{ page.clients-heading }}{% endif %}</h1>
                 <ul>
 										<li><img src='/assets/images/logos/client/the-qyou.png'></li>
                     <li><img src='/assets/images/logos/client/qvc.png'></li>
@@ -121,7 +121,7 @@
             <section class="image-banner rerun">
                 <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
                 <img src="/assets/images/rerun-logo.png" alt="Rerun logo" />
-                <p>{% if page.rerun-description %}{{ page.rerun-description | markdownify }}{% endif %}</p>
+                <p>{% if page.rerun-description %}{{ page.rerun-description }}{% endif %}</p>
                     <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
                     <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
                     <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
