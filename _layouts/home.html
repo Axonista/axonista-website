@@ -29,7 +29,7 @@
 			<div class="hero" id="home">
 				<div id="hero-content">
 					<h1>TV is now <span class="highlight">interactive</span></h1>
-					<p>{{ page.axonista-description }}</p>
+					<p>{{ page.axonista-description | markdownify }}</p>
                 </div>
                 <div class="hero-footer">
                     <a href="#what-we-do" class="anchor-link">Learn more about what we do <svg width="16" height="8" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg"><path d="M15.34.495L8.028 7.87.715.495" stroke="rgba(255, 255, 255, 0.8)" stroke-width="1.5px" fill="none"></path></svg></a>
@@ -42,24 +42,24 @@
 		<section id="products" class="ediflo">
 			<h1>Product</h1>
 			<img src='assets/images/logos/ediflo.png' />
-			<p>{{ page.ediflo-description }}</p>
+			<p>{{ page.ediflo-description | markdownify }}</p>
 
 			<div class="features">
 				<ul class="rig columns-3">
 					<li>
-						<h2>{{ page.ediflo-library.heading }}</h2>
-						<h3>{{ page.ediflo-library.subheading }}</h3>
-						<p>{{ page.ediflo-library.description }}</p>
+						<h2>{{ page.ediflo-library.heading | markdownify }}</h2>
+						<h3>{{ page.ediflo-library.subheading | markdownify }}</h3>
+						<p>{{ page.ediflo-library.description | markdownify }}</p>
 					</li>
 					<li>
-						<h2>{{ page.ediflo-live.heading }}</h2>
-						<h3>{{ page.ediflo-live.subheading }}</h3>
-						<p>{{ page.ediflo-live.description }}</p>
+						<h2>{{ page.ediflo-live.heading | markdownify }}</h2>
+						<h3>{{ page.ediflo-live.subheading | markdownify }}</h3>
+						<p>{{ page.ediflo-live.description | markdownify }}</p>
 					</li>
 					<li>
-						<h2>{{ page.remoco.heading }}</h2>
-						<h3>{{ page.remoco.subheading }}</h3>
-						<p>{{ page.remoco.description }}</p>
+						<h2>{{ page.remoco.heading | markdownify }}</h2>
+						<h3>{{ page.remoco.subheading | markdownify }}</h3>
+						<p>{{ page.remoco.description | markdownify }}</p>
 					</li>
 				</ul>
 			</div>
@@ -79,7 +79,7 @@
 
 			<section id="services" class="services">
 					<h1>Services</h1>
-					<p>{{ page.services-description }}</p>
+					<p>{{ page.services-description | markdownify }}</p>
 					<a class='case-button on-light animsition-link' href="/services.html">View Our Work</a>
 			</section>
 
@@ -91,9 +91,9 @@
 						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
 						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
 					</div>
-					<p>{{ page.qvc-description }}</p>
-					<h1>{{ page.qvc-quote.text }}</h1>
-                    <p class="subtext">&mdash; {{ page.qvc-quote.author }}</p>
+					<p>{{ page.qvc-description | markdownify }}</p>
+					<h1>{{ page.qvc-quote.text | markdownify }}</h1>
+                    <p class="subtext">&mdash; {{ page.qvc-quote.author | markdownify }}</p>
 					<a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
 				</div>
 				<div class="featured">
@@ -102,7 +102,7 @@
       </section>
 
             <section class="logos clients">
-                <h1>{{ page.clients-heading }}</h1>
+                <h1>{{ page.clients-heading | markdownify }}</h1>
                 <ul>
 										<li><img src='/assets/images/logos/client/the-qyou.png'></li>
                     <li><img src='/assets/images/logos/client/qvc.png'></li>
@@ -117,7 +117,7 @@
             <section class="image-banner rerun">
                 <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
                 <img src="/assets/images/rerun-logo.png" alt="Rerun logo" />
-                <p>{{ page.rerun-description }}</p>
+                <p>{{ page.rerun-description | markdownify }}</p>
                     <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
                     <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
                     <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
