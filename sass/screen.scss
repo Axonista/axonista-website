@@ -158,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.5em;
     line-height: 2em;
+    letter-spacing: -0.02em;
 
     @include media($mobile) {
         font-size: 1.5em;
@@ -340,7 +341,7 @@ video#bgvid {
     z-index: 0;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: linear-gradient( rgba($black, 0.33), rgba($black, 0.33) ), url(../assets/images/placeholder.jpg);
+    background: rgba($black, 0.6), url(../assets/images/placeholder.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -375,7 +376,8 @@ div.hero {
         a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
-            font-size: 1.125em;
+            font-size: 1em;
+            font-family: $font-family-book;
             @include media($mobile) {
                 font-size: 1em;
             }
@@ -394,7 +396,7 @@ div.hero {
 	color: $black;
     height: 100vh;
     //background: linear-gradient(to right, rgba($black, 0.9), rgba($black, 0.2));
-    background: radial-gradient(circle farthest-corner at right, rgba($black, 0.1) 0%, rgba($black, 0.125) 20%, rgba($black, 0.25) 45%, rgba($black, 0.5) 70%, rgba($black, 0.8) 100%);
+    background: rgba($black, 0.6);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -403,7 +405,7 @@ div.hero {
 
 	@include span-columns(12);
     @include media($tablet) {
-        background: radial-gradient(circle farthest-corner at right, rgba($black, 0.1) 0%, rgba($black, 0.125) 20%, rgba($black, 0.25) 45%, rgba($black, 0.5) 70%, rgba($black, 0.8) 100%), url(../assets/images/placeholder.jpg);
+        background: rgba($black, 0.6), url(../assets/images/placeholder.jpg);
         background-position: center;
         background-size: cover;
         -webkit-background-size: cover;
@@ -432,21 +434,21 @@ div.hero {
     }
 
 	h1 {
-		font-size: 3em;
-        font-weight: 700;
-        line-height: 1.5em;
-        color: $white;
-        @include media($tablet) {
-            line-height: 1em;
-        }
-        @include media($mobile) {
-            font-size: 2.5em;
-        }
+		font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: $white;
+    @include media($tablet) {
+        line-height: 1em;
+    }
+    @include media($mobile) {
+        font-size: 2.5em;
+    }
 	}
 
 	p {
-		font-size: 1.5em;
-		max-width: 29em;
+		font-size: 1.75em;
+		max-width: 24em;
         color: rgba(255, 255, 255, 0.8);
         padding-bottom: 8em;
         line-height: 1.4;
