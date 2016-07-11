@@ -143,8 +143,11 @@ html, body {
             a {
                 display: block;
                 text-align: center;
-                font-size: 2em;
+                font-size: 1.5em;
                 padding: 1em;
+                @include media($tablet) {
+                    font-size: 2em;
+                }
             }
         }
     }
@@ -415,6 +418,7 @@ div.hero {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
+        height: auto;
     }
 
     h1, p {
@@ -1750,7 +1754,7 @@ section.image-banner {
         url(../assets/images/case-studies/showpal/gallery-header.png);
     @include outer-container;
     @include media($mobile) {
-        padding: 3em 1em;
+        padding: 2em 0 0 0;
     }
     h1 {
         color: $white;
@@ -1776,6 +1780,9 @@ section.image-banner {
     &.clear {
         background: $white;
         padding: 6em 0 0 0;
+        @include media($mobile) {
+            padding: 2em 0 0 0;
+        }
         h1 {
             color: $gold;
             margin: 0 auto;
