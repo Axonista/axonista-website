@@ -476,7 +476,7 @@ section.ediflo {
   padding: 5em 0;
 
   p {
-    padding: 1em 0;
+    padding: 1em;
     margin-bottom: 0!important;
     margin: 0 auto!important;
     max-width: 26em;
@@ -489,7 +489,7 @@ section.ediflo {
   }
 
   .features {
-    padding: 3em 0;
+    padding-top: 2em;
 
     ul.rig.columns-3 li { width: 25%; }
   	ul.rig {
@@ -504,10 +504,9 @@ section.ediflo {
   		li {
   			display: inline-block;
   			padding: 10px;
-  			margin: 0 0 2.5% 2.5%;
+  			margin: 0 1.25% 2.5% 1.25%;
   			background: $white;
   			font-size: 16px;
-  			font-size: 1rem;
   			vertical-align: top;
   			text-align: left;
         @include media ($tablet) {
@@ -559,8 +558,10 @@ section.services {
   p {
     text-align: center;
     margin: 0 auto;
+    padding: 0 0.5em;
     font-size: 1.25em;
     line-height: 1.5em;
+    color: rgba(0,0,0,0.75);
   }
 
   .case-button {
@@ -835,7 +836,7 @@ section.case-study {
         p.subtext {
             margin-top: 0.5em;
             font-family: $font-family-book;
-            font-size: 0.875em;
+            font-size: 1em;
             color: $mediumgrey;
         }
         .atvImg {
@@ -1416,7 +1417,7 @@ header.case-study {
     }
 
     &.qvc-apple-tv {
-        background: linear-gradient(rgba($qvc, 0.1) rgba($qvc, 0.1)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
+        background: linear-gradient(rgba($black, 0.5) rgba($black, 0.5)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1430,11 +1431,15 @@ header.case-study {
             height: 60vh;
         }
         @include media($mobile) {
-            height: 100vh;
+            height: auto;
+            padding: 150px 0 90px 0;
             background: linear-gradient(rgba($black, 0.75) rgba($black, 0.75)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
         }
         p.subtext {
-            color: rgba(255, 255, 255, 0.7) !important;
+          font-family: $font-family-book !important;
+          font-size: 1em !important;
+          margin-top: 0.5em !important;
+            color: rgba(255, 255, 255, 0.6) !important;
         }
         .atvImg {
             width: 240px;
@@ -1527,7 +1532,7 @@ section.features {
 
 // Objectives section
 section.objectives {
-    padding-top: 4em;
+    padding: 6em 0 3em 0;
     @include outer-container;
     @include media($mobile) {
         padding: 2em 0 0 0;
@@ -1770,6 +1775,7 @@ section.image-banner {
 
     &.clear {
         background: $white;
+        padding: 6em 0 0 0;
         h1 {
             color: $gold;
             margin: 0 auto;
@@ -1779,9 +1785,27 @@ section.image-banner {
                 font-size: 1.125em;
             }
         }
+        h2 {
+          font-family: $font-family-medium;
+          font-size: 1.5em;
+        }
+        blockquote {
+          margin: 0 auto;
+          max-width: 24em;
+          font-family: $font-family-medium;
+          font-size: 1.5em;
+          line-height: 1.25;
+          color: $black;
+        }
         p {
-            color: $black;
-            margin: 0 auto;
+            color: rgba($black, 0.8);
+            font-size: 1.125em;
+        }
+        p.subtext {
+            margin-top: 0.5em;
+            font-family: $font-family-book;
+            font-size: 1em;
+            color: $mediumgrey;
         }
         img.logo {
             max-width: 100%;
