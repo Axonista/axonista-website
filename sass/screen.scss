@@ -876,28 +876,6 @@ section.case-study {
             }
         }
     }
-    &.showpal {
-        //background: linear-gradient(to right, $black, rgba(59, 184, 215, 0.2)),
-        //url(../assets/images/case-studies/showpal/showpal-featured.png);
-        background: radial-gradient(circle farthest-corner at right bottom, rgba($showpal, 0.25) 0%, rgba($showpal, 0.3) 20%, rgba($showpal, 0.35) 45%, rgba($black, 0.7) 70%, rgba($black, 1) 100%), url(../assets/images/case-studies/showpal/showpal-featured.jpg);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-position-y: 25%;
-        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
-        h1 {
-            color: $showpal;
-        }
-        .case-button {
-            border-color: $showpal;
-
-            &:hover {
-                color: $white;
-                background: $showpal;
-            }
-        }
-    }
 }
 
 // Sub Section
@@ -1014,22 +992,6 @@ section.logos {
     }
 }
 
-section.services-header {
-  top: 90px;
-  height: 50vh;
-  padding: 6em 0;
-  text-align: center;
-  background: $lightgrey;
-
-  h1 {
-    color: $gold;
-  }
-
-  p {
-    margin: 0 auto;
-  }
-}
-
 section.rerun {
     padding: 150px 0 120px 0 !important;
     box-shadow: inset 0 4px 8px rgba(0,0,0,0.25), inset 0 -4px 8px rgba(0,0,0,0.25);
@@ -1103,8 +1065,6 @@ section.rerun {
   		}
 	}
 }
-
-
 
 section.contact {
     @include outer-container;
@@ -1359,61 +1319,6 @@ header.case-study {
         }
     }
 
-    &.threeplayer {
-        background: radial-gradient(circle farthest-corner at right bottom, rgba($threeplayer, 0.1) 0%, rgba($threeplayer, 0.2) 20%, rgba($lightgrey, 0.3) 45%, rgba($lightgrey, 0.8) 70%, rgba($lightgrey, 1) 100%), url(../assets/images/case-studies/3player/3player-featured-2.jpg);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        height: 80vh;
-        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
-        @include media($tablet) {
-            background-position-x: center;
-        }
-
-        #main-content {
-            text-align: left;
-            top: 33vh;
-
-            img {
-                margin-left: 8%;
-            }
-            p {
-                margin: 1em 0 0 8%;
-                max-width: 24em;
-                color: rgba($black, 0.9);
-                @include media($tablet) {
-                    max-width: 20em;
-                }
-                @include media($mobile) {
-                    max-width: 18em;
-                }
-            }
-        }
-    }
-
-    &.showpal {
-        background: linear-gradient(to right, rgba($black, 1), rgba($black, 0.5)),
-        url('/assets/images/case-studies/showpal/showpal-featured.jpg');
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        height: 80vh;
-        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
-    }
-
-    &.qvc {
-        background: linear-gradient(to right, rgba($black, 1), rgba($black, 0.5)),
-        url('/assets/images/case-studies/qvc/qvc-featured.jpg');
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        height: 80vh;
-        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
-    }
-
     &.services {
       background: linear-gradient(rgba($black, 0.5) rgba($black, 0.5)), url('/assets/images/services-ios.jpg');
       background-size: cover;
@@ -1496,14 +1401,6 @@ header.case-study {
             }
         }
     }
-
-    &.aolrise {
-        background: linear-gradient(#942580, $aolrise);
-
-        img.hero {
-            margin-top: 6em !important;
-        }
-    }
 }
 
 // Features section
@@ -1545,26 +1442,6 @@ section.features {
             padding-top: 0.5em;
         }
     }
-
-    i.icon {
-        font-size: 2em;
-    }
-
-    &.showpal i {
-        color: $showpal;
-    }
-
-    &.qvc i {
-        color: $qvc;
-    }
-
-    &.threeplayer i {
-        color: $threeplayer;
-    }
-
-    &.aolrise i {
-        color: $aolrise;
-    }
 }
 
 
@@ -1576,206 +1453,23 @@ section.objectives {
         padding: 2em 0 0 0;
     }
 
-    h1, p, img {
-        clear: both;
-        max-width: none;
-        @include span-columns(6);
-        @include shift (2);
-    }
-
-    p {
-        font-size: 1.125em;
-        line-height: 1.6;
-    }
-
-    blockquote {
-        @include span-columns(8);
-        @include shift (2);
-        font-size: 1.5em;
-    }
-
     img {
-        margin-top: 2em;
+      margin-top: 0;
+      margin-bottom: 4em;
+      max-width: 100%;
+      border-radius: 4px;
+      border: 15px solid #151828;
+      box-shadow: 0 8px 30px rgba(14, 21, 47, 0.45);
+      @include media($mobile) {
+          margin-bottom: 2em;
+          border: 7px solid #151828;
+      }
         @include span-columns(8);
         @include shift (2);
         @include media($tablet) {
             @include span-columns(10);
             @include shift (1);
         }
-    }
-
-    img.featured {
-        margin-top: 0;
-        margin-bottom: 4em;
-        max-width: 100%;
-        border-radius: 4px;
-        border: 15px solid #151828;
-        box-shadow: 0 8px 30px rgba(14, 21, 47, 0.45);
-        @include media($mobile) {
-            margin-bottom: 2em;
-            border: 7px solid #151828;
-        }
-    }
-
-    p:last-child {
-        padding-bottom: 4em;
-    }
-
-    &.showpal h1 {
-        color: $showpal;
-    }
-
-    &.qvc h1 {
-        color: $qvc;
-    }
-
-    &.threeplayer h1 {
-        color: $threeplayer;
-    }
-
-    &.quote {
-        padding-bottom: 4em;
-    }
-
-    .reviews-container {
-        ul.rig {
-            list-style: none;
-            font-size: 0px;
-            text-align: center;
-        }
-        ul.rig li {
-            display: inline-block;
-            padding: 10px;
-            margin: 0 0 2.5% 2.5%;
-            background: $white;
-            border: 1px solid #ddd;
-            font-size: 16px;
-            font-size: 1rem;
-            vertical-align: top;
-            box-shadow: 0 0 5px #ddd;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-        }
-        ul.rig li h3 {
-            margin: 0 0 5px;
-        }
-        ul.rig li p {
-            font-size: .9em;
-            line-height: 1.5em;
-            color: #999;
-        }
-        ul.rig.columns-3 li {
-            width: 21%;
-        }
-
-        @media (max-width: 480px) {
-            ul.grid-nav li {
-                display: block;
-                margin: 0 0 5px;
-            }
-            ul.grid-nav li a {
-                display: block;
-            }
-            ul.rig {
-                margin-left: 0;
-            }
-            ul.rig li {
-                width: 100% !important;
-                margin: 0 0 20px;
-            }
-        }
-
-        h5 {
-            font-size: 1em;
-            font-weight: 400;
-            font-family: Avenir Next;
-            text-transform: lowercase;
-        }
-    }
-}
-
-
-// Results section
-.results {
-    padding: 4em 0;
-    @include outer-container;
-    @include media($mobile) {
-        padding: 2em;
-    }
-
-    h1 {
-        @include span-columns(8);
-        @include shift (2);
-        @include media($tablet) {
-            @include span-columns(11);
-            @include shift (1);
-        }
-    }
-
-    ul {
-        list-style: none;
-        padding-top: 2em;
-        @include span-columns (10);
-        @include shift (2);
-        @include media($tablet) {
-            @include span-columns(11);
-            @include shift (1);
-        }
-        @include media($mobile) {
-            padding-top: 1em;
-        }
-    }
-    li {
-        display: block;
-        margin-bottom: 2em;
-        @include span-columns(3 of 10);
-        @include omega(3n);
-        @include media($mobile) {
-            @include span-columns(10 of 11);
-            @include omega(1n);
-            margin-bottom: 1em;
-        }
-
-        i.icon {
-            font-size: 2em;
-        }
-
-        h3 {
-            font-size: 1em;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin-top: 1em;
-            line-height: 1.5em;
-            @include media($mobile) {
-                padding-top: 0;
-            }
-        }
-
-        p {
-            font-size: 1em;
-            color: #666;
-        }
-    }
-
-    &.showpal h1,
-    &.showpal i {
-        color: $showpal;
-    }
-
-    &.qvc h1,
-    &.qvc i {
-        color: $qvc;
-    }
-
-    &.threeplayer h1,
-    &.threeplayer i {
-        color: $threeplayer;
-    }
-
-    &.aolrise h1,
-    &.aolrise i {
-        color: $aolrise;
     }
 }
 
@@ -1863,20 +1557,10 @@ section.image-banner {
         }
     }
 
-    &.orange {
-        background: linear-gradient(rgba($gold, 0.75), rgba($gold, 0.75)),
-        url(../assets/images/case-studies/showpal/gallery-header.png);
-    }
-
     &.rerun {
         //background: url(../assets/images/rerun-bg.png);
         background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(../assets/images/rerun-bad-tv.jpg);
         background-size: 75%;
-    }
-
-    &.showpal {
-        background: linear-gradient(rgba($showpal, 0.9), rgba($showpal, 0.9)),
-        url(../assets/images/case-studies/showpal/gallery-header.png);
     }
 
     &.qvc {
@@ -1889,216 +1573,10 @@ section.image-banner {
         url(../assets/images/case-studies/showpal/gallery-header.png);
     }
 
-    &.aolrise {
-        background: linear-gradient(rgba(#942580, 0.9), rgba($aolrise, 0.9)),
-        url(../assets/images/case-studies/showpal/gallery-header.png);
-    }
-
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-}
-
-
-// Methodology
-section.method {
-    padding: 4em 0;
-    @include outer-container;
-    @include media($mobile) {
-        padding: 2em 0;
-    }
-
-    h1, p {
-        @include span-columns(8);
-        @include shift (2);
-        @include media($tablet) {
-            @include span-columns(10);
-            @include shift (1);
-        }
-    }
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-        padding-top: 2em;
-        @include shift (2);
-        @include media($tablet) {
-            @include shift (1);
-        }
-    }
-
-    li {
-        display: block;
-        @include span-columns(2 of 10);
-        @include omega(5n);
-        @include media($mobile) {
-            @include span-columns(3 of 10);
-            @include omega(3n);
-            margin-bottom: 1em;
-        }
-        font-size: 1em;
-    }
-
-    h3 {
-        padding-top: 1em;
-        font-weight: 600;
-    }
-
-    i.icon {
-        font-size: 2em;
-    }
-
-    &.showpal h1,
-    &.showpal i {
-        color: $showpal;
-    }
-
-    &.qvc h1,
-    &.qvc i {
-        color: $qvc;
-    }
-
-    &.threeplayer h1,
-    &.threeplayer i {
-        color: $threeplayer;
-    }
-
-    &.aolrise h1,
-    &.aolrise i {
-        color: $aolrise;
-    }
-}
-
-
-// Product details
-section.product-details {
-    padding: 4em 0;
-    @include outer-container;
-    @include media($mobile) {
-        padding: 2em 0;
-    }
-
-    h1, p {
-        @include span-columns(8);
-        @include shift (2);
-        @include media($tablet) {
-            @include span-columns(10);
-            @include shift (1);
-        }
-    }
-
-    ul {
-        list-style-type: none;
-        padding-top: 4em;
-    }
-
-    li {
-        display: block;
-        margin: 1em 0;
-        @include span-columns(6 of 12);
-        @include omega(2n);
-        @include media($mobile) {
-            @include span-columns(12);
-            @include omega(1n);
-            margin: 0.5em 0;
-        }
-    }
-
-    img {
-        max-width: 100%;
-
-        &:hover {
-            cursor: pointer; opacity: 0.8;
-        }
-    }
-
-    &.showpal h1 {
-        color: $showpal;
-    }
-
-    &.qvc h1 {
-        color: $qvc;
-    }
-
-    &.threeplayer h1 {
-        color: $threeplayer;
-    }
-
-    &.aolrise h1 {
-        color: $aolrise;
-    }
-}
-
-//
-// UI Elements
-// ----------------------------------------------------------------------------------------------------
-
-/* Segmented Control */
-.segmented-control {
-    display: flex !important;
-    display: -webkit-flex !important;
-    flex-flow: row wrap;
-    box-sizing: border-box;
-    text-align: center;
-    @include media($tablet) {
-        float: none !important;
-        margin: 2em auto 2em auto !important;
-        width: 50% !important;
-    }
-    @include media($mobile) {
-        width: 75% !important;
-    }
-}
-.segmented-control label {
-    display: block;
-    position: relative;
-    flex: 1;
-    box-sizing: border-box;
-    overflow: hidden;
-    border: 1px solid  $gold;
-    border-right: none;
-    background: transparent;
-    color: $gold;
-    font-size: 0.875em;
-    font-weight: 600;
-    margin: 0;
-    padding: 0.3em;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-}
-.segmented-control label.checked {
-    background: $gold;
-    color: $white;
-}
-.segmented-control label:first-child {
-    border-radius: 2em 0 0 2em;
-    border-right: 0;
-}
-.segmented-control label:last-child {
-    border-radius: 0 2em 2em 0;
-    border-right: 1px solid;
-}
-.segmented-control input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    margin: 0;
-    position: absolute;
-}
-
-.tab-active a {
-  color: $gold;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-li.tab-active {
-    border-bottom: 1px solid $gold;
-}
-
-.morphext > .animated {
-    display: inline-block;
 }
 
 /* Menu Icon */
