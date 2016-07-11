@@ -99,7 +99,7 @@ $mobile: max-width 510px;
 }
 
 html, body {
-    background-color: $white;
+    background-color: $black;
     font-family: $font-family-regular;
     font-size: 16px;
     color: $black;
@@ -1188,10 +1188,13 @@ section.contact {
 footer {
 	@include outer-container;
     clear: both;
-    background-image: linear-gradient(rgba($black, 1), rgba($black, 0.7)), url('../assets/images/office.jpg');
+    background: $black;
+    /*
+    background-image: linear-gradient(rgba($black, 1), rgba($black, 0.7)), url('../assets/images/services-ios.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    */
     box-shadow: inset 0 4px 8px rgba(0,0,0,0.25);
     padding: 50px 0 30px 0;
     @include media($tablet) {
@@ -1206,7 +1209,7 @@ footer {
     p {
         font-size: 1em;
         max-width: 25em;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.75);
         margin-top: 1em;
     }
 
@@ -1280,7 +1283,7 @@ footer {
         @include span-columns (10 of 11);
         font-family: $font-family-book;
         font-size: 0.75em;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.5);
 		    padding-top: 1em;
         margin-top: 100px;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
