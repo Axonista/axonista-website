@@ -343,7 +343,7 @@ video#bgvid {
     z-index: 0;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: rgba($black, 0.6), url(../assets/images/placeholder.jpg);
+    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(../assets/images/placeholder.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -407,7 +407,7 @@ div.hero {
 
 	@include span-columns(12);
     @include media($tablet) {
-        background: rgba($black, 0.6), url(../assets/images/placeholder.jpg);
+        background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(../assets/images/placeholder.jpg);
         background-position: center;
         background-size: cover;
         -webkit-background-size: cover;
