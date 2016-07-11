@@ -152,11 +152,11 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-bold;
-    line-height: 1.2em;
+    line-height: 1.25em;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 2em;
     letter-spacing: -0.02em;
 
@@ -168,7 +168,7 @@ h1 {
 p {
     line-height: 1.5em;
     max-width: 35em;
-    font-size: 1em;
+    font-size: 1.125em;
     margin-bottom: 1em;
 
     @include media($mobile) {
@@ -181,7 +181,8 @@ p {
 }
 
 strong {
-    font-weight: 700;
+    font-family: $font-family-medium;
+    font-weight: 400;
 }
 
 span.highlight {
@@ -274,11 +275,10 @@ nav {
 		display: inline-block;
 		margin-left: 1em;
 		color: rgba(255, 255, 255, 0.8);
-		font-size: 1em;
+		font-size: 0.875em;
 		padding: 35px 20px 30px;
         text-transform: uppercase;
         font-family: $font-family-book;
-        font-weight: 500;
         letter-spacing: 1px;
         @include media ($tablet) {
             width: 100%;
@@ -445,7 +445,7 @@ div.hero {
 	p {
 		font-size: 1.75em;
 		max-width: 24em;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.75);
         padding-bottom: 8em;
         line-height: 1.4;
         @include media($tablet) {
@@ -473,16 +473,19 @@ section.ediflo {
   background: white;
   text-align: center;
   margin: 0 auto;
-  padding: 3em;
+  padding: 5em 0;
 
   p {
     padding: 1em 0;
     margin-bottom: 0!important;
     margin: 0 auto!important;
+    max-width: 26em;
+    color: rgba(0,0,0,0.75);
   }
 
   img {
-    max-width: 130px;
+    max-width: 180px;
+    margin: 1em auto;
   }
 
   .features {
@@ -526,30 +529,22 @@ section.ediflo {
   			}
 
   			h3 {
-  				margin: 0 0 5px;
-  				font-weight: 600;
-  				font-size: 1.125em;
-          color: $darkgrey;
-          text-transform: none;
-          font-family: 'open-sans';
-  				@include media($mobile) {
-  					line-height: 1.5em;
-  				}
+          color: $mediumgrey;
+          font-family: $font-family-book;
+          text-transform: uppercase;
+          font-size: 0.875em;
+          letter-spacing: 2px;
+          line-height: 2em;
   			}
 
         h2 {
-          color: $darkgrey;
+          font-family: $font-family-medium;
           font-size: 1.5em;
         }
 
   			p {
-  				font-size: .9em;
-  				line-height: 1.5em;
   				font-size: 1em;
-  				line-height: 1.8em;
-  				font-weight: 300;
-  				margin: 0 auto;
-  				padding: 0 0 1em 0;
+  				padding: 0 0 0.5em 0;
   			}
       }
     }
@@ -564,34 +559,35 @@ section.services {
   p {
     text-align: center;
     margin: 0 auto;
-    line-height: 1.8em;
+    font-size: 1.25em;
+    line-height: 1.5em;
   }
 
   .case-button {
     display: inline-block;
     border: 2px solid $black;
     background: none;
-    margin-top: 1em;
-    padding: 0.5em 1.5em;
+    margin-top: 2em;
+    padding: 0.6em 1.5em 0.5em 1.5em;
     color: $black;
     border-radius: 50px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: $font-family-medium;
     font-size: 0.875em;
     letter-spacing: 1px;
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
 
     &.on-light {
-        border: 2px solid $black;
-        color: $black;
+        border: 2px solid $gold;
+        color: $gold;
     }
     &:hover {
         cursor: pointer;
         background: $white;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
     }
     &.disabled {
         opacity: 0.25;
@@ -658,12 +654,12 @@ section.case-study {
         border: 2px solid rgba(255, 255, 255, 0.5);
         background: none;
         margin-top: 1em;
-        padding: 0.5em 1.5em;
+        padding: 0.6em 1.5em 0.5em 1.5em;
         color: rgba(255, 255, 255, 0.9);
         border-radius: 50px;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 600;
+        font-family: $font-family-medium;
         font-size: 0.875em;
         letter-spacing: 1px;
         transition: all .1s ease-in-out;
@@ -676,8 +672,8 @@ section.case-study {
         &:hover {
             cursor: pointer;
             background: $white;
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
         }
         &.disabled {
             opacity: 0.25;
@@ -817,7 +813,7 @@ section.case-study {
             }
         }
         h1 {
-            color: $gold;
+            color: $black;
             font-size: 1.25em;
             line-height: 1.3em;
             margin-top: 30px;
@@ -825,12 +821,22 @@ section.case-study {
                 font-size: 1.25em;
             }
         }
+        blockquote {
+          margin-top: 1.25em;
+          font-family: $font-family-medium;
+          font-size: 1.5em;
+          line-height: 1.25;
+          color: $black;
+        }
         p {
-            color: $mediumgrey;
-            font-size: 1em;
+            color: rgba($black, 0.8);
+            font-size: 1.125em;
         }
         p.subtext {
-            font-size: 1em;
+            margin-top: 0.5em;
+            font-family: $font-family-book;
+            font-size: 0.875em;
+            color: $mediumgrey;
         }
         .atvImg {
             width: 200px;
@@ -945,13 +951,13 @@ section.logos {
     }
 
     h1 {
-      @include span-columns (8 of 12);
-      @include shift(2);
+      @include span-columns (6 of 12);
+      @include shift(3);
       line-height: 1.2em;
       margin-bottom: 1em;
         @include media($tablet) {
-            @include span-columns (10 of 12);
-            @include shift(1);
+            @include span-columns (8 of 12);
+            @include shift(2);
         }
     }
     img {
@@ -1139,6 +1145,7 @@ section.contact {
             color: $mediumgrey;
             font-family: $font-family-book;
             text-transform: uppercase;
+            font-size: 0.875em;
             letter-spacing: 2px;
             line-height: 2em;
         }
@@ -1194,7 +1201,7 @@ footer {
     p {
         font-size: 1em;
         max-width: 25em;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.6);
         margin-top: 1em;
     }
 
@@ -1237,9 +1244,12 @@ footer {
         }
 
         h3 {
+          font-family: "geomanist-book", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
         	text-transform: uppercase;
-            color: rgba($lightgrey, 0.5);
-            font-weight: 700;
+          color: rgba($lightgrey, 0.6);
+          font-size: 0.875em;
+          letter-spacing: 2px;
+          line-height: 2em;
         }
         ul {
             list-style: none;
@@ -1247,7 +1257,7 @@ footer {
         li {
             display: block;
             color: rgba($lightgrey, 0.9);
-            font-size: 0.875em;
+            font-size: 1em;
             line-height: 2em;
         }
         a {
@@ -1257,17 +1267,18 @@ footer {
         }
         a:hover {
             color: $white;
-            border-bottom: 2px solid rgba($lightgrey, 0.5);
+            border-bottom: 2px solid rgba($lightgrey, 0.6);
         }
     }
 
 	.legality {
         @include span-columns (10 of 11);
-        font-size: 0.875em;
-        color: rgba(255, 255, 255, 0.5);
-		padding-top: 1em;
+        font-family: $font-family-book;
+        font-size: 0.75em;
+        color: rgba(255, 255, 255, 0.6);
+		    padding-top: 1em;
         margin-top: 100px;
-        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
         @include media ($mobile) {
             margin-top: 40px;
         }
@@ -1278,7 +1289,7 @@ footer {
         }
 
 		img {
-		  height: 20px;
+		  height: 16px;
 		}
 	}
 }
@@ -1740,7 +1751,7 @@ section.image-banner {
         color: $white;
     }
     p {
-        font-size: 1.5em;
+        font-size: 1.25em;
         margin: 0 auto 6em auto;
         max-width: 24em;
         color: rgba($white, 0.8);

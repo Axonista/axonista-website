@@ -7,7 +7,7 @@
 					<span></span>
 				</div>
           <a href="/" class="brand animsition-link">
-              <img class="logo" src="/assets/images/axonista-logo-horizontal.png"/>
+              <img class="logo" src="/assets/images/axonista-logo.png"/>
           </a>
           <div id="alignright">
               <ul id="toggle-menu">
@@ -21,7 +21,7 @@
 			<div id="full-screen-nav">
                 <ul>
 									<li><a class="anchor-link" href="#products">Products</a></li>
-										<li><a href="/services.html">Services</a></li>
+										<li><a class="animsition-link" href="/services.html">Services</a></li>
                     <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                     <li><a class="anchor-link" href="#contact">Contact</a></li>
                 </ul>
@@ -96,7 +96,7 @@
 						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
 					</div>
 					<p>{% if page.qvc-description %}{{ page.qvc-description | markdownify }}{% endif %}</p>
-					<h1>{% if page.qvc-quote.text %}{{ page.qvc-quote.text }}{% endif %}</h1>
+					<blockquote>{% if page.qvc-quote.text %}{{ page.qvc-quote.text }}{% endif %}</blockquote>
                     {% if page.qvc-quote.author %}<p class="subtext">&mdash; {{ page.qvc-quote.author }}{% endif %}</p>
 					<a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
 				</div>
