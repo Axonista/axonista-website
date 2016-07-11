@@ -148,6 +148,9 @@ html, body {
                 @include media($tablet) {
                     font-size: 2em;
                 }
+                @include media($mobile) {
+                  font-size: 1.5em;
+                }
             }
         }
     }
@@ -502,7 +505,7 @@ section.ediflo {
       padding: 3em 0;
   		text-align: center;
   		@include media ($mobile) {
-  			margin-left: 0;
+  			margin-left: 10px;
   		}
 
   		li {
@@ -608,7 +611,7 @@ section.services {
 
 section.case-study {
 	padding: 150px 0;
-    height: 80vh;
+    min-height: 80vh;
     overflow: hidden;
     display: flex;
     display: -webkit-flex;
