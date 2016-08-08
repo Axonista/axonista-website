@@ -2,30 +2,39 @@
 title: Home
 date: 2016-03-01 18:07:00 Z
 permalink: "/"
-axonista-description: Powering realtime interactive video graphics for some of the
-  world's leading video and TV companies.
-ediflo-description: Ediflo is our smart video platform designed and developed for
-  the information age.
+axonista-description: Powering a whole new generation of intuitive video experiences
+  for the world’s leading brands and media companies.
+ediflo-description: |
+  Ediflo is the complete management and distribution platform for a whole new generation of video-based interactive digital experiences.
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
-  description: 
+  description: |-
+    Digital asset management
+
+    Metadata management
+
+    Content collections
+
+    Transcoding
 ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
-  description: |-
-    Linear scheduling
-
+  description: |
     Live streaming
 
-    Real time content management
+    Linear scheduling
+
+    Realtime content synchronization
 remoco:
   heading: Remoco
   subheading: Interactive Layer
   description: |-
-    Our cross platform in-app SDK for mobile, Apple TV, Android TV and VR.
+    Multi-platform native SDK
 
-    Add interactive graphic overlays into existing video apps for both live and on demand video.
+    Interactive overlays
+
+    Suite of reference apps
 platforms-heading: We design and build awesome video experiences on these platforms
 services-description: |
   We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
