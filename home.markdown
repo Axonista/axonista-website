@@ -4,12 +4,8 @@ date: 2016-03-01 18:07:00 Z
 permalink: "/"
 axonista-description: Powering a whole new generation of intuitive video experiences
   for the world’s leading brands and media companies.
-ediflo-description: |-
-  Smart video for smart devices.
-
+ediflo-description: |
   Ediflo is the complete management and distribution platform for a whole new generation of video-based interactive digital experiences.
-
-  Enterprise and Pro editions available.
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
