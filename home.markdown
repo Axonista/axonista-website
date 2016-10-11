@@ -4,8 +4,10 @@ date: 2016-03-01 18:07:00 Z
 permalink: "/"
 axonista-description: Powering a whole new generation of intuitive video experiences
   for the world’s leading brands and media companies.
-ediflo-description: |
-  Ediflo is the complete management and distribution platform for a whole new generation of video-based interactive digital experiences.
+ediflo-description: 'Ediflo is the complete management and distribution platform for
+  a whole new generation of video-based interactive digital experiences.
+
+'
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
@@ -27,8 +29,8 @@ ediflo-live:
 
     Realtime content synchronization
 remoco:
-  heading: Remoco
-  subheading: Interactive Layer
+  heading: Ediflo Interactive
+  subheading: In-Video Interactivity
   description: |-
     Multi-platform native SDK
 
@@ -36,8 +38,10 @@ remoco:
 
     Suite of reference apps
 platforms-heading: We design and build awesome video experiences on these platforms
-services-description: |
-  We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
+services-description: 'We create interactive video apps that can be distributed on
+  multiple platforms and managed by TV producers.
+
+'
 qvc-description: We collaborated closely with QVC to deliver what is widely lauded
   as one of the best apps in the Apple TV App Store. **Powered by Ediflo.**
 qvc-quote:
