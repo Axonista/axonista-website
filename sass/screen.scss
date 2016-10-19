@@ -498,7 +498,9 @@ section.ediflo {
   .features {
     padding-top: 2em;
 
-    ul.rig.columns-3 li { width: 25%; }
+    ul.rig.columns-4 li {
+      width: 20%;
+    }
   	ul.rig {
   		list-style: none;
   		font-size: 0px;
@@ -517,7 +519,7 @@ section.ediflo {
   			vertical-align: top;
   			text-align: left;
         @include media ($tablet) {
-          width: 30%!important;
+          width: 33%!important;
         }
   			@include media ($mobile) {
   				width: 100% !important;
@@ -553,6 +555,44 @@ section.ediflo {
   				padding: 0 0 0.5em 0;
   			}
       }
+    }
+  }
+
+  .button {
+    display: inline-block;
+    border: 2px solid $black;
+    background: none;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    padding: 0.6em 1.5em 0.5em 1.5em;
+    color: $black;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-family-medium;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+
+    &.on-light {
+        border: 2px solid #256FD0;
+        color: #256FD0;
+    }
+    &:hover {
+        cursor: pointer;
+        background: $white;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+    }
+    &.disabled {
+        opacity: 0.25;
+    }
+    &.disabled:hover {
+        cursor: default;
+        background: none !important;
+        transform: none;
+        -webkit-transform: none;
     }
   }
 }

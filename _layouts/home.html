@@ -47,9 +47,10 @@
 			{% if page.ediflo-description %}
 				<p>{{ page.ediflo-description }}</p>
 			{% endif %}
+			<a class='button on-light animsition-link' href="http://www.ediflo.tv">Read More</a>
 
 			<div class="features">
-				<ul class="rig columns-3">
+				<ul class="rig columns-4">
 					<li>
 						<h2>{% if page.ediflo-library.heading %}{{ page.ediflo-library.heading }}{% endif %}</h2>
 						<h3>{% if page.ediflo-library.subheading %}{{ page.ediflo-library.subheading }}{% endif %}</h3>
@@ -64,6 +65,11 @@
 						<h2>{% if page.remoco.heading %}{{ page.remoco.heading }}{% endif %}</h2>
 						<h3>{% if page.remoco.subheading %}{{ page.remoco.subheading }}{% endif %}</h3>
 						<p>{% if page.remoco.description %}{{ page.remoco.description | markdownify }}{% endif %}</p>
+					</li>
+					<li>
+						<h2>{% if page.ediflo-analytics.heading %}{{ page.ediflo-analytics.heading }}{% endif %}</h2>
+						<h3>{% if page.ediflo-analytics.subheading %}{{ page.ediflo-analytics.subheading }}{% endif %}</h3>
+						<p>{% if page.ediflo-analytics.description %}{{ page.ediflo-analytics.description | markdownify }}{% endif %}</p>
 					</li>
 				</ul>
 			</div>
