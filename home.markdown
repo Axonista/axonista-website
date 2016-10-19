@@ -4,21 +4,21 @@ date: 2016-03-01 18:07:00 Z
 permalink: "/"
 axonista-description: Powering a whole new generation of intuitive video experiences
   for the world’s leading brands and media companies.
-ediflo-description: 'Ediflo is the complete management and distribution platform for
-  a whole new generation of video-based interactive digital experiences.
+ediflo-description: 'Ediflo is a complete one-stop-shop management platform for building,
+  launching and powering modern interactive digital video products.
 
 '
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
   description: |-
-    Digital asset management
+    Ingest and transcode
 
     Metadata management
 
-    Content collections
+    Curation tools
 
-    Transcoding
+    Syndication feeds
 ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
@@ -27,16 +27,20 @@ ediflo-live:
 
     Linear scheduling
 
-    Realtime content synchronization
+    Realtime content sync
+
+    Live storytelling dashboard
 remoco:
   heading: Ediflo Interactive
   subheading: In-Video Interactivity
   description: |-
     Multi-platform native SDK
 
+    Suite of reference apps
+
     Interactive overlays
 
-    Suite of reference apps
+    In-video shopping
 platforms-heading: We design and build awesome video experiences on these platforms
 services-description: 'We create interactive video apps that can be distributed on
   multiple platforms and managed by TV producers.
