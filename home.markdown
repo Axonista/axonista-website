@@ -2,33 +2,61 @@
 title: Home
 date: 2016-03-01 18:07:00 Z
 permalink: "/"
-axonista-description: Powering realtime interactive video graphics for some of the
-  world's leading video and TV companies.
-ediflo-description: Ediflo is our smart video platform designed and developed for
-  the information age.
+axonista-description: Powering a whole new generation of intuitive video experiences
+  for the world’s leading brands and media companies.
+ediflo-description: 'Ediflo is a complete one-stop-shop management platform for building,
+  launching and powering modern interactive digital video products.
+
+'
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management
-  description: 
+  description: |-
+    Ingest and transcode
+
+    Metadata management
+
+    Curation tools
+
+    Syndication feeds
 ediflo-live:
   heading: Ediflo Live
   subheading: Scheduling & Playout
-  description: |-
-    Linear scheduling
-
+  description: |
     Live streaming
 
-    Real time content management
-remoco:
-  heading: Remoco
-  subheading: Interactive Layer
-  description: |-
-    Our cross platform in-app SDK for mobile, Apple TV, Android TV and VR.
+    Linear scheduling
 
-    Add interactive graphic overlays into existing video apps for both live and on demand video.
+    Realtime content sync
+
+    Live storytelling dashboard
+remoco:
+  heading: Ediflo Interactive
+  subheading: In-Video Interactivity
+  description: |-
+    Multi-platform native SDK
+
+    Suite of reference apps
+
+    Interactive overlays
+
+    In-video shopping
+ediflo-analytics:
+  heading: Ediflo Analytics
+  subheading: Metrics & Insights
+  description: |-
+    Real-time video metrics
+
+    Insights into audience engagement
+
+    Video commerce reports
+
+    Custom exports
 platforms-heading: We design and build awesome video experiences on these platforms
-services-description: |
-  We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
+services-description: 'We create interactive video apps that can be distributed on
+  multiple platforms and managed by TV producers.
+
+'
 qvc-description: We collaborated closely with QVC to deliver what is widely lauded
   as one of the best apps in the Apple TV App Store. **Powered by Ediflo.**
 qvc-quote:

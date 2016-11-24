@@ -12,7 +12,7 @@
           <div id="alignright">
               <ul id="toggle-menu">
 								<li><a class="anchor-link" href="#products">Products</a></li>
-                  <li><a href="/services.html">Services</a></li>
+                  <li><a class="animsition-link" href="/services.html">Services</a></li>
                   <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                   <li><a class="anchor-link" href="#contact">Contact</a></li>
               </ul>
@@ -21,7 +21,7 @@
 			<div id="full-screen-nav">
                 <ul>
 									<li><a class="anchor-link" href="#products">Products</a></li>
-										<li><a href="/services.html">Services</a></li>
+										<li><a class="animsition-link" href="/services.html">Services</a></li>
                     <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                     <li><a class="anchor-link" href="#contact">Contact</a></li>
                 </ul>
@@ -47,9 +47,10 @@
 			{% if page.ediflo-description %}
 				<p>{{ page.ediflo-description }}</p>
 			{% endif %}
+			<a class='button on-light animsition-link' href="http://www.ediflo.tv">Read More</a>
 
 			<div class="features">
-				<ul class="rig columns-3">
+				<ul class="rig columns-4">
 					<li>
 						<h2>{% if page.ediflo-library.heading %}{{ page.ediflo-library.heading }}{% endif %}</h2>
 						<h3>{% if page.ediflo-library.subheading %}{{ page.ediflo-library.subheading }}{% endif %}</h3>
@@ -64,6 +65,11 @@
 						<h2>{% if page.remoco.heading %}{{ page.remoco.heading }}{% endif %}</h2>
 						<h3>{% if page.remoco.subheading %}{{ page.remoco.subheading }}{% endif %}</h3>
 						<p>{% if page.remoco.description %}{{ page.remoco.description | markdownify }}{% endif %}</p>
+					</li>
+					<li>
+						<h2>{% if page.ediflo-analytics.heading %}{{ page.ediflo-analytics.heading }}{% endif %}</h2>
+						<h3>{% if page.ediflo-analytics.subheading %}{{ page.ediflo-analytics.subheading }}{% endif %}</h3>
+						<p>{% if page.ediflo-analytics.description %}{{ page.ediflo-analytics.description | markdownify }}{% endif %}</p>
 					</li>
 				</ul>
 			</div>
@@ -89,14 +95,14 @@
 
 			<section class='case-study qvc-tv'>
         <div class="info">
-					<h1>Customer Story</h1>
+					<h3>Customer Story</h3>
 					<div class="atvImg">
 						<!--<img class="logo" src="/assets/images/case-studies/qvc/qvc-icon-apple-tv-flat.png"/>-->
 						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
 						<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
 					</div>
 					<p>{% if page.qvc-description %}{{ page.qvc-description | markdownify }}{% endif %}</p>
-					<h1>{% if page.qvc-quote.text %}{{ page.qvc-quote.text }}{% endif %}</h1>
+					<blockquote>{% if page.qvc-quote.text %}{{ page.qvc-quote.text }}{% endif %}</blockquote>
                     {% if page.qvc-quote.author %}<p class="subtext">&mdash; {{ page.qvc-quote.author }}{% endif %}</p>
 					<a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
 				</div>

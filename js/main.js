@@ -1,20 +1,17 @@
 $(".animsition").animsition({
-    inClass: 'zoom-in-sm',
-    outClass: 'zoom-out-sm',
-    inDuration: 500,
-    outDuration: 500,
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 250,
+    outDuration: 250,
     linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
     loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
+    loadingParentElement: 'body',
     loadingClass: 'animsition-loading',
-    loadingInner: '<img src="/assets/images/puff.svg" />',
+    loadingInner: '',
     timeout: false,
     timeoutCountdown: 5000,
     onLoadEvent: true,
     browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
     overlay : false,
     overlayClass : 'animsition-overlay-slide',
     overlayParentElement : 'body',
@@ -65,38 +62,6 @@ $('a.anchor-link').click(function(event) {
             $('html,body').animate({scrollTop: $target.offset().top}, 500, 'easeInOutExpo');
 		}
 	}
-});
-
-// Interaction Slider //
-$('.tabs-content div:first').show();
-$('.tabs-nav li:first').addClass('tab-active');
-
-// Change tab class and display content
-$('.tabs-nav a').on('click', function(event){
-  event.preventDefault();
-  $('.tabs-nav li').removeClass('tab-active');
-  $(this).parent().addClass('tab-active');
-  $('.tabs-content div').hide();
-  $($(this).attr('href')).show();
-});
-
-// Segmented Control UI
-$(".segmented-control label input[type=radio]").each(function(){
-    $(this).on("change", function(){
-        if($(this).is(":checked")){
-           $(this).parent().siblings().each(function(){
-                $(this).removeClass("checked");
-            });
-            $(this).parent().addClass("checked");
-        }
-    });
-});
-
-$(".illustrations .segmented-control input").on("change", function() {
-    var image_id = $(this).data('image-id'),
-        $parent = $(this).closest('.illustration');
-    $parent.find('img:not(".' + image_id + '")').hide();
-    $parent.find('img.' + image_id).show();
 });
 
 $(function() {
