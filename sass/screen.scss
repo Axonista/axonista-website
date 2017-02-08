@@ -967,35 +967,21 @@ section.logos {
     }
 
     h1 {
-      @include span-columns (6 of 12);
-      @include shift(3);
+      width: 100%;
       line-height: 1.2em;
       margin-bottom: 1em;
-        @include media($tablet) {
-            @include span-columns (8 of 12);
-            @include shift(2);
-        }
     }
     img {
         max-height: 25px;
         margin: 0 auto;
     }
 	ul {
-        @include span-columns (12);
         list-style: none;
         padding-top: 10px;
-        @include media($desktop) {
-            @include span-columns (8 of 12);
-            @include shift(2);
-        }
-        @include media($tablet) {
-            @include span-columns (10 of 12);
-            @include shift(1);
-        }
-        @include media($mobile) {
-            @include span-columns (12 of 12);
-            @include shift(0);
-        }
+        width: 100%;
+        max-width: 960px;
+        list-style: none;
+        margin: 0 auto;
     }
 	li {
         width: 150px;
