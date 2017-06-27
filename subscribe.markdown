@@ -5,8 +5,10 @@ permalink: "/subscribe"
 layout: landing-page
 ---
 
-# Test headline
+# A new dawn of Video has arrived.
 
-Some text in a paragraph.
+What will the next 10 years bring?
 
-Some text in another paragraph.
+Find out what the next generation of video experiences looks like, where content, commerce and interactivity come together seamlessly.
+
+Keep up with the speed of change, by signing up to Rerun, Axonista’s weekly round-up of the best stories shaping the future of video.
