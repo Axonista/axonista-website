@@ -5,7 +5,7 @@ permalink: "/subscribe"
 layout: landing-page
 ---
 
-# A new dawn of Video has arrived.
+# A new dawn of video has arrived.
 
 What will the next 10 years bring?
 
