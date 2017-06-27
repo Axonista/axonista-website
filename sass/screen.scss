@@ -114,6 +114,9 @@ html, body {
 
     &.landing {
       background-color: $gold;
+      @include media($mobile) {
+        height: auto !important;
+      }
     }
 }
 
@@ -1966,8 +1969,71 @@ section.image-banner {
 // Landing Page
 // ----------------------------------------------------------------------------------------------------
 .landing__container {
+  @include outer-container;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
   height: 100%;
   background-color: $white;
+  box-shadow: inset 0 0 0 8px $gold;
+  padding: 8px;
+}
+
+.landing__block {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  @include span-columns (6);
+  padding: 32px;
+
+  @include media ($tablet) {
+    @include span-columns (12);
+  }
+  @include media ($mobile) {
+    padding: 16px;
+    @include span-columns (12);
+  }
+
+  h1 {
+    font-size: 2.25em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+
+    @include media ($mobile) {
+      font-size: 2em;
+    }
+  }
+}
+
+.landing__block--video {
+  position: relative;
+  @include span-columns (6);
+  background-color: $black;
+  padding: 0;
+  overflow: hidden;
+
+  @include media ($tablet) {
+    display: none !important;
+    @include span-columns (0);
+  }
+
+  img {
+    height: 100%;
+    -webkit-transform: translateX(-33%);
+    transform: translateX(-33%);
+  }
+}
+
+.landing__logo {
+  margin-bottom: 1em;
+  height: 49px;
+
+  @include media ($mobile) {
+    margin-bottom: 2em;
+  }
 }
 
 .landing__form {
@@ -1983,13 +2049,15 @@ section.image-banner {
         color: $darkgrey;
         border-radius: 4px;
         border: 1px solid rgba(0,0,0,0.1);
-        padding: 1em 10em 1em 1em;
+        padding: 1em;
         font-size: 1em;
         font-weight: 400;
         outline: none;
         transition: all 0.2s ease;
+        width: 60%;
         @include media($mobile) {
-            width: 90%;
+            width: 100%;
+            max-width: 100%;
         }
     }
     input[type="email"]:hover {
@@ -2010,7 +2078,7 @@ section.image-banner {
         margin-left: -8px;
         border-radius: 0px 4px 4px 0px;
         background-color: $gold;
-        padding: 1em 2em;
+        padding: 1em;
         border: 1px solid rgba(0,0,0,0.1);
         color: $white;
         outline: none;
@@ -2027,4 +2095,27 @@ section.image-banner {
       }
     }
 
+}
+
+.landing__footer {
+    display: flex;
+    width: 100%;
+    font-family: $font-family-book;
+    font-size: 0.75em;
+    color: rgba(0,0,0,0.5);
+    padding-top: 1em;
+    margin-top: 5em;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    @include media ($mobile) {
+        margin-top: 40px;
+    }
+
+    span {
+        vertical-align: top;
+        margin-left: 5px;
+    }
+
+  img {
+    height: 16px;
+  }
 }

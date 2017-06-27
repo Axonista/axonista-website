@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="landing">
 	<title>{{ site.title }} - {{ page.title}}</title>
 	<head>
         <meta name="description" content="{{ site.description }}">
@@ -56,13 +56,23 @@
 	</head>
 		<body class="landing">
       <div class="landing__container">
-        {% if content %}
-          <div>{{ content }}</div>
-        {% endif %}
-        <form class="landing__form" action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
-          <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
-          <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
-        </form>
+        <div class="landing__block">
+          <img class="landing__logo" src="/assets/images/axonista-logo.png" srcset="/assets/images/axonista-logo.png 2x"/>
+          <div class="landing__content">
+            {{ content }}
+            <form class="landing__form" action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
+              <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
+              <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
+            </form>
+          </div>
+          <div class="landing__footer">
+            <img src="/assets/images/tv.png" alt="TV icon">
+            <span>Axonista <script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+          </div>
+        </div>
+        <div class="landing__block landing__block--video">
+          <img src="/assets/images/placeholder.jpg"/>
+        </div>
       </div>
 
     <script src="/js/libraries/jquery-1.11.3.min.js"></script>
