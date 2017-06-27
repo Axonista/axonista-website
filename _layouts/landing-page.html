@@ -1,0 +1,10 @@
+{% if page.headline %}
+  <h1>{{ page.headline }}</h1>
+{% endif %}
+{% if page.copy %}
+  <div>{{ page.copy }}</div>
+{% endif %}
+<form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
+  <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
+  <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
+</form>
