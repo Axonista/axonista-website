@@ -1,7 +1,76 @@
-{% if page.content %}
-  <div>{{{ page.content }}</div>
-{% endif %}
-<form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
-  <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
-  <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
-</form>
+<!DOCTYPE html>
+<html>
+	<title>{{ site.title }} - {{ page.title}}</title>
+	<head>
+        <meta name="description" content="{{ site.description }}">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="{{ site.twitter }}">
+        <meta name="twitter:title" content="{{ site.title }}">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:creator" content="{{ site.twitter }}">
+        <meta name="twitter:image" content="{{ site.url }}/assets/images/axonista-logo-stacked.png">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="{{ site.title }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:image" content="{{ site.url }}/assets/images/axonista-logo-stacked.png" />
+        <meta property="og:description" content="{{ site.description }}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+
+        <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
+		<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-18701425-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script>
+			window['_fs_debug'] = false;
+			window['_fs_host'] = 'www.fullstory.com';
+			window['_fs_org'] = '2FWHT';
+			window['_fs_namespace'] = 'FS';
+			(function(m,n,e,t,l,o,g,y){
+			    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+			    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+			    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+			    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+			    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+			    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+			    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+			    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+			    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+			})(window,document,window['_fs_namespace'],'script','user');
+		</script>
+	</head>
+		<body class="landing">
+      <div class="landing__container">
+        {% if content %}
+          <div>{{ content }}</div>
+        {% endif %}
+        <form class="landing__form" action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
+          <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
+          <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
+        </form>
+      </div>
+
+    <script src="/js/libraries/jquery-1.11.3.min.js"></script>
+    <script src="/js/libraries/jquery-ui.min.js"></script>
+    <script src="/js/libraries/headroom.min.js"></script>
+    <script src="/js/libraries/jquery.headroom.min.js"></script>
+    <script src="/js/libraries/atvImg.min.js"></script>
+    <script src="/js/libraries/animsition.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
