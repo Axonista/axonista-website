@@ -502,6 +502,11 @@ section.ediflo {
     margin: 1em auto;
   }
 
+  .store-link img {
+      height: 45px !important;
+      margin: 0 !important;
+  }
+
   .features {
     padding-top: 2em;
 
@@ -519,14 +524,13 @@ section.ediflo {
 
   		li {
   			display: inline-block;
-  			padding: 10px;
   			margin: 0 1.25% 2.5% 1.25%;
   			background: $white;
   			font-size: 16px;
   			vertical-align: top;
   			text-align: left;
         @include media ($tablet) {
-          width: 33%!important;
+          width: 30%!important;
         }
   			@include media ($mobile) {
   				width: 100% !important;
@@ -534,14 +538,6 @@ section.ediflo {
   			}
 
   			a { color: inherit; }
-
-  			img {
-  				max-width: 70%;
-  				height: auto;
-  				margin: 0 0 10px;
-  				padding: 2em 0 3em 0;
-
-  			}
 
   			h3 {
           color: $mediumgrey;
@@ -787,6 +783,70 @@ section.case-study {
                 background: none;
             }
         }
+    }
+    &.ifiplayer {
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background: linear-gradient(rgba($black, 0.9), rgba($black, 0.9)),
+        url(../assets/images/case-studies/ifi-player/apple-tv-banner.jpg);
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position-y: 25%;
+        @include media($tablet) {
+            background-position-x: 50% !important;
+        }
+        @include media($mobile) {
+            background-position-x: 50% !important;
+        }
+      }
+      .info {
+          @include media($desktop) {
+              @include span-columns (5);
+          }
+          @include media($tablet) {
+              @include span-columns (6);
+              @include shift(3);
+              text-align: center;
+          }
+          @include media($mobile) {
+              @include span-columns (10);
+              @include shift(1);
+          }
+      }
+      .atvImg {
+          width: 200px;
+          height: 120px;
+          margin-bottom: 30px;
+          @include media($tablet) {
+              margin: 0 auto 20px auto;
+          }
+      }
+      .featured {
+          z-index: 1;
+          margin-right: -10% !important;
+        @include span-columns (8);
+          @include media($biggerdesktop) {
+              @include span-columns (8);
+              margin-right: -10% !important;
+          }
+          @include media($tablet) {
+              display:none;
+          }
+
+          img {
+              max-width: 100%;
+          }
+      }
+      .case-button:hover {
+        background-color: transparent !important;
+      }
     }
     &.qvc {
         background: linear-gradient(rgba($qvc, 0.95) 0%, rgba($qvc, 1) 50%, rgba($qvc, 0.95) 100%);
@@ -1344,6 +1404,22 @@ header.case-study {
                 font-size: 1em;
             }
         }
+        .atvImg {
+            width: 240px;
+            height: 144px;
+            margin: 30px auto;
+            @include media($biggerdesktop) {
+                width: 200px;
+                height: 120px;
+            }
+            @include media($mobile) {
+                width: 160px;
+                height: 96px;
+            }
+            @include media($tablet) {
+                margin: 0 auto 20px auto;
+            }
+        }
     }
 
     img.logo {
@@ -1426,23 +1502,57 @@ header.case-study {
           margin-top: 0.5em !important;
             color: rgba(255, 255, 255, 0.6) !important;
         }
-        .atvImg {
-            width: 240px;
-            height: 144px;
-            margin: 30px auto;
-            @include media($biggerdesktop) {
-                width: 200px;
-                height: 120px;
-            }
-            @include media($mobile) {
-                width: 160px;
-                height: 96px;
-            }
-            @include media($tablet) {
-                margin: 0 auto 20px auto;
-            }
-        }
     }
+
+    &.ifi-player {
+      background: linear-gradient(rgba($black, 0.8) rgba($black, 0.8)), url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 80vh;
+      box-shadow: inset 0 -4px 8px rgba(0,0,0,0.25);
+      @include media($biggerdesktop) {
+          height: 100vh;
+      }
+      @include media($tablet) {
+          height: 60vh;
+      }
+      @include media($mobile) {
+          height: auto;
+          padding: 150px 0 90px 0;
+          background: linear-gradient(rgba($black, 0.8) rgba($black, 0.8)), url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
+          background-size: cover;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+      }
+      h1 {
+        font-size: 3em !important;
+        @include media($mobile) {
+          font-size: 2em !important;
+        }
+      }
+      p {
+        font-size: 1.5em !important;
+        max-width: 26em !important;
+        color: rgba(255, 255, 255, 0.75) !important;
+        @include media($mobile) {
+          font-size: 1.125em !important;
+          padding: 0 1em;
+        }
+      }
+    }
+}
+
+section.image-block {
+  padding: 2em 0;
+  width: 100%;
+  background-color: #fff !important;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 // Features section
@@ -1546,8 +1656,18 @@ section.image-banner {
       font-size: 0.875em !important;
       max-width: 90%;
     }
+    p.lead {
+      font-size: 1.5em !important;
+      max-width: 50% !important;
 
-    &.clear {
+      @include media($mobile) {
+        font-size: 1.25em !important;
+        max-width: 90% !important;
+      }
+    }
+
+    &.clear,
+    &.dark {
         background: $white;
         padding: 6em 0 0 0;
         @include media($mobile) {
@@ -1597,6 +1717,20 @@ section.image-banner {
                 width: 90%;
             }
         }
+    }
+
+    &.dark {
+      background: #121212;
+      padding: 8em 0 0 0;
+
+      blockquote {
+        padding: 0 1em;
+        color: $white;
+      }
+
+      p {
+        color: rgba($white, 0.8);
+      }
     }
 
     &.rerun {
