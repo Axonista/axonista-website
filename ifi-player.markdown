@@ -16,7 +16,7 @@ about-the-customer: The Irish Film Institute is Ireland’s national cultural in
   of all ages and backgrounds to learn and critically engage with film.
 platforms: iPhone, iPad, Apple TV, Android Phone, Android Tablet, Android TV, Amazon
   Fire TV, Roku
-Field name:
+customer-testimonial:
   text: Working with Axonista on the IFI Player applications allows the Irish Film
     Institute to address the rapidly changing digital landscape.
   author: Ross Keane, IFI Director
