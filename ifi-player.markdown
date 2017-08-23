@@ -1,7 +1,6 @@
 ---
 title: IFI Player
 date: 2017-08-23 08:09:00 Z
-published: false
 headline: Irish film heritage at your fingertips.
 mission-statement: The Irish Film Institute selected our video CMS Ediflo to bring
   the moving image collections from the IFI Irish Film Archive to a global audience
