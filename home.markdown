@@ -62,6 +62,9 @@ qvc-description: We collaborated closely with QVC to deliver what is widely laud
 qvc-quote:
   text: '"The single most interesting app in the Apple TV App Store right now"'
   author: Nilay Patel, The Verge
+ifi-player-description: The Irish Film Institute selected our video CMS Ediflo to
+  bring the moving image collections from the IFI Irish Film Archive to a global audience
+  on mobile and TV-connected devices for the first time.
 clients-heading: We work with these visionaries of video & TV
 rerun-description: Rerun is the best way to keep up with the world of digital storytelling,
   interactive media and future of TV. Curated by us and published Fridays!
