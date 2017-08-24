@@ -1,7 +1,6 @@
 ---
 title: IFI Player
 date: 2017-08-23 08:09:00 Z
-published: false
 headline: Irish film heritage at your fingertips.
 mission-statement: The Irish Film Institute selected our video CMS Ediflo to bring
   the moving image collections from the IFI Irish Film Archive to a global audience
@@ -16,9 +15,10 @@ about-the-customer: The Irish Film Institute is Ireland’s national cultural in
   of all ages and backgrounds to learn and critically engage with film.
 platforms: iPhone, iPad, Apple TV, Android Phone, Android Tablet, Android TV, Amazon
   Fire TV, Roku
-Field name:
+customer-testimonial:
   text: Working with Axonista on the IFI Player applications allows the Irish Film
     Institute to address the rapidly changing digital landscape.
   author: Ross Keane, IFI Director
 layout: ifi-player
 ---
+
