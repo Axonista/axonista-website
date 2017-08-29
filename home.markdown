@@ -52,8 +52,7 @@ ediflo-analytics:
     Video commerce reports
 
     Custom exports
-platforms-heading: Using Ediflo, our customers can design and build awesome video
-  experiences on these platforms
+platforms-heading: Distribute awesome interactive video experiences on these platforms
 services-description: 'Using Ediflo, our customers can create interactive video experiences
   that can be distributed on multiple platforms and managed by TV producers.
 
