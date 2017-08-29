@@ -52,9 +52,9 @@ ediflo-analytics:
     Video commerce reports
 
     Custom exports
-platforms-heading: We design and build awesome video experiences on these platforms
-services-description: 'We create interactive video apps that can be distributed on
-  multiple platforms and managed by TV producers.
+platforms-heading: Distribute awesome interactive video experiences on these platforms
+services-description: 'Using Ediflo, our customers can create interactive video experiences
+  that can be distributed on multiple platforms and managed by TV producers.
 
 '
 qvc-description: We collaborated closely with QVC to deliver what is widely lauded
