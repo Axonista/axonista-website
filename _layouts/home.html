@@ -88,6 +88,22 @@
         </ul>
     </section>
 
+		<section class="logos clients">
+				<h1>{% if page.clients-heading %}{{ page.clients-heading }}{% endif %}</h1>
+				<ul>
+						<li><img src='/assets/images/logos/client/qvc.png'></li>
+						<li><img src='/assets/images/logos/client/aol.png'></li>
+						<li><img src='/assets/images/logos/client/mtv.png'></li>
+						<li><img src='/assets/images/logos/client/tv3.png'></li>
+						<li><img src='/assets/images/logos/client/channel-five.png'></li>
+						<li><img src='/assets/images/logos/client/snkr.png'></li>
+						<li><img src='/assets/images/logos/client/100uu.png'></li>
+						<li><img src='/assets/images/logos/client/the-qyou.png'></li>
+						<li><img src='/assets/images/logos/client/eir-sport.png'></li>
+						<li><img src='/assets/images/logos/client/ifi.png'></li>
+				</ul>
+		</section>
+
 			<section id="customers" class="services">
 					<h1>Customers</h1>
 					<p>{% if page.services-description %}{{ page.services-description }}{% endif %}</p>
@@ -127,21 +143,7 @@
 		      </div>
 		  </section>
 
-			<section class="logos clients">
-					<h1>{% if page.clients-heading %}{{ page.clients-heading }}{% endif %}</h1>
-					<ul>
-							<li><img src='/assets/images/logos/client/qvc.png'></li>
-							<li><img src='/assets/images/logos/client/aol.png'></li>
-							<li><img src='/assets/images/logos/client/mtv.png'></li>
-							<li><img src='/assets/images/logos/client/tv3.png'></li>
-							<li><img src='/assets/images/logos/client/channel-five.png'></li>
-							<li><img src='/assets/images/logos/client/snkr.png'></li>
-							<li><img src='/assets/images/logos/client/100uu.png'></li>
-							<li><img src='/assets/images/logos/client/the-qyou.png'></li>
-							<li><img src='/assets/images/logos/client/eir-sport.png'></li>
-							<li><img src='/assets/images/logos/client/ifi.png'></li>
-					</ul>
-			</section>
+			{% include contact.html %}
 
 			<section class="image-banner rerun">
           <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
@@ -152,7 +154,5 @@
               <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
           </form>
       </section>
-
-			{% include contact.html %}
 
     	{% include footer.html %}
