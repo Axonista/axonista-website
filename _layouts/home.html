@@ -12,7 +12,7 @@
           <div id="alignright">
               <ul id="toggle-menu">
 								<li><a class="anchor-link" href="#products">Products</a></li>
-                  <li><a class="animsition-link" href="/services.html">Services</a></li>
+                  <li><a class="animsition-link" href="/customers.html">Customers</a></li>
                   <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                   <li><a class="anchor-link" href="#contact">Contact</a></li>
               </ul>
@@ -21,7 +21,7 @@
 			<div id="full-screen-nav">
                 <ul>
 									<li><a class="anchor-link" href="#products">Products</a></li>
-										<li><a class="animsition-link" href="/services.html">Services</a></li>
+										<li><a class="animsition-link" href="/customers.html">Customers</a></li>
                     <li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
                     <li><a class="anchor-link" href="#contact">Contact</a></li>
                 </ul>
@@ -75,23 +75,23 @@
 			</div>
 		</section>
 
-            <section id="what-we-do" class="logos platforms">
-                <h1>{% if page.platforms-heading %}{{ page.platforms-heading }}{% endif %}</h1>
-                <ul>
-                    <li><img src='/assets/images/logos/platform/ios.png'></li>
-                    <li><img src='/assets/images/logos/platform/tvos.png'></li>
-                    <li><img src='/assets/images/logos/platform/android.png'></li>
-										<li><img src='/assets/images/logos/platform/amazon-fire-tv.png'></li>
-                    <li><img src='/assets/images/logos/platform/roku.png'></li>
-                    <li><img src='/assets/images/logos/platform/xbox.png'></li>
-                    <li><img src='/assets/images/logos/platform/oculus.png'></li>
-                </ul>
-            </section>
+    <section id="what-we-do" class="logos platforms">
+        <h1>{% if page.platforms-heading %}{{ page.platforms-heading }}{% endif %}</h1>
+        <ul>
+            <li><img src='/assets/images/logos/platform/ios.png'></li>
+            <li><img src='/assets/images/logos/platform/tvos.png'></li>
+            <li><img src='/assets/images/logos/platform/android.png'></li>
+						<li><img src='/assets/images/logos/platform/amazon-fire-tv.png'></li>
+            <li><img src='/assets/images/logos/platform/roku.png'></li>
+            <li><img src='/assets/images/logos/platform/xbox.png'></li>
+            <li><img src='/assets/images/logos/platform/oculus.png'></li>
+        </ul>
+    </section>
 
-			<section id="services" class="services">
-					<h1>Services</h1>
+			<section id="customers" class="services">
+					<h1>Customers</h1>
 					<p>{% if page.services-description %}{{ page.services-description }}{% endif %}</p>
-					<a class='case-button on-light animsition-link' href="/services.html">View Our Work</a>
+					<a class='case-button on-light animsition-link' href="/customers">Our Customers</a>
 			</section>
 
 			<section class='case-study qvc-tv'>
@@ -127,31 +127,31 @@
 		      </div>
 		  </section>
 
-            <section class="logos clients">
-                <h1>{% if page.clients-heading %}{{ page.clients-heading }}{% endif %}</h1>
-                <ul>
-										<li><img src='/assets/images/logos/client/qvc.png'></li>
-										<li><img src='/assets/images/logos/client/aol.png'></li>
-										<li><img src='/assets/images/logos/client/mtv.png'></li>
-										<li><img src='/assets/images/logos/client/tv3.png'></li>
-										<li><img src='/assets/images/logos/client/channel-five.png'></li>
-										<li><img src='/assets/images/logos/client/snkr.png'></li>
-										<li><img src='/assets/images/logos/client/100uu.png'></li>
-										<li><img src='/assets/images/logos/client/the-qyou.png'></li>
-                    <li><img src='/assets/images/logos/client/eir-sport.png'></li>
-										<li><img src='/assets/images/logos/client/ifi.png'></li>
-                </ul>
-            </section>
+			<section class="logos clients">
+					<h1>{% if page.clients-heading %}{{ page.clients-heading }}{% endif %}</h1>
+					<ul>
+							<li><img src='/assets/images/logos/client/qvc.png'></li>
+							<li><img src='/assets/images/logos/client/aol.png'></li>
+							<li><img src='/assets/images/logos/client/mtv.png'></li>
+							<li><img src='/assets/images/logos/client/tv3.png'></li>
+							<li><img src='/assets/images/logos/client/channel-five.png'></li>
+							<li><img src='/assets/images/logos/client/snkr.png'></li>
+							<li><img src='/assets/images/logos/client/100uu.png'></li>
+							<li><img src='/assets/images/logos/client/the-qyou.png'></li>
+							<li><img src='/assets/images/logos/client/eir-sport.png'></li>
+							<li><img src='/assets/images/logos/client/ifi.png'></li>
+					</ul>
+			</section>
 
-            <section class="image-banner rerun">
-                <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
-                <img src="/assets/images/rerun-logo.png" alt="Rerun logo" />
-                <p>{% if page.rerun-description %}{{ page.rerun-description }}{% endif %}</p>
-                    <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
-                    <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
-                    <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
-                </form>
-            </section>
+			<section class="image-banner rerun">
+          <form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
+          <img src="/assets/images/rerun-logo.png" alt="Rerun logo" />
+          <p>{% if page.rerun-description %}{{ page.rerun-description }}{% endif %}</p>
+              <input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
+              <input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button" id="submit"></input>
+              <p class="small"><strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
+          </form>
+      </section>
 
 			{% include contact.html %}
 
