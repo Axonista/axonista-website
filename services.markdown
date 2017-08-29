@@ -16,4 +16,4 @@ ifi-player-description: The Irish Film Institute selected our video CMS Ediflo t
 layout: services
 ---
 
-We create interactive video apps that can be distributed on multiple platforms and managed by TV producers.
+Using Ediflo, our customers can create interactive video experiences that can be distributed on multiple platforms and managed by TV producers.
