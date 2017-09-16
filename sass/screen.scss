@@ -1169,7 +1169,7 @@ section.contact {
     background-color: $white;
 
     div.content {
-        @include span-columns (5);
+        @include span-columns (10);
         @include shift(1);
         padding: 50px 0;
         @include media($tablet) {
@@ -1180,17 +1180,23 @@ section.contact {
         }
 
         .addresses {
-            @include span-columns (5 of 5);
+            @include span-columns (10 of 10);
             @include media($tablet) {
-                @include span-columns (6 of 10);
+                @include span-columns (10 of 10);
             }
             @include media($mobile) {
                 @include span-columns (10 of 10);
             }
         }
         section {
-            @include span-columns (2.5 of 5);
+            @include span-columns (2.5 of 10);
             background-color: $white;
+            @include media($tablet) {
+                @include span-columns (10 of 10);
+            }
+            @include media($mobile) {
+                @include span-columns (10 of 10);
+            }
         }
         h3 {
             color: $mediumgrey;
@@ -1215,19 +1221,6 @@ section.contact {
         a:hover {
             color: darken($blue, 5%);
             border-bottom: 2px solid rgba($blue, 0.5);
-        }
-    }
-    .map {
-        @include span-columns (6);
-        @include media($tablet) {
-            display: none;
-        }
-        @include media($mobile) {
-            display: none;
-        }
-
-        img {
-          max-width: 100%;
         }
     }
 }
