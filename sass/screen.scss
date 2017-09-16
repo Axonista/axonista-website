@@ -1217,13 +1217,17 @@ section.contact {
             border-bottom: 2px solid rgba($blue, 0.5);
         }
     }
-    iframe {
+    .map {
         @include span-columns (6);
         @include media($tablet) {
             display: none;
         }
         @include media($mobile) {
             display: none;
+        }
+
+        img {
+          max-width: 100%;
         }
     }
 }
