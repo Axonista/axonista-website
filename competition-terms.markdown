@@ -17,7 +17,7 @@ layout: long-content-page
 
 (f) The winner will be notified by November 24th.
 
-(g) The winner will be notified by the email they entered the competition with, and we will post the winners name on the Axonista <a href="https://www.facebook.com/axonista/">Facebook page</a>.
+(g) The winner will be notified by the email they entered the competition with, and we will post the winners name on the Axonista <a href="https://www.facebook.com/axonista/" target="_blank">Facebook page</a>.
 
 (h) Axonista owns the copyright of the entries, entries will not be shared with any 3rd parties.
 
