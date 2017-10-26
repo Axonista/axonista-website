@@ -34,3 +34,5 @@ Time: 8:00 AM - 6:00 PM followed by a great cocktail party until 7:30 PM
 Location: SVA Theatre, 333 West 23rd Street, New York City, NY 10011
 
 Web Site: <a href="http://www.thetvoftomorrowshow.com" target="_blank">http://www.thetvoftomorrowshow.com</a>
+
+<a href="/competition">Return to competition</a>
