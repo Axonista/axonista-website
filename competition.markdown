@@ -4,6 +4,8 @@ date: 2017-10-26 11:20:00 Z
 layout: competition
 ---
 
+# Win 2 tickets to this year's TV Of Tomorrow event in New York.
+
 This event packs all the excitement of our San Francisco flagship <a href="http://thetvoftomorrowshow.com/" target="_blank">TV of Tomorrow Show</a> into a highly focused, expert-crafted, dialog-driven, one-day "intensive", with leading TV industry professionals. Oh, and don't forget the after party!
 
 This fantastic event takes place on Thursday December 7th at the <a href="https://www.google.ie/maps/place/SVA+Theatre/@40.7459734,-73.9997469,15z/data=!4m5!3m4!1s0x0:0xc1c1675ce0bfb1a1!8m2!3d40.7459734!4d-73.9997469" target="_blank">SVA Theatre, New York</a>.
