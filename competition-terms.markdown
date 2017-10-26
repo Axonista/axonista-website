@@ -1,6 +1,7 @@
 ---
 title: Competition Terms and Conditions
 date: 2017-10-26 11:31:00 Z
+layout: long-content-page
 ---
 
 (a) Closing date is November 23rd. 
