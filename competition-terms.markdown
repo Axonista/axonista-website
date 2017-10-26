@@ -4,6 +4,7 @@ date: 2017-10-26 11:31:00 Z
 layout: long-content-page
 ---
 
+# Competition Terms and Conditions
 (a) Closing date is November 23rd. 
 (b) This competition is for anyone over the age of 18, living in the United States or who is willing to travel to the United States. 
 (c) You can only sign up once with one email address;
