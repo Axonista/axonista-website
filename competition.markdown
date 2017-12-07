@@ -1,6 +1,7 @@
 ---
 title: Competition
 date: 2017-10-26 11:20:00 Z
+published: false
 layout: competition
 ---
 
