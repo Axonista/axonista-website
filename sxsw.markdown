@@ -8,4 +8,4 @@ signup-form-terms: By submitting an entry, you are agreeing to...
 layout: internal-marketing-page
 ---
 
-Content tag
+Content tag![new-york.jpg](/uploads/new-york.jpg)
