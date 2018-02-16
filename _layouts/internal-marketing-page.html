@@ -1,0 +1,104 @@
+{% include header.html %}
+		<!-- Template CSS -->
+		<style type="text/css">
+			html.landing, body.landing{background-color: #FFF;}
+			.landing__container{box-shadow: none; padding: 0px; height: auto;}
+			.landing__content a{color: #F3A540;}
+			.landing__content a:hover{text-decoration: underline;}
+			.landing__container .expanding__image{background-image: url({{ page['feature-image'] }});background-position: right bottom;background-size:cover;width: 48.82117%;}
+			.landing__container{align-items:none; -webkit-align-items:normal;}
+			/* Recreate golden border around page */
+			#border-top, #border-bottom, #border-left, #border-right{background: #F3A540;position: fixed;}
+			#border-left, #border-right{top: 0; bottom: 0;width: 10px;}
+			#border-left{left: 0;}
+			#border-right{right: 0;}
+			#border-top, #border-bottom{left: 0; right: 0;height: 10px;}
+			#border-top{top: 0;}
+			#border-bottom{bottom: 0;}
+			/* Hide page elements for mobile */
+			@media screen and (max-width: 768px){
+				#border-top, #border-bottom, #border-left, #border-right{display: none;}
+				.landing__container .expanding__image{display: none;}
+				}
+		</style>
+
+		<div class="landing">
+      <div class="landing__container">
+        <div class="landing__block">
+          <a href="{{site.url}}"><img class="landing__logo" src="/assets/images/axonista-logo.png" srcset="/assets/images/axonista-logo.png 2x"/></a>
+          <div class="landing__content">
+						{{content}}
+						<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+						<style type="text/css">
+							/* Mail chimp */
+							#mc_embed_signup{background:#fff; clear:left;}
+							#mc_embed_signup form{padding: 0px; overflow: hidden;}
+							#mc_embed_signup .mc-field-group input{font-size: 16px; padding: 12px 0;}
+							#mc_embed_signup div#mce-responses{padding: 0px; margin: 0px;}
+							#mc_embed_signup div.response{padding: 0px 0px 20px 0px; margin: 0px; width: 100%; font-weight: normal;}
+							#mce-error-response, #mc_embed_signup #mce-success-response{color: red;}
+							#mc_embed_signup .terms{font-size: 1em; margin-top: 10px;}
+							#mc_embed_signup #mce-success-response{color:}
+							#mc_embed_signup .button{font-family: "geomanist-medium","Avenir Next","Helvetica Neue",Helvetica,sans-serif;font-size: 16px;line-height: 40px;height: 44px;padding: 4px 26px 4px 26px;margin: 0px 30px 40px 0px;float: right;clear: both;background-color: #F3A540;border: 1px solid #DA943A;}
+							#mc_embed_signup .button:hover{background-color: #DA943A;}
+							#mc_embed_signup .mc-field-group{padding-bottom:10px;}
+							::-webkit-input-placeholder{color: #939393;} /* Chrome/Opera/Safari */
+							::-moz-placeholder{color: #939393;} /* Firefox 19+ */
+							:-ms-input-placeholder{color: #939393;} /* IE 10+ */
+							:-moz-placeholder{color: #939393;} /* Firefox 18- */
+						</style>
+						<div id="mc_embed_signup">
+						<form action="{{ page['mailchimp-form-action'] }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email</label>
+							<input type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email address" id="mce-EMAIL">
+						</div>
+						<p class="terms">{{ page['signup-form-terms'] }}</p>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0fa6facce98578adeda82d3fa_c71f3f47be" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+								</div>
+						</form>
+						</div>
+						<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($){window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+						<!-- End MailChimp Signup Form -->
+          </div>
+          <div class="landing__footer">
+            <img src="/assets/images/tv.png" alt="TV icon">
+						<span>Copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script> Axonista.</span>
+          </div>
+        </div>
+				<div class="expanding__image"></div>
+      </div>
+		</div>
+
+		</div><!-- end animsition div -->
+    <script src="/js/libraries/jquery-1.11.3.min.js"></script>
+    <script src="/js/libraries/jquery-ui.min.js"></script>
+    <script src="/js/libraries/headroom.min.js"></script>
+    <script src="/js/libraries/jquery.headroom.min.js"></script>
+    <script src="/js/libraries/atvImg.min.js"></script>
+    <script src="/js/libraries/animsition.min.js"></script>
+    <script src="/js/main.js"></script>
+
+		<div id="border-left"></div>
+		<div id="border-right"></div>
+		<div id="border-top"></div>
+		<div id="border-bottom"></div>
+
+		<script>
+			$(document).ready(function() {
+				page_height = $(document).height();
+				function resize_expanding_image(){$(".expanding__image").height(page_height + 80);}
+				$(window).resize(function(){resize_expanding_image();});
+				resize_expanding_image();
+				});
+		</script>
+
+  </body>
+</html>
