@@ -5,7 +5,8 @@ published: false
 feature-image: "/assets/images/SXSW-2017-29r.jpg"
 mailchimp-form-action: https://axonista.us16.list-manage.com/subscribe/post?u=0fa6facce98578adeda82d3fa&amp;id=b917b8e7bf
 signup-form-terms: By submitting an entry, you are agreeing to...
-below-form-text: 
+below-form-text: Photography | 2017 SXSW Conference & Festivals | Photo by Samantha
+  Burkardt
 layout: internal-marketing-page
 ---
 
