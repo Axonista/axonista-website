@@ -3,7 +3,7 @@ title: SXSW
 date: 2018-02-15 16:14:00 Z
 feature-image: "/uploads/placeholder-3.jpg"
 mailchimp-form-action: https://axonista.us16.list-manage.com/subscribe/post?u=0fa6facce98578adeda82d3fa&amp;id=b917b8e7bf
-signup-form-terms: 'By submitting your email address, you''re agreeing to being emailed
+signup-form-terms: 'By submitting your email address, you''re agreeing to be emailed
   from Axonista. '
 below-form-text: 
 layout: internal-marketing-page
