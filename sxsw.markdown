@@ -5,8 +5,7 @@ feature-image: "/uploads/David-Rackley-Interactive-Sensory-Lounge-8250-1440x810.
 mailchimp-form-action: https://axonista.us16.list-manage.com/subscribe/post?u=0fa6facce98578adeda82d3fa&amp;id=b917b8e7bf
 signup-form-terms: 'By submitting your email address, you''re agreeing to being emailed
   about Axonista at the SXSW event and other updates. '
-below-form-text: Photography | 2017 SXSW Conference & Festivals | Photo by Samantha
-  Burkardt
+below-form-text: Photography | 2017 SXSW Interactive – Photo by David Rackley
 layout: internal-marketing-page
 ---
 
