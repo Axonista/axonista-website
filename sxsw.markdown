@@ -11,5 +11,10 @@ layout: internal-marketing-page
 
 <p>Hello!</p>
 
-<p>Axonista will be at SXSW Interactive March 10th - 14th.  
-If you plan to be in Austin, please get in touch to see how global media companies including QVC, Sinclair Broadcasting Group, Viacom and others have partnered with Axonista to build the fastest growing, interactive and monetizable OTT and mobile channels.</p>
+<p>Hello!
+We are really excited to attend SXSW Interactive in Austin from March 10th - 14th.  
+If you are going along, we'd love to show you how global media companies including QVC, Sinclair Broadcasting, Viacom and more have partnered with Axonista to build the fastest growing, interactive, monetizable OTT and mobile channels.
+
+Looking forward to connecting with you. 
+
+— Team Axonista</p>
