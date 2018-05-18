@@ -2,8 +2,8 @@
 title: Home
 date: 2016-03-01 18:07:00 Z
 permalink: "/"
-axonista-description: Powering a whole new generation of intuitive video experiences
-  for the world’s leading brands and media companies.
+axonista-description: Powering intuitive video commerce for the world’s leading brands
+  and media companies.
 ediflo-description: 'Ediflo is a complete one-stop-shop management platform for building,
   launching and powering modern interactive digital video products.
 
