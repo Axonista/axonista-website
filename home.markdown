@@ -2,10 +2,10 @@
 title: Home
 date: 2016-03-01 18:07:00 Z
 permalink: "/"
-axonista-description: Powering intuitive video commerce for the world’s leading brands
-  and media companies.
+axonista-description: Powering video commerce for the world’s leading brands and media
+  companies.
 ediflo-description: 'Ediflo is a complete one-stop-shop management platform for building,
-  launching and powering modern interactive digital video products.
+  launching and powering interactive video commerce experiences.
 
 '
 ediflo-library:
@@ -52,9 +52,9 @@ ediflo-analytics:
     Video commerce reports
 
     Custom exports
-platforms-heading: Distribute awesome interactive video experiences on these platforms
+platforms-heading: Distribute awesome video commerce experiences on these platforms
 services-description: 'Using Ediflo, our customers can create interactive video experiences
-  that can be distributed on multiple platforms and managed by TV producers.
+  that can be distributed on multiple platforms and easily managed by content producers.
 
 '
 qvc-description: We collaborated closely with QVC to deliver what is widely lauded
