@@ -8,10 +8,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: Powering realtime interactive video graphics for some of the world's
-  leading video and TV companies.
-footer-description: Powering realtime interactive video graphics for some of the world's
-  leading video and TV companies.
+description: Powering video commerce for some of the world's leading video and TV
+  companies.
+footer-description: Powering video commerce for some of the world's leading video
+  and TV companies.
 email: connect@axonista.com
 baseurl: 
 markdown: kramdown
