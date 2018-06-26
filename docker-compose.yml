@@ -9,6 +9,6 @@ services:
   httpserver:
     image: nginx:latest
     ports:
-      - 8080:80
+      - 3000:80
     volumes:
       - $PWD/_site:/usr/share/nginx/html
