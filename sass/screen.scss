@@ -376,7 +376,7 @@ nav {
         li {
             margin:0;
             color: $white;
-            padding:0.5em 1em;
+            padding:0.6em 1em;
             font-size:1em;
             background:unset;
             opacity:0;
@@ -386,7 +386,7 @@ nav {
         }
 
         & > li:first-child {
-            padding-top:1.5em;
+            padding-top:2em;
         }
     }
 
