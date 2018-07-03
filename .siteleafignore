@@ -9,3 +9,4 @@ Gemfile
 Guardfile
 Gemfile.lock
 docker-compose.yml
+node_modules/

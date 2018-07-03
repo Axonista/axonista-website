@@ -15,3 +15,5 @@ footer-description: Powering video commerce for some of the world's leading vide
 email: connect@axonista.com
 baseurl: 
 markdown: kramdown
+sass:
+  style: expanded
