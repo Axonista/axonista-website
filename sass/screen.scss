@@ -397,10 +397,16 @@ nav {
         background: $gold;
         border-radius: 4px;
         font-size:14px;
-        font-weight:bold;
         padding:0.5em 1em;
+        font-weight:bold;
+        > a {
+            opacity:0.75;
+        }
         &:hover {
             border:none;
+            > a {
+                opacity:1;
+            }
         }
     }
 
@@ -461,7 +467,7 @@ div.hero {
             font-size:20px;
             color: $black;
             opacity:0.75;
-            
+
             i {
                 color:$black;
             }
