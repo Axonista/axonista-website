@@ -185,6 +185,10 @@ section:nth-of-type(2n) {
 }
 
 nav {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
     height: 64px;
     position: fixed;
     width: 100%;
@@ -202,7 +206,6 @@ nav {
     div#alignright {
         float: right;
         position: fixed;
-        margin-top: 12px;
         right: 8.5298%;
         font-family: $font-family-book;
         font-weight: normal;
@@ -211,6 +214,12 @@ nav {
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
+
+        > ul {
+            display:flex;
+            height:64px;
+        }
+
         @include media ($tablet) {
             display: none;
             float: none;
@@ -228,7 +237,7 @@ nav {
         float: left;
         position: fixed;
         left: 8.5298%;
-        margin-top: 12px;
+        margin-top:3px;
         text-decoration: none !important;
         @include media ($tablet) {
             left: 20px;
@@ -254,12 +263,15 @@ nav {
         }
     }
     .toggle-menu__link {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
         margin-left: 1em;
         background: $black;
         color: $white;
         font-size: 1em;
-        padding: 0.8em 1em;
+        padding: 1em 1em;
+
         @include media ($tablet) {
             width: 100%;
             border: none !important;
@@ -280,6 +292,7 @@ nav {
         &:hover {
             cursor: pointer;
             border-bottom: 3px solid $gold;
+            margin-top:3px;
             @include media ($tablet) {
                 border-bottom: none !important;
                 text-decoration: none;
@@ -299,8 +312,10 @@ nav {
         }
     }
     .dropdown-menu {
+        display: flex;
+        flex-direction: row;
+        align-items:center;        
         position: relative;
-        display: inline-block;
         margin-left: 1em;
         background: $black;
         color: $white;
@@ -320,6 +335,7 @@ nav {
     .dropdown-menu:hover {
         cursor: default;
         border-bottom: 3px solid $gold;
+        margin-top:3px;
         @include media ($tablet) {
             border-bottom: none !important;
             text-decoration: none;
@@ -330,42 +346,44 @@ nav {
     .dropdown-menu > .dropdown-items:hover {
             visibility: visible;
             height: 198px;
-            transition: height .2s ease-in-out;
+            transition: height .3s ease-in-out;
+            transform: translateY(60%);
             > li {
                 opacity: 1;
-                transition: opacity .2s ease-in-out;    
+                transition: opacity .3s ease-in-out;    
             }
     }
     .dropdown-menu:hover > .dropdown-toggle:after {
-        content: "\0025B4";
+        content: "\0025BE";
         position: absolute;
         opacity: 0.75;
         font-size: 1.6em;
-        line-height: 0.8;
+        line-height: 0.85;
         margin-left: 0.2em;
-        transform: scale(1.25, 0.8);
+        transform: scale(0.75, 0.8) rotate(180deg);
+        transition: transform .3s ease-in-out;
     }    
     .dropdown-toggle:after {
         content: "\0025BE";
         position: absolute;
         opacity: 0.75;
         font-size: 1.6em;
-        line-height: 0.8;
+        line-height: 0.85;
         margin-left: 0.2em;
         transform: scale(0.75, 0.8);
+        transition: transform .3s ease-in-out;
     }
     .dropdown-items {
         position: absolute;
         visibility: hidden;
         display: flex;
         height: 0;
-        transition: height .2s ease-in-out;
+        width: 232px;
+        left: -77px;        
         z-index: -1;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.7);
-        margin-top: 0.8em;
-        width: 232px;
-        left: -77px;
+        transition: height .2s ease-in-out;
         text-align: center;
         li {
             margin: 0;
@@ -388,10 +406,12 @@ nav {
         font-size: 14px;
         padding: 0.5em 1em;
         font-weight: bold;
-        >a {
+        margin: 1em 0 1em 1em;
+        > a {
             opacity: 0.75;
         }
         &:hover {
+            margin: 1em 0 1em 1em;
             border: none;
             >a {
                 opacity: 1;
