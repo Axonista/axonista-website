@@ -74,7 +74,7 @@
 		</div>	
 	</div>
 	<video autoplay loop muted playsinline poster="/assets/images/placeholder.jpg" id="bgvid">
-		<source src="/assets/videos/hero-comp.mp4" type="video/mp4">
+		<source src="/assets/videos/hero-commerce.mp4" type="video/mp4">
 	</video>
 </div>
 
@@ -83,7 +83,7 @@
 	<figure>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z"/>
-			</svg>		
+		</svg>		
 		<img src="/assets/images/commerce-product-1.png" srcset="/assets/images/commerce-product-1.png@2x 100vw" alt="">
 		<figcaption>
 			<h2>Shoppable Video Experiences</h2>
@@ -98,7 +98,7 @@
 			<h2>Sponorship &amp; Advertising</h2>
 			<p>Draw long term sponsors to your platform by boasting a captivated audience. Create a brand experience with their products or direct response ads that your audience will love. Start selling meaningful connections, with an engaged audience.</p>
 		</figcaption>	
-		<img src="/assets/images/commerce-product-2.png" srcset="/assets/images/commerce-product-2.png@2x 2x /assets/images/commerce-product-2.png@3x 3x" alt="">	
+		<img src="/assets/images/commerce-product-2.png" srcset="/assets/images/commerce-product-2.png@2x /assets/images/commerce-product-2.png@3x" alt="">	
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z"/>
 			</svg>				
@@ -120,65 +120,102 @@
 <section class="product-section__left-align">
 	<h1>Customers</h1>
 	<figure>
-		<figcaption>
-			<h2>Sponorship &amp; Advertising</h2>
-			<p>Draw long term sponsors to your platform by boasting a captivated audience. Create a brand experience with their products or direct response ads that your audience will love. Start selling meaningful connections, with an engaged audience.</p>
+		<figcaption class="product-section__logo-wquote">
+			<img class="product-section__logo" src="/assets/images/logos/client/qvc-joy-red.png" alt="">
+			<p>We collaborated closely with QVC to deliver what is widely lauded as one of the best apps in the Apple TV App Store.</p>
+			<blockquote>"The single most interesting app in the Apple TV App Store right now”</blockquote>
+			<small class="product-section__quote-author">— Nilay Patel, The Verge</small>
+			<a class="product-section__cta--secondary" href="">Find out more</a>
 		</figcaption>	
-		<img src="/assets/images/commerce-product-2.png" srcset="/assets/images/commerce-product-2.png@2x 2x /assets/images/commerce-product-2.png@3x 3x" alt="">	
+		
+		<img src="/assets/images/commerce-product-3.png" srcset="/assets/images/commerce-product-3.png@2x /assets/images/commerce-product-3.png@3x" alt="">	
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z"/>
-			</svg>				
-	</figure>		
+		</svg>				
+	</figure>	
 	<a href="" class="product-section__cta">OUR CUSTOMERS</a>
 </section>
 
-
-<section class='case-study qvc-tv'>
-	<div class="info">
-		<h3>Customer Story</h3>
-		<div class="atvImg">
-			<!--<img class="logo" src="/assets/images/case-studies/qvc/qvc-icon-apple-tv-flat.png"/>-->
-			<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
-			<div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
-		</div>
-		<p>{% if page.qvc-description %}{{ page.qvc-description | markdownify }}{% endif %}</p>
-		<blockquote>{% if page.qvc-quote.text %}{{ page.qvc-quote.text }}{% endif %}</blockquote>
-		{% if page.qvc-quote.author %}
-		<p class="subtext">&mdash; {{ page.qvc-quote.author }}{% endif %}</p>
-		<a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
+<section class="product-features">
+	<h1>Behind the Scenes</h1>
+	<h2>We’re ready to work with media companies no<br>matter what stage they’re at.</h2>
+	<div class="product-features__row">
+		<figure>
+			<img src="/assets/images/commerce/rectangle-14_6.png" alt="">
+			<h3>Ready to use template apps</h3>
+			<p>Use our flexible, cross platform video app templates to reach new audiences fast. Publish live or VOD offerings within a matter of weeks.</p>
+		</figure>
+		<figure>
+			<img src="/assets/images/commerce/rectangle-14_4.png" alt="">
+			<h3>Use our custom built video CMS</h3>
+			<p>Our CMS has everything you’ll ever need, from Ingest to Play-out. We’ve created a powerful and easy to use management system.</p>
+		</figure>
+		<figure>
+			<img src="/assets/images/commerce/rectangle-14_5.png" alt="">
+			<h3>Embeddable in existing apps</h3>
+			<p>Only use the parts you need. Quickly and easily integrate our service inside your existing apps. We already work with JWplayer..</p>
+		</figure>
 	</div>
-	<div class="featured">
-		<img src="/assets/images/case-studies/qvc/qvc-apple-tv.jpg" />
+	<div class="product-features__row">
+		<figure>
+			<img src="/assets/images/commerce/rectangle-14_3.png" alt="">
+			<h3>Works with existing CMS</h3>
+			<p>We play well with others, and have lots of experience building integrations with our customers' existing systems.</p>
+		</figure>
+		<figure>
+			<img src="/assets/images/commerce/rectangle-14.png" alt="">
+			<h3>Analytics & Insights</h3>
+			<p>Track your KPIs, and export or receive scheduled reports. Uncovering valueable insights into your audience’s behaviour.</p>
+		</figure>
+		<figure>
+			<img src="/assets/images/commerce/rectangle-14_2.png" alt="">
+			<h3>Flexible Pricing Models</h3>
+			<p>Monthly and annual plans available, to scale with your success. Our customer support team will guide you every step of the way.</p>
+		</figure>
 	</div>
+	<a href="" class="product-section__cta">GET IN TOUCH</a>
 </section>
 
-<section class='case-study ifiplayer'>
-	<div class="background-image"></div>
-	<div class="info">
-		<div class="atvImg">
-			<div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
-			<div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
+<section class="platform-section--invert">
+		<h1>Ready to integrate with these platforms&hellip;</h1>
+		<div class="client-section__client-list">
+			<img src="/assets/images/logos/greyscale/shopify.png" alt="">
+			<img src="/assets/images/logos/greyscale/magento.png" alt="">
+			<img src="/assets/images/logos/greyscale/craft.png" alt="">
+			<img src="/assets/images/logos/greyscale/woocommerce.png" alt="">
+			<img src="/assets/images/logos/greyscale/amazon.png" alt="">		
 		</div>
-		<p>{{ page.ifi-player-description }}</p>
-		<a class='case-button on-light animsition-link' href="/ifi-player.html">Read more about it</a>
-	</div>
-	<div class="featured">
-		<img src="/assets/images/case-studies/ifi-player/ifi-android-family.png" />
-	</div>
 </section>
 
-{% include contact.html %}
-
-<section class="image-banner rerun">
-	<form action='https://rerun.curated.co/email_subscribers' id='subscribe-form' method='post'>
-		<img src="/assets/images/rerun-logo.png" alt="Rerun logo" />
-		<p>{% if page.rerun-description %}{{ page.rerun-description }}{% endif %}</p>
-		<input id="subscribe-email" name="email" type="email" placeholder="Your email address"></input>
-		<input type="submit" onclick="this.form.submit(); this.disabled=true; this.value='Sending...';" value="Subscribe" class="button"
-		    id="submit"></input>
-		<p class="small">
-			<strong>No spam, ever.</strong> Your email address will only ever be used for Rerun.</p>
+<section class="contact-section">
+	<h1>Get in touch</h1>
+	<h2>Talk to us about activating your audience today</h2>
+	<form>
+		<label for="name">Full name</label>
+		<input type="text" name="name">
+		<label for="email">Email address</label>
+		<input type="email" name="email" required>
+		<label for="industry">Industry (Optional)</label>
+		<select name="industry">
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+		</select>
+		<label for="message">Message</label>
+		<textarea rows="8"></textarea>
+		<button type="submit">Send Message</button>
 	</form>
+</section>
+
+<section class="cards-section">
+	<h1>Thinking About Video</h1>
+	<h2>We love this industry and we're curious and fascinated about how it unfolds</h2>
+	<div class="card-row">
+		<figure></figure>
+		<figure></figure>
+		<figure></figure>
+	</div>
 </section>
 
 {% include footer.html %}
