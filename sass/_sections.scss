@@ -24,12 +24,13 @@
                 background-image: url("/assets/commerce-bg-slash.png");
                 img {
                         max-width: 555px;
-                        width:100%;
+                        width:50%;
                         height: auto;
                         padding-top:2em;
                 }
                 figcaption {
                         margin-left:40px;
+                        width:50%;
                         h2 {
                                 font-family: $font-family-medium;
                                 font-size:32px;
