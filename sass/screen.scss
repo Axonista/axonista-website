@@ -63,7 +63,7 @@ $mobile: max-width 510px;
 
 html,
 body {
-    background-color: $black;
+    background-color: $white;
     font-family: $font-family-regular;
     font-size: 16px;
     color: $black;
@@ -566,6 +566,8 @@ div.hero {
         bottom: 0;
     }
 }
+
+@import '_sections';
 
 section.ediflo {
     background: white;
