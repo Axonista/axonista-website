@@ -8,13 +8,22 @@ footer {
                 width:100%;
                 align-items:center;
                 background:#1a1a1a;
-                padding:5em;                
+                padding:5em;         
+                @include media($mobile) {
+                        padding:3em 1.5em;     
+                }                       
         }
         .brand {
-               img {
-                       max-width:260px;
-               }
-               padding-bottom:5em;
+                padding-bottom:5em;
+                img {
+                max-width:260px;
+                }
+                @include media($mobile) {
+                        padding-bottom:2em;
+                        img {
+                                max-width:204px;
+                        }
+                }               
         }
         .address {
                 display:flex;
@@ -42,6 +51,19 @@ footer {
                         margin-top:0;
                         margin-bottom:0.25em;
                 }
+                @include media($mobile) {
+                        padding-bottom:0.5em;
+                        div {
+                                margin-bottom:2em;
+                        }
+                        span {
+                                font-size:20px;     
+                        }
+                        p {
+                                font-size:16px;
+                                margin-bottom:.5em;
+                        }
+                }
         }
         .social {
                 display:flex;
@@ -58,6 +80,13 @@ footer {
                 a:hover > .icon {
                         opacity:1;
                 }
+                @include media($mobile) {
+                        width:100%;
+                        .icon {
+                                font-size:1.8em;
+                        }
+                        padding-bottom:2em;
+                }
         }
         .copyright {
                 p {
@@ -66,6 +95,13 @@ footer {
                         line-height:1.88;
                         color:$white;
                         opacity:0.75;
+                }
+                @include media($mobile) {
+                        p {
+                                font-size:14px;
+                                line-height:2.14;
+                                padding-bottom:2em;
+                        }
                 }
         }
 }
