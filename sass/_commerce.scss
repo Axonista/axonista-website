@@ -185,6 +185,13 @@
                 color:$gold;
                 margin-top:24px;
         }
+        @include media($tablet) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1em 0.125em;           
+                padding-top:4em;
+        }
 }
 
 .item-list-section {
@@ -211,6 +218,24 @@
                 justify-content: space-around;
                 align-items:center;
                 padding:0 5em;
+        }
+        @include media($tablet) {
+                padding-top:3em;
+                padding-bottom:3em;    
+                h1 {
+                        padding: 0 3em;
+                        font-size:22px;
+                        line-height:1.18;
+                        margin-bottom: 1em;                             
+                }
+                .client-section__client-list {
+                        flex-wrap:wrap;
+                        padding: 0em 2em;                       
+                        > img {
+                                transform: scale(.75);
+                                margin: .75em 0;
+                        }
+                }
         }
 }
 
