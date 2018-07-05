@@ -261,7 +261,6 @@ nav {
         flex-direction: row;
         align-items:center;
         margin-left: 1em;
-        background: $black;
         color: $white;
         font-size: 1em;
         padding: 1em 1em;
@@ -311,7 +310,6 @@ nav {
         align-items:center;        
         position: relative;
         margin-left: 1em;
-        background: $black;
         color: $white;
         font-size: 1em;
         padding: 0.8em 1em;
@@ -341,7 +339,7 @@ nav {
             visibility: visible;
             height: 198px;
             transition: height .3s ease-in-out;
-            transform: translateY(60%);
+            transform: translateY(65%);
             > li {
                 opacity: 1;
                 transition: opacity .3s ease-in-out;    
@@ -376,7 +374,7 @@ nav {
         left: -77px;        
         z-index: -1;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.9);
         transition: height .2s ease-in-out;
         text-align: center;
         li {
@@ -872,18 +870,9 @@ section.case-study {
         }
     }
     &.ifiplayer {
-        position:relative;
-        &:before {
-            position:absolute;
-            content:'';
-            top:0;
-            bottom:0;
-            left:0;
-            right:0;
-            background:$black;
-            opacity:0.9;
-        }        
+        position:relative;       
         .background-image {
+            z-index:-100;
             position: absolute;
             top: 0;
             left: 0;
@@ -896,6 +885,17 @@ section.case-study {
             -moz-background-size: cover;
             -o-background-size: cover;
             background-position-y: 25%;
+            &:before {
+                z-index:-10;
+                position:absolute;
+                content:'';
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background:$black;
+                opacity:0.9;
+            }             
             @include media($tablet) {
                 background-position-x: 50% !important;
             }
