@@ -20,6 +20,7 @@ footer {
                 display:flex;
                 width:75%;
                 flex-direction:row;
+                flex-wrap: wrap;
                 justify-content: space-around;
                 padding-bottom:5em;
                 div {
@@ -51,7 +52,7 @@ footer {
                 padding-bottom:5em;
                 .icon {
                         color:$white;
-                        font-size:1.75em;
+                        font-size:2em;
                         opacity:0.75;
                 }
                 a:hover > .icon {
