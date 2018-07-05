@@ -65,7 +65,7 @@
                                 line-height:1.5;
                                 opacity:0.75;
                                 max-width:475px;
-                                @include media($mobile) {
+                                @include media($tablet) {
                                         font-size:16px;
                                         text-align:center;
                                         line-height:1.63;
@@ -148,7 +148,7 @@
                                 z-index: -1;
                                 left: 0.5em;
                                 top: -0.5em;
-                                width: 100%;                                
+                                width: calc(100% - .5em);                                
                         }
                 }
         }               
@@ -226,9 +226,13 @@
         .client-section__client-list {
                 display:flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-around;
                 align-items:center;
                 padding:0 5em;
+                > img {
+                        margin: 1em 1em;
+                }                
         }
         @include media($tablet) {
                 padding-top:3em;
@@ -272,6 +276,7 @@
         display:flex;
         width:100%;
         flex-direction:column;
+        align-items:center;
         background: $lightgrey;
         h1 {
                 font-family: $font-family-medium;
@@ -288,14 +293,16 @@
                 opacity:0.4;
                 text-align:center;
                 margin-top:4px;
-                margin-bottom:3em;                
+                margin-bottom:3em;     
+                max-width:730px;
         }
         .product-features__row {
                 display:flex;
                 flex-direction: row;
+                flex-wrap:wrap;
                 justify-content: space-around;
                 margin-left:135px;
-                margin-bottom:6em;
+                margin-bottom:2em;
                 figure {
                         margin-right:60px;
                         max-width:320px;
@@ -317,10 +324,14 @@
                 p {
                         font-size:20px;
                         line-height: 1.5;
+                        margin-bottom:4em;
                 }
         }
         @include media($tablet) {
                 padding-top:2em;
+                flex-direction:column;
+                align-items:center;
+                text-align:center;                
                 h1 {
                         font-size:34px;
                         line-height:1.12;
@@ -332,21 +343,11 @@
                 }
                 
                 .product-features__row {
-                        p {
-                                font-size:16px;
-                                line-height:1.63;
-                                padding: 0 2em;
-                        }
-                }
-                
-        }
-        @include media($mobile) {
-                .product-features__row {
                         flex-direction:column;
                         align-items:center;
                         text-align:center;
                         margin-left:0;
-                        margin-bottom: 2em;
+                        margin-bottom: 2em;                       
                         .product-features__image-container {
                                 margin-bottom:0.25em;
                         }                         
@@ -365,9 +366,13 @@
                                 line-height:1.18;                              
                         }
                         p {
+                                font-size:16px;
+                                line-height:1.63;
+                                padding: 0 2em;
                                 margin-bottom:4em;
-                        }
+                        }                        
                 }
+                
         }
 }
 
@@ -397,7 +402,8 @@
         form {
                 display:flex;
                 flex-direction: column;
-                width: 42%;
+                width: 90%;
+                max-width:600px;
                 margin-top: 3em;  
                 font-family: $font-family-regular;
                 font-size:20px;
@@ -451,7 +457,6 @@
                         line-height:1.18;
                 }
                 form {
-                        width: 66%;
                         margin-top:2em;
                         font-size:20px;
                         label {
@@ -463,11 +468,6 @@
                 h2 {
                         padding: 0 3em;
                 }
-                form {
-                        width: 90%;
-
-                }
-                
         }        
 }    
 
