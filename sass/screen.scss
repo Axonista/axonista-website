@@ -468,11 +468,14 @@ div.hero {
                 @include shift (1);
                 text-align: center;
             }
+            display:flex;
+            align-items: center;
             font-family: $font-family-medium;
             font-size:20px;
             color: $black;
             opacity:0.75;
             i {
+                font-size:1.5em;
                 color: $black;
             }
             span {

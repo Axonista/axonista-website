@@ -291,7 +291,12 @@
                         background-color:#d4d4d4;
                         border-radius:4px;
                         padding:0.5em 1em;
+                        &:hover {
+                                cursor:pointer;
+                                background-color:$gold;
+                        }
                 }
+                
         }
 }    
 

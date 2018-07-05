@@ -49,10 +49,13 @@ footer {
                 justify-content: space-around;                
                 color:$white;
                 padding-bottom:5em;
-                i {
+                .icon {
                         color:$white;
                         font-size:1.75em;
                         opacity:0.75;
+                }
+                a:hover > .icon {
+                        opacity:1;
                 }
         }
         .copyright {
