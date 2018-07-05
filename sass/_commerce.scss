@@ -28,7 +28,6 @@
                 align-self: center;
                 align-items: center;
                 justify-content: center;
-                background-image: url("/assets/commerce-bg-slash.png");
                 @include media($mobile) {
                         flex-direction:column;
                 }                
