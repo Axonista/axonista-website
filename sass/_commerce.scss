@@ -2,7 +2,10 @@
         display:flex;
         flex-direction:column;
         background:$white!important;
-        padding-top:104px;
+        padding-top:6em;
+        @include media($tablet) {
+                padding-top:4em;
+        }        
         h1 {
               font-family:$font-family-medium;
               font-size: 60px;
@@ -11,6 +14,12 @@
               line-height:1.07;
               text-align:center;
               align-self: center;
+              max-width:730px;
+              @include media($tablet) {
+                      font-size:34px;
+                      line-height:1.12;
+                      width:80%;
+              }
         }
         figure {
                 display:flex;
@@ -20,20 +29,35 @@
                 align-items: center;
                 justify-content: center;
                 background-image: url("/assets/commerce-bg-slash.png");
+                @include media($mobile) {
+                        flex-direction:column;
+                }                
                 img {
                         max-width: 555px;
                         width:50%;
                         height: auto;
                         padding-top:2em;
+                        @include media($mobile) {
+                                width:90%;
+                        }
                 }
                 figcaption {
                         margin-left:40px;
+                        @include media($tablet) {
+                                margin-left:0;
+                        }                        
                         h2 {
                                 font-family: $font-family-medium;
                                 font-size:32px;
                                 font-weight:500;
                                 color:black;
                                 margin-bottom:8px;
+                                @include media($tablet) {
+                                        font-size:22px;
+                                        text-align:center;
+                                        line-height:1.18;
+                                        padding-top:2em;
+                                }
                         }
                         p {
                                 font-family: $font-family-regular;
@@ -41,6 +65,12 @@
                                 line-height:1.5;
                                 opacity:0.75;
                                 max-width:475px;
+                                @include media($mobile) {
+                                        font-size:16px;
+                                        text-align:center;
+                                        line-height:1.63;
+                                        padding: 0 2.25em;
+                                }                                
                         }
                 }
                 svg {
@@ -49,7 +79,14 @@
                         left:0;
                         bottom: -2.5em;
                         width: calc(50% + 18px);
-                        transform: scaleY(0.9);                  
+                        transform: scaleY(0.9);    
+                        @include media($mobile) {
+                                left: 0;
+                                top: 18%;
+                                width:100%;
+                                bottom:unset;
+                                transform:unset;                               
+                        }              
                 }
         }
 }
@@ -77,6 +114,8 @@
 .product-section__left-align {
         @extend .product-section;
         padding-top:0;
+        @include media($mobile) {
+        }
         h1 {
                 padding:1em 0;
         }
@@ -84,16 +123,35 @@
                 figcaption {
                         margin-right:40px;
                 }   
-                margin-bottom:6em;              
-        }
-        figure > svg {
-                position: absolute;
-                z-index: -1;
-                left: calc(50% + .125em);
-                bottom: -4em;
-                width: 50%;
-        }        
-               
+                margin-bottom:6em;     
+                > svg {
+                        position: absolute;
+                        z-index: -1;
+                        left: calc(50% + .125em);
+                        bottom: -4em;
+                        width: 50%;
+                }                          
+                @include media($mobile) {
+                        flex-direction: column-reverse;
+                        margin-bottom:2em;  
+                        img {
+                                padding-top:0;
+                        }   
+                        figcaption {
+                                h2 {
+                                        padding-top:1.5em;
+                                }
+                                margin-right: 0;
+                        }
+                        > svg {
+                                position: absolute;
+                                z-index: -1;
+                                left: 0.5em;
+                                top: -0.5em;
+                                width: 100%;                                
+                        }
+                }
+        }               
 } 
 
 .product-section__logo-wquote {
