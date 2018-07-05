@@ -572,7 +572,7 @@ div.hero {
     }
 }
 
-@import '_commerce';
+// @import '_commerce';
 
 section.ediflo {
     background: white;
@@ -1473,7 +1473,8 @@ header.case-study {
         }
     }
     &.services {
-        background: linear-gradient(rgba($black, 0.5) rgba($black, 0.5)), url('/assets/images/services-ios.jpg');
+        position: relative;
+        background:url('/assets/images/services-ios.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1489,7 +1490,7 @@ header.case-study {
         @include media($mobile) {
             height: auto;
             padding: 150px 0 90px 0;
-            background: linear-gradient(rgba($black, 0.75) rgba($black, 0.75)), url('/assets/images/services-ios.jpg');
+            background:url('/assets/images/services-ios.jpg');
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -1509,6 +1510,16 @@ header.case-study {
                 font-size: 1.125em !important;
                 padding: 0 1em;
             }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;            
+            background:black;          
+            opacity:0.5;
         }
     }
     &.qvc-apple-tv {
