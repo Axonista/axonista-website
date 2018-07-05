@@ -191,6 +191,17 @@
                 align-items: center;
                 padding: 1em 0.125em;           
                 padding-top:4em;
+
+                blockquote {
+                        font-size:22px;
+                        line-height: 1.16;
+                        padding: 0 2.25em;
+                        text-align: center;
+                }
+                .product-section__quote-author {
+                        margin-top:0.5em;
+                        opacity:0.5;
+                }
         }
 }
 
