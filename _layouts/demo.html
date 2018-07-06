@@ -1,11 +1,9 @@
 {% include header.html %}
 {% include navbar-dark.html %}
 
-
-
 <section class="contact-section section--top-pad">
-	<h1>Demo</h1>
-	<h2>Lorem ipsum dolor sit amet</h2>
+	<h1>{{ page.demo.heading }}</h1>
+	<h2>{{ page.demo.description }}</h2>
 	<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 		<input type=hidden name="oid" value="00D1I000003nncv">
 		<input type=hidden name="retURL" value="http://www.axonista.com/thanks.html">		

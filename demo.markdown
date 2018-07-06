@@ -1,6 +1,10 @@
 ---
 title: Demo
-permalink: "/demo"
 layout: demo
+
+demo:
+        heading: Demo
+        description: Lorem ipsum dolor sit ame
+
 ---
 
