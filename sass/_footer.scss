@@ -1,0 +1,107 @@
+footer {
+        section,div {
+                background: #1a1a1a!important;
+        }
+        .footer__content {
+                display:flex;
+                flex-direction: column;
+                width:100%;
+                align-items:center;
+                background:#1a1a1a;
+                padding:5em;         
+                @include media($mobile) {
+                        padding:3em 1.5em;     
+                }                       
+        }
+        .brand {
+                padding-bottom:5em;
+                img {
+                max-width:260px;
+                }
+                @include media($mobile) {
+                        padding-bottom:2em;
+                        img {
+                                max-width:204px;
+                        }
+                }               
+        }
+        .address {
+                display:flex;
+                width:75%;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding-bottom:5em;
+                div {
+                        text-align:center;
+                }
+                span {
+                        font-family: $font-family-medium;
+                        font-size:24px;
+                        font-weight:500;
+                        color:$white;
+                        padding-bottom:8px;
+                }
+                p {
+                        font-family: $font-family-regular;
+                        font-size:20px;
+                        line-height:1.5;
+                        color:$white;
+                        opacity:0.75;
+                        margin-top:0;
+                        margin-bottom:0.25em;
+                }
+                @include media($mobile) {
+                        padding-bottom:0.5em;
+                        div {
+                                margin-bottom:2em;
+                        }
+                        span {
+                                font-size:20px;     
+                        }
+                        p {
+                                font-size:16px;
+                                margin-bottom:.5em;
+                        }
+                }
+        }
+        .social {
+                display:flex;
+                width:65%;
+                flex-direction: row;
+                justify-content: space-around;                
+                color:$white;
+                padding-bottom:5em;
+                .icon {
+                        color:$white;
+                        font-size:2em;
+                        opacity:0.75;
+                }
+                a:hover > .icon {
+                        opacity:1;
+                }
+                @include media($mobile) {
+                        width:100%;
+                        .icon {
+                                font-size:1.8em;
+                        }
+                        padding-bottom:2em;
+                }
+        }
+        .copyright {
+                p {
+                        font-family: $font-family-regular;
+                        font-size:16px;
+                        line-height:1.88;
+                        color:$white;
+                        opacity:0.75;
+                }
+                @include media($mobile) {
+                        p {
+                                font-size:14px;
+                                line-height:2.14;
+                                padding-bottom:2em;
+                        }
+                }
+        }
+}

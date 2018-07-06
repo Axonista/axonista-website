@@ -4,10 +4,10 @@ date: 2016-03-01 18:07:00 Z
 permalink: "/"
 axonista-description: Powering video commerce for the world’s leading brands and media
   companies.
-ediflo-description: 'Ediflo is a complete one-stop-shop management platform for building,
+ediflo-description: Ediflo is a complete one-stop-shop management platform for building,
   launching and powering interactive video commerce experiences.
-
-'
+commerce-description: Sell products from directly inside your\ video, on any device
+  or TV
 ediflo-library:
   heading: Ediflo Library
   subheading: Digital Asset Management

@@ -11,8 +11,8 @@ qvc-ipad-description: QVC UK uses our interactive video platform Ediflo to bring
 ifi-player-description: The Irish Film Institute selected our video CMS Ediflo to
   bring the moving image collections from the IFI Irish Film Archive to a global audience
   on mobile and TV-connected devices for the first time.
-3player-description: We designed and developed the native 3player live streaming and
-  VOD apps on iOS, Android, Xbox and Roku platforms for TV3.
+three-player-description: We designed and developed the native three-player live streaming
+  and VOD apps on iOS, Android, Xbox and Roku platforms for TV3.
 layout: services
 ---
 

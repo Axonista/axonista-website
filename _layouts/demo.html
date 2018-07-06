@@ -1,0 +1,45 @@
+{% include header.html %}
+{% include navbar-dark.html %}
+
+<section class="contact-section section--top-pad">
+	<h1>{{ page.demo.heading }}</h1>
+	<h2>{{ page.demo.description }}</h2>
+	<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+		<input type=hidden name="oid" value="00D1I000003nncv">
+		<input type=hidden name="retURL" value="http://www.axonista.com/thanks.html">		
+		<input type="hidden" id="lead_source" name="lead_source" value="Web" />
+		<input type="hidden" id="00N1I00000M7ank" name="00N1I00000M7ank" value="http://www.axonista.com/demo"/>
+
+		<!--  ----------------------------------------------------------------------  -->
+		<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+		<!--  these lines if you wish to test in debug mode.                          -->
+			<!-- <input type="hidden" name="debug" value=1>                              -->
+			<!-- <input type="hidden" name="debugEmail" value="ian.luby@axonista.com">   -->
+		<!--  ----------------------------------------------------------------------  -->			
+		
+		<label for="first_name">First Name</label>
+		<input autocomplete=off type="text" name="first_name" required>
+		<label for="last_name">Last Name</label>
+		<input autocomplete=off type="text" name="last_name" required>			
+		<label for="email">Email address</label>
+		<input autocomplete=off type="email" name="email" required>
+		<label for="company">Company</label>
+		<input autocomplete=off type="text" name="company">	
+		<label for="title">Title / Role</label>
+		<input autocomplete=off type="text" name="title">					
+		<label for="industry">Industry (Optional)</label>
+		<select name="industry">
+			<option value="not specified" selected>Choose&hellip;</option>
+			<option value="Retail">Retail</option>
+			<option value="Hotel / Travel">Hotel / Travel</option>
+			<option value="Brand">Brand</option>
+			<option value="TV">TV</option>
+			<option value="other">Other</option>
+		</select>
+		<label for="message">Message</label>
+		<textarea id="00N1I00000M7anM" name="00N1I00000M7anM" rows="8"></textarea>
+		<button type="submit">Send Message</button>
+	</form>
+</section>
+
+{% include footer.html %}
