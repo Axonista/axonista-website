@@ -314,7 +314,7 @@ nav {
     }
     .active {
         color: $white;
-        opacity: 1;
+        opacity: 1!important;
     }
     &.headroom--not-top {
         background: rgba($black, 0.90);
@@ -516,7 +516,7 @@ div.hero {
     }
 }
 
-#hero-content {
+#hero-content,#hero-content-commerce {
     position: relative;
     z-index: 1;
     padding-top: 35vh;
@@ -612,7 +612,11 @@ div.hero {
         bottom: 0;
     }
 }
-
+#hero-content-commerce {
+    @include media($tablet) {
+        background-image: url(../assets/images/placeholder-commerce.jpg);
+    }
+}
 @import '_commerce';
 @import '_thanks';
 

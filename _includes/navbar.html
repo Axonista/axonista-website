@@ -10,10 +10,10 @@
         <div id="alignright">
                 <ul id="toggle-menu">
                         <li class="toggle-menu__link">
-                                <a class="animsition-link" href="/commerce.html">Commerce</a>
+                                <a class="animsition-link {% if page.url == '/commerce.html' %}active{% endif %}" href="/commerce.html">Commerce</a>
                         </li>
                         <li class="toggle-menu__link">
-                                <a class="animsition-link" href="/customers.html">Customers</a>
+                                <a class="animsition-link {% if page.url == '/customers.html' %}active{% endif %} {{page.url}}" href="/customers.html">Customers</a>
                         </li>
                         <li class="dropdown-menu">
                                 <span class="dropdown-toggle">Blog</span>
