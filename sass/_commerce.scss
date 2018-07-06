@@ -135,7 +135,12 @@
                         left: 50%;
                         bottom: -4em;
                         width: 50%;
-                }                          
+                }       
+                @include media($tablet) {
+                        > svg {
+                                display:none;
+                        }
+                }
                 @include media($mobile) {
                         flex-direction: column-reverse;
                         margin-bottom:2em;  
@@ -149,6 +154,7 @@
                                 margin-right: 0;
                         }
                         > svg {
+                                display:block;
                                 position: absolute;
                                 z-index: -1;
                                 left: 0.5em;
@@ -514,7 +520,7 @@
                 flex-wrap:wrap;
                 figure {
                         background:$white;
-                        max-width:348px;
+                        max-width:320px;
                         margin-bottom: 2em;
                         border-radius:4px;
                         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
