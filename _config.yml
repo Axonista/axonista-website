@@ -36,4 +36,4 @@ email: connect@axonista.com
 baseurl: 
 markdown: kramdown
 sass:
-  style: expanded
+  style: compact
