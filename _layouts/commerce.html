@@ -14,7 +14,7 @@
 	<div class="hero-footer">
 		<div class="hero-footer__content">
 			<i class="icon ion-md-notifications"></i>
-			<span>We'll be attending SXSW July 15th, we'd love to see you there.&nbsp;
+			<span>{{ site.hero-banner }}&nbsp;
 				<a class="anchor-link" href="#contact"><button class="hero-footer__cta">Get in touch</button></a>
 			</span>
 		</div>
@@ -26,7 +26,7 @@
 </div>
 
 <section class="product-section product-section--bottom-pad">
-	<h1>Earn new revenue through in-video shopping</h1>
+	<h1>{{ page.product-revenue.heading }}</h1>
 	<figure>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
@@ -35,18 +35,16 @@
 			srcset="/assets/images/commerce-product-1.png 1x, /assets/images/commerce-product-1@2x.png 2x, /assets/images/commerce-product-1@3x.png 3x" 
 			alt="">
 		<figcaption>
-			<h2>Shoppable Video Experiences</h2>
-			<p>Give your viewers a convenient way to buy the products they're watching, related merchandise, or your sponsor’s products.
-				Set to display at the most opportune moment during your video, for powerful and effective in the moment shopping.</p>
+			<h2>{{ page.product-revenue.subheading }}</h2>
+			<p>{{ page.product-revenue.description }}</p>
 		</figcaption>
 	</figure>
 </section>
 <section class="product-section__left-align">
 	<figure>
 		<figcaption>
-			<h2>Sponorship &amp; Advertising</h2>
-			<p>Draw long term sponsors to your platform by boasting a captivated audience. Create a brand experience with their products
-				or direct response ads that your audience will love. Start selling meaningful connections, with an engaged audience.</p>
+			<h2>{{ page.product-advertising.heading }}</h2>
+			<p>{{ page.product-advertising.description }}</p>
 		</figcaption>
 		<img 	src="/assets/images/commerce-product-2.png" 
 			srcset="/assets/images/commerce-product-2.png 1x, /assets/images/commerce-product-2@2x.png 2x, /assets/images/commerce-product-2@3x.png 3x" 
@@ -59,7 +57,7 @@
 </section>
 
 <section class="client-section">
-	<h1>Some of the great companies we work with&hellip;</h1>
+	<h1>{{ page.clients.heading }}</h1>
 	<div class="client-section__client-list">
 		<img 
 			src="/assets/images/logos/greyscale/logo-qvc.png" 
@@ -85,16 +83,16 @@
 </section>
 
 <section class="product-section__left-align">
-	<h1>Customers</h1>
+	<h1>{{ page.customers.heading }}</h1>
 	<figure>
 		<figcaption class="product-section__logo-wquote">
 			<img class="product-section__logo" 
 				src="/assets/images/logos/client/qvc-joy-red.png" 
 				srcset="/assets/images/logos/client/qvc-joy-red.png 1x, /assets/images/logos/client/qvc-joy-red@2x.png 2x, /assets/images/logos/client/qvc-joy-red@3x.png 3x" 
 				alt="">
-			<p>We collaborated closely with QVC to deliver what is widely lauded as one of the best apps in the Apple TV App Store.</p>
-			<blockquote>"The single most interesting app in the Apple TV App Store right now”</blockquote>
-			<small class="product-section__quote-author">— Nilay Patel, The Verge</small>
+			<p>{{ page.customers.description }}</p>
+			<blockquote>{{ page.customers.quote }}</blockquote>
+			<small class="product-section__quote-author">— {{ page.customers.quote-author }}</small>
 			<a class="product-section__cta--secondary" href="">Find out more</a>
 		</figcaption>
 		<img 	src="/assets/images/commerce-product-3.png" 
@@ -104,12 +102,12 @@
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
 		</svg>
 	</figure>
-	<a href="" class="product-section__cta">OUR CUSTOMERS</a>
+	<a href="/customers.html" class="product-section__cta">OUR CUSTOMERS</a>
 </section>
 
 <section class="product-features">
-	<h1>Behind the Scenes</h1>
-	<h2>We’re ready to work with media companies no matter what stage they’re at.</h2>
+	<h1>{{ page.product-features.heading }}</h1>
+	<h2>{{ page.product-features.subheading }}</h2>
 	<div class="product-features__row">
 		<figure>
 			<div class="product-features__image-container">
@@ -140,8 +138,6 @@
 			<h3>Embeddable in existing apps</h3>
 			<p>Only use the parts you need. Quickly and easily integrate our service inside your existing apps. We already work with JWplayer.</p>
 		</figure>
-	<!-- </div>
-	<div class="product-features__row"> -->
 		<figure>
 			<div class="product-features__image-container">
 				<img src="/assets/images/commerce/rectangle-14_3.png" 
@@ -171,11 +167,11 @@
 				the way.</p>
 		</figure>
 	</div>
-	<a href="" class="product-section__cta">GET IN TOUCH</a>
+	<a href="#contact" class="anchor-link product-section__cta">GET IN TOUCH</a>
 </section>
 
 <section class="platform-section--invert">
-	<h1>Ready to integrate with these platforms&hellip;</h1>
+	<h1>{{ page.product-integrations.heading }}</h1>
 	<div class="client-section__client-list">
 		<img 
 			src="/assets/images/logos/greyscale/shopify.png" 
@@ -201,25 +197,39 @@
 </section>
 
 <section class="contact-section" id="contact">
-	<h1>Get in touch</h1>
-	<h2>Talk to us about activating your audience today</h2>
-	<form>
-		<label for="name">Full name</label>
-		<input autocomplete=off type="text" name="name" required>
+	<h1>{{ page.contact-form.heading }}</h1>
+	<h2>{{ page.contact-form.subheading }}</h2>
+	<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+		<input type=hidden name="oid" value="00D1I000003nncv">
+		<input type=hidden name="retURL" value="http://www.axonista.com/thanks.html">		
+		<input type="hidden" id="lead_source" name="lead_source" value="Web" />
+		<input type="hidden" id="00N1I00000M7ank" name="00N1I00000M7ank" value="http://www.axonista.com/commerce"/>
+
+		<!--  ----------------------------------------------------------------------  -->
+		<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+		<!--  these lines if you wish to test in debug mode.                          -->
+		 <!-- <input type="hidden" name="debug" value=1>                              -->
+		 <!-- <input type="hidden" name="debugEmail" value="ian.luby@axonista.com">   -->
+		<!--  ----------------------------------------------------------------------  -->			
+
+		<label for="first_name">First Name</label>
+		<input autocomplete=off type="text" name="first_name" required>
+		<label for="last_name">Last Name</label>
+		<input autocomplete=off type="text" name="last_name" required>			
 		<label for="email">Email address</label>
 		<input autocomplete=off type="email" name="email" required>
 		<label for="industry">Industry (Optional)</label>
 		<select name="industry">
 			<option value="not specified" selected>Choose&hellip;</option>
-			<option value="retail">Retail</option>
-			<option value="hotel / travel">Hotel / Travel</option>
-			<option value="brand">Brand</option>
+			<option value="Retail">Retail</option>
+			<option value="Hotel / Travel">Hotel / Travel</option>
+			<option value="Brand">Brand</option>
 			<option value="TV">TV</option>
 			<option value="other">Other</option>
 		</select>
 		<label for="message">Message</label>
-		<textarea rows="8"></textarea>
-		<button type="submit">Send Message</button>
+		<textarea id="00N1I00000M7anM" name="00N1I00000M7anM" rows="8"></textarea>
+		<button type="submit" name="submit">Send Message</button>
 	</form>
 </section>
 
