@@ -1,14 +1,21 @@
 version: '3.4'
 
 services:
+  
   jekyll:
-    image: jekyll/builder:latest
-    command: "jekyll build"
+    image: jekyll/jekyll:latest
+    command: "jekyll serve"
     volumes:
       - $PWD:/srv/jekyll
-  httpserver:
-    image: nginx:latest
     ports:
-      - 3000:80
-    volumes:
-      - $PWD/_site:/usr/share/nginx/html
+      - 4000:4000
+      - 35729:35729
+      - 3000:3000
+      -   8090:4000
+
+  # httpserver:
+  #   image: nginx:latest
+  #   ports:
+  #     - 3000:80
+  #   volumes:
+  #     - $PWD/_site:/usr/share/nginx/html

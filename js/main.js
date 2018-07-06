@@ -54,14 +54,14 @@ $hero_vid.on('timeupdate', function(e) {
 
 // Smooth Scroll to Section //
 $('a.anchor-link').click(function(event) {
-	if (location.pathname.replace(/^\//,'').length <= 0) {
-    event.preventDefault();
-		var $target = $(this.hash);
-		$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-		if ($target.length) {
-            $('html,body').animate({scrollTop: $target.offset().top}, 500, 'easeInOutExpo');
-		}
-	}
+	if ((location.pathname.replace(/^\//,'').length <= 0) || (location.pathname.replace(/^\//,'') == 'commerce.html')) {
+            event.preventDefault();
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                $('html,body').animate({scrollTop: $target.offset().top}, 500, 'easeInOutExpo');
+            }
+    }
 });
 
 $(function() {

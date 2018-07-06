@@ -1,0 +1,236 @@
+{% include header.html %}
+{% include navbar.html %}
+
+<div class="hero" id="home">
+	<div id="hero-content-commerce">
+		<h1>Video is the new
+			<br>
+			<span class="highlight">storefront</span>
+		</h1>
+		{% if page.commerce-description %}
+		<p>{{ page.commerce-description }}</p>
+		{% endif %}
+	</div>
+	<div class="hero-footer">
+		<div class="hero-footer__content">
+			<i class="icon ion-md-notifications"></i>
+			<span>{{ site.hero-banner }}&nbsp;
+				<a class="anchor-link" href="#contact"><button class="hero-footer__cta">Get in touch</button></a>
+			</span>
+		</div>
+	</div>
+	<video autoplay loop muted playsinline poster="/assets/images/placeholder-commerce.jpg" id="bgvid-commerce">
+		<source src="/assets/videos/hero-commerce.mp4" type="video/mp4">
+		<source src="/assets/videos/hero-commerce.webm" type="video/webm">
+	</video>
+</div>
+
+<section class="product-section product-section--bottom-pad">
+	<h1>{{ page.product-revenue.heading }}</h1>
+	<figure>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+		<img 	src="/assets/images/commerce-product-1.png" 
+			srcset="/assets/images/commerce-product-1.png 1x, /assets/images/commerce-product-1@2x.png 2x, /assets/images/commerce-product-1@3x.png 3x" 
+			alt="{{ page.product-revenue.subheading }}">
+		<figcaption>
+			<h2>{{ page.product-revenue.subheading }}</h2>
+			<p>{{ page.product-revenue.description }}</p>
+		</figcaption>
+	</figure>
+</section>
+<section class="product-section__left-align">
+	<figure>
+		<figcaption>
+			<h2>{{ page.product-advertising.heading }}</h2>
+			<p>{{ page.product-advertising.description }}</p>
+		</figcaption>
+		<img 	src="/assets/images/commerce-product-2.png" 
+			srcset="/assets/images/commerce-product-2.png 1x, /assets/images/commerce-product-2@2x.png 2x, /assets/images/commerce-product-2@3x.png 3x" 
+			alt="{{ page.product-advertising.heading }}">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+	</figure>
+	<a href="" class="product-section__cta">GET IN TOUCH</a>
+</section>
+
+<section class="client-section">
+	<h1>{{ page.clients.heading }}</h1>
+	<div class="client-section__client-list">
+		<img 
+			src="/assets/images/logos/greyscale/logo-qvc.png" 
+			srcset="/assets/images/logos/greyscale/logo-qvc.png 1x, /assets/images/logos/greyscale/logo-qvc@2x.png 2x, /assets/images/logos/greyscale/logo-qvc@3x.png 3x" 
+			alt="QVC logo">
+		<img 
+			src="/assets/images/logos/greyscale/oath.png" 
+			srcset="/assets/images/logos/greyscale/oath.png 1x, /assets/images/logos/greyscale/oath@2x.png 2x, /assets/images/logos/greyscale/oath@3x.png 3x" 
+			alt="Oath logo">			
+		<img 
+			src="/assets/images/logos/greyscale/viacom.png" 
+			srcset="/assets/images/logos/greyscale/viacom.png 1x, /assets/images/logos/greyscale/viacom@2x.png 2x, /assets/images/logos/greyscale/viacom@3x.png 3x" 
+			alt="Viacom logo">			
+		<img 
+			src="/assets/images/logos/greyscale/logo-red.png" 
+			srcset="/assets/images/logos/greyscale/logo-red.png 1x, /assets/images/logos/greyscale/logo-red@2x.png 2x, /assets/images/logos/greyscale/logo-red@3x.png 3x" 
+			alt="Qyou logo">			
+		<img 
+			src="/assets/images/logos/greyscale/sinclair.png" 
+			srcset="/assets/images/logos/greyscale/sinclair.png 1x, /assets/images/logos/greyscale/sinclair@2x.png 2x, /assets/images/logos/greyscale/sinclair@3x.png 3x" 
+			alt="Sinclair">			
+	</div>
+</section>
+
+<section class="product-section__left-align">
+	<h1>{{ page.customers.heading }}</h1>
+	<figure>
+		<figcaption class="product-section__logo-wquote">
+			<img class="product-section__logo" 
+				src="/assets/images/logos/client/qvc-joy-red.png" 
+				srcset="/assets/images/logos/client/qvc-joy-red.png 1x, /assets/images/logos/client/qvc-joy-red@2x.png 2x, /assets/images/logos/client/qvc-joy-red@3x.png 3x" 
+				alt="">
+			<p>{{ page.customers.description }}</p>
+			<blockquote>{{ page.customers.quote }}</blockquote>
+			<small class="product-section__quote-author">— {{ page.customers.quote-author }}</small>
+			<a class="product-section__cta--secondary" href="">Find out more</a>
+		</figcaption>
+		<img 	src="/assets/images/commerce-product-3.png" 
+			srcset="/assets/images/commerce-product-3.png 1x, /assets/images/commerce-product-3@2x.png 2x, /assets/images/commerce-product-3@3x.png 3x"
+		        alt="{{ page.customers.description }}">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+	</figure>
+	<a href="/customers.html" class="product-section__cta">OUR CUSTOMERS</a>
+</section>
+
+<section class="product-features">
+	<h1>{{ page.product-features.heading }}</h1>
+	<h2>{{ page.product-features.subheading }}</h2>
+	<div class="product-features__row">
+		<figure>
+			<div class="product-features__image-container">
+				<img src="/assets/images/commerce/rectangle-14_6.png" 
+					srcset="/assets/images/commerce/rectangle-14_6.png 1x, /assets/images/commerce/rectangle-14_6@2x.png 2x, /assets/images/commerce/rectangle-14_6@3x.png 3x" 
+				alt="Template apps">
+			</div>
+			<h3>Ready to use template apps</h3>
+			<p>Use our flexible, cross platform video app templates to reach new audiences fast. Publish live or VOD offerings within
+				a matter of weeks.</p>
+		</figure>
+		<figure>
+			<div class="product-features__image-container">
+				<img src="/assets/images/commerce/rectangle-14_4.png" 
+					srcset="/assets/images/commerce/rectangle-14_4.png 1x, /assets/images/commerce/rectangle-14_4@2x.png 2x, /assets/images/commerce/rectangle-14_4@3x.png 3x" 
+				alt="Custom CMS">
+			</div>
+			<h3>Use our custom built video CMS</h3>
+			<p>Our CMS has everything you’ll ever need, from Ingest to Play-out. We’ve created a powerful and easy to use management
+				system.</p>
+		</figure>
+		<figure>
+			<div class="product-features__image-container">
+				<img src="/assets/images/commerce/rectangle-14_5.png" 
+					srcset="/assets/images/commerce/rectangle-14_5.png 1x, /assets/images/commerce/rectangle-14_5@2x.png 2x, /assets/images/commerce/rectangle-14_5@3x.png 3x" 
+				alt="Embeddable">				
+			</div>
+			<h3>Embeddable in existing apps</h3>
+			<p>Only use the parts you need. Quickly and easily integrate our service inside your existing apps. We already work with JWplayer.</p>
+		</figure>
+		<figure>
+			<div class="product-features__image-container">
+				<img src="/assets/images/commerce/rectangle-14_3.png" 
+					srcset="/assets/images/commerce/rectangle-14_3.png 1x, /assets/images/commerce/rectangle-14_3@2x.png 2x, /assets/images/commerce/rectangle-14_3@3x.png 3x" 
+				alt="Works with existing CMS">				
+			</div>
+			<h3>Works with existing CMS</h3>
+			<p>We play well with others, and have lots of experience building integrations with our customers' existing systems.</p>
+		</figure>
+		<figure>
+			<div class="product-features__image-container">
+				<img src="/assets/images/commerce/rectangle-14.png" 
+					srcset="/assets/images/commerce/rectangle-14.png 1x, /assets/images/commerce/rectangle-14@2x.png 2x, /assets/images/commerce/rectangle-14@3x.png 3x" 
+				alt="Analytics">
+			</div>
+			<h3>Analytics & Insights</h3>
+			<p>Track your KPIs, and export or receive scheduled reports. Uncovering valueable insights into your audience’s behaviour.</p>
+		</figure>
+		<figure>
+			<div class="product-features__image-container">
+				<img src="/assets/images/commerce/rectangle-14_2.png" 
+					srcset="/assets/images/commerce/rectangle-14_2.png 1x, /assets/images/commerce/rectangle-14_2@2x.png 2x, /assets/images/commerce/rectangle-14_2@3x.png 3x" 
+				alt="Flexible pricing">				
+			</div>
+			<h3>Flexible Pricing Models</h3>
+			<p>Monthly and annual plans available, to scale with your success. Our customer support team will guide you every step of
+				the way.</p>
+		</figure>
+	</div>
+	<a href="#contact" class="anchor-link product-section__cta">GET IN TOUCH</a>
+</section>
+
+<section class="platform-section--invert">
+	<h1>{{ page.product-integrations.heading }}</h1>
+	<div class="client-section__client-list">
+		<img 
+			src="/assets/images/logos/greyscale/shopify.png" 
+			srcset="/assets/images/logos/greyscale/shopify.png 1x, /assets/images/logos/greyscale/shopify@2x.png 2x, /assets/images/logos/greyscale/shopify@3x.png 3x"
+			alt="Shopify logo">
+		<img 
+			src="/assets/images/logos/greyscale/magento.png" 
+			srcset="/assets/images/logos/greyscale/magento.png 1x, /assets/images/logos/greyscale/magento@2x.png 2x, /assets/images/logos/greyscale/magento@3x.png 3x"
+			alt="Magneto logo">
+		<img 
+			src="/assets/images/logos/greyscale/craft.png" 
+			srcset="/assets/images/logos/greyscale/craft.png 1x, /assets/images/logos/greyscale/craft@2x.png 2x, /assets/images/logos/greyscale/craft@3x.png 3x"
+			alt="Craft CMS logo">
+		<img 
+			src="/assets/images/logos/greyscale/woocommerce.png" 
+			srcset="/assets/images/logos/greyscale/woocommerce.png 1x, /assets/images/logos/greyscale/woocommerce@2x.png 2x, /assets/images/logos/greyscale/woocommerce@3x.png 3x"
+			alt="Woo commerce logo">
+		<img 
+			src="/assets/images/logos/greyscale/amazon.png" 
+			srcset="/assets/images/logos/greyscale/amazon.png 1x, /assets/images/logos/greyscale/amazon@2x.png 2x, /assets/images/logos/greyscale/amazon@3x.png 3x"
+			alt="Amazon logo">												
+	</div>
+</section>
+
+<section class="contact-section" id="contact">
+	<h1>{{ page.contact-form.heading }}</h1>
+	<h2>{{ page.contact-form.subheading }}</h2>
+	<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+		<input type=hidden name="oid" value="00D1I000003nncv">
+		<input type=hidden name="retURL" value="http://www.axonista.com/thanks.html">		
+		<input type="hidden" id="lead_source" name="lead_source" value="Web" />
+		<input type="hidden" id="00N1I00000M7ank" name="00N1I00000M7ank" value="http://www.axonista.com/commerce"/>
+
+		<!--  ----------------------------------------------------------------------  -->
+		<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+		<!--  these lines if you wish to test in debug mode.                          -->
+		 <!-- <input type="hidden" name="debug" value=1>                              -->
+		 <!-- <input type="hidden" name="debugEmail" value="ian.luby@axonista.com">   -->
+		<!--  ----------------------------------------------------------------------  -->			
+
+		<label for="first_name">First Name</label>
+		<input autocomplete=off type="text" name="first_name" required>
+		<label for="last_name">Last Name</label>
+		<input autocomplete=off type="text" name="last_name" required>			
+		<label for="email">Email address</label>
+		<input autocomplete=off type="email" name="email" required>
+		<label for="industry">Industry (Optional)</label>
+		<select name="industry">
+			<option value="not specified" selected>Choose&hellip;</option>
+			<option value="Retail">Retail</option>
+			<option value="Hotel / Travel">Hotel / Travel</option>
+			<option value="Brand">Brand</option>
+			<option value="TV">TV</option>
+			<option value="other">Other</option>
+		</select>
+		<label for="message">Message</label>
+		<textarea id="00N1I00000M7anM" name="00N1I00000M7anM" rows="8"></textarea>
+		<button type="submit" name="submit">Send Message</button>
+	</form>
+</section>
+
+{% include footer.html %}
