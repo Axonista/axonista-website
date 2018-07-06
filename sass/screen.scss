@@ -299,7 +299,7 @@ nav {
         a {
             text-decoration: none;
             color: inherit;
-            opacity: 0.75;
+            opacity: 0.8;
         }
         &:hover {
             cursor: pointer;
@@ -342,6 +342,7 @@ nav {
     }
     .dropdown-toggle {
         position: relative;
+        opacity: 0.8;
     }
     .dropdown-menu:hover {
         cursor: default;
