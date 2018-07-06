@@ -388,7 +388,8 @@
                 font-weight:500;
                 line-height: 1.07;
                 text-align:center;    
-                margin-top:1em;            
+                margin-top:1em;      
+                max-width:730px;
         }
         h2 {
                 font-family: $font-family-regular;
@@ -397,6 +398,7 @@
                 opacity:0.4;
                 text-align:center;
                 margin-top:8px;
+                max-width:730px;
         }
         form {
                 display:flex;
@@ -469,6 +471,9 @@
                 }
         }        
 }    
+.section--top-pad {
+        padding-top:5em;
+}
 
 .cards-section {
         display:flex;

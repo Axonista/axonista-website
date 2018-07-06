@@ -1,14 +1,6 @@
 {% include header.html %}
 {% include navbar.html %}
 
-<div id="full-screen-nav">
-	<ul>
-						<li><a class="anchor-link" href="#products">Products</a></li>
-							<li><a class="animsition-link" href="/customers.html">Customers</a></li>
-		<li><a href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
-		<li><a class="anchor-link" href="#contact">Contact</a></li>
-	</ul>
-</div>
 <div class="hero" id="home">
 	<div id="hero-content">
 		<h1>TV is now <span class="highlight">interactive</span></h1>
@@ -20,7 +12,7 @@
 			<div class="hero-footer__content">
 				<i class="icon ion-md-notifications"></i>
 				<span>We'll be attending SXSW July 15th, we'd love to see you there.&nbsp;
-					<a href="#contact"><button class="hero-footer__cta">Get in touch</button></a>
+					<a class="anchor-link" href="#contact"><button class="hero-footer__cta">Get in touch</button></a>
 				</span>
 			</div>
 	</div>
@@ -69,7 +61,7 @@
 	<li><img src='/assets/images/logos/platform/ios.png'></li>
 	<li><img src='/assets/images/logos/platform/tvos.png'></li>
 	<li><img src='/assets/images/logos/platform/android.png'></li>
-				<li><img src='/assets/images/logos/platform/amazon-fire-tv.png'></li>
+	<li><img src='/assets/images/logos/platform/amazon-fire-tv.png'></li>
 	<li><img src='/assets/images/logos/platform/roku.png'></li>
 	<li><img src='/assets/images/logos/platform/xbox.png'></li>
 	<li><img src='/assets/images/logos/platform/oculus.png'></li>
@@ -116,55 +108,42 @@
 		</div>
 </section>
 
-	<section class='case-study ifiplayer'>
-		<div class="background-image"></div>
-		<div class="info">
-		<div class="atvImg">
-			<div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
-			<div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
-		</div>
-		<p>{{ page.ifi-player-description }}</p>
-		<a class='case-button on-light animsition-link' href="/ifi-player.html">Read more about it</a>
-		</div>
-		<div class="featured">
-		<img src="/assets/images/case-studies/ifi-player/ifi-android-family.png" />
-		</div>
-	</section>
-
-<section class="cards-section">
-	<h1>Thinking About Video</h1>
-	<h2>We love this industry and we're curious and fascinated about how it unfolds</h2>
-	<div class="card-row">
-		<a href="">
-			<figure>
-				<img src="/assets/images/commerce-card-1.png" alt="">
-				<figcaption>
-					<h3>Over the Top</h3>
-					<p>Global industry thought leaders from Conde Nast, Nasdaq, and Machinima share their thoughts on the future of brand engagement
-						with our hosts Jocelyn and Dermot.</p>
-				</figcaption>
-			</figure>
-		</a>
-		<a href="">
-			<figure>
-				<img src="/assets/images/commerce-card-2.png" alt="">
-				<figcaption>
-					<h3>Rerun</h3>
-					<p>Global industry thought leaders from Conde Nast, Nasdaq, and Machinima share their thoughts on the future of brand engagement
-						with our hosts Jocelyn and Dermot.</p>
-				</figcaption>
-			</figure>
-		</a>
-		<a href="">
-			<figure>
-				<img src="/assets/images/commerce-card-3.png" alt="">
-				<figcaption>
-					<h3>The Fourth Wall</h3>
-					<p>Our team of designers thinks out loud, blogging about our industry and the world of interactive digital media. Read
-						their latest articles and join in the conversation.</p>
-				</figcaption>
-			</figure>
-		</a>
+<section class='case-study ifiplayer'>
+	<div class="background-image"></div>
+	<div class="info">
+	<div class="atvImg">
+		<div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
+		<div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
+	</div>
+	<p>{{ page.ifi-player-description }}</p>
+	<a class='case-button on-light animsition-link' href="/ifi-player.html">Read more about it</a>
+	</div>
+	<div class="featured">
+	<img src="/assets/images/case-studies/ifi-player/ifi-android-family.png" />
 	</div>
 </section>
+
+<section class="contact-section" id="contact">
+		<h1>Get in touch</h1>
+		<h2>Talk to us about activating your audience today</h2>
+		<form>
+			<label for="name">Full name</label>
+			<input autocomplete=off type="text" name="name" required>
+			<label for="email">Email address</label>
+			<input autocomplete=off type="email" name="email" required>
+			<label for="industry">Industry (Optional)</label>
+			<select name="industry">
+				<option value="not specified" selected>Choose&hellip;</option>
+				<option value="retail">Retail</option>
+				<option value="hotel / travel">Hotel / Travel</option>
+				<option value="brand">Brand</option>
+				<option value="TV">TV</option>
+				<option value="other">Other</option>
+			</select>
+			<label for="message">Message</label>
+			<textarea rows="8"></textarea>
+			<button type="submit">Send Message</button>
+		</form>
+	</section>
+
 {% include footer.html %}

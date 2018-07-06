@@ -431,7 +431,7 @@ nav {
     }
 }
 
-video#bgvid,video#bgvid-commerce {
+video#bgvid, video#bgvid-commerce {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -442,7 +442,7 @@ video#bgvid,video#bgvid-commerce {
     z-index: 0;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(../assets/images/placeholder.jpg);
+    background-image: url(../assets/images/placeholder.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -450,6 +450,10 @@ video#bgvid,video#bgvid-commerce {
     @include media($tablet) {
         display: none;
     }
+}
+
+video#bgvid-commerce {
+    background-image: url(../assets/images/placeholder.jpg);
 }
 
 div.hero {
