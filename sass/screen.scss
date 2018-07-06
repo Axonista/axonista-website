@@ -986,12 +986,24 @@ section.case-study {
             bottom: 0;
             right: 0;
             z-index: 0;
-            background: linear-gradient(rgba($qvc, 0.9) 0%, rgba($qvc, 0.98) 50%, rgba($qvc, 1) 100%), url(../assets/images/case-studies/qvc/ipad-four.jpg);
+            background-image:url(../assets/images/case-studies/qvc/ipad-four.jpg);
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-position-y: 25%;
+            &:before {
+                z-index:-10;
+                position:absolute;
+                content:'';
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                // background: linear-gradient(rgba($qvc, 0.9) 0%, rgba($qvc, 0.98) 50%, rgba($qvc, 1) 100%);
+                background: #{"linear-gradient(rgba(228,102,103, 0.9) 0%, rgba(228,102,103, 0.98) 50%, rgba(228,102,103, 1) 100%)"};
+                opacity:0.9;
+            }              
             @include media($tablet) {
                 background-position-x: 50% !important;
             }
