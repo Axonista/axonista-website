@@ -197,7 +197,7 @@ nav {
     width: 100%;
     transition-duration: 0.2s;
     z-index: 3;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     @include media($tablet) {
         justify-content: space-between;    
         height:auto;
@@ -393,7 +393,7 @@ nav {
         left: -77px;        
         z-index: -1;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.6);
         transition: height .2s ease-in-out;
         text-align: center;
         li {
@@ -429,6 +429,10 @@ nav {
             }
         }
     }
+}
+
+nav.nav-bar--dark {
+    background:rgba(0,0,0,0.9);
 }
 
 video#bgvid, video#bgvid-commerce {
@@ -1453,6 +1457,7 @@ section.contact {
 // ----------------------------------------------------------------------------------------------------
 // Hero/header section
 header.case-study {
+    position:relative;
     display: flex;
     align-items: center;
     height: 80vh;
@@ -1573,7 +1578,7 @@ header.case-study {
         }
     }
     &.qvc-apple-tv {
-        background: linear-gradient(rgba($black, 0.5) rgba($black, 0.5)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
+        background-image: url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1589,7 +1594,8 @@ header.case-study {
         @include media($mobile) {
             height: auto;
             padding: 150px 0 90px 0;
-            background: linear-gradient(rgba($black, 0.75) rgba($black, 0.75)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
+            // background: linear-gradient(rgba($black, 0.75) rgba($black, 0.75)), url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
+            background-image: url('/assets/images/case-studies/qvc/qvc-apple-tv-blurred.jpg');
         }
         p.subtext {
             font-family: $font-family-book !important;
@@ -1597,15 +1603,17 @@ header.case-study {
             margin-top: 0.5em !important;
             color: rgba(255, 255, 255, 0.6) !important;
         }
-    }
+    }     
     &.ifi-player {
-        background: linear-gradient(rgba($black, 0.8) rgba($black, 0.8)), url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
+        // background: linear-gradient(rgba($black, 0.8) rgba($black, 0.8)), url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
+        background-image: url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         height: 80vh;
         box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.25);
+         
         @include media($biggerdesktop) {
             height: 100vh;
         }
@@ -1615,7 +1623,8 @@ header.case-study {
         @include media($mobile) {
             height: auto;
             padding: 150px 0 90px 0;
-            background: linear-gradient(rgba($black, 0.8) rgba($black, 0.8)), url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
+            // background: linear-gradient(rgba($black, 0.8) rgba($black, 0.8)), url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
+            background-image: url('/assets/images/case-studies/ifi-player/apple-tv-banner.jpg');
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -1637,6 +1646,17 @@ header.case-study {
             }
         }
     }
+    // use this instead of the linear gradient
+    &:before {
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background:$black;
+        opacity:0.6;
+    }    
 }
 
 section.image-block {
