@@ -3,8 +3,6 @@ title: Commerce
 commerce-description: Sell products from directly inside your video, on any device or TV
 layout: commerce
 
-commerce-banner: We'll be attending SXSW July 15th, we'd love to see you there.
-
 product-revenue:
         heading: Earn new revenue through in-video shopping
         subheading: Shoppable Video Experiences
