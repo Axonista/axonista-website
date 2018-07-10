@@ -23,8 +23,8 @@ customers:
   quote-author: Nilay Patel, The Verge
 product-features:
   heading: Behind the Scenes
-  subheading: We’re ready to work with media companies no matter what stage they’re
-    at
+  subheading: We've developed effective tools and methods to release your products,
+    fast
 product-integrations:
   heading: Ready to integrate with these platforms&hellip;
 contact-form:
