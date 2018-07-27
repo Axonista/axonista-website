@@ -1,0 +1,47 @@
+{% include header.html %}
+{% include navbar.html %}
+
+<div class="hero" id="home">
+	<div id="hero-content-commerce">
+		<h1>Video is the new
+			<br>
+			<span class="highlight">storefront</span>
+		</h1>
+		{% if page.commerce-description %}
+		<p>{{ page.commerce-description }}</p>
+		{% endif %}
+	</div>
+	<div class="hero-footer">
+		<div class="hero-footer__content">
+			<i class="icon ion-md-notifications"></i>
+			<span>{{ site.hero-banner }}&nbsp;
+				<a class="anchor-link" href="#contact"><button class="hero-footer__cta">Get in touch</button></a>
+			</span>
+		</div>
+	</div>
+	<video autoplay loop muted playsinline poster="/assets/images/placeholder-commerce.jpg" id="bgvid-commerce">
+		<source src="/assets/videos/hero-commerce.mp4" type="video/mp4">
+		<source src="/assets/videos/hero-commerce.webm" type="video/webm">
+	</video>
+</div>
+
+<section class="product-section product-section--bottom-pad">
+	<h1>{{ page.product-revenue.heading }}</h1>
+	<figure>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+		<img 	src="/assets/images/commerce-product-1.png"
+			srcset="/assets/images/commerce-product-1.png 1x, /assets/images/commerce-product-1@2x.png 2x, /assets/images/commerce-product-1@3x.png 3x"
+			alt="{{ page.product-revenue.subheading }}">
+		<figcaption>
+			<h2>{{ page.product-revenue.subheading }}</h2>
+			<p>{{ page.product-revenue.description }}</p>
+		</figcaption>
+	</figure>
+</section>
+
+
+
+
+{% include footer.html %}
