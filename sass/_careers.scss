@@ -1,0 +1,36 @@
+.instagram-feed {
+        display: grid;
+        width: 100%;
+        max-width:1078px;
+        grid-gap: 32px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 160px;
+}
+
+.instagram-feed__block {
+        grid-row-end: span 2;
+
+        img {
+                width:100%;
+        }
+
+        p {
+                font-size:14px;
+                color:#7f7f7f;
+        }
+
+}
+
+
+.instagram-feed__block--horz {
+        grid-row-end: span 2;
+}
+
+.instagram-feed__block--vert {
+        grid-row-end: span 3;
+}
+
+.instagram-feed__block--vid {
+        grid-row-end: span 4;
+}
+

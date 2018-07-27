@@ -2,46 +2,67 @@
 {% include navbar.html %}
 
 <div class="hero" id="home">
-	<div id="hero-content-commerce">
-		<h1>Video is the new
-			<br>
-			<span class="highlight">storefront</span>
-		</h1>
-		{% if page.commerce-description %}
-		<p>{{ page.commerce-description }}</p>
+	<div id="hero-content">
+		<h1>Careers</h1>
+		{% if page.careers-description %}
+			<p>{{ page.careers-description }}</p>
 		{% endif %}
 	</div>
-	<div class="hero-footer">
-		<div class="hero-footer__content">
-			<i class="icon ion-md-notifications"></i>
-			<span>{{ site.hero-banner }}&nbsp;
-				<a class="anchor-link" href="#contact"><button class="hero-footer__cta">Get in touch</button></a>
-			</span>
-		</div>
-	</div>
-	<video autoplay loop muted playsinline poster="/assets/images/placeholder-commerce.jpg" id="bgvid-commerce">
-		<source src="/assets/videos/hero-commerce.mp4" type="video/mp4">
-		<source src="/assets/videos/hero-commerce.webm" type="video/webm">
+	<video autoplay loop muted playsinline poster="/assets/images/placeholder-careers.jpg" id="bgvid">
+		<source src="/assets/videos/hero-careers.mp4" type="video/mp4">
 	</video>
 </div>
 
 <section class="product-section product-section--bottom-pad">
-	<h1>{{ page.product-revenue.heading }}</h1>
+	<h1>{{ page.why-axonista.heading }}</h1>
 	<figure>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
 		</svg>
-		<img 	src="/assets/images/commerce-product-1.png"
-			srcset="/assets/images/commerce-product-1.png 1x, /assets/images/commerce-product-1@2x.png 2x, /assets/images/commerce-product-1@3x.png 3x"
-			alt="{{ page.product-revenue.subheading }}">
+		<img 	src="/assets/images/careers/image-quality.jpg"
+			srcset="/assets/images/careers/image-quality.jpg 1x, /assets/images/careers/image-quality@2x.jpg 2x, /assets/images/image-quality@3x.jpg 3x"
+			alt="{{ page.why-axonista.subheading-quality }}">
 		<figcaption>
-			<h2>{{ page.product-revenue.subheading }}</h2>
-			<p>{{ page.product-revenue.description }}</p>
+			<h2>{{ page.why-axonista.subheading-quality }}</h2>
+			<p>{{ page.why-axonista.description-quality }}</p>
 		</figcaption>
 	</figure>
 </section>
 
+<section class="product-section__left-align">
+	<figure>
+		<figcaption>
+			<h2>{{ page.why-axonista.subheading-growth }}</h2>
+			<p>{{ page.why-axonista.description-growth }}</p>
+		</figcaption>
+		<img 	src="/assets/images/careers/image-growth.jpg"
+			srcset="/assets/images/careers/image-growth.jpg 1x, /assets/images/careers/image-growth@2x.jpg 2x, /assets/images/image-growth@3x.jpg 3x"
+			alt="{{ page.why-axonista.subheading-growth }}">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+	</figure>
+</section>
 
+<section class="product-section product-section--bottom-pad">
+	<figure>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+		<img 	src="/assets/images/careers/image-location.jpg"
+			srcset="/assets/images/careers/image-location.jpg 1x, /assets/images/careers/image-location@2x.jpg 2x, /assets/images/image-location@3x.jpg 3x"
+			alt="{{ page.why-axonista.subheading-location }}">
+		<figcaption>
+			<h2>{{ page.why-axonista.subheading-location }}</h2>
+			<p>{{ page.why-axonista.description-location }}</p>
+		</figcaption>
+	</figure>
+</section>
 
+<section class="product-features product-features--whitebg">
+	<h1>{{ page.work-hard.heading }}</h1>
+	<h2>{{ page.work-hard.subheading }}</h2>
+	<div class="instagram-feed" id="instagram-feed"></div>
+</section>
 
 {% include footer.html %}

@@ -91,3 +91,25 @@ $nav.on('click', 'a', function(e) {
         $nav.fadeOut().removeClass('open');
     }
 });
+
+var feed = new Instafeed({
+    userId: "4273174377",
+    target: 'instagram-feed',
+    accessToken:"4273174377.6fd079a.8af98a2724d24dc7ab5280a089cf8d58",
+    get: "user",
+    resolution:'standard_resolution',
+    template: `
+        <div class="instagram-feed__block instagram-feed__block--vert">
+            <img src="{{model.images.standard_resolution.url}}" />
+            <p>{{caption}}</p>
+        </div>`,
+    filter: function(image) {
+        if  (image.tags.indexOf('axonistafun') != -1) {
+            console.log(image);
+            return true;
+        } else {
+            return false;
+        }
+    }
+});
+feed.run();
