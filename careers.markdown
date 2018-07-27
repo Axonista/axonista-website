@@ -4,6 +4,16 @@ layout: careers
 
 careers-description: We're looking for passionate people to help realise our ambitious vision for the future of video and TV.
 
+current-openings:
+  heading: Current openings
+  jobs:
+    - role: Technical Support Engineer
+      location: Dublin, Ireland
+      jobbio-url: https://jobbio.com/companies/axonista/jobs/technical-support-1
+    - role: Senior Software Engineer
+      location: Dublin, Ireland
+      jobbio-url: https://jobbio.com/companies/axonista/jobs/senior-software-engineer-27
+
 why-axonista:
   heading: Why Axonista?
 
@@ -20,7 +30,8 @@ work-hard:
   heading: Work hard, play harder
   subheading: Happy workers produce great work. That’s why we go on regular adventures and are supremely skillful in finding any excuse to celebrate.
 
-
+apply-again:
+  heading: So what are you waiting for? Apply below!
 
 ---
 

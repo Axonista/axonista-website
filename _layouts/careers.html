@@ -1,8 +1,8 @@
 {% include header.html %}
 {% include navbar.html %}
 
-<div class="hero" id="home">
-	<div id="hero-content">
+<div class="hero">
+	<div class="careers-hero" id="hero-content">
 		<h1>Careers</h1>
 		{% if page.careers-description %}
 			<p>{{ page.careers-description }}</p>
@@ -13,7 +13,18 @@
 	</video>
 </div>
 
-<section class="product-section product-section--bottom-pad">
+<section class="platform-section--invert careers-openings">
+	<h1>{{ page.current-openings.heading }}</h1>
+		{% for job in page.current-openings.jobs %}	
+			<div class="job-card">
+				<h3>{{ job.role }}</h3>
+				<p>{{ job.location }}</p>
+				<a href="{{ job.jobbio-url }}" target="_blank">View role on Jobbio</a>
+			</div>
+		{% endfor %}
+	</section>
+
+<section class="product-section product-section--bottom-pad careers-section--top-pad">
 	<h1>{{ page.why-axonista.heading }}</h1>
 	<figure>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
@@ -29,7 +40,7 @@
 	</figure>
 </section>
 
-<section class="product-section__left-align">
+<section class="product-section__left-align careers-section--top-pad">
 	<figure>
 		<figcaption>
 			<h2>{{ page.why-axonista.subheading-growth }}</h2>
@@ -44,7 +55,7 @@
 	</figure>
 </section>
 
-<section class="product-section product-section--bottom-pad">
+<section class="product-section product-section--bottom-pad careers-section--top-pad">
 	<figure>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
 			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
@@ -63,6 +74,18 @@
 	<h1>{{ page.work-hard.heading }}</h1>
 	<h2>{{ page.work-hard.subheading }}</h2>
 	<div class="instagram-feed" id="instagram-feed"></div>
+	<a href="https://www.instagram.com/axonistahq" class="product-section__cta">See more on Instagram</a>
+</section>
+
+<section class="client-section careers-openings careers-section--bottom-pad ">
+	<h1>{{ page.apply-again.heading }}</h1>
+	{% for job in page.current-openings.jobs %}	
+		<div class="job-card">
+			<h3>{{ job.role }}</h3>
+			<p>{{ job.location }}</p>
+			<a href="{{ job.jobbio-url }}" target="_blank">View role on Jobbio</a>
+		</div>
+	{% endfor %}
 </section>
 
 {% include footer.html %}

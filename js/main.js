@@ -105,7 +105,6 @@ var feed = new Instafeed({
         </div>`,
     filter: function(image) {
         if  (image.tags.indexOf('axonistafun') != -1) {
-            console.log(image);
             return true;
         } else {
             return false;
