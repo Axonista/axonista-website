@@ -1,0 +1,95 @@
+{% include header.html %}
+{% include navbar.html %}
+
+<div class="hero">
+	<div class="careers-hero" id="hero-content">
+		<h1>Careers</h1>
+		{% if page.careers-description %}
+			<p>{{ page.careers-description }}</p>
+		{% endif %}
+	</div>
+	<video autoplay loop muted playsinline poster="/assets/images/placeholder-careers.jpg" id="bgvid">
+		<source src="/assets/videos/hero-careers.mp4" type="video/mp4">
+	</video>
+</div>
+
+<section class="platform-section--invert careers-openings">
+	<h1>{{ page.current-openings.heading }}</h1>
+		{% for job in page.current-openings.jobs %}	
+			<a href="{{ job.jobbio-url }}" class="job-card" target="_blank">
+					<h3>{{ job.role }}</h3>
+					<p>{{ job.location }}</p>
+					<span>View role on Jobbio</span>
+			</a>
+		{% endfor %}
+	</section>
+
+<section class="product-section product-section--bottom-pad careers-section--top-pad">
+	<h1>{{ page.why-axonista.heading }}</h1>
+	<figure>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+		<img 	src="/assets/images/careers/image-quality.jpg"
+			srcset="/assets/images/careers/image-quality.jpg 1x, /assets/images/careers/image-quality@2x.jpg 2x, /assets/images/image-quality@3x.jpg 3x"
+			alt="{{ page.why-axonista.subheading-quality }}"
+			class="careers-image-left-align">
+		<figcaption>
+			<h2>{{ page.why-axonista.subheading-quality }}</h2>
+			<p>{{ page.why-axonista.description-quality }}</p>
+		</figcaption>
+	</figure>
+</section>
+
+<section class="product-section__left-align careers-section--top-pad">
+	<figure>
+		<figcaption>
+			<h2>{{ page.why-axonista.subheading-growth }}</h2>
+			<p>{{ page.why-axonista.description-growth }}</p>
+		</figcaption>
+		<img 	src="/assets/images/careers/image-growth.jpg"
+			srcset="/assets/images/careers/image-growth.jpg 1x, /assets/images/careers/image-growth@2x.jpg 2x, /assets/images/image-growth@3x.jpg 3x"
+			alt="{{ page.why-axonista.subheading-growth }}"
+			class="careers-image-right-align">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+	</figure>
+</section>
+
+<section class="product-section product-section--bottom-pad careers-section--no-top-pad careers-section-location">
+	<figure>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 457">
+			<path fill="#F8F8F8" fill-rule="evenodd" d="M0 121.245L669 0v335.755L0 457z" />
+		</svg>
+		<img 	src="/assets/images/careers/image-location.jpg"
+			srcset="/assets/images/careers/image-location.jpg 1x, /assets/images/careers/image-location@2x.jpg 2x, /assets/images/image-location@3x.jpg 3x"
+			alt="{{ page.why-axonista.subheading-location }}"
+			class="careers-image-left-align">
+		<figcaption>
+			<h2>{{ page.why-axonista.subheading-location }}</h2>
+			<p>{{ page.why-axonista.description-location }}</p>
+		</figcaption>
+	</figure>
+</section>
+
+<section class="product-features product-features--whitebg">
+	<h1>{{ page.work-hard.heading }}</h1>
+	<h2>{{ page.work-hard.subheading }}</h2>
+	<div class="instagram-feed" id="instagram-feed">
+	</div>
+	<a href="https://www.instagram.com/axonistahq" class="product-section__cta">See more on Instagram</a>
+</section>
+
+<section class="client-section careers-openings careers-section--bottom-pad ">
+	<h1>{{ page.apply-again.heading }}</h1>
+	{% for job in page.current-openings.jobs %}	
+		<a href="{{ job.jobbio-url }}" class="job-card" target="_blank">
+			<h3>{{ job.role }}</h3>
+			<p>{{ job.location }}</p>
+			<span>View role on Jobbio</span>
+		</a>
+	{% endfor %}
+</section>
+
+{% include footer.html %}

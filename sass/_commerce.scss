@@ -3,6 +3,10 @@
         flex-direction:column;
         background:$white!important;
         padding-top:6em;
+        z-index:-2;
+        @include media($mobile) {
+                z-index:0;
+        }          
         @include media($tablet) {
                 padding-top:4em;
         }        
@@ -15,6 +19,7 @@
               text-align:center;
               align-self: center;
               max-width:730px;
+              margin-bottom:1em;
               @include media($tablet) {
                       font-size:34px;
                       line-height:1.12;
@@ -35,15 +40,20 @@
                         max-width: 555px;
                         width:50%;
                         height: auto;
-                        padding-top:2em;
+                        padding:0.75em;
                         @include media($mobile) {
                                 width:90%;
+                                padding:0;
                         }
                 }
                 figcaption {
+                        max-width: 475px;
                         margin-left:40px;
                         @include media($tablet) {
                                 margin-left:0;
+                        }
+                        @include media($mobile) {
+                                max-width: 343px;                                
                         }                        
                         h2 {
                                 font-family: $font-family-medium;
@@ -57,6 +67,9 @@
                                         line-height:1.18;
                                         padding-top:2em;
                                 }
+                                @include media($mobile) {
+                                        padding-top:1.5em;
+                                }                                
                         }
                         p {
                                 font-family: $font-family-regular;
@@ -64,19 +77,27 @@
                                 line-height:1.5;
                                 opacity:0.75;
                                 max-width:475px;
+                                @include media($desktop) {
+                                        margin-right:20px;
+                                }
                                 @include media($tablet) {
                                         font-size:16px;
                                         text-align:center;
                                         line-height:1.63;
                                         padding: 0 2.25em;
-                                }                                
+                                } 
+                                @include media($mobile) {
+                                        padding:0;
+                                        max-width:327px;                                        
+                                }                               
                         }
                 }
                 svg {
                         position: absolute;
                         z-index: -1;
                         left:0;
-                        bottom: -2.5em;
+                        top:0;
+                        // bottom: -2.5em;
                         width: calc(50% + 18px);
                         transform: scaleY(0.9);    
                         @include media($mobile) {
@@ -91,11 +112,15 @@
 }
 .product-section--bottom-pad {
         padding-bottom:3em;
+        @include media($mobile) {
+                padding-bottom:0.5em;
+        }
 }
 .product-section__cta {
         display:flex;
         flex-direction: column;
         justify-content: center;
+        text-transform: uppercase;
         align-self: center;   
         height:43px;
         min-width:153px;   
@@ -119,8 +144,7 @@
 .product-section__left-align {
         @extend .product-section;
         padding-top:0;
-        @include media($mobile) {
-        }
+        z-index:-10;
         h1 {
                 padding:1em 0;
         }
@@ -387,6 +411,10 @@
         }
 }
 
+.product-features--whitebg {
+        background:$white!important;
+}
+
 .contact-section {
         display:flex;
         width:100%;
@@ -568,17 +596,21 @@
                 }
         }
         @include media($mobile) {
+                h1 {
+                        max-width:327px;
+                        padding:0;
+                }   
+                h2 {
+                        max-width:327px;
+                }                                
                 margin:2em 1em;   
                 margin-bottom:0;
                 .card-row {
                         flex-direction: column;
                         align-items: center;
                         figure {
-                                max-width:330px;
+                                max-width:327px;
                                 margin-bottom:1.5em;
-                                img {
-                                        max-width:330px;
-                                }
                                 figcaption {
                                         h3 {
                                                 font-size:22px;
@@ -592,4 +624,8 @@
                         }
                 }
         } 
+}
+
+.careers-section-location {
+        z-index:10;
 }

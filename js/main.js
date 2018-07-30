@@ -91,3 +91,35 @@ $nav.on('click', 'a', function(e) {
         $nav.fadeOut().removeClass('open');
     }
 });
+
+var feed = new Instafeed({
+    userId: "4273174377",
+    target: 'instagram-feed',
+    accessToken:"4273174377.6fd079a.8af98a2724d24dc7ab5280a089cf8d58",
+    get: "user",
+    resolution:'standard_resolution',
+    template: `
+    <div class="instagram-feed__block instagram-feed__block--vert">
+        <video autoplay loop poster="{{model.images.standard_resolution.url}}">
+            <source src="{{model.videos.standard_resolution.url}}" type="video/mp4">
+        </video>
+        <p>{{caption}}</p>
+    </div>`,        
+    filter: function(image) {
+        if  (image.tags.indexOf('axonistafun') != -1) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    after: function() {
+        var video_elements = $('video');
+        for (var i=0;i < video_elements.length; i++) {
+            if ($(video_elements[i]).children()[0].src.endsWith('mp4') == false) {
+                var image_url = video_elements[i].poster;
+                $(video_elements[i]).replaceWith("<img src=\""+image_url+"\">");
+            }
+        }
+    }
+});
+feed.run();
