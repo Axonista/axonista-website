@@ -1,6 +1,5 @@
 ---
 title: Careers
-layout: careers
 careers-description: We're looking for passionate people to help realise our ambitious
   vision for the future of video and TV.
 current-openings:
@@ -28,12 +27,13 @@ why-axonista:
   description-location: Axonista HQ is located right in the heart of Dublin City,
     next to all the best cafés and pubs. We also have a very strong team of remote
     workers dotted all over the world. From our offices in New York to remoters in
-    Croatia, Spain, France, and Ukraine.
+    Croatia, Spain, and France.
 work-hard:
   heading: Work hard, play harder
   subheading: Happy workers produce great work. That’s why we go on regular adventures
     and are supremely skillful in finding any excuse to celebrate.
 apply-again:
   heading: So what are you waiting for? Apply below!
+layout: careers
 ---
 
