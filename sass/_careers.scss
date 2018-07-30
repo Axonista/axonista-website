@@ -158,7 +158,11 @@
 
 .careers-section--top-pad {
         padding-top:3em;
-
+        @include media($mobile) {
+                figure > svg {
+                        top:0;
+                }
+        }          
 }
 
 .careers-section--bottom-pad {
@@ -170,4 +174,9 @@
 
 .careers-section--no-top-pad {
         padding-top:0;
+        @include media($mobile) {
+                figure > svg {
+                        top:0;
+                }
+        }        
 }
