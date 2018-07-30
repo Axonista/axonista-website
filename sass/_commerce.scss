@@ -43,6 +43,7 @@
                         padding:0.75em;
                         @include media($mobile) {
                                 width:90%;
+                                padding:0;
                         }
                 }
                 figcaption {
@@ -66,6 +67,9 @@
                                         line-height:1.18;
                                         padding-top:2em;
                                 }
+                                @include media($mobile) {
+                                        padding-top:1.5em;
+                                }                                
                         }
                         p {
                                 font-family: $font-family-regular;
@@ -141,8 +145,6 @@
         @extend .product-section;
         padding-top:0;
         z-index:-10;
-        @include media($mobile) {
-        }
         h1 {
                 padding:1em 0;
         }
