@@ -2,20 +2,21 @@ version: '3.4'
 
 services:
   
-  jekyll:
-    image: jekyll/jekyll:latest
-    command: "jekyll serve"
-    volumes:
-      - $PWD:/srv/jekyll
-    ports:
-      - 4000:4000
-      - 35729:35729
-      - 3000:3000
-      -   8090:4000
-
-  # httpserver:
-  #   image: nginx:latest
-  #   ports:
-  #     - 3000:80
+  # jekyll:
+  #   image: jekyll/jekyll:latest
+  #   command: "jekyll serve"
   #   volumes:
-  #     - $PWD/_site:/usr/share/nginx/html
+  #     - $PWD:/srv/jekyll
+  #   ports:
+  #     - 4000:4000
+  #     - 35729:35729
+  #     - 3000:3000
+  #     -   8090:4000
+
+  httpserver:
+    image: httpd:latest
+    ports:
+      - 3000:80
+    volumes:
+      - $PWD/_site:/usr/local/apache2/htdocs/
+      - $PWD/httpd.conf:/usr/local/apache2/conf/httpd.conf
