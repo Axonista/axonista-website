@@ -100,17 +100,25 @@ var feed = new Instafeed({
     resolution:'standard_resolution',
     template: `
     <div class="instagram-feed__block instagram-feed__block--vert">
-        <video controls poster="{{model.images.standard_resolution.url}}">
+        <video autoplay loop poster="{{model.images.standard_resolution.url}}">
             <source src="{{model.videos.standard_resolution.url}}" type="video/mp4">
         </video>
         <p>{{caption}}</p>
     </div>`,        
     filter: function(image) {
         if  (image.tags.indexOf('axonistafun') != -1) {
-            console.log(image)
             return true;
         } else {
             return false;
+        }
+    },
+    after: function() {
+        var video_elements = $('video');
+        for (var i=0;i < video_elements.length; i++) {
+            if ($(video_elements[i]).children()[0].src.endsWith('mp4') == false) {
+                var image_url = video_elements[i].poster;
+                $(video_elements[i]).replaceWith("<img src=\""+image_url+"\">");
+            }
         }
     }
 });
