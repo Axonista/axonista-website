@@ -1,9 +1,5 @@
 RewriteEngine On
 
-# You probably don't want this enabled during dev
-RewriteCond %{HTTPS} !=On
-RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,NC,L] 
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
