@@ -6,18 +6,18 @@
         text-align:center;     
         padding-top:0!important;  
         @include media($tablet) {
-        background-image: url(../assets/images/placeholder-careers.jpg)!important;
-        &:before {
-                z-index:-1;
-                content:'';
-                position:absolute;
-                top:0;
-                bottom:0;
-                left:0;
-                right:0;
-                background:$black;
-                opacity:0.6;
-        }        
+                background-image: url(../assets/images/placeholder-careers.jpg)!important;
+                &:before {
+                        z-index:-1;
+                        content:'';
+                        position:absolute;
+                        top:0;
+                        bottom:0;
+                        left:0;
+                        right:0;
+                        background:$black;
+                        opacity:0.6;
+                }        
         }        
         @include media($mobile) {
                 height:526px!important;
@@ -70,9 +70,12 @@
         columns:2;
         column-gap: 2em;
         margin-bottom:4.5em;
+        padding-left:1em;
+        padding-right:1em;
         @include media($mobile) {
                 columns:1;
                 width:90%;
+                padding:0;
                 & .instagram-feed__block:nth-child(n+4) {
                         display:none;
                 }                
