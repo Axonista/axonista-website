@@ -61,7 +61,13 @@
         h1 {
                 margin-bottom:32px;
         }
-        padding-bottom:1em;
+        padding-bottom:2em;
+        padding-left:2em;
+        padding-right:2em;   
+        @include media($mobile) {
+                padding-left:0;
+                padding-right:0;
+        }     
 }
 
 .instagram-feed {
@@ -76,6 +82,10 @@
                 columns:1;
                 width:90%;
                 padding:0;
+                margin-bottom:2.5em;
+                .instagram-feed__block {
+                        margin-bottom:1.5em;
+                }
                 & .instagram-feed__block:nth-child(n+4) {
                         display:none;
                 }                
@@ -107,7 +117,7 @@
         padding:24px;
         @include media($mobile) {
                 columns:1;
-                width:85%;
+                max-width:327px;
         }           
         h3 {
                 font-size: 24px;
@@ -146,8 +156,6 @@
         }        
 }
 
-
-
 .careers-section--top-pad {
         padding-top:3em;
 
@@ -155,4 +163,11 @@
 
 .careers-section--bottom-pad {
         padding-bottom:3em;
+        @include media($mobile) {
+                padding-bottom:0.5em;
+        }
+}
+
+.careers-section--no-top-pad {
+        padding-top:0;
 }

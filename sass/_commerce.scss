@@ -9,8 +9,6 @@
         }          
         @include media($tablet) {
                 padding-top:4em;
-                padding-left:1em;
-                padding-right:1em;
         }        
         h1 {
               font-family:$font-family-medium;
@@ -21,6 +19,7 @@
               text-align:center;
               align-self: center;
               max-width:730px;
+              margin-bottom:1em;
               @include media($tablet) {
                       font-size:34px;
                       line-height:1.12;
@@ -41,7 +40,7 @@
                         max-width: 555px;
                         width:50%;
                         height: auto;
-                        padding-top:2em;
+                        padding:0.75em;
                         @include media($mobile) {
                                 width:90%;
                         }
@@ -51,6 +50,9 @@
                         margin-left:40px;
                         @include media($tablet) {
                                 margin-left:0;
+                        }
+                        @include media($mobile) {
+                                max-width: 343px;                                
                         }                        
                         h2 {
                                 font-family: $font-family-medium;
@@ -71,12 +73,19 @@
                                 line-height:1.5;
                                 opacity:0.75;
                                 max-width:475px;
+                                @include media($desktop) {
+                                        margin-right:20px;
+                                }
                                 @include media($tablet) {
                                         font-size:16px;
                                         text-align:center;
                                         line-height:1.63;
                                         padding: 0 2.25em;
-                                }                                
+                                } 
+                                @include media($mobile) {
+                                        padding:0;
+                                        max-width:327px;                                        
+                                }                               
                         }
                 }
                 svg {
@@ -99,6 +108,9 @@
 }
 .product-section--bottom-pad {
         padding-bottom:3em;
+        @include media($mobile) {
+                padding-bottom:0.5em;
+        }
 }
 .product-section__cta {
         display:flex;
@@ -350,8 +362,6 @@
         }
         @include media($tablet) {
                 padding-top:2em;
-                padding-left:1em;
-                padding-right:1em;
                 flex-direction:column;
                 align-items:center;
                 text-align:center;                
@@ -584,17 +594,21 @@
                 }
         }
         @include media($mobile) {
+                h1 {
+                        max-width:327px;
+                        padding:0;
+                }   
+                h2 {
+                        max-width:327px;
+                }                                
                 margin:2em 1em;   
                 margin-bottom:0;
                 .card-row {
                         flex-direction: column;
                         align-items: center;
                         figure {
-                                max-width:330px;
+                                max-width:327px;
                                 margin-bottom:1.5em;
-                                img {
-                                        max-width:330px;
-                                }
                                 figcaption {
                                         h3 {
                                                 font-size:22px;
@@ -608,4 +622,8 @@
                         }
                 }
         } 
+}
+
+.careers-section-location {
+        z-index:10;
 }
