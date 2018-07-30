@@ -84,11 +84,11 @@
 <section class="client-section careers-openings careers-section--bottom-pad ">
 	<h1>{{ page.apply-again.heading }}</h1>
 	{% for job in page.current-openings.jobs %}	
-		<div class="job-card">
+		<a href="{{ job.jobbio-url }}" class="job-card" target="_blank">
 			<h3>{{ job.role }}</h3>
 			<p>{{ job.location }}</p>
-			<a href="{{ job.jobbio-url }}" target="_blank">View role on Jobbio</a>
-		</div>
+			<span>View role on Jobbio</span>
+		</a>
 	{% endfor %}
 </section>
 
