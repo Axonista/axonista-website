@@ -8,7 +8,7 @@ current-openings:
   - role: Technical Support Engineer
     location: Dublin, Ireland
     jobbio-url: https://jobbio.com/companies/axonista/jobs/technical-support-1
-  - role: Senior Software Engineer
+  - role: Product Engineer
     location: Dublin, Ireland
     jobbio-url: https://jobbio.com/companies/axonista/jobs/senior-software-engineer-27
 why-axonista:
