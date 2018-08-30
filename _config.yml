@@ -38,5 +38,5 @@ baseurl:
 markdown: kramdown
 sass:
   style: compact
-url: "https://www.axonista.com"
+url: https://www.axonista.com
     
