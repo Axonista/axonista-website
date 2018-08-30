@@ -92,6 +92,7 @@ $nav.on('click', 'a', function(e) {
     }
 });
 
+
 var feed = new Instafeed({
     userId: "4273174377",
     target: 'instagram-feed',
@@ -122,4 +123,6 @@ var feed = new Instafeed({
         }
     }
 });
-feed.run();
+if ($('#instagram-feed').length > 0) {
+	feed.run();
+}
