@@ -12,9 +12,9 @@ gulp.task('scss', function() {
                 .pipe(gulp.dest('stylesheets'))
 })
 
-gulp.task('build',['scss']);
+gulp.task('build',gulp.series('scss'));
 
 
 gulp.task('watch', function() {
-        return gulp.watch('sass/*.scss',['scss']);
+        return gulp.watch('sass/*.scss',gulp.series('scss'));
 });
