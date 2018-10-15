@@ -1,5 +1,9 @@
 RewriteEngine On
 
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ https%2://%1%{REQUEST_URI} [L,R=301]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
