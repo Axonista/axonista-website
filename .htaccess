@@ -2,7 +2,8 @@ RewriteEngine On
 
 RewriteCond %{HTTP_HOST} !=""
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
