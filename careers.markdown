@@ -5,12 +5,9 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-  - role: Technical Support Engineer
+  - role: 'Project coordinator '
     location: Dublin, Ireland
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/technical-support-1
-  - role: Product Engineer
-    location: Dublin, Ireland
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/senior-software-engineer-27
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/project-coordinator-axonista
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
