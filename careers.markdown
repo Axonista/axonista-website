@@ -8,6 +8,9 @@ current-openings:
   - role: 'Project coordinator '
     location: Dublin, Ireland
     jobbio-url: https://jobbio.com/companies/axonista/jobs/project-coordinator-axonista
+  - role: Front End Web Developer
+    location: Dublin, Ireland
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/front-end-web-developer-axonista
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
