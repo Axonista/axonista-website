@@ -5,9 +5,6 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-  - role: 'Project coordinator '
-    location: Dublin, Ireland
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/project-coordinator-axonista
   - role: Front End Web Developer
     location: Dublin, Ireland
     jobbio-url: https://jobbio.com/companies/axonista/jobs/front-end-web-developer-axonista
