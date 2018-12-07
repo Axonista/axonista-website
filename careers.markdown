@@ -8,6 +8,9 @@ current-openings:
   - role: Front End Web Developer
     location: Dublin, Ireland
     jobbio-url: https://jobbio.com/companies/axonista/jobs/front-end-web-developer-axonista
+  - role: Visual / UI Designer
+    location: Dublin, Ireland
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/visual-ui-designer-axonista
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
