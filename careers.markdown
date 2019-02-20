@@ -5,9 +5,9 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-  - role: Front End Web Developer
+  - role: Software Engineer
     location: Dublin, Ireland
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/front-end-web-developer-axonista
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-axonista
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
