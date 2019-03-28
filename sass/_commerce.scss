@@ -107,6 +107,9 @@
                                 bottom:unset;
                                 transform:unset;
                         }
+                        @include media($hugedesktop) {
+                                display : none;
+                        }
                 }
         }
 }
