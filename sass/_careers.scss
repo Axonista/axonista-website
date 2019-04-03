@@ -1,10 +1,10 @@
 .careers-hero {
         display:flex!important;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         justify-content:center;
-        text-align:center;     
-        padding-top:0!important;  
+        text-align:center;
+        padding-top:0!important;
         @include media($tablet) {
                 background-image: url(../assets/images/placeholder-careers.jpg)!important;
                 &:before {
@@ -17,8 +17,8 @@
                         right:0;
                         background:$black;
                         opacity:0.6;
-                }        
-        }        
+                }
+        }
         @include media($mobile) {
                 height:526px!important;
         }
@@ -32,7 +32,7 @@
                 @include media($mobile) {
                 font-size: 34px;
                 line-height:1.12;
-                }                
+                }
         }
         p {
                 display:flex!important;
@@ -47,14 +47,14 @@
                 }
                 @include media($mobile) {
                         @include span-columns (12);
-                        @include shift (0);            
+                        @include shift (0);
                         max-width: none;
                         font-size: 22px!important;
                         line-height:1.18;
                         padding: 0.5em 2em 8em 2em;
                         margin-bottom:3em;
-                }                
-        }        
+                }
+        }
 }
 
 .careers-openings {
@@ -63,11 +63,11 @@
         }
         padding-bottom:2em;
         padding-left:2em;
-        padding-right:2em;   
+        padding-right:2em;
         @include media($mobile) {
                 padding-left:0;
                 padding-right:0;
-        }     
+        }
 }
 
 .instagram-feed {
@@ -88,8 +88,8 @@
                 }
                 & .instagram-feed__block:nth-child(n+4) {
                         display:none;
-                }                
-        }        
+                }
+        }
 }
 
 .instagram-feed__block {
@@ -118,7 +118,7 @@
         @include media($mobile) {
                 columns:1;
                 max-width:327px;
-        }           
+        }
         h3 {
                 font-size: 24px;
                 font-weight: 500;
@@ -126,8 +126,8 @@
                 font-stretch: normal;
                 line-height: normal;
                 letter-spacing: normal;
-                color: #000000;    
-                margin-bottom:8px;            
+                color: #000000;
+                margin-bottom:8px;
         }
         p {
                 opacity: 0.75;
@@ -137,8 +137,8 @@
                 font-stretch: normal;
                 line-height: 1.5;
                 letter-spacing: normal;
-                color: #000000;    
-                margin-bottom:8px;            
+                color: #000000;
+                margin-bottom:8px;
         }
         span {
                 font-size: 20px;
@@ -147,13 +147,13 @@
                 font-stretch: normal;
                 line-height: normal;
                 letter-spacing: normal;
-                color: #f3a540;
-                margin-bottom:8px;            
-        } 
+                color: $accent;
+                margin-bottom:8px;
+        }
         &:hover {
-                box-shadow: 0 24px 30px 0 rgba(0, 0, 0, 0.1);    
-                transition: box-shadow 0.2s ease-in-out;  
-        }        
+                box-shadow: 0 24px 30px 0 rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.2s ease-in-out;
+        }
 }
 
 .careers-section--top-pad {
@@ -162,7 +162,7 @@
                 figure > svg {
                         top:0;
                 }
-        }          
+        }
 }
 
 .careers-section--bottom-pad {
@@ -178,5 +178,5 @@
                 figure > svg {
                         top:0;
                 }
-        }        
+        }
 }

@@ -1,17 +1,17 @@
 footer {
         section,div {
-                background: #1a1a1a!important;
+                background: $black !important;
         }
         .footer__content {
                 display:flex;
                 flex-direction: column;
                 width:100%;
                 align-items:center;
-                background:#1a1a1a;
-                padding:5em;         
+                background: $black;
+                padding:5em;
                 @include media($mobile) {
-                        padding:3em 1.5em;     
-                }                       
+                        padding:3em 1.5em;
+                }
         }
         .brand {
                 padding-bottom:5em;
@@ -23,7 +23,7 @@ footer {
                         img {
                                 max-width:204px;
                         }
-                }               
+                }
         }
         .address {
                 display:flex;
@@ -57,7 +57,7 @@ footer {
                                 margin-bottom:2em;
                         }
                         span {
-                                font-size:20px;     
+                                font-size:20px;
                         }
                         p {
                                 font-size:16px;
@@ -69,7 +69,7 @@ footer {
                 display:flex;
                 width:65%;
                 flex-direction: row;
-                justify-content: space-around;                
+                justify-content: space-around;
                 color:$white;
                 padding-bottom:5em;
                 .icon {
