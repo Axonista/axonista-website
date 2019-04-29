@@ -4,10 +4,6 @@ careers-description: We're looking for passionate people to help realise our amb
   vision for the future of video and TV.
 current-openings:
   heading: Current openings
-  jobs:
-  - role: Software Engineer
-    location: Dublin, Ireland
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-axonista
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
