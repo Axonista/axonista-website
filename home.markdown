@@ -4,12 +4,11 @@ date: 2016-03-01 18:07:00 Z
 permalink: "/"
 axonista-description: Powering video commerce for the world’s leading brands and media
   companies.
-ediflo-description: A flexible, end-to-end platform that enables you to achieve your
-  business goals through video.
+ediflo-description: Launch your video business with Ediflo, a flexible, end-to end platform that enables you to achieve your business goals through video. We’ve been helping our customers get to market for years, so we understand what it takes to launch a successful video business. Ediflo handles everything you need to easily setup, launch, and maintain your product at scale.
 commerce-description: Sell products from directly inside your\ video, on any device
   or TV
 ediflo-library:
-  heading: Ediflo Library
+  heading: Ediflo Distribution
   subheading: Digital Asset Management
   description: |-
     Ingest and transcode
@@ -20,7 +19,7 @@ ediflo-library:
 
     Syndication feeds
 ediflo-live:
-  heading: Ediflo Live
+  heading: Ediflo Library
   subheading: Scheduling & Playout
   description: |
     Live streaming
@@ -70,4 +69,3 @@ rerun-description: Rerun is the best way to keep up with the world of digital st
   interactive media and future of TV. Curated by us and published Fridays!
 layout: home
 ---
-
