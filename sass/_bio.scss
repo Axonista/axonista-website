@@ -1,0 +1,61 @@
+.bio-content-section {
+  display: flex;
+  justify-content: center;
+  background: $white!important;
+  padding-top: 160px;
+  flex-direction: row;
+
+    @include media($tablet) {
+      padding-top:4em;
+      flex-direction: column;
+      }
+
+  h1 {
+    font-family:$font-family-medium;
+    font-size: 32px;
+    font-weight:500;
+    color: $black;
+    text-align: left;
+    align-self: left;
+    margin-bottom: 0;
+    margin-top: 40px;
+    line-height: 1.4em;
+
+      @include media($tablet) {
+        margin-top: 20px;
+        }
+
+    }
+
+  h2 {
+      font-family:$font-family-medium;
+      font-size: 24px;
+      font-weight:500;
+      color: $black;
+      margin-bottom: 10px;
+  }
+
+  .bio-photo{
+    flex: 0 0 214px;
+    float: left;
+    margin: 0 20px;
+
+    @include media($tablet) {
+      margin: 20px 20px 0 20px;
+      }
+
+    }
+
+  .bio-content{
+    max-width: 760px;
+    margin: 0 20px;
+
+    p{
+      font-size: 1.2em;
+      line-height: 1.7em;
+      max-width: none;
+      }
+
+    }
+
+}
