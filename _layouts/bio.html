@@ -1,0 +1,24 @@
+{% include header.html %}
+{% include navbar.html %}
+
+<section class="bio-content-section">
+
+	<div class="bio-photo">
+		<img src="/assets/images/bio/claire-mchugh-profile.png"
+			srcset="/assets/images/bio/claire-mchugh-profile.png 1x, /assets/images/bio/claire-mchugh-profile@2x.png 2x, /assets/images/bio/claire-mchugh-profile@3x.png 3x"
+			alt="Claire McHugh">
+	</div>
+
+	<div class="bio-content">
+
+		<h1>{{ page.title }}</h1>
+		<h2>{{ page.job-title }}</h2>
+		{{ page.content }}
+
+	</div>
+
+
+
+</section>
+
+{% include footer.html %}
