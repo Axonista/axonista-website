@@ -4,7 +4,10 @@ careers-description: We're looking for passionate people to help realise our amb
   vision for the future of video and TV.
 current-openings:
   heading: Current openings
-  description: Test
+  jobs:
+    role: Software engineer
+    location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-107?source=axonista_job
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
