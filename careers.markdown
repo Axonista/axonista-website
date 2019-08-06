@@ -5,7 +5,7 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-    role: Software engineer
+  - role: Software Engineer
     location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
     jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-107
 why-axonista:
