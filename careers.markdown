@@ -4,7 +4,7 @@ careers-description: We're looking for passionate people to help realise our amb
   vision for the future of video and TV.
 current-openings:
   heading: Current openings
-  description: "[Software engineer At Axonista In Exchequer Chambers](https://jobbio.com/companies/axonista/jobs/software-engineer-107?source=axonista_job)"
+  description: Test
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
