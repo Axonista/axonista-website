@@ -7,7 +7,7 @@ current-openings:
   jobs:
     role: Software engineer
     location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-107?source=axonista_job
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-107
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
