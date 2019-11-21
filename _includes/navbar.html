@@ -9,8 +9,16 @@
         </div>
         <div id="alignright">
                 <ul id="toggle-menu">
-                        <li class="toggle-menu__link">
-                                <a class="animsition-link {% if page.url == '/commerce' %}active{% endif %}" href="/commerce">Commerce</a>
+                        <li class="dropdown-menu">
+                                <span class="dropdown-toggle">Solutions</span>
+                                <ul class="dropdown-items solutions">
+                                        <li>
+                                                <a href="/commerce">Commerce</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://ediflo.tv/" target="_blank">Ediflo</a>
+                                        </li>
+                                </ul>
                         </li>
                         <li class="toggle-menu__link">
                                 <a class="animsition-link {% if page.url == '/customers' %}active{% endif %} {{page.url}}" href="/customers">Customers</a>
@@ -43,7 +51,17 @@
 </nav>
 <div id="full-screen-nav">
         <ul>
-                <li><a href="/commerce">Commerce</a></li>
+                <li>
+                        <ul id="mobile-subnav">
+                                <span>Solutions</span>
+                                <li>
+                                        <a href="/commerce">Commerce</a>
+                                </li>
+                                <li>
+                                        <a href="https://ediflo.tv/" target="_blank">Ediflo</a>
+                                </li>
+                        </ul>
+                </li>
                 <li><a href="/customers">Customers</a></li>
                 <li>
                         <ul id="mobile-subnav">
