@@ -2,13 +2,14 @@
 title: Home
 date: 2016-03-01 18:07:00 Z
 permalink: "/"
-axonista-description: Powering video commerce for the world’s leading brands and media
-  companies.
-ediflo-description: Launch your video business with Ediflo, a flexible, end-to end
-  platform that enables you to achieve your business goals through video. We’ve been
-  helping our customers get to market for years, so we understand what it takes to
-  launch a successful video business. Ediflo handles everything you need to easily
-  setup, launch, and maintain your product at scale.
+axonista-description: Powering interactive video experiences for visionary storytellers
+  at global brands and media companies.
+ediflo-description: Curate and distribute cross-platform video services with Ediflo,
+  our flexible, end-to-end content management system, and add interactive features
+  to directly engage your viewers. We’ve been helping our customers build and innovate
+  their video businesses for a decade. Our team understands what it takes to run a
+  successful video business. Ediflo has everything you need to easily curate and maintain
+  your video product at scale.
 commerce-description: Sell products from directly inside your\ video, on any device
   or TV
 ediflo-library:
