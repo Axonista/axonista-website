@@ -27,6 +27,6 @@ layout: bio
 
 <strong>Links</strong>
 
-<a src="https://www.linkedin.com/in/clairemchugh/">https://www.linkedin.com/in/clairemchugh/</a>
+<a href="https://www.linkedin.com/in/clairemchugh/" target="_blank" title="Claire McHugh LinkedIn profile">https://www.linkedin.com/in/clairemchugh/</a>
 
-<a src="https://twitter.com/clairemchugh">https://twitter.com/clairemchugh</a>
+<a href="https://twitter.com/clairemchugh" target="_blank" title="Claire McHugh Twitter profile">https://twitter.com/clairemchugh</a>
