@@ -25,7 +25,7 @@ layout: bio
 
 <p>She was the Winner of Image Magazine's Businesswoman of the Year for Digital, Science and Technology in 2017, and of the People’s Choice Award at the 2018 TV Connect Awards in London.</p>
 
-**Links**
+Links
 
 [https://www.linkedin.com/in/clairemchugh/](https://www.linkedin.com/in/clairemchugh/)
 
