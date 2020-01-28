@@ -2,9 +2,6 @@
 title: Claire McHugh
 date: 2019-07-04 14:54:00 Z
 job-title: CEO & Co-founder, Axonista
-Links:
-- LinkedIn: https://www.linkedin.com/in/clairemchugh
-  Twitter: https://twitter.com/clairemchugh
 layout: bio
 ---
 
@@ -27,3 +24,5 @@ layout: bio
 <p>Claire has been included in Silicon Republic’s ‘21 Irish software superstars’, featured in In Business Magazine’s ‘4 Female Founders to Watch from Julie Sinnamon’, and most recently as one of ’20 Irish Entrepreneurs to watch in 2020’ by Think Business.</p>
 
 <p>She was the Winner of Image Magazine's Businesswoman of the Year for Digital, Science and Technology in 2017, and of the People’s Choice Award at the 2018 TV Connect Awards in London.</p>
+
+<a href="https://www.linkedin.com/in/clairemchugh/">LinkedIn</a>
