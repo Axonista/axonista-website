@@ -4,12 +4,14 @@ var     gulp            = require('gulp'),
         cssnano         = require('gulp-cssnano'),
         watch           = require('gulp-watch');
 
+sass.compiler = require('node-sass');
+
 gulp.task('scss', function() {
         return gulp.src('sass/*.scss')
-                .pipe(sass())
+                .pipe(sass().on('error', sass.logError))
                 .pipe(cssnano())
                 .pipe(rename({extname:".css"}))
-                .pipe(gulp.dest('stylesheets'))
+                .pipe(gulp.dest('./stylesheets'))
 })
 
 gulp.task('build',gulp.series('scss'));
