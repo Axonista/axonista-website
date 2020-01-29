@@ -1,6 +1,7 @@
 ---
 title: About Axonista
 date: 2020-01-29 10:34:00 Z
+image: "/uploads/placeholder-2.jpg"
 layout: bio
 ---
 
