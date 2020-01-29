@@ -1,6 +1,7 @@
 ---
 title: About Axonista
 date: 2020-01-29 10:34:00 Z
+layout: bio
 ---
 
 <p>Axonista is an interactive video technology company. We’re building an easy-to-use suite of tools that enables creative storytellers at enterprise media companies and brands to tell stories in entirely new ways that build deeper and more valuable connections with their audiences.</p>
