@@ -1,4 +1,4 @@
-.bio-content-section {
+.basic-content-section {
   display: flex;
   justify-content: center;
   background: $white!important;
@@ -35,7 +35,7 @@
       margin-bottom: 10px;
   }
 
-  .bio-photo{
+  .image{
     flex: 0 0 214px;
     float: left;
     margin: 0 20px;
@@ -46,7 +46,7 @@
 
     }
 
-  .bio-content{
+  .content{
     max-width: 760px;
     margin: 0 20px;
 
