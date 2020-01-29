@@ -2,6 +2,14 @@
 title: About Axonista
 date: 2020-01-29 10:34:00 Z
 image: "/uploads/placeholder-2.jpg"
+image-alt: 
+image_srcset:
+- path: "/assets/images/bio/claire-mchugh-profile.png"
+  multiplier: 1
+- path: "/assets/images/bio/claire-mchugh-profile@2x.png"
+  multiplier: 2
+- path: "/assets/images/bio/claire-mchugh-profile@3x.png"
+  multiplier: 3
 layout: bio
 ---
 
