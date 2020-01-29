@@ -3,8 +3,8 @@ title: Claire McHugh
 date: 2019-07-04 14:54:00 Z
 subtitle: CEO & Co-founder, Axonista
 layout: basic-content-page
-image: /assets/images/bio/claire-mchugh-profile.png
-image_alt: 'Claire McHugh picture'
+image: "/assets/images/bio/claire-mchugh-profile.png"
+image_alt: Claire McHugh picture
 image_srcset:
 - path: "/assets/images/bio/claire-mchugh-profile.png"
   multiplier: 1
