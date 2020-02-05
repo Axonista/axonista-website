@@ -1,7 +1,7 @@
 ---
 title: Claire McHugh
 date: 2019-07-04 14:54:00 Z
-subtitle: CEO & Co-founder, Axonista
+subtitle: 
 image: "/assets/images/bio/claire-mchugh-profile.png"
 image_alt: Claire McHugh picture
 image_srcset:
@@ -13,6 +13,8 @@ image_srcset:
   multiplier: 3
 layout: basic-content-page
 ---
+
+<p>Claire McHugh is the CEO and co-Founder of Axonista.</p>
 
 <p>Axonista is an interactive video technology company. We’re building an easy-to-use suite of tools that enables creative storytellers at enterprise media companies and brands tell stories in entirely new ways that build deeper and more valuable connections with their audiences.</p>
 
