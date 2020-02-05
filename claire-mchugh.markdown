@@ -14,8 +14,6 @@ image_srcset:
 layout: basic-content-page
 ---
 
-<p>Claire McHugh is the CEO and co-Founder of Axonista.</p>
-
 <p>Axonista is an interactive video technology company. We’re building an easy-to-use suite of tools that enables creative storytellers at enterprise media companies and brands tell stories in entirely new ways that build deeper and more valuable connections with their audiences.</p>
 
 <p>Axonista’s technology is the engine behind some of the world’s most popular video streaming apps, used by hundreds of thousands of people every day around the world. Axonista has offices in Dublin and New York, has customers including QVC, Virgin Media, and the Irish Film Institute, and employs a team of 30 people.</p>
