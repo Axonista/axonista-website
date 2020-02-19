@@ -11,6 +11,9 @@ current-openings:
   - role: Scrum Master
     location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
     jobbio-url: https://jobbio.com/companies/axonista/jobs/scrum-master-27?source=axonista_job
+  - role: UX/UI Designer
+    location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/uxui-designer-16?source=axonista_job
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
