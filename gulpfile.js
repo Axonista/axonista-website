@@ -1,7 +1,8 @@
 var     gulp            = require('gulp'),
+        postcss         = require('gulp-postcss'),
         sass            = require('gulp-sass'),
         rename          = require('gulp-rename'),
-        cssnano         = require('gulp-cssnano'),
+        minify          = require('cssnano'),
         watch           = require('gulp-watch');
 
 sass.compiler = require('node-sass');
@@ -9,7 +10,9 @@ sass.compiler = require('node-sass');
 gulp.task('scss', function() {
         return gulp.src('sass/*.scss')
                 .pipe(sass().on('error', sass.logError))
-                .pipe(cssnano())
+                .pipe(postcss([
+                        minify()
+                ]))
                 .pipe(rename({extname:".css"}))
                 .pipe(gulp.dest('./stylesheets'))
 })
