@@ -4417,3 +4417,21 @@ section.image-banner.threeplayer {
     align-self: flex-end;
     margin-bottom: 1em
 }
+
+.basic-content-section.fashion-relief img {
+    max-width: 100%;
+    margin: 0 0 1em 0;
+}
+
+.basic-content-section.fashion-relief em {
+    font-style: italic;
+}
+
+.basic-content-section.fashion-relief a {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.basic-content-section.fashion-relief strong {
+    font-weight: 500;
+}

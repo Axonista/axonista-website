@@ -3,8 +3,6 @@ title: Fashion Relief and Axonista
 subtitle: When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising campaign to pivot and become a shoppable video event.
 date: 2020-06-09 17:00:00 Z
 layout: fashion-relief
-image: "/assets/images/axonista-logo.png"
-image_alt: Axonista logo
 ---
 
 <p>COVID-19 has had a profound impact on the global events calendar. Since the outbreak began, a huge number of high profile shows, music festivals and sporting events have been postponed or cancelled indefinitely. A series of events that had been severely impacted was sustainable fashion fundraiser ‘Fashion Relief 2020’ supported by Oxfam Ireland. However, using Axonista's interactive video platform Ediflo, this event has been able to pivot to digital and raise vital funds for a great cause.</p>
@@ -15,13 +13,13 @@ image_alt: Axonista logo
 
 <p>The first Fashion Relief took place in Dublin’s RDS in May 2018 and has since gone nationwide, with annual events in Dublin, Cork and Galway. To date, over €200,000 has been raised by Fashion Relief. These funds have all gone into supporting Oxfam’s work in some of the world’s most poverty-stricken countries. Oxfam also provides vital aid to countries affected by disaster.</p>
 
-<h3>Pivoting from Offline Event to Online Shoppable Video</h3>
+<h2>Pivoting from Offline Event to Online Shoppable Video</h2>
 
 <p>2020 was shaping up to be the charity’s biggest year yet when COVID-19 restrictions disrupted their entire schedule. When this occurred, Lorraine and Oxfam reached out to Axonista to look at how Ediflo, our award-winning interactive video platform, could bring the event online. Together, Fashion Relief and Oxfam wanted to translate the catwalks, rails and product demonstrations to the small screen and allow viewers to shop from the comfort of their own homes.</p>
 
 <p>Having endured a string of cancellations, Fashion Relief and Oxfam Ireland was able to harness the power of video and reach an even larger online audience. The team at Fashion Relief worked hard in lockdown to create the video assets which were then curated in Ediflo. A number of interactive features and ecommerce functionalities have transformed Fashion Relief into an end-to-end video shopping experience - Fashion Relief TV.</p>
 
-<h3>Providing a Shoppable Video Solution - Fashion Relief TV</h3>
+<h2>Providing a Shoppable Video Solution - Fashion Relief TV</h2>
 
 <p>On the 12th of June 2020, Fashion Relief is launching Fashion Relief TV. Built on the Ediflo platform, Fashion Relief TV is an always-on shoppable video platform that enables viewers to watch back and shop at any time. Each 30 minute programme allows viewers to click and buy from any device.</p>
 
