@@ -4419,8 +4419,9 @@ section.image-banner.threeplayer {
 }
 
 .basic-content-section.fashion-relief img {
+    display: flex;
     max-width: 100%;
-    margin: 0 0 1em 0;
+    margin: 0 auto 1em auto;
 }
 
 .basic-content-section.fashion-relief em {
