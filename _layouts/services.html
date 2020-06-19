@@ -3,71 +3,73 @@
 
 <div id="full-screen-nav">
     <ul>
-      <li><a class="animsition-link" href="{{ site.url }}/#products">Products</a></li>
+        <li><a class="animsition-link"href="{{ site.url }}/#products">Products</a></li>
         <li><a class="animsition-link" href="/customers">Customers</a></li>
         <li><a class="animsition-link" href="https://medium.com/axonista-hq" target="_blank">Blog</a></li>
         <li><a class="anchor-link" href="#contact">Contact</a></li>
     </ul>
 </div>
 
-  <header class="case-study services">
+<header class="case-study services">
     <div id="main-content">
-      <h1>Customers</h1>
-      <p>{{ page.content }}</p>
+        <h1>Customers</h1>
+        <p>{{ page.content }}</p>
     </div>
-  </header>
+</header>
 
-  <section id="work" class='case-study qvc-tv'>
-            <div class="info">
-      <div class="atvImg">
-        <!--<img class="logo" src="/assets/images/case-studies/qvc/qvc-icon-apple-tv-flat.png"/>-->
-        <div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
-        <div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
-      </div>
-      <p>{{ page.qvc-description }}</p>
-      <blockquote>{{ page.qvc-quote.text }}</blockquote>
-                <p class="subtext">&mdash; {{ page.qvc-quote.author }}</p>
-      <a class='case-button on-light animsition-link' href="/qvc-apple-tv.html">Read more about it</a>
-    </div>
-    <div class="featured">
-      <img src="/assets/images/case-studies/qvc/qvc-apple-tv.jpg"/>
-    </div>
-  </section>
-  <section class='case-study qvc'>
-    <div class="background-image"></div>
-            <div class="info">
-                <img class="logo" src="/assets/images/case-studies/qvc/qvc-logo-white.png" alt="QVC Logo">
-                <p>{{ page.qvc-ipad-description }}</p>
-                <a class="store-link" href="https://itunes.apple.com/gb/app/qvc-ipad-edition/id848357388?mt=8"><img src="/assets/images/app-store.svg" alt="Download QVC on the App Store"/></a>
-            </div>
-    <div class="featured">
-      <img src="/assets/images/case-studies/qvc/qvc-featured-image.png"/>
-    </div>
-  </section>
-  <section class='case-study ifiplayer'>
-      <div class="background-image"></div>
-      <div class="info">
+<section class="case-study qvc-tv" id="work">
+    <div class="info">
         <div class="atvImg">
-          <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
-          <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
+            <!--<img class="logo" src="/assets/images/case-studies/qvc/qvc-icon-apple-tv-flat.png"/>-->
+            <div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-back.png"></div>
+            <div class="atvImg-layer" data-img="/assets/images/case-studies/qvc/qvc-icon-apple-tv-front.png"></div>
+        </div>
+        <p>{{ page.qvc-description }}</p>
+        <blockquote>{{ page.qvc-quote.text }}</blockquote>
+        <p class="subtext">&mdash;
+            {{ page.qvc-quote.author }}</p>
+        <a class="case-button on-light animsition-link" href="/qvc-apple-tv.html">Read more about it</a>
+    </div>
+    <div class="featured">
+        <img src="/assets/images/case-studies/qvc/qvc-apple-tv.jpg"/>
+    </div>
+</section>
+<section class="case-study qvc">
+    <div class="background-image"></div>
+    <div class="info">
+        <img alt="QVC Logo" class="logo" src="/assets/images/case-studies/qvc/qvc-logo-white.png">
+        <p>{{ page.qvc-ipad-description }}</p>
+        <a class="store-link" href="https://itunes.apple.com/gb/app/qvc-ipad-edition/id848357388?mt=8"><img alt="Download QVC on the App Store" src="/assets/images/app-store.svg"/></a>
+    </div>
+    <div class="featured">
+        <img src="/assets/images/case-studies/qvc/qvc-featured-image.png"/>
+    </div>
+</section>
+<section class="case-study ifiplayer">
+    <div class="background-image"></div>
+    <div class="info">
+        <div class="atvImg">
+            <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
+            <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
         </div>
         <p>{{ page.ifi-player-description }}</p>
-        <a class='case-button on-light animsition-link' href="/ifi-player.html">Read more about it</a>
-      </div>
-      <div class="featured">
-        <img src="/assets/images/case-studies/ifi-player/ifi-android-family.png" />
-      </div>
-  </section>
-  <section class='case-study threeplayer'>
-      <div class="background-image"></div>
-      <div class="info">
-          <img class="logo" src="/assets/images/case-studies/three-player/three-player-logo-colour.png" alt="three-player Logo">
-          <p>{{ page.three-player-description }}</p>
-          <a class="store-link" href="https://itunes.apple.com/ie/app/three-player/id602597705?mt=8"><img src="/assets/images/app-store.svg" alt="Download three-player on the App Store"/></a>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.axonista.threeplayer">
-              <img src="/assets/images/play-store.png" alt="Get it on Google Play"/>
-          </a>
-      </div>
-  </section>
+        <a class="case-button on-light animsition-link" href="/ifi-player.html">Read more about it</a>
+    </div>
+    <div class="featured">
+        <img src="/assets/images/case-studies/ifi-player/ifi-android-family.png"/>
+    </div>
+</section>
+<section class="case-study threeplayer">
+    <div class="background-image"></div>
+    <div class="info">
+        <img alt="three-player Logo" class="logo" src="/assets/images/case-studies/three-player/three-player-logo-colour.png">
+        <p>{{ page.three-player-description }}</p>
+        <a class="store-link" href="https://itunes.apple.com/ie/app/three-player/id602597705?mt=8"><img alt="Download three-player on the App Store" src="/assets/images/app-store.svg"/></a>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.axonista.threeplayer">
+            <img alt="Get it on Google Play" src="/assets/images/play-store.png"/>
+        </a>
+    </div>
+</section>
 
-  {% include footer.html %}
+{% include blog-cards.html %}
+{% include footer.html %}
