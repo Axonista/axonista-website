@@ -1,0 +1,7 @@
+.blog-list {
+    padding-bottom: 100px;
+
+    @include media($tablet) {
+        padding-bottom: 0;
+    }
+}
