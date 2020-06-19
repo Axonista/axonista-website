@@ -4,4 +4,15 @@
     @include media($tablet) {
         padding-bottom: 0;
     }
+
+    li {
+        display   : flex;
+        max-height: 150px;
+
+        img {
+            object-fit  : contain;
+            margin-right: 20px;
+            /* */
+        }
+    }
 }
