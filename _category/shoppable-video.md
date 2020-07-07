@@ -1,4 +1,6 @@
 ---
-tag: "Shoppable Video"
-title: "Shoppable Video"
+title: Shoppable Video
+tags:
+- Shoppable Video
 ---
+

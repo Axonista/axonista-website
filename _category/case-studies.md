@@ -1,4 +1,6 @@
 ---
-tag: "Case Studies"
-title: "Case Studies"
+title: Case Studies
+tags:
+- Case Studies
 ---
+

@@ -1,4 +1,6 @@
 ---
-tag: "Interactive Video"
-title: "Interactive Video"
+title: Interactive Video
+tags:
+- Interactive Video
 ---
+

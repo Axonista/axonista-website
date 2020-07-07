@@ -1,4 +1,6 @@
 ---
-tag: "Rerun"
 title: Rerun
+tags:
+- Rerun
 ---
+
