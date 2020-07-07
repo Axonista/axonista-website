@@ -27,6 +27,19 @@
         img {
             object-fit  : contain;
             margin-right: 20px;
+            max-width   : 250px;
+        }
+
+        p {
+            display           : -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+
+            /* max number of lines to show */
+            text-overflow: ellipsis;
+            white-space  : pre-line;
+            overflow     : hidden;
+
         }
     }
 
@@ -66,17 +79,6 @@
 
             img {
                 max-width: 20vw;
-            }
-
-            p {
-                display           : -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                /* max number of lines to show */
-                text-overflow     : ellipsis;
-                white-space       : pre-line;
-                overflow          : hidden;
-
             }
         }
 
