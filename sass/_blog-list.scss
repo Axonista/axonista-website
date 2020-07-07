@@ -1,9 +1,6 @@
+.blog-post .blog-list,
 .blog-list {
     padding-bottom: 100px;
-
-    @include media($tablet) {
-        padding-bottom: 0;
-    }
 
     a {
         text-decoration: none !important;
@@ -32,4 +29,60 @@
             margin-right: 20px;
         }
     }
+
+    .content {
+        .pagination {
+            display        : table;
+            justify-content: center;
+            align-items    : center;
+            margin         : 0 auto;
+
+            a,
+            em,
+            span {
+                margin: 0 3px;
+            }
+
+
+            a {
+                text-decoration: underline !important;
+
+                &:hover {
+                    text-decoration: none !important;
+                }
+            }
+
+            em {
+                font-weight: bold;
+            }
+        }
+    }
+
+    @include media($tablet) {
+        padding-bottom: 0;
+
+        li {
+            margin: 20px 0;
+
+            img {
+                max-width: 20vw;
+            }
+
+            p {
+                display           : -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                /* max number of lines to show */
+                text-overflow     : ellipsis;
+                white-space       : pre-line;
+                overflow          : hidden;
+
+            }
+        }
+
+        .content {
+            padding-bottom: 30px;
+        }
+    }
+
 }

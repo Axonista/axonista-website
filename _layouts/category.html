@@ -2,6 +2,8 @@
 {% include navbar.html %}
 
 <section class="basic-content-section category">
+    <h1>Category:
+        {{page.title}}</h1>
     {% for post in site.categories[page.tag] %}
         <div class="post">
             <a href="{{site.baseurl}}{{post.url}}">

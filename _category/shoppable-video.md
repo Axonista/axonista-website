@@ -1,4 +1,4 @@
 ---
-tag: shoppable-video
+tag: "Shoppable Video"
 title: "Shoppable Video"
 ---
