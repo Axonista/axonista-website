@@ -1,50 +1,54 @@
 {% include header.html %}
 {% include navbar.html %}
 
-  <header class="case-study ifi-player">
+<header class="case-study ifi-player">
     <div id="main-content">
-      <div class="atvImg">
-        <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
-        <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
-      </div>
-      <h1>{{ page.headline }}</h1>
-      <p>{{ page.mission-statement }}</p>
+        <div class="atvImg">
+            <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__background--small.png"></div>
+            <div class="atvImg-layer" data-img="/assets/images/case-studies/ifi-player/app-icon__foreground--small.png"></div>
+        </div>
+        <h1>{{ page.headline }}</h1>
+        <p>{{ page.mission-statement }}</p>
     </div>
-  </header>
+</header>
 
-  <section class="ediflo">
+<section class="ediflo">
     <div class="features">
-      <ul class="rig columns-3">
-        <li>
-          <h2>About the IFI</h2>
-          <p>{{ page.about-the-customer }}</p>
-        </li>
-        <li>
-          <h2>Platforms</h2>
-          <p>{{ page.platforms }}</p>
-        </li>
-        <li>
-          <h2>Get the apps</h2>
-          <p><a class="store-link" href="https://itunes.apple.com/ie/app/ifi-player/id1259914642?mt=8"><img src="/assets/images/app-store.svg" alt="Download three-player on the App Store"/></a>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.axonista.ifi&hl=en">
-              <img src="/assets/images/play-store.png" alt="Get it on Google Play"/>
-          </a></p>
-        </li>
-      </ul>
+        <ul class="rig columns-3">
+            <li>
+                <h2>About the IFI</h2>
+                <p>{{ page.about-the-customer }}</p>
+            </li>
+            <li>
+                <h2>Platforms</h2>
+                <p>{{ page.platforms }}</p>
+            </li>
+            <li>
+                <h2>Get the apps</h2>
+                <p>
+                    <a class="store-link" href="https://itunes.apple.com/ie/app/ifi-player/id1259914642?mt=8"><img alt="Download three-player on the App Store" src="/assets/images/app-store.svg"/></a>
+                    <a class="store-link" href="https://play.google.com/store/apps/details?id=com.axonista.ifi&hl=en">
+                        <img alt="Get it on Google Play" src="/assets/images/play-store.png"/>
+                    </a>
+                </p>
+            </li>
+        </ul>
     </div>
-  </section>
+</section>
 
-  <section class="image-banner clear dark">
-      <blockquote>"{{ page.customer-testimonial.text }}"</blockquote>
-      <p class="subtext">&mdash; {{ page.customer-testimonial.author }}</p>
-  </section>
+<section class="image-banner clear dark">
+    <blockquote>"{{ page.customer-testimonial.text }}"</blockquote>
+    <p class="subtext">&mdash;
+        {{ page.customer-testimonial.author }}</p>
+</section>
 
-  <section class="image-block">
-    <img src="/assets/images/case-studies/ifi-player/ifi-android-family.jpg" />
-  </section>
+<section class="image-block">
+    <img src="/assets/images/case-studies/ifi-player/ifi-android-family.jpg"/>
+</section>
 
-  <section class="image-banner clear dark">
-      <p class="lead">{{ page.outcome }}</p>
-  </section>
+<section class="image-banner clear dark">
+    <p class="lead">{{ page.outcome }}</p>
+</section>
 
-  {% include footer.html %}
+{% include blog-cards.html %}
+{% include footer.html %}

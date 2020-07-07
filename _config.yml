@@ -2,12 +2,22 @@
 title: Axonista
 timezone: UTC
 collections:
+  category:
+    title: Category
+    output: true
+    permalink: "/blog/category/:title"
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: category
+  values:
+    layout: category
 description: Powering video commerce for some of the world's leading video and TV
   companies.
 footer-description: Powering video commerce for some of the world's leading video
@@ -38,3 +48,7 @@ markdown: kramdown
 sass:
   style: compact
 url: https://www.axonista.com
+gems:
+- jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num"

@@ -1,67 +1,75 @@
 .basic-content-section {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  background: $white!important;
-  padding-top: 160px;
-  flex-direction: row;
+  background     : $white !important;
+  padding-top    : 160px;
+  flex-direction : row;
 
-    @include media($tablet) {
-      padding-top:4em;
-      flex-direction: column;
-      }
-
-  h1 {
-    font-family:$font-family-medium;
-    font-size: 32px;
-    font-weight:500;
-    color: $black;
-    text-align: left;
-    align-self: left;
-    margin-bottom: 0;
-    margin-top: 40px;
-    line-height: 1.4em;
-
-      @include media($tablet) {
-        margin-top: 20px;
-        }
-
-    }
-
-  h2 {
-      font-family:$font-family-medium;
-      font-size: 24px;
-      font-weight:500;
-      color: $black;
-      margin-bottom: 10px;
+  @include media($tablet) {
+    padding-top   : 4em;
+    flex-direction: column;
   }
 
-  .image{
-    flex: 0 0 214px;
-    float: left;
+  h1 {
+    font-family  : $font-family-medium;
+    font-size    : 32px;
+    font-weight  : 500;
+    color        : $black;
+    text-align   : left;
+    align-self   : left;
+    margin-bottom: 0;
+    margin-top   : 40px;
+    line-height  : 1.4em;
+
+    @include media($tablet) {
+      margin-top: 20px;
+    }
+
+  }
+
+  h2 {
+    font-family  : $font-family-medium;
+    font-size    : 24px;
+    font-weight  : 500;
+    color        : $black;
+    margin-bottom: 10px;
+  }
+
+  .image {
+    flex  : 0 0 214px;
+    float : left;
     margin: 0 20px;
 
     @include media($tablet) {
       margin: 20px 20px 0 20px;
-      }
-
     }
 
-  .content{
-    max-width: 760px;
-    margin: 0 20px;
+  }
 
-    a, p{
-      font-size: 1.2em;
+  .content {
+    max-width: 760px;
+    margin   : 0 20px;
+
+    a,
+    p {
+      font-size  : 1.2em;
       line-height: 1.7em;
-      max-width: none;
+      max-width  : none;
+
+      @include media($tablet) {
+        font-size  : unset;
+        line-height: unset;
       }
-    a{
+    }
+
+    a {
       text-decoration: underline;
+
       &:hover {
         text-decoration: none;
       }
-      }
-
     }
+
+  }
 
 }
