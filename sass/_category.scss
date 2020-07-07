@@ -1,0 +1,21 @@
+.basic-content-section {
+    &.category {
+        display       : flex;
+        flex-flow     : column nowrap;
+        align-items   : center;
+        padding-bottom: 60px;
+
+        .post {
+            h2 {
+                text-decoration: underline;
+            }
+
+            &:hover {
+                h2 {
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}
