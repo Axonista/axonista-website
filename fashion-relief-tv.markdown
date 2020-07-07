@@ -1,7 +1,8 @@
 ---
 title: Fashion Relief and Axonista
-subtitle: When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising campaign to pivot and become a shoppable video event.
 date: 2020-06-09 17:00:00 Z
+subtitle: When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising
+  campaign to pivot and become a shoppable video event.
 layout: fashion-relief
 ---
 
@@ -31,6 +32,6 @@ layout: fashion-relief
 
 <p>Axonista’s CEO Claire also spoke of what providing a solution to such a great cause has meant to Axonista. <em>"We were delighted to bring our interactive video technology to the aid of Fashion Relief. We’ve learned a lot about shoppable video through our work with global brands like QVC and the Home Shopping Network. This campaign is truly remarkable, both for its inherent sustainability and meaningful impact on communities ravaged by climate change, who need our support now more than ever."</em></p>
 
-<p>At Axonista, we’re very proud to have been able to help both Fashion Relief and Oxfam Ireland. To see the product in action and lend your support to Oxfam’s mission you can visit <a href="https://www.fashionrelief.ie" target="_blank" title="Fashion Relief website">fashionrelief.ie</a>.</p>
+<p>At Axonista, we’re very proud to have been able to help both Fashion Relief and Oxfam Ireland. To see the product in action and lend your support to Oxfam’s mission you can visit <a href="https://stories.oxfamireland.org/fashion-relief-tv/index.html" target="_blank" title="Fashion Relief website">Fashion Relief</a>.</p>
 
 <p><strong>Want to read some more about how our technology is helping customers embrace video interactivity and shoppable video? Visit <a href="https://www.ediflo.tv/blog/the-ifi-player-case-study" title="IFI Player case study" target="_blank">ediflo.tv/blog/the-ifi-player-case-study</a> and see how Irish Film Institute's extensive Irish film collection was brought online thanks to Ediflo.</strong></p>
