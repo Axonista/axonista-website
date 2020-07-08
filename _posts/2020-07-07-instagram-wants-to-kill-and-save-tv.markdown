@@ -2,11 +2,12 @@
 title: Instagram wants to kill—and save—TV
 date: 2020-07-07 17:51:00 Z
 categories:
-  - OTT
+- OTT
+tags:
+- OTT
 featured-image: "/uploads/1_VtOOTiphfi_-vCc9gMqBPQ.gif"
 featured-image-alt: Kevin Systrom gif
 author: Craig Philips
-tags: ["OTT"]
 ---
 
 ICYMI, this week Kevin Systrom—CEO/Cofounder of Instagram—[announced the release](https://instagram-press.com/blog/2018/06/20/welcome-to-igtv/) of IGTV. He called it “most exciting feature to date”.
