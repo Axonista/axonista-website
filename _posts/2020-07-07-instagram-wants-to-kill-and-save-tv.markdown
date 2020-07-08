@@ -2,10 +2,11 @@
 title: Instagram wants to kill—and save—TV
 date: 2020-07-07 17:51:00 Z
 categories:
-- OTT
+  - OTT
 featured-image: "/uploads/1_VtOOTiphfi_-vCc9gMqBPQ.gif"
 featured-image-alt: Kevin Systrom gif
 author: Craig Philips
+tags: ["OTT"]
 ---
 
 ICYMI, this week Kevin Systrom—CEO/Cofounder of Instagram—[announced the release](https://instagram-press.com/blog/2018/06/20/welcome-to-igtv/) of IGTV. He called it “most exciting feature to date”.
@@ -26,7 +27,7 @@ They launched video in 2013. Instagram stories in 2016. And now, exactly 5 years
 
 First, as Kevin said, teens are watching 40% less TV than 5 years ago. Second, Instagram has seen a 60% increase in video in the last year alone.
 
-So, TV is dying and/or dead. And video is massive and growing. The obvious response for Instagram is to invest in content creators by building the environment for them to share more, without the time limitations, and being able to say you have a TV channel, instead of just an account.*(Sounds so much cooler)*
+So, TV is dying and/or dead. And video is massive and growing. The obvious response for Instagram is to invest in content creators by building the environment for them to share more, without the time limitations, and being able to say you have a TV channel, instead of just an account._(Sounds so much cooler)_
 
 And, in the process, they’re putting a nail in TV’s coffin. Or, making TV cool again. Your choice.
 
