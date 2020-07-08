@@ -18,6 +18,16 @@ defaults:
     type: category
   values:
     layout: category
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: drafts
+  values:
+    layout: post
 description: Powering video commerce for some of the world's leading video and TV
   companies.
 footer-description: Powering video commerce for some of the world's leading video
