@@ -9,6 +9,7 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: "/blog/:title"
   uploads:
     title: Uploads
     output: true
@@ -18,6 +19,16 @@ defaults:
       type: category
     values:
       layout: category
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
 description:
   Powering video commerce for some of the world's leading video and TV
   companies.
