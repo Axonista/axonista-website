@@ -21,14 +21,14 @@ defaults:
       layout: category
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
   - scope:
       path: ""
-      type: "drafts"
+      type: drafts
     values:
-      layout: "post"
+      layout: post
 description:
   Powering video commerce for some of the world's leading video and TV
   companies.
