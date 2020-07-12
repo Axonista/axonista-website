@@ -9,6 +9,7 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: "/blog/:category/:title"
   uploads:
     title: Uploads
     output: true
@@ -23,7 +24,6 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: "/:category/:title"
   - scope:
       path: ""
       type: drafts
