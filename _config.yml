@@ -9,63 +9,56 @@ collections:
   posts:
     title: Posts
     output: true
-    permalink: "/:category/:title"
   uploads:
     title: Uploads
     output: true
 defaults:
-  - scope:
-      path: ""
-      type: category
-    values:
-      layout: category
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: drafts
-    values:
-      layout: post
-description:
-  Powering video commerce for some of the world's leading video and TV
+- scope:
+    path: ''
+    type: category
+  values:
+    layout: category
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: drafts
+  values:
+    layout: post
+description: Powering video commerce for some of the world's leading video and TV
   companies.
-footer-description:
-  Powering video commerce for some of the world's leading video
+footer-description: Powering video commerce for some of the world's leading video
   and TV companies.
 hero-banner: Launching an OTT app? - We'd love to help with your plans!
 cards:
   heading: Our Thoughts on Video
-  subheading:
-    We love to share our thoughts on the industry, here’s all the latest
+  subheading: We love to share our thoughts on the industry, here’s all the latest
     from us&hellip;
   first-card:
     heading: Over the Top
-    description:
-      Global industry thought leaders from Conde Nast, Nasdaq, and Machinima
+    description: Global industry thought leaders from Conde Nast, Nasdaq, and Machinima
       share their thoughts on the future of brand engagement with our hosts Jocelyn
       and Dermot.
   second-card:
     heading: Rerun
-    description:
-      Want a quick refresh on the latest news from the video industry?
+    description: Want a quick refresh on the latest news from the video industry?
       Our in-house team of experts share their favourite stories each week, on OTT,
       VR, eSports, social TV, and more.
   third-card:
     heading: The Fourth Wall
-    description:
-      Our team of designers thinks out loud, blogging about our industry
+    description: Our team of designers thinks out loud, blogging about our industry
       and the world of interactive digital media. Read their latest articles and join
       in the conversation.
 email: connect@axonista.com
-baseurl:
+baseurl: 
 markdown: kramdown
 sass:
   style: compact
 url: https://www.axonista.com
 gems:
-  - jekyll-paginate
+- jekyll-paginate
 paginate: 5
 paginate_path: "/blog/page:num"
