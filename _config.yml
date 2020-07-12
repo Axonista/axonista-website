@@ -9,7 +9,7 @@ collections:
   posts:
     title: Posts
     output: true
-    permalink: "/blog/:category/:title"
+    permalink: "/:categories/:title"
   uploads:
     title: Uploads
     output: true
