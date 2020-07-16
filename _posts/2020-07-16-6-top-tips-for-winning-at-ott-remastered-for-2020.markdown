@@ -1,7 +1,7 @@
 ---
 title: 6 Top Tips for Winning at OTT, Remastered for 2020
 date: 2020-07-16 15:44:00 Z
-permalink: "/ott/six-top-tips-for-winning-at-OTT-remastered-for-2020"
+permalink: "/ott/six-top-tips-for-winning-at-OTT-remastered-for-2020/"
 categories:
 - OTT
 tags:
