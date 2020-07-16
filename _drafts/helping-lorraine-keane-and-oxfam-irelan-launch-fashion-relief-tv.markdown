@@ -1,7 +1,7 @@
 ---
 title: Helping Lorraine Keane and Oxfam Irelan Launch Fashion Relief TV
 date: 2020-07-16 17:02:00 Z
-permalink: "/shoppable-video/fashion-relief-and-axonista"
+permalink: "/shoppable-video/fashion-relief-tv-and-axonista/"
 categories:
 - Shoppable Video
 tags:
