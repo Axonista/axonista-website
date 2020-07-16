@@ -15,7 +15,7 @@ tags:
 
 # ![OTT Video Applications Axonista.jpg](/uploads/OTT%20Video%20Applications%20Axonista.jpg)
 
-# The age of OTT is here: 
+# The age of OTT is here:
 
 # 6 top tips for winning at OTT, remastered for 2020
 
@@ -35,7 +35,6 @@ Here are our 6 top tips for winning at OTT, revised and remastered for 2020.
 ## 1.Don’t let interactivity get in the way
 
 Interactive OTT enables new revenue streams, such as shoppable video, individually targeted advertising, and clever non-intrusive sponsorships. It’s ideally suited for key verticals like fashion, sports merchandise, news and entertainment. If you can engage with a viewer when they are in the moment, you can tap into truly incredible conversion rates. We drove 25% conversion to basket in a recent shoppable video app for a fashion client.
-
 
 However if your video commerce functionality isn’t seamless or easy to use, it’s just going to get in the way and have the opposite effect.
 
@@ -67,6 +66,6 @@ You might have an awesome interactive video experience with clever yet subtle in
 
 Never get so caught up in the technology that you forget about what’s important. OTT applications are making what once seemed impossible, possible. However, that doesn’t mean that OTT is now the narrative. The technology is what enables the experience but it shouldn’t ever be the totality of the experience. It is up to you to make sure that the content and the art of storytelling is at the heart of things. You need to demonstrate that you understand and value this content enough to create authentic user experiences. This, and only this will ensure your viewers connect deeply and with meaning to the product that brings them closer to the story.
 
-The future of OTT is now, and there’s everything to play for, with the right commitment to exceptional user experiences that respect the content, and the channel. 
+The future of OTT is now, and there’s everything to play for, with the right commitment to exceptional user experiences that respect the content, and the channel.
 
 The possibilities for interactive storytelling experiences are endless. Let’s set the bar high!
