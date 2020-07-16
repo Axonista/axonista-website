@@ -39,4 +39,4 @@ For anyone interested in OTT, interactive video, shoppable video and the art of 
 
 Check out the interview in full below!
 
-[https://www.youtube.com/watch?v=FP2HoNgRpIk&feature=youtu.be](https://www.youtube.com/watch?v=FP2HoNgRpIk&feature=youtu.be)
+https://www.youtube.com/watch?v=FP2HoNgRpIk&feature=youtu.be
