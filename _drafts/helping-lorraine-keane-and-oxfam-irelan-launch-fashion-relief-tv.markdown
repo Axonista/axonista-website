@@ -13,9 +13,9 @@ tags:
 - Shoppable Content
 ---
 
-## Helping Lorraine Keane and Oxfam Ireland Launch Fashion Relief TV
-
 When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising campaign to pivot and become a shoppable video event.
+
+![axonista-shoppable-video.png](/uploads/axonista-shoppable-video.png)
 
 COVID-19 has had a profound impact on the global events calendar. Since the outbreak began, a huge number of high profile shows, music festivals and sporting events have been postponed or cancelled indefinitely. A series of events that had been severely impacted was sustainable fashion fundraiser ‘Fashion Relief 2020’ supported by Oxfam Ireland. However, using Axonista's interactive video platform Ediflo, this event has been able to pivot to digital and raise vital funds for a great cause.
 
