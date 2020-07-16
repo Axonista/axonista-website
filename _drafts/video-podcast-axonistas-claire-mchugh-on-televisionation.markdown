@@ -21,7 +21,7 @@ Over the course of a wide-ranging 30 minute interview, Claire got a chance to ta
 
 Televisionation is a new video/audio podcast from InteractiveTV Today (ITVT). Founded in 1998 by Tracy Swedlow, InteractiveTV Today is the most widely read and trusted source for news and analysis of the interactive/multi-platform television space. Televisionation, which was first launched on March 30th at the early stages of the lockdown, explores how the advanced television industry is overcoming the challenges posed by the COVID-19 pandemic.
 
-To date, there have been over 50 episodes of the show with “prominent figures in the advanced television” industry. Previous guests have included; **Rose Adkins Hulse**, CEO of ScreenHits TV. **Gerrit Niemeijer**, CTO of Ampersand (formerly NCC Media), a data-driven TV ad sales and technology company, co-owned by Comcast, Charter and Cox. **Yvette Kanouff**, winner of the Television Academy's 2020 Lifetime Achievement Emmy for her work in television technology at Time Warner's Full Service Network, SeaChange, Cablevision and Cisco. **Rob Gabel**, Co-Founder and CEO of social-video measurement and analytics company, Tubular Labs. Also on the show in May were **Scott Ehrlich and Rob Weisbord** of Sinclair Broadcast Group, an organisation that Axonista has worked with extensively in the past.
+To date, there have been over 50 episodes of the show with prominent figures in the advanced television industry. Previous guests have included; **Rose Adkins Hulse**, CEO of ScreenHits TV. **Gerrit Niemeijer**, CTO of Ampersand (formerly NCC Media), a data-driven TV ad sales and technology company, co-owned by Comcast, Charter and Cox. **Yvette Kanouff**, winner of the Television Academy's 2020 Lifetime Achievement Emmy for her work in television technology at Time Warner's Full Service Network, SeaChange, Cablevision and Cisco. **Rob Gabel**, Co-Founder and CEO of social-video measurement and analytics company, Tubular Labs. Also on the show in May were **Scott Ehrlich and Rob Weisbord** of Sinclair Broadcast Group, an organisation that Axonista has worked with extensively in the past.
 
 ## Covered in this episode
 
@@ -33,7 +33,7 @@ For anyone interested in OTT, interactive video, shoppable video and the art of 
 
 * **Ohio 24/7** - Claire discusses Axonista’s recent work on Sinclair’s Ohio 24/7 streaming news app with Tracey, an Ohio native. We hear how Axonista first got in touch and what interactive video means for local news networks.
 
-* **Waterbear and environmental activism** - Claire shares how Axonista has partnered with Dutch factual content producers Off The Fence on an interactive video-on-demand platform “dedicated to our future on this planet”. The idea is that the content streamed on WaterBear will encourage users to take action on local and global science, education and environmental initiatives, with WaterBear connecting viewers to NGOs.
+* **Waterbear and environmental activism** - Claire shares how Axonista has partnered with Dutch factual content producers 'Off The Fence' on an interactive video-on-demand platform “dedicated to our future on this planet”. The idea is that the content streamed on WaterBear will encourage users to take action on local and global science, education and environmental initiatives, with WaterBear connecting viewers to NGOs.
 
 * **And all the latest news from Axonista**!
 
