@@ -1,7 +1,7 @@
 ---
 title: 'Video Podcast: Axonista''s Claire McHugh on Televisionation'
 date: 2020-07-16 11:34:00 Z
-permalink: ott/Video-podcast-Claire-McHugh-on-Televisionation/
+permalink: ott/video-podcast-Claire-McHugh-on-Televisionation/
 categories:
 - OTT
 tags:
