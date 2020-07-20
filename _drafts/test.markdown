@@ -1,7 +1,7 @@
 ---
 title: video test
 date: 2020-07-20 17:22:00 Z
-permalink: "/test"
+permalink: "/blog/video-test"
 featured-image: "/uploads/1_tmws6KrMSSZZvQDG3Ymavg-abfdc7.png"
 featured-image-alt: test
 ---
