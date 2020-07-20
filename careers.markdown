@@ -5,12 +5,12 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-  - role: Software Engineer
-    location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/software-engineer-112?source=axonista_job
-  - role: UX/UI Designer
-    location: Exchequer Chambers, 19-23 Exchequer St, Dublin 2
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/uxui-designer-16?source=axonista_job
+  - role: Web & Javascript Developer
+    location: Remote in Ireland, Spain, Croatia and France
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/web-javascript-developer
+  - role: Marketing Executive
+    location: Remote in Ireland
+    jobbio-url: https://jobbio.com/companies/axonista/jobs/marketing-executive-597
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
