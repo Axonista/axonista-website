@@ -44,7 +44,7 @@ Once video becomes interactive, it becomes a two way experience. Empower audienc
 
 ## 3. Embrace live (or nearly live)
 
-Even pure-play on-demand services can embrace the live streaming phenomenon. Having a face — either homegrown talent or an iInternet influencer — reinforces the human nature of the brand and creates a reason to keep users coming back. A scheduled weekly co-viewing of a select VOD asset at a regular time can create opportunities for users to connect by watching together. When Oxfam launched Fashion Relief TV, it was broadcast as ‘live’ on the web every Friday evening at 7pm. This created a sense of community, as people all watched together at the same time. This also built a sense of excitement and demand, as shoppers waited for the latest bargains to go ‘live’ as part of the show.
+Even pure-play on-demand services can embrace the live streaming phenomenon. Having a face — either homegrown talent or an Internet influencer — reinforces the human nature of the brand and creates a reason to keep users coming back. A scheduled weekly co-viewing of a select VOD asset at a regular time can create opportunities for users to connect by watching together. When Oxfam launched Fashion Relief TV, it was broadcast as ‘live’ on the web every Friday evening at 7pm. This created a sense of community, as people all watched together at the same time. This also built a sense of excitement and demand, as shoppers waited for the latest bargains to go ‘live’ as part of the show.
 
 ## 4. Be consistent — and disciplined
 
