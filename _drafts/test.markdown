@@ -6,7 +6,7 @@ featured-image: "/uploads/1_tmws6KrMSSZZvQDG3Ymavg-abfdc7.png"
 featured-image-alt: test
 ---
 
-\*\* Video Test
+## Video Test
 
 ![hero-comp.mp4](/uploads/hero-comp.mp4)
 
