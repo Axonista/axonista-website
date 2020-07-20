@@ -34,7 +34,7 @@ Here are our 6 top tips for winning at OTT, revised and remastered for 2020.
 
 ## 1.Don’t let interactivity get in the way
 
-Interactive OTT enables new revenue streams, such as shoppable video, individually targeted advertising, and clever non-intrusive sponsorships. It’s ideally suited for key verticals like fashion, sports merchandise, news and entertainment. If you can engage with a viewer when they are in the moment, you can tap into truly incredible conversion rates. We drove 25% conversion to basket in a recent shoppable video app for a fashion client.
+Interactive OTT enables new revenue streams, such as shoppable video, individually targeted advertising, and clever non-intrusive sponsorships. It’s ideally suited for key verticals like fashion, sports merchandise, news and entertainment. If you can engage with a viewer when they are in the moment, you can tap into truly incredible conversion rates. We drove 25% conversion to basket in a recent shoppable video app for a fashion customer.
 
 However if your video commerce functionality isn’t seamless or easy to use, it’s just going to get in the way and have the opposite effect.
 
