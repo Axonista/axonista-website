@@ -3,7 +3,7 @@ title: Video Test
 date: 2020-07-21 11:48:00 Z
 permalink: "/blog/video-test.html"
 categories:
-- ott
+- OTT
 featured-image: "/uploads/OTT%20Video%20Applications%20Axonista.jpg"
 featured-image-alt: test
 robots: noindex, nofollow
