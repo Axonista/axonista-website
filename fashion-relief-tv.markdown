@@ -1,6 +1,7 @@
 ---
 title: Fashion Relief and Axonista
 date: 2020-06-09 17:00:00 Z
+published: false
 subtitle: When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising
   campaign to pivot and become a shoppable video event.
 layout: fashion-relief
