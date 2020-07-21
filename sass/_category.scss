@@ -9,22 +9,35 @@
             margin-bottom: 40px;
         }
 
-        .post {
-            h2 {
-                text-decoration: underline;
-            }
+        .posts-container {
+            max-width: 760px;
 
-            &:hover {
+            .post {
+                width: 100%;
+
                 h2 {
-                    text-decoration: none;
+                    text-decoration: underline;
+                }
+
+                &:hover {
+                    h2 {
+                        text-decoration: none;
+                    }
+                }
+
+                video,
+                iframe,
+                figure {
+                    /* don't attempt to display videos in post previews */
+                    display: none;
                 }
             }
-        }
 
-        @include media($tablet) {
-            margin        : 0 30px 20px;
-            padding-bottom: 0;
-            padding-top   : 90px;
+            @include media($tablet) {
+                margin        : 0 30px 20px;
+                padding-bottom: 0;
+                padding-top   : 90px;
+            }
         }
     }
 }
