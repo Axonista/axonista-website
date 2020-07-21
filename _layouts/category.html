@@ -4,14 +4,16 @@
 <section class="basic-content-section category">
     <h1>Category:
         {{page.title}}</h1>
-    {% for post in site.categories[page.title] %}
-        <div class="post">
-            <a href="{{site.baseurl}}{{post.url}}">
-                <h2>{{post.title}}</h2>
-                <p>{{post.excerpt}}</p>
-            </a>
-        </div>
-    {% endfor %}
+    <div class="posts-container">
+        {% for post in site.categories[page.title] %}
+            <div class="post">
+                <a href="{{site.baseurl}}{{post.url}}">
+                    <h2>{{post.title}}</h2>
+                    <p>{{post.excerpt}}</p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 </section>
 
 {% include footer.html %}
