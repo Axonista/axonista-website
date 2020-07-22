@@ -8,7 +8,7 @@ featured-image: "/uploads/Claire%20McHugh%20on%20Televisionation%20OTT.PNG"
 featured-image-alt: Axonista OTT Claire McHugh on Televisionation
 ---
 
-Axonista’s very own Claire McHugh recently joined Televisionation's Tracy Swedlow to discuss how Axonista is powering interactive video apps for Sinclair Broadcast, Waterbear and QVC amongst many others.
+Axonista’s very own Claire McHugh recently joined Televisionation's Tracy Swedlow to discuss how Axonista is powering interactive video apps for Sinclair Broadcast, Waterbear and QVC amongst many others. (Link to video at bottom of page.)
 
 Over the course of a wide-ranging 30 minute interview, Claire got a chance to talk about how Axonista helped Oxfam Ireland “pivot to digital” with Fashion Relief TV. She also gave a sneak preview of a new version of Ediflo coming in September aimed specifically at smaller media companies. Axonista is incredibly grateful to have been able to work with some truly inspirational organizations in recent times. During this interview, Claire got a chance to talk in depth about the stories behind those projects.
 
@@ -33,7 +33,6 @@ For anyone interested in OTT, interactive video, shoppable video and the art of 
 * **And all the latest news from Axonista**!
 
 Check out the interview in full below!
-
 
 <figure class="video_container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FP2HoNgRpIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
