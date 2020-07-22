@@ -11,6 +11,8 @@ tags:
 - OTT
 - OTT video applications
 - Video Content Management Systems
+featured-image: "/uploads/OTT%20Axonista.jpg"
+featured-image-alt: 'OTT Axonista '
 ---
 
 # The age of OTT is here:
