@@ -4,6 +4,8 @@ date: 2020-07-22 14:33:00 Z
 permalink: "/video-CMS/are-recommendation-engines-getting-it-wrong"
 categories:
 - Video CMS
+featured-image: 
+featured-image-alt: Video CMS Recommendation Engines
 ---
 
 *What’s The Holy Grail of recommendations? And why users are becoming frustrated.*
