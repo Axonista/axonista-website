@@ -2,6 +2,8 @@
 title: 'The IFI Player: Showcasing the Best of Irish Film'
 date: 2020-07-22 13:23:00 Z
 permalink: "/interactive-video/the-ifi-player-showcasing-the-best-of-irish-film/"
+categories:
+- interactive video
 featured-image: "/uploads/The%20IFI%20Player%20Axonista.png"
 featured-image-alt: IFI Player Interactive Video Axonista
 ---
