@@ -25,13 +25,13 @@ Founded in 2018 by Irish broadcaster, Lorraine Keane in partnership with Oxfam, 
 
 The first Fashion Relief took place in Dublin’s RDS in May 2018 and has since gone nationwide, with annual events in Dublin, Cork and Galway. To date, over €200,000 has been raised by Fashion Relief. These funds have all gone into supporting Oxfam’s work in some of the world’s most poverty-stricken countries. Oxfam also provides vital aid to countries affected by disaster.
 
+![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
+
 ## Pivoting from Offline Event to Online Shoppable Video
 
 2020 was shaping up to be the charity’s biggest year yet when COVID-19 restrictions disrupted their entire schedule. When this occurred, Lorraine and Oxfam reached out to Axonista to look at how Ediflo, our award-winning interactive video platform, could bring the event online. Together, Fashion Relief and Oxfam wanted to translate the catwalks, rails and product demonstrations to the small screen and allow viewers to shop from the comfort of their own homes.
 
 Having endured a string of cancellations, Fashion Relief and Oxfam Ireland was able to harness the power of video and reach an even larger online audience. The team at Fashion Relief worked hard in lockdown to create the video assets which were then curated in Ediflo. A number of interactive features and ecommerce functionalities have transformed Fashion Relief into an end-to-end video shopping experience - Fashion Relief TV.
-
-![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
 
 ## Providing a Shoppable Video Solution - Fashion Relief TV
 
