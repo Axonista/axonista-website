@@ -11,7 +11,8 @@ tags:
 - Oxfam Ireland
 - Interactive Video
 - Shoppable Content
-Field name: featured-image
+featured-image: "/uploads/Axonista%20and%20Fashion%20Relief%20TV%20Shoppable%20Video.jpg"
+featured-image-alt: Axonista Shoppable Video Fashion Relief TV
 ---
 
 When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising campaign to pivot and become a shoppable video event.
