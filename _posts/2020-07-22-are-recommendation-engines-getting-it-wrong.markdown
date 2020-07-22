@@ -6,6 +6,4 @@ categories:
 - Video CMS
 ---
 
-<video autoplay muted loop>
-<source src="/uploads/hero-comp.mp4" type="video/mp4">
-</video>
+<img src="/uploads/Interactive%20video%20recommendations%20axonista.gif" alt="Video CMS" />
