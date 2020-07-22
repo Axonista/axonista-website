@@ -31,7 +31,7 @@ The first Fashion Relief took place in Dublin’s RDS in May 2018 and has since 
 
 Having endured a string of cancellations, Fashion Relief and Oxfam Ireland was able to harness the power of video and reach an even larger online audience. The team at Fashion Relief worked hard in lockdown to create the video assets which were then curated in Ediflo. A number of interactive features and ecommerce functionalities have transformed Fashion Relief into an end-to-end video shopping experience - Fashion Relief TV.
 
-## ![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
+![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
 
 ## Providing a Shoppable Video Solution - Fashion Relief TV
 
