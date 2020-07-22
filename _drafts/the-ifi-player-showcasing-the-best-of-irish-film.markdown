@@ -6,8 +6,6 @@ featured-image: "/uploads/The%20IFI%20Player%20Axonista.png"
 featured-image-alt: IFI Player Interactive Video Axonista
 ---
 
-# The IFI Player: Showcasing the Best of Irish Film
-
 *With 2 awards, 1.3 million plays and more than 150,000 yearly users in 6\+ countries, the interactive IFI Player app, powered by Ediflo, showcases the Irish Film Institute's extensive Irish film collection anytime, anywhere.*
 
 The Irish Film Institute is Ireland’s national cultural institution for film. It provides audiences throughout Ireland and around the world with access to the finest independent, Irish and international cinema.
