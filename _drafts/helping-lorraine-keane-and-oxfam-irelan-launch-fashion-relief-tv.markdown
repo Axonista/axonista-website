@@ -11,7 +11,7 @@ tags:
 - Oxfam Ireland
 - Interactive Video
 - Shoppable Content
-Field name: featured-image-alt
+Field name: featured-image
 ---
 
 When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising campaign to pivot and become a shoppable video event.
