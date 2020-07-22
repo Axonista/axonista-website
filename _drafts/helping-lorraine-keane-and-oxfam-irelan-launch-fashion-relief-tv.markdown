@@ -11,6 +11,7 @@ tags:
 - Oxfam Ireland
 - Interactive Video
 - Shoppable Content
+Field name: featured-image-alt
 ---
 
 When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising campaign to pivot and become a shoppable video event.
@@ -20,8 +21,6 @@ When COVID-19 hit, Axonista was able to help a highly-anticipated fundraising ca
 COVID-19 has had a profound impact on the global events calendar. Since the outbreak began, a huge number of high profile shows, music festivals and sporting events have been postponed or cancelled indefinitely. A series of events that had been severely impacted was sustainable fashion fundraiser ‘Fashion Relief 2020’ supported by Oxfam Ireland. However, using Axonista's interactive video platform Ediflo, this event has been able to pivot to digital and raise vital funds for a great cause.
 
 Founded in 2018 by Irish broadcaster, Lorraine Keane in partnership with Oxfam, Fashion Relief has become one of Ireland’s biggest fashion fundraisers. Fashion Relief offers people the unique opportunity to “bag a bargain from the wardrobe of their style icon or beloved brand, boutique or designer".
-
-![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
 
 The first Fashion Relief took place in Dublin’s RDS in May 2018 and has since gone nationwide, with annual events in Dublin, Cork and Galway. To date, over €200,000 has been raised by Fashion Relief. These funds have all gone into supporting Oxfam’s work in some of the world’s most poverty-stricken countries. Oxfam also provides vital aid to countries affected by disaster.
 
@@ -38,6 +37,8 @@ Having endured a string of cancellations, Fashion Relief and Oxfam Ireland was a
 On the 12th of June 2020, Fashion Relief is launching Fashion Relief TV. Built on the Ediflo platform, Fashion Relief TV is an always-on shoppable video platform that enables viewers to watch back and shop at any time. Each 30 minute programme allows viewers to click and buy from any device.
 
 Fashion Relief TV enables the campaign team to open up a much more active online schedule. Each week, the Fashion Relief TV team will produce a new edition of the show that will go live on Fridays at 7.00pm. Fashion Relief plans on adding new hand-picked clothes, accessories and shoes which can be purchased right from the video player and posted directly to consumers.
+
+![Fashion Relief TV Axonista Shoppable Video Lorraine Keane.png](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video%20Lorraine%20Keane.png)
 
 Founder of Fashion Relief, Lorraine Keane, shared her thoughts on the turnaround of events. “It was such a disappointment to have to postpone the rest of our Fashion Relief 2020 events after so much preparation, so we are delighted to be partnering with Axonista to bring Fashion Relief straight to an online audience.”
 
