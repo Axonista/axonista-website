@@ -4,7 +4,7 @@ date: 2020-07-16 11:34:00 Z
 permalink: ott/video-podcast-Claire-McHugh-on-Televisionation/
 categories:
 - OTT
-featured-image: "/uploads/Claire%20McHugh%20Televisionation%20OTT%20Interactive%20Video.PNG"
+featured-image: "/uploads/Claire%20McHugh%20on%20Televisionation%20OTT.PNG"
 featured-image-alt: Axonista OTT Claire McHugh on Televisionation
 ---
 
