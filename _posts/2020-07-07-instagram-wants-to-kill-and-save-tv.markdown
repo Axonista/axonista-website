@@ -1,5 +1,5 @@
 ---
-title: Instagram wants to kill—and save—TV
+title: Instagram Wants to Kill—And Save—TV
 date: 2020-07-07 17:51:00 Z
 permalink: "/ott/instagram-wants-to-kill-and-save-tv"
 categories:
