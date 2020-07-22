@@ -7,7 +7,13 @@ categories:
 featured-image: "/uploads/OTT%20Video%20Applications%20Axonista.jpg"
 featured-image-alt: test
 robots: noindex, nofollow
+excerpt-separator: "<!--end-excerpt-->"
 ---
+
+COVID-19 has had a profound impact on the global events calendar. Since the outbreak began, a huge number of high profile shows, music festivals and sporting events have been postponed or cancelled indefinitely. A series of events that had been severely impacted was sustainable fashion fundraiser ‘Fashion Relief 2020’ supported by Oxfam Ireland. COVID-19 has had a profound impact on the global events calendar. 
+
+Since the outbreak began, a huge number of high profile shows, music festivals and sporting events have been postponed or cancelled indefinitely. A series of events that had been severely impacted was sustainable fashion fundraiser ‘Fashion Relief 2020’ supported by Oxfam Ireland.
+<!--end-excerpt-->
 
 <video autoplay muted loop>
 <source src="/uploads/hero-comp.mp4" type="video/mp4">
