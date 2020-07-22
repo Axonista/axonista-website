@@ -11,9 +11,9 @@ tags:
 - OTT
 - OTT video applications
 - Video Content Management Systems
+featured-image: "/uploads/OTT%20Axonista.jpg"
+featured-image-alt: 'OTT Axonista '
 ---
-
-# ![OTT Video Applications Axonista.jpg](/uploads/OTT%20Video%20Applications%20Axonista.jpg)
 
 # The age of OTT is here:
 
@@ -25,6 +25,8 @@ While the stats might have caught up with the predictions, the fundamentals for 
 Any OTT offering needs to be good enough to entice viewers to keep coming back
 
 What has changed in the past four years, is viewer expectations. These are even higher than before. With more and more brands committed to providing excellent OTT experiences, the bar is high. Pushing video into an app isn't all that hard, in fact, it gets easier every day. Thinking about how your viewer will want to engage with your video content is a different matter entirely.
+
+# ![OTT Video Applications Axonista.jpg](/uploads/OTT%20Video%20Applications%20Axonista.jpg)
 
 The future of video is interactive. The future is here, just unevenly distributed. We are even closer to the day when we will look back on TV with non-touchable baked-in graphics and wonder how we partook in such a one-way experience for so long.
 
@@ -41,6 +43,8 @@ However if your video commerce functionality isn’t seamless or easy to use, it
 ## 2. Build a tribe of brand advocates
 
 Once video becomes interactive, it becomes a two way experience. Empower audiences and enable users to feel like they belong. User generated content turns a viewer into a brand advocate. Enable customized profiles and the sharing of favorite content recommendations to tap into the benefits of user-generated-content across multiple social channels. Teasers and trailers come in handy for enabling social posts of gated content. By encouraging power users to emerge and providing them with the tools to share, you open the door to having your very own brand ambassadors.
+
+![OTT Axonista Blog Post Top Tips.jpg](/uploads/OTT%20Axonista%20Blog%20Post%20Top%20Tips.jpg)
 
 ## 3. Embrace live (or nearly live)
 
