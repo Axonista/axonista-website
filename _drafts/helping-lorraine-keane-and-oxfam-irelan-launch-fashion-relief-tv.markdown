@@ -21,7 +21,7 @@ COVID-19 has had a profound impact on the global events calendar. Since the outb
 
 Founded in 2018 by Irish broadcaster, Lorraine Keane in partnership with Oxfam, Fashion Relief has become one of Ireland’s biggest fashion fundraisers. Fashion Relief offers people the unique opportunity to “bag a bargain from the wardrobe of their style icon or beloved brand, boutique or designer".
 
-![Axonista and Fashion Relief TV Shoppable Video.jpg](/uploads/Axonista%20and%20Fashion%20Relief%20TV%20Shoppable%20Video.jpg)
+![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
 
 The first Fashion Relief took place in Dublin’s RDS in May 2018 and has since gone nationwide, with annual events in Dublin, Cork and Galway. To date, over €200,000 has been raised by Fashion Relief. These funds have all gone into supporting Oxfam’s work in some of the world’s most poverty-stricken countries. Oxfam also provides vital aid to countries affected by disaster.
 
