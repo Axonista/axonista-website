@@ -28,7 +28,7 @@ There are so many ways to watch video these days. Each OTT platform, like Roku, 
 
 Think about where and when your audience is likely to want to view your content. Will they be commuting and watching via their mobile device, or at home in the living room? Will your viewers use multiple devices, depending on the time of day? They will expect a consistent, seamless experience across platforms. At the same time, be mindful of the device itself. An Apple TV app should behave like it's expected to. An Android phone app should be consistent with the Android ecosystem. You could launch on web first, before committing to a native platform. No matter which OTT platform you launch on, we’ve got you covered.
 
-![ediflo Axonista launching OTT app.jpg](/uploads/ediflo%20Axonista%20launching%20OTT%20app.jpg)
+![VIDEO OTT APP.png](/uploads/VIDEO%20OTT%20APP.png)
 
 ## **3. What’s your business model going to be?**
 
