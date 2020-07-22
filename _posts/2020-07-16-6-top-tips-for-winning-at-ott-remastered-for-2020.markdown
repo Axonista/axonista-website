@@ -11,7 +11,7 @@ tags:
 - OTT
 - OTT video applications
 - Video Content Management Systems
-featured-image: "/uploads/OTT%20Axonista.jpg"
+featured-image: "/uploads/OTT%20Video%20Applications%20Axonista.jpg"
 featured-image-alt: 'OTT Axonista '
 ---
 
@@ -26,7 +26,7 @@ Any OTT offering needs to be good enough to entice viewers to keep coming back
 
 What has changed in the past four years, is viewer expectations. These are even higher than before. With more and more brands committed to providing excellent OTT experiences, the bar is high. Pushing video into an app isn't all that hard, in fact, it gets easier every day. Thinking about how your viewer will want to engage with your video content is a different matter entirely.
 
-# ![OTT Video Applications Axonista.jpg](/uploads/OTT%20Video%20Applications%20Axonista.jpg)
+# ![OTT Axonista.jpg](/uploads/OTT%20Axonista.jpg)
 
 The future of video is interactive. The future is here, just unevenly distributed. We are even closer to the day when we will look back on TV with non-touchable baked-in graphics and wonder how we partook in such a one-way experience for so long.
 
