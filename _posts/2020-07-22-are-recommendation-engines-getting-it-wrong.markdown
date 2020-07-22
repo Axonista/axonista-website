@@ -4,7 +4,7 @@ date: 2020-07-22 14:33:00 Z
 permalink: "/video-CMS/are-recommendation-engines-getting-it-wrong"
 categories:
 - Video CMS
-featured-image: 
+featured-image: "/uploads/Video%20CMS%20recommendation%20engines%20Axonista.jpg"
 featured-image-alt: Video CMS Recommendation Engines
 ---
 
