@@ -84,4 +84,4 @@ Recommendation engines will almost certainly get better at what they do. But how
 
 Is it even possible to design for the level of complexity that is a person’s mood? Can external factors be addressed to create a better experience? And can recommendation engines evolve with us as our tastes mature?
 
-These are substantial, and outstanding issues in the design of today’s largest video content libraries. In our next article, we consider some solutions to these issues.
+These are substantial, and outstanding issues in the design of today’s largest video content libraries. In our next article, we consider some solutions to these issues - [check it out here](www.axonista.com/video-cms/how-netflix-should-improve-recommendations).
