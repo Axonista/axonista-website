@@ -2,6 +2,8 @@
 title: 'The IFI Player: Showcasing the Best of Irish Film'
 date: 2020-07-22 13:23:00 Z
 permalink: "/interactive-video/the-ifi-player-showcasing-the-best-of-irish-film/"
+categories:
+- interactive video
 featured-image: "/uploads/The%20IFI%20Player%20Axonista.png"
 featured-image-alt: IFI Player Interactive Video Axonista
 ---
@@ -18,7 +20,7 @@ With over 30,000 cans of film preserved in the IFI Irish Film Archive, the Irish
 
 # Our Solution
 
-### Delivering Innovation to Market Fast
+## Delivering Innovation to Market Fast
 
 The IFI Player applications are powered by Ediflo, Axonista’s interactive video CMS, which gives organizations the tools to distribute, manage, curate, and customize video content. Using Ediflo, the IFI was able to launch a suite of rich immersive video apps within a matter of weeks, on the App Store, Google Play, Android, Amazon TV, and Roku.
 
@@ -44,7 +46,7 @@ The release of the IFI Player attracted new audiences from all around the globe,
 
 ![The IFI Player Axonista OTT.jpg](/uploads/The%20IFI%20Player%20Axonista%20OTT.jpg)
 
-Since its launch in 2016, the IFI Player’s success and innovation have not gone unnoticed, having already won 2 awards.\
+Since its launch in 2016, the IFI Player’s success and innovation have not gone unnoticed, having already won 2 awards.\\
 
 * 2019 - Winner - Allianz Business to Arts Award, Best Creative Staff Engagement
 
