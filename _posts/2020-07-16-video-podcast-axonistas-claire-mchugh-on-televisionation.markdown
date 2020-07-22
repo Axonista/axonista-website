@@ -11,6 +11,8 @@ tags:
 - Claire McHugh
 - Interactive Video
 - Televisionation
+featured-image: "/uploads/Claire%20McHugh%20Televisionation%20OTT%20Interactive%20Video.PNG"
+featured-image-alt: Axonista OTT Claire McHugh on Televisionation
 ---
 
 Axonista’s very own Claire McHugh recently joined Televisionation's Tracy Swedlow to discuss how Axonista is powering interactive video apps for Sinclair Broadcast, Waterbear and QVC amongst many others.
