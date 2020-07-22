@@ -29,6 +29,8 @@ This is the first in a series exploring how interactive video shows its face in 
 
 Here are 4 examples of how creatives are using interactivity. A music video, a short story, an HBO series, and a story book/game. All very different, all very interactive.
 
+![Fashion Relief TV Axonista Shoppable Video.jpg](/uploads/Fashion%20Relief%20TV%20Axonista%20Shoppable%20Video.jpg)
+
 ## **1. One Last Beat — Héctor Monerris**
 
 This unusual but really impressive (and homemade) short story gives us a unique way to approach interactive video storytelling. It doesn’t need to be about choosing a narrative path based on what you want to see.
