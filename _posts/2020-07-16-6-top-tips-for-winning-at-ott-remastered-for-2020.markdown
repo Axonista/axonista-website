@@ -15,10 +15,6 @@ featured-image: "/uploads/OTT%20Video%20Applications%20Axonista.jpg"
 featured-image-alt: 'OTT Axonista '
 ---
 
-# The age of OTT is here:
-
-# 6 top tips for winning at OTT, remastered for 2020
-
 Back in 2016, Axonista’s CEO Claire McHugh [wrote about OTT as the future of linear](https://medium.com/axonista-hq/interactive-ott-are-you-ready-for-the-next-stage-in-the-evolution-of-tv-4155b67a71d7). She predicted that ”eventually even the living room TV will catch up and become an interactive device” And she wasn’t wrong. By 2018, 70% of the televisions being sold around the world were smart TVs, according to [Statista](https://www.statista.com/topics/4761/smart-and-connected-tvs/).
 
 While the stats might have caught up with the predictions, the fundamentals for brands coming to play in the OTT space remain the same. Those who want to win have to put viewer experience before everything else.
