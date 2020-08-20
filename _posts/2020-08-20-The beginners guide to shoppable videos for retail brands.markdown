@@ -12,7 +12,7 @@ Now, thanks to the innovation of shoppable video, retail brands can engage with 
 
 Shoppable videos create an interactive experience for viewers. With embedded links, viewers can click or purchase products instantly without changing screens or windows. The experiences are conveyed through graphic video overlays that produce additional context to viewers. This means that retail brands can meet today’s consumers’ shopping habits by reducing the time and actions it takes to make a purchase - therefore, increasing sales and lead generation. 
 
-## **How to create a great shoppable video**
+##**How to create a great shoppable video**
 
 It is important that the videos retail brands publish are engaging and deliver value. By creating great shoppable videos, retail brands can increase traffic and generate more revenue. 
 
