@@ -12,13 +12,13 @@ Now, thanks to the innovation of shoppable video, retail brands can engage with 
 
 Shoppable videos create an interactive experience for viewers. With embedded links, viewers can click or purchase products instantly without changing screens or windows. The experiences are conveyed through graphic video overlays that produce additional context to viewers. This means that retail brands can meet today’s consumers’ shopping habits by reducing the time and actions it takes to make a purchase - therefore, increasing sales and lead generation. 
 
-** #How to create a great shoppable video**
+## **How to create a great shoppable video**
 
 It is important that the videos retail brands publish are engaging and deliver value. By creating great shoppable videos, retail brands can increase traffic and generate more revenue. 
 
 The Ediflo video content management system from Axonista allows you to curate multiple video collections for users to enjoy across all screens.  Ediflo makes video shoppable which enables you to provide additional context to what your viewers are watching. You can include “buy buttons”, calls to action, email sign-ups and more in your videos. 
 
-** ##Create a seamless shopping experience with shoppable videos**
+###**Create a seamless shopping experience with shoppable videos**
 
 One of the reasons that many retail brands are using shoppable videos is because it provides a fast and convenient way for consumers to shop. By creating a seamless shopping experience for your customers, you can increase your revenue and level of engagement. Shoppable videos remove the time a customer would take to browse for a product as it allows them to click and purchase what they see without leaving the video. 
 
@@ -28,7 +28,7 @@ Fashion Relief TV was a great success for Oxfam as they sold 60% of stock in the
 
 “...We are delighted to be partnering with Axonista to bring Fashion Relief straight to an online audience.” Lorraine Keane, Fashion Relief founder.
 
-** ##Create shoppable videos through storytelling**
+###**Create shoppable videos through storytelling**
 
 Storytelling allows you to create stories that convey your brand’s product and engage your audience. Through storytelling, you can show different aspects of your brand, create shoppable videos that keep your audiences entertained, and show your brands’ personality. 
 
