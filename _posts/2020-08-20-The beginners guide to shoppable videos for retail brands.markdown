@@ -3,6 +3,12 @@ title: The beginners guide to shoppable videos for retail brands
 date: 2020-08-20 11:17:00 Z
 categories:
 - Shoppable video
+tags:
+- Interactive Video
+- video cms
+- Shoppable Content
+- Shoppable Video
+- Video Content Management Systems
 ---
 
 Video consumption is increasing, which means many retail brands are focusing their marketing strategy on video advertising. A study from [HubSpot](https://www.hubspot.com/marketing-statistics) found that 83% of video marketers say that video has helped them generate leads, while 84% of people say that a brand’s video convinced them to buy a product or service. 
