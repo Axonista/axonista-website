@@ -33,6 +33,8 @@ One of the reasons that many retail brands are using shoppable videos is because
 
 A great example of a brand that has used shoppable video to create a seamless shopping experience is charity retailer Oxfam. The restrictions put in place for COVID-19 meant that Oxfam could not have their annual Fashion Relief event. However, partnering with Axonista allowed them to turn their fashion show into a shoppable video event to reach a larger online audience. Built on the Ediflo video CMS platform, Fashion Relief TV is an always-on shoppable video platform that allows viewers to click and buy from any device.
 
+![fashion-relief.jpg](/uploads/fashion-relief.jpg)
+
 Fashion Relief TV was a great success for Oxfam as they sold 60% of stock in the first two hours of the showing going live. In just three weeks, they surpassed sales targets and delivered a 25% conversion rate to basket. 
 
 “...We are delighted to be partnering with Axonista to bring Fashion Relief straight to an online audience.” Lorraine Keane, Fashion Relief founder.
