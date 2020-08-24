@@ -1,7 +1,7 @@
 ---
 title: The beginners guide to shoppable videos for retail brands
 date: 2020-08-20 11:17:00 Z
-permalink: "/shoppable-video/the-begginers-guide-to-shoppable-video-for-retail-brands"
+permalink: "/shoppable-video/the-beginners-guide-to-shoppable-video-for-retail-brands"
 categories:
 - Shoppable video
 tags:
@@ -10,9 +10,13 @@ tags:
 - Shoppable Content
 - Shoppable Video
 - Video Content Management Systems
+Featured-image: "/uploads/The%20beginners%20guide%20to%20shoppable%20videos%20for%20retail%20brands.jpg"
+featured-image-alt: The beginners guide to shoppable videos for retail brands Axonista
+  blog
 ---
 
-![cover-b.jpg](/uploads/cover-b.jpg)
+*The beginners guide to shoppable videos for retail brands.*
+
 Video consumption is increasing, which means many retail brands are focusing their marketing strategy on video advertising. A study from [HubSpot](https://www.hubspot.com/marketing-statistics) found that 83% of video marketers say that video has helped them generate leads, while 84% of people say that a brand’s video convinced them to buy a product or service. 
 Now, thanks to the innovation of shoppable video, retail brands can engage with their audiences and increase sales like never before.
 
@@ -53,7 +57,9 @@ Ted Baker saw great results from using shoppable videos as it was reported that 
 
 So, if you're considering how to harness shoppable video for your retail brand, here are three key recommendations - 
 1) Translate the real-world excitement into an online channel like Oxfam and Fashion Relief.
+
  2) Invest in great storytelling, that will resonate with your target consumer (as Ted Baker did with Guy Ritchie.
+
 3) Ensure a high-quality experience across all devices using smart overlays and design-centred user experience. 
 
 See here for some examples of great shoppable video interfaces!
