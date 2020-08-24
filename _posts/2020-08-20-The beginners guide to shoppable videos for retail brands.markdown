@@ -10,7 +10,7 @@ tags:
 - Shoppable Content
 - Shoppable Video
 - Video Content Management Systems
-Featured-image: "/uploads/The%20beginners%20guide%20to%20shoppable%20videos%20for%20retail%20brands.jpg"
+featured-image: "/uploads/The%20beginners%20guide%20to%20shoppable%20videos%20for%20retail%20brands.jpg"
 featured-image-alt: The beginners guide to shoppable videos for retail brands Axonista
   blog
 ---
