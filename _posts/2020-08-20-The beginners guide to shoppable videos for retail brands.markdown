@@ -53,7 +53,9 @@ Ted Baker saw great results from using shoppable videos as it was reported that 
 
 So, if you're considering how to harness shoppable video for your retail brand, here are three key recommendations - 
 1) Translate the real-world excitement into an online channel like Oxfam and Fashion Relief.
+
  2) Invest in great storytelling, that will resonate with your target consumer (as Ted Baker did with Guy Ritchie.
+
 3) Ensure a high-quality experience across all devices using smart overlays and design-centred user experience. 
 
 See here for some examples of great shoppable video interfaces!
