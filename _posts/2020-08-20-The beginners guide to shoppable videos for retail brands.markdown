@@ -1,6 +1,7 @@
 ---
 title: The beginners guide to shoppable videos for retail brands
 date: 2020-08-20 11:17:00 Z
+permalink: "/shoppable-video/the-begginers-guide-to-shoppable-video-for-retail-brands"
 categories:
 - Shoppable video
 tags:
