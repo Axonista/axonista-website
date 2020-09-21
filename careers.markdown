@@ -5,12 +5,12 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-  - role: Web & Javascript Developer
-    location: Remote in Ireland, Spain, Croatia and France
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/web-javascript-developer
-  - role: Marketing Executive
+  - role: Senior iOS Engineer
     location: Remote in Ireland
-    jobbio-url: https://jobbio.com/companies/axonista/jobs/marketing-executive-597
+    HireHive-url: https://my.hirehive.io/voltedge/jobs/68117/senior-ios-engineer-axonista-dublin
+  - role: Android Engineer
+    location: Remote in Ireland
+    HireHive-url: https://my.hirehive.io/voltedge/jobs/68218/android-engineer-axonista-dublin
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
