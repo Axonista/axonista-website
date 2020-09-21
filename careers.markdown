@@ -7,10 +7,10 @@ current-openings:
   jobs:
   - role: Senior iOS Engineer
     location: Remote in Ireland
-    HireHive-url: https://my.hirehive.io/voltedge/jobs/68117/senior-ios-engineer-axonista-dublin
+    https://my.hirehive.io/voltedge-url: https://my.hirehive.io/voltedge/jobs/68117/senior-ios-engineer-axonista-dublin
   - role: Android Engineer
     location: Remote in Ireland
-    HireHive-url: https://my.hirehive.io/voltedge/jobs/68218/android-engineer-axonista-dublin
+    https://my.hirehive.io/voltedge-url: https://my.hirehive.io/voltedge/jobs/68218/android-engineer-axonista-dublin
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
