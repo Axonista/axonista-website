@@ -9,6 +9,10 @@ current-openings:
     location: Remote in Ireland
     url: https://my.hirehive.io/voltedge/jobs/68218/android-engineer-axonista-dublin
     link-text: View role on HireHive
+  - role: Backend Software Engineer
+    location: Remote in Ireland, Spain, Croatia or France
+    url: https://my.hirehive.io/voltedge/jobs/68558/backend-software-engineer-axonista-dublin
+    link-text: View role on HireHive
 why-axonista:
   heading: Why Axonista?
   subheading-quality: Quality, Collaboration and Innovation
