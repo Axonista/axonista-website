@@ -5,13 +5,13 @@ careers-description: We're looking for passionate people to help realise our amb
 current-openings:
   heading: Current openings
   jobs:
-  - role: Senior iOS Engineer
-    location: Remote in Ireland
-    url: https://my.hirehive.io/voltedge/jobs/68117/senior-ios-engineer-axonista-dublin
-    link-text: View role on HireHive
   - role: Android Engineer
     location: Remote in Ireland
     url: https://my.hirehive.io/voltedge/jobs/68218/android-engineer-axonista-dublin
+    link-text: View role on HireHive
+  - role: Backend Software Engineer
+    location: Remote in Ireland, Spain, Croatia or France
+    url: https://my.hirehive.io/voltedge/jobs/68558/backend-software-engineer-axonista-dublin
     link-text: View role on HireHive
 why-axonista:
   heading: Why Axonista?
